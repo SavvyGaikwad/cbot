@@ -1,634 +1,544 @@
+import streamlit as st
 import google.generativeai as genai
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.schema import Document
 from PIL import Image
 import requests
 from io import BytesIO
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import webbrowser
 import os
-import json
-import glob
-from typing import List, Dict, Any
+from pathlib import Path
+import logging
+from datetime import datetime
+import time
 
-# Configure Gemini
-genai.configure(api_key="AIzaSyAvzloY_NyX-yjtZb8EE_RdXPs3rPmMEso")
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-# Initialize embedding model
-embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+# MUST BE FIRST: Configure Streamlit page
+st.set_page_config(
+    page_title="Document Intelligence Assistant",
+    page_icon="🤖",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
-class JSONDocumentProcessor:
-    """Process JSON documents and extract content with metadata"""
+# Custom CSS for professional styling
+st.markdown("""
+<style>
+    .main {
+        padding-top: 2rem;
+    }
     
-    def __init__(self, data_directory: str):
-        self.data_directory = data_directory
-        self.documents = []
-        
-    def extract_images_from_content(self, content_items: List[Dict]) -> List[str]:
-        """Extract image URLs from content items"""
-        images = []
-        for item in content_items:
-            if item.get('type') == 'media' and item.get('path'):
-                images.append(item['path'])
-            elif item.get('type') == 'section' and 'content' in item:
-                # Recursively extract images from nested sections
-                nested_images = self.extract_images_from_content(item['content'])
-                images.extend(nested_images)
-        return images
+    .stButton > button {
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
     
-    def process_content_items(self, content_items: List[Dict], parent_section: str = "") -> List[Dict]:
-        """Process content items and create structured text chunks"""
-        chunks = []
-        current_chunk = []
-        current_images = []
-        
-        for item in content_items:
-            item_type = item.get('type', '')
-            
-            if item_type == 'section':
-                # If we have accumulated content, save it as a chunk
-                if current_chunk:
-                    chunks.append({
-                        'text': ' '.join(current_chunk),
-                        'images': current_images.copy(),
-                        'section': parent_section
-                    })
-                    current_chunk = []
-                    current_images = []
-                
-                # Process the section
-                section_title = item.get('title', '')
-                section_content = item.get('content', [])
-                
-                # Create section header chunk
-                section_text = f"Section: {section_title}"
-                section_images = self.extract_images_from_content(section_content)
-                
-                # Recursively process section content
-                nested_chunks = self.process_content_items(section_content, section_title)
-                
-                # Add section header
-                chunks.append({
-                    'text': section_text,
-                    'images': section_images,
-                    'section': section_title
-                })
-                
-                # Add nested chunks
-                chunks.extend(nested_chunks)
-                
-            elif item_type == 'media':
-                # Add media reference to current chunk
-                media_path = item.get('path', '')
-                if media_path:
-                    current_images.append(media_path)
-                    current_chunk.append(f"[Image: {media_path.split('/')[-1]}]")
-                    
-            elif item_type in ['info', 'step', 'substep', 'text']:
-                # Add text content to current chunk
-                text = item.get('text', '')
-                if text:
-                    current_chunk.append(text)
-                    
-            elif item_type == 'list':
-                # Handle list items
-                list_items = item.get('items', [])
-                for list_item in list_items:
-                    current_chunk.append(f"• {list_item}")
-        
-        # Don't forget the last chunk
-        if current_chunk:
-            chunks.append({
-                'text': ' '.join(current_chunk),
-                'images': current_images.copy(),
-                'section': parent_section
-            })
-        
-        return chunks
+    .stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
     
-    def process_json_file(self, file_path: str) -> List[Document]:
-        """Process a single JSON file and return Document objects"""
+    .chat-message {
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin: 1rem 0;
+        border-left: 4px solid #667eea;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    
+    .response-container {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        margin: 1rem 0;
+    }
+    
+    .metric-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+    
+    .image-container {
+        border: 1px solid #e1e5e9;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        background: #fafbfc;
+    }
+    
+    .status-indicator {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+    
+    .status-success {
+        background: #d4edda;
+        color: #155724;
+    }
+    
+    .status-info {
+        background: #d1ecf1;
+        color: #0c5460;
+    }
+    
+    .divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #ddd, transparent);
+        margin: 2rem 0;
+    }
+    
+    .language-selector {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+class ProfessionalChatbot:
+    def __init__(self):
+        self.setup_genai()
+        self.setup_vector_db()
+        self.initialize_session_state()
+        self.setup_language_prompts()
+    
+    def setup_genai(self):
+        """Initialize Gemini AI model"""
         try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            filename = os.path.basename(file_path)
-            document_title = data.get('document_title', filename)
-            content = data.get('content', [])
-            
-            print(f"📄 Processing: {document_title}")
-            
-            # Extract all content chunks
-            chunks = self.process_content_items(content)
-            
-            documents = []
-            for i, chunk in enumerate(chunks):
-                # Create metadata
-                metadata = {
-                    'source': document_title,
-                    'file_path': file_path,
-                    'section': chunk['section'],
-                    'chunk_id': i,
-                    'document_type': 'instruction_manual',
-                    'has_images': len(chunk['images']) > 0,
-                    'images': '|'.join(chunk['images']) if chunk['images'] else '',
-                    'image_count': len(chunk['images'])
-                }
-                
-                # Create Document object
-                doc = Document(
-                    page_content=chunk['text'],
-                    metadata=metadata
-                )
-                documents.append(doc)
-            
-            print(f"   ✅ Created {len(documents)} document chunks")
-            return documents
-            
+            genai.configure(api_key="AIzaSyAvzloY_NyX-yjtZb8EE_RdXPs3rPmMEso")
+            self.model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+            logger.info("Gemini AI model initialized successfully")
         except Exception as e:
-            print(f"   ❌ Error processing {file_path}: {str(e)}")
-            return []
+            st.error("Failed to initialize AI model. Please check your API key.")
+            logger.error(f"Gemini AI initialization error: {e}")
+            st.stop()
     
-    def process_all_files(self) -> List[Document]:
-        """Process all JSON files in the data directory"""
-        json_files = glob.glob(os.path.join(self.data_directory, "*.json"))
-        
-        if not json_files:
-            print(f"❌ No JSON files found in {self.data_directory}")
-            return []
-        
-        print(f"🔍 Found {len(json_files)} JSON files to process")
-        print("="*60)
-        
-        all_documents = []
-        
-        for file_path in json_files:
-            documents = self.process_json_file(file_path)
-            all_documents.extend(documents)
-        
-        print("="*60)
-        print(f"📊 Processing Summary:")
-        print(f"   • Files processed: {len(json_files)}")
-        print(f"   • Total document chunks: {len(all_documents)}")
-        print(f"   • Documents with images: {len([d for d in all_documents if d.metadata.get('has_images', False)])}")
-        
-        # Show breakdown by source
-        source_counts = {}
-        for doc in all_documents:
-            source = doc.metadata.get('source', 'unknown')
-            if source not in source_counts:
-                source_counts[source] = 0
-            source_counts[source] += 1
-        
-        print(f"   • Breakdown by source:")
-        for source, count in source_counts.items():
-            print(f"     - {source}: {count} chunks")
-        
-        return all_documents
-
-def create_vector_database(data_directory: str, persist_directory: str = "vector_db_unified"):
-    """Create or update the vector database from JSON files"""
-    
-    # Initialize processor
-    processor = JSONDocumentProcessor(data_directory)
-    
-    # Process all files
-    documents = processor.process_all_files()
-    
-    if not documents:
-        print("❌ No documents to process. Exiting.")
-        return None
-    
-    # Split documents if they're too long
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
-        length_function=len,
-    )
-    
-    print(f"\n📝 Splitting long documents...")
-    split_documents = text_splitter.split_documents(documents)
-    
-    print(f"   • Original chunks: {len(documents)}")
-    print(f"   • After splitting: {len(split_documents)}")
-    
-    # Create vector database
-    print(f"\n🔄 Creating vector database...")
-    print(f"   • Persist directory: {persist_directory}")
-    
-    # Remove existing database if it exists
-    if os.path.exists(persist_directory):
-        print(f"   • Removing existing database...")
-        import shutil
-        shutil.rmtree(persist_directory)
-    
-    # Create new database
-    vector_db = Chroma.from_documents(
-        documents=split_documents,
-        embedding=embedding_model,
-        persist_directory=persist_directory
-    )
-    
-    print(f"   ✅ Vector database created successfully!")
-    print(f"   • Total embeddings: {len(split_documents)}")
-    
-    return vector_db
-
-def convert_github_url_to_raw(github_url):
-    """Convert GitHub blob URL to raw URL for direct image access"""
-    if "github.com" in github_url and "/blob/" in github_url:
-        return github_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
-    return github_url
-
-def display_image_from_url(image_url, max_width=600):
-    """Display image from URL using matplotlib"""
-    try:
-        # Convert GitHub URL to raw URL
-        raw_url = convert_github_url_to_raw(image_url)
-        
-        # Download and display image
-        response = requests.get(raw_url, timeout=10)
-        response.raise_for_status()
-        
-        # Load image
-        img = Image.open(BytesIO(response.content))
-        
-        # Create matplotlib figure
-        plt.figure(figsize=(10, 6))
-        plt.imshow(img)
-        plt.axis('off')
-        plt.title(f"Reference Image")
-        plt.tight_layout()
-        plt.show()
-        
-        return True
-        
-    except Exception as e:
-        print(f"   ❌ Could not display image from {image_url}")
-        print(f"   Error: {str(e)}")
-        return False
-
-def display_images_html(image_urls, max_width=400):
-    """Create HTML file to display images in browser"""
-    try:
-        html_content = f"""
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Related Images</title>
-            <style>
-                body {{ font-family: Arial, sans-serif; margin: 20px; }}
-                .container {{ display: flex; flex-wrap: wrap; gap: 15px; }}
-                .image-card {{ 
-                    border: 1px solid #ccc; 
-                    padding: 10px; 
-                    border-radius: 8px; 
-                    max-width: {max_width}px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                }}
-                .image-card img {{ 
-                    max-width: 100%; 
-                    height: auto; 
-                    border-radius: 4px;
-                }}
-                .image-title {{ 
-                    margin-top: 8px; 
-                    font-size: 12px; 
-                    color: #666;
-                    word-break: break-all;
-                }}
-                .error {{ color: red; font-size: 12px; }}
-            </style>
-        </head>
-        <body>
-            <h2>Related Images</h2>
-            <div class="container">
-        """
-        
-        for i, url in enumerate(image_urls):
-            raw_url = convert_github_url_to_raw(url)
-            filename = url.split('/')[-1]
-            html_content += f"""
-            <div class="image-card">
-                <img src='{raw_url}' alt='{filename}' 
-                     onerror="this.style.display='none'; this.nextSibling.style.display='block';">
-                <div class="error" style="display: none;">
-                    Failed to load: {filename}
-                </div>
-                <div class="image-title">{filename}</div>
-            </div>
-            """
-        
-        html_content += """
-            </div>
-        </body>
-        </html>
-        """
-        
-        # Save HTML file and open in browser
-        html_file = "temp_images.html"
-        with open(html_file, 'w', encoding='utf-8') as f:
-            f.write(html_content)
-        
-        # Open in default browser
-        webbrowser.open(f'file://{os.path.abspath(html_file)}')
-        print(f"📸 Opening {len(image_urls)} images in your browser...")
-        
-        return True
+    def setup_vector_db(self):
+        """Initialize vector database"""
+        try:
+            self.embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+            self.vector_db_path = "comprehensive_vector_db"
             
-    except Exception as e:
-        print(f"Error creating HTML display: {e}")
-        return False
+            if os.path.exists(self.vector_db_path):
+                self.vector_db = Chroma(
+                    persist_directory=self.vector_db_path, 
+                    embedding_function=self.embedding_model
+                )
+                status_text = "✅ Knowledge base connected" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました"
+                st.markdown(
+                    f'<div class="status-indicator status-success">{status_text}</div>', 
+                    unsafe_allow_html=True
+                )
+                logger.info(f"Vector database loaded from {self.vector_db_path}")
+            else:
+                error_text = "Knowledge base not found. Please contact system administrator." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースが見つかりません。システム管理者にお問い合わせください。"
+                st.error(error_text)
+                logger.error(f"Vector database not found at {self.vector_db_path}")
+                st.stop()
+        except Exception as e:
+            error_text = "Failed to connect to knowledge base." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースへの接続に失敗しました。"
+            st.error(error_text)
+            logger.error(f"Vector database initialization error: {e}")
+            st.stop()
+    
+    def initialize_session_state(self):
+        """Initialize session state variables"""
+        if 'chat_history' not in st.session_state:
+            st.session_state.chat_history = []
+        if 'processing' not in st.session_state:
+            st.session_state.processing = False
+        if 'language' not in st.session_state:
+            st.session_state.language = 'English'
 
-def collect_images_from_docs_comprehensive(docs, k_limit=10):
-    """Enhanced image collection that processes ALL retrieved documents"""
-    all_images = []
-    seen_images = set()
-    doc_info = []
-    
-    print(f"\n[Image Collection] Processing {len(docs)} retrieved documents...")
-    print("-" * 60)
-    
-    for doc_idx, doc in enumerate(docs):
-        doc_images = []
-        doc_source = "unknown"
-        doc_section = "unknown"
-        doc_type = "unknown"
-        
-        # Extract document information
-        if hasattr(doc, 'metadata') and doc.metadata:
-            doc_source = doc.metadata.get('source', 'unknown')
-            doc_section = doc.metadata.get('section', 'unknown')
-            doc_type = doc.metadata.get('document_type', 'unknown')
-            has_images = doc.metadata.get('has_images', False)
-            images_str = doc.metadata.get('images', '')
+    def setup_language_prompts(self):
+        """Setup language-specific prompts and text"""
+        self.language_config = {
+            'English': {
+                'title': 'Document Intelligence Assistant',
+                'subtitle': 'Get instant answers from your organization\'s knowledge base',
+                'input_placeholder': 'Ask me anything about your documents:',
+                'ask_button': '🔍 Ask Question',
+                'new_chat': '🔄 New Chat',
+                'clear_history': '🗑️ Clear Chat History',
+                'recent_queries': '📝 Recent Queries',
+                'response_header': '### Response',
+                'visual_resources': '### Related Visual Resources',
+                'quick_examples': '### 💡 Quick Start Examples',
+                'documents_analyzed': 'Documents Analyzed',
+                'content_types': 'Content Types',
+                'visual_resources_metric': 'Visual Resources',
+                'source_documents': 'Source Documents',
+                'searching': 'Searching knowledge base...',
+                'analyzing': 'Analyzing documents and generating response...',
+                'no_docs_found': 'No relevant documents found. Please try rephrasing your question.',
+                'enter_question': 'Please enter a question to get started.',
+                'processing_error': 'An error occurred while processing your request. Please try again.',
+                'examples': [
+                    ("📊 Data Management", "How to create and manage saved views?"),
+                    ("🔄 Process Workflows", "What are the cycle count procedures?"),
+                    ("🔍 Search & Filter", "How to use advanced filtering options?"),
+                    ("👥 User Management", "How to manage user roles and permissions?"),
+                    ("📋 Reporting", "How to generate comprehensive reports?"),
+                    ("⚙️ Configuration", "How to configure system settings?")
+                ]
+            },
+            'Japanese': {
+                'title': 'ドキュメント インテリジェンス アシスタント',
+                'subtitle': '組織のナレッジベースから即座に回答を取得',
+                'input_placeholder': 'ドキュメントについて何でもお聞きください：',
+                'ask_button': '🔍 質問する',
+                'new_chat': '🔄 新しいチャット',
+                'clear_history': '🗑️ 履歴をクリア',
+                'recent_queries': '📝 最近の質問',
+                'response_header': '### 回答',
+                'visual_resources': '### 関連するビジュアルリソース',
+                'quick_examples': '### 💡 クイックスタートの例',
+                'documents_analyzed': '分析されたドキュメント',
+                'content_types': 'コンテンツタイプ',
+                'visual_resources_metric': 'ビジュアルリソース',
+                'source_documents': 'ソースドキュメント',
+                'searching': 'ナレッジベースを検索中...',
+                'analyzing': 'ドキュメントを分析して回答を生成中...',
+                'no_docs_found': '関連するドキュメントが見つかりませんでした。質問を言い換えてみてください。',
+                'enter_question': '開始するには質問を入力してください。',
+                'processing_error': 'リクエストの処理中にエラーが発生しました。再試行してください。',
+                'examples': [
+                    ("📊 データ管理", "保存ビューの作成と管理方法は？"),
+                    ("🔄 プロセスワークフロー", "サイクルカウントの手順は何ですか？"),
+                    ("🔍 検索とフィルター", "高度なフィルタリングオプションの使用方法は？"),
+                    ("👥 ユーザー管理", "ユーザーの役割と権限の管理方法は？"),
+                    ("📋 レポート", "包括的なレポートの生成方法は？"),
+                    ("⚙️ 設定", "システム設定の構成方法は？")
+                ]
+            }
+        }
+
+    def get_text(self, key):
+        """Get localized text based on current language"""
+        return self.language_config[st.session_state.language][key]
+
+    @staticmethod
+    def convert_github_url_to_raw(github_url):
+        """Convert GitHub URL to raw format"""
+        if "github.com" in github_url and "/blob/" in github_url:
+            return github_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+        return github_url
+
+    @staticmethod
+    def is_gif_file(url):
+        """Check if URL points to a GIF file"""
+        return url.lower().endswith('.gif')
+
+    def display_image_safely(self, image_url, container):
+        """Display image with error handling"""
+        try:
+            raw_url = self.convert_github_url_to_raw(image_url)
             
-            # Process images if they exist
-            if images_str and images_str.strip():
-                # Handle pipe-separated format
-                images = [img.strip() for img in images_str.split('|') if img.strip()]
-                
-                # Add unique images
-                for img in images:
-                    if img and img not in seen_images:
-                        all_images.append(img)
-                        seen_images.add(img)
-                        doc_images.append(img)
-            
-            # Log document processing results
-            status = f"✅ {len(doc_images)} images" if doc_images else ("⚠️  has_images=True but no images found" if has_images else "ℹ️  no images")
-            print(f"Doc {doc_idx+1:2d}: [{doc_type:10s}] {doc_source:25s} | {doc_section:20s} | {status}")
-            
-            if doc_images:
-                for img in doc_images:
-                    filename = img.split('/')[-1] if '/' in img else img
-                    print(f"      └─ {filename}")
-        
-        else:
-            print(f"Doc {doc_idx+1:2d}: [no metadata] - Cannot extract images")
-    
-    # Summary
-    print("-" * 60)
-    print(f"📊 COLLECTION SUMMARY:")
-    print(f"   • Documents processed: {len(docs)}")
-    print(f"   • Documents with images: {len([d for d in docs if d.metadata.get('has_images', False)])}")
-    print(f"   • Total unique images: {len(all_images)}")
-    
-    # Limit images if requested
-    if k_limit and len(all_images) > k_limit:
-        print(f"   • Limiting to first {k_limit} images")
-        all_images = all_images[:k_limit]
-    
-    print()
-    return all_images
+            with container:
+                if self.is_gif_file(raw_url):
+                    st.markdown(f"""
+                    <div class="image-container">
+                        <img src="{raw_url}" alt="Visual Resource" 
+                             style="max-width: 100%; height: auto; border-radius: 4px;">
+                    </div>
+                    """, unsafe_allow_html=True)
+                else:
+                    response = requests.get(raw_url, timeout=10)
+                    response.raise_for_status()
+                    img = Image.open(BytesIO(response.content))
+                    st.image(img, use_container_width=True)
+            return True
+        except Exception as e:
+            logger.error(f"Image display error: {e}")
+            with container:
+                error_text = "Unable to load image" if st.session_state.language == 'English' else "画像を読み込めません"
+                st.error(error_text)
+            return False
 
-def display_images_console(image_urls):
-    """Display image information in console with clickable links"""
-    if not image_urls:
-        print("\n📸 No related images found.")
-        return
-    
-    print(f"\n📸 Related Images ({len(image_urls)}):")
-    print("-" * 50)
-    
-    for i, url in enumerate(image_urls, 1):
-        # Convert to raw URL for direct viewing
-        raw_url = convert_github_url_to_raw(url)
-        filename = url.split('/')[-1]
+    def extract_images_from_documents(self, docs, max_images=3):
+        """Extract images from retrieved documents"""
+        all_images = []
+        seen_images = set()
         
-        print(f"{i:2d}. {filename}")
-        print(f"    View: {raw_url}")
-        print(f"    GitHub: {url}")
-        print()
-
-def ask_question(vector_db, query, show_images=True, display_method='console', k_docs=5, k_images=10):
-    """Enhanced question answering with comprehensive image collection"""
-    try:
-        print(f"\n🔍 Searching for: '{query}'")
-        print(f"📄 Retrieving {k_docs} most relevant documents...")
-        
-        # Get relevant documents
-        docs = vector_db.similarity_search(query, k=k_docs)
-        
-        # Combine context more effectively
-        context_parts = []
-        for i, doc in enumerate(docs):
-            source = doc.metadata.get('source', 'unknown') if hasattr(doc, 'metadata') else 'unknown'
-            section = doc.metadata.get('section', '') if hasattr(doc, 'metadata') else ''
-            context_parts.append(f"[Source {i+1}: {source} - {section}]\n{doc.page_content}")
-        
-        context = "\n\n---\n\n".join(context_parts)
-        
-        # Collect images from ALL documents with comprehensive logging
-        image_urls = []
-        if show_images:
-            print(f"\n🖼️  Collecting images from retrieved documents...")
-            image_urls = collect_images_from_docs_comprehensive(docs, k_limit=k_images)
-        
-        # Generate response
-        prompt = f"""
-You are a helpful assistant answering questions about user profile settings and software documentation.
-
-Use the provided context to answer the question accurately and completely. If the context contains relevant information, provide a detailed answer. If you're not sure or the context doesn't contain enough information, say so honestly.
-
-Context:
-{context}
-
-Question: {query}
-
-Please provide a clear, helpful answer based on the context above:
-"""
-        
-        print(f"\n🧠 Generating response...")
-        response = model.generate_content(prompt)
-        print("\n" + "="*60)
-        print("🧠 CHATBOT ANSWER:")
-        print("="*60)
-        print(response.text)
-        
-        # Display images if available
-        if image_urls and show_images:
-            print(f"\n" + "="*60)
-            print("📸 RELATED IMAGES:")
-            print("="*60)
-            
-            if display_method == 'console':
-                display_images_console(image_urls)
-            
-            elif display_method == 'matplotlib':
-                print(f"\n📸 Displaying {len(image_urls)} related images using matplotlib...")
-                for i, url in enumerate(image_urls):
-                    print(f"\nImage {i+1}/{len(image_urls)}:")
-                    if not display_image_from_url(url):
-                        print(f"   Skipping {url.split('/')[-1]}")
-            
-            elif display_method == 'html':
-                print(f"\n📸 Creating HTML page with {len(image_urls)} related images...")
-                if not display_images_html(image_urls):
-                    # Fallback to console display
-                    print("HTML display failed, showing in console:")
-                    display_images_console(image_urls)
-        
-        elif show_images and not image_urls:
-            print(f"\n📸 No images found for this query.")
-        
-        # Final summary
-        print(f"\n" + "="*60)
-        print("📊 SEARCH SUMMARY:")
-        print("="*60)
-        print(f"   • Documents retrieved: {len(docs)}")
-        print(f"   • Images found: {len(image_urls)}")
-        if image_urls:
-            print(f"   • Display method: {display_method}")
-        
-        # Show document sources
-        sources = set()
         for doc in docs:
             if hasattr(doc, 'metadata') and doc.metadata:
-                source = doc.metadata.get('source', 'unknown')
-                sources.add(source)
+                images_str = doc.metadata.get('images', '')
+                
+                if images_str and images_str.strip():
+                    # Handle multiple delimiter formats
+                    for delimiter in ['|', ',', ';']:
+                        if delimiter in images_str:
+                            images = [img.strip() for img in images_str.split(delimiter) if img.strip()]
+                            break
+                    else:
+                        images = [images_str.strip()] if images_str.strip() else []
+                    
+                    for img in images:
+                        if img and img not in seen_images and len(all_images) < max_images:
+                            all_images.append(img)
+                            seen_images.add(img)
         
-        if sources:
-            print(f"   • Sources consulted: {', '.join(sorted(sources))}")
+        return all_images
+
+    def generate_response(self, query, docs):
+        """Generate AI response from documents"""
+        # Build context from documents
+        context_parts = []
+        for i, doc in enumerate(docs):
+            metadata = doc.metadata if hasattr(doc, 'metadata') else {}
+            source = metadata.get('source', 'Document')
+            doc_title = metadata.get('document_title', source)
+            section = metadata.get('section', '')
+            doc_type = metadata.get('document_type', 'Content')
+            
+            header = f"[Source {i+1}: {doc_title}"
+            if section:
+                header += f" - {section}"
+            header += f" ({doc_type})]"
+            
+            context_parts.append(f"{header}\n{doc.page_content}")
         
-    except Exception as e:
-        print(f"❌ Error occurred: {e}")
-        print("Please check your API key and internet connection.")
+        context = "\n\n---\n\n".join(context_parts)
+
+        # Create language-specific prompt
+        if st.session_state.language == 'Japanese':
+            prompt = f"""
+プロフェッショナルなドキュメントアシスタントとして、提供されたコンテキストに基づいて包括的で正確な回答を日本語で提供してください。
+
+ガイドライン:
+- 明確でプロフェッショナルな日本語を使用する
+- 回答を論理的に構成し、適切な書式設定を行う
+- 回答に「(ソース1、2、3)」のようなソース引用や参照を含めない
+- 情報を直接的で権威ある知識として提示する
+- 情報が不完全な場合は制限を認める
+- 可能な場合は実用的なガイダンスを提供する
+- ステップバイステップの指示には箇条書きや番号付きリストを使用する
+- 会話的でありながらプロフェッショナルな回答を維持する
+
+ナレッジベースからのコンテキスト:
+{context}
+
+ユーザーの質問: {query}
+
+ソース引用なしで詳細なプロフェッショナルな回答を日本語で提供してください:
+"""
+        else:
+            prompt = f"""
+As a professional document assistant, provide a comprehensive and accurate answer based on the provided context.
+
+Guidelines:
+- Use clear, professional language
+- Structure your response logically with proper formatting
+- Do NOT include source citations or references like "(Source 1, 2, 3)" in your response
+- Present information as direct, authoritative knowledge
+- If information is incomplete, acknowledge limitations
+- Provide actionable guidance when possible
+- Use bullet points or numbered lists for step-by-step instructions
+- Keep responses conversational yet professional
+
+Context from knowledge base:
+{context}
+
+User Question: {query}
+
+Please provide a detailed, professional response without any source citations:
+"""
+
+        try:
+            response = self.model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            logger.error(f"AI response generation error: {e}")
+            error_text = "I apologize, but I'm unable to generate a response at this time. Please try again or contact support." if st.session_state.language == 'English' else "申し訳ございませんが、現在回答を生成できません。再試行するかサポートにお問い合わせください。"
+            return error_text
+
+    def process_query(self, query, container=None):
+        """Main query processing function"""
+        try:
+            # Use provided container or create a new one
+            if container is None:
+                container = st.container()
+            
+            with container:
+                # Search documents - using default k value instead of hardcoded 50
+                with st.spinner(self.get_text('searching')):
+                    docs = self.vector_db.similarity_search(query, k=10)  # Changed from k=50 to k=10
+                
+                if not docs:
+                    st.warning(self.get_text('no_docs_found'))
+                    return
+                
+                # Generate response
+                with st.spinner(self.get_text('analyzing')):
+                    response_text = self.generate_response(query, docs)
+                
+                # Display response
+                st.markdown('<div class="response-container">', unsafe_allow_html=True)
+                st.markdown(self.get_text('response_header'))
+                st.write(response_text)
+                st.markdown('</div>', unsafe_allow_html=True)
+                
+                # Display images - hardcoded to max 3 images
+                images = self.extract_images_from_documents(docs, max_images=3)
+                if images:
+                    st.markdown(self.get_text('visual_resources'))
+                    cols = st.columns(min(len(images), 3))
+                    for idx, img_url in enumerate(images):
+                        self.display_image_safely(img_url, cols[idx % len(cols)])
+                
+                # Add to chat history
+                timestamp = datetime.now().strftime("%H:%M")
+                st.session_state.chat_history.append({
+                    'timestamp': timestamp,
+                    'query': query,
+                    'response': response_text,
+                    'doc_count': len(docs),
+                    'image_count': len(images)
+                })
+            
+        except Exception as e:
+            logger.error(f"Query processing error: {e}")
+            if container:
+                with container:
+                    st.error(self.get_text('processing_error'))
+            else:
+                st.error(self.get_text('processing_error'))
+
+    def render_sidebar(self):
+        """Render sidebar with language selection and chat history"""
+        with st.sidebar:
+            # Language Selection at the top
+            st.markdown("""
+            <div class="language-selector">
+                <h3>🌐 Language / 言語</h3>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            language_options = {'English': '🇺🇸 English', 'Japanese': '🇯🇵 日本語'}
+            
+            new_language = st.selectbox(
+                "",
+                options=list(language_options.keys()),
+                format_func=lambda x: language_options[x],
+                index=0 if st.session_state.language == 'English' else 1,
+                key="language_selector"
+            )
+            
+            if new_language != st.session_state.language:
+                st.session_state.language = new_language
+                st.rerun()
+            
+            st.markdown("---")
+            
+            # Clear history button
+            if st.button(self.get_text('clear_history')):
+                st.session_state.chat_history = []
+                st.rerun()
+            
+            # Chat history
+            if st.session_state.chat_history:
+                st.markdown(f"### {self.get_text('recent_queries')}")
+                for idx, chat in enumerate(reversed(st.session_state.chat_history[-5:])):
+                    with st.expander(f"{chat['timestamp']} - {chat['query'][:30]}..."):
+                        query_label = "**Query:**" if st.session_state.language == 'English' else "**質問:**"
+                        docs_label = "**Documents:**" if st.session_state.language == 'English' else "**ドキュメント:**"
+                        images_label = "**Images:**" if st.session_state.language == 'English' else "**画像:**"
+                        
+                        st.write(f"{query_label} {chat['query']}")
+                        st.write(f"{docs_label} {chat['doc_count']}")
+                        st.write(f"{images_label} {chat['image_count']}")
+
+    def render_main_interface(self):
+        """Render main chat interface"""
+        # Header
+        st.markdown(f"""
+        <div style="text-align: center; padding: 2rem 0;">
+            <h1 style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
+                       -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+                       font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">
+                {self.get_text('title')}
+            </h1>
+            <p style="color: #6c757d; font-size: 1.1rem;">
+                {self.get_text('subtitle')}
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Render sidebar
+        self.render_sidebar()
+        
+        # Main query interface
+        with st.container():
+            query = st.text_input(
+                "",
+                placeholder=self.get_text('input_placeholder'),
+                key="main_query"
+            )
+            
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                submit_clicked = st.button(self.get_text('ask_button'), type="primary", key="submit_main")
+            with col2:
+                if st.button(self.get_text('new_chat'), key="clear_main"):
+                    st.session_state.chat_history = []
+                    st.rerun()
+        
+        # Response area container - positioned directly after input
+        response_container = st.container()
+        
+        # Process query from input box
+        if submit_clicked and query.strip():
+            self.process_query(query, response_container)
+        elif submit_clicked:
+            with response_container:
+                st.warning(self.get_text('enter_question'))
+        
+        # Quick examples
+        st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+        
+        st.markdown(self.get_text('quick_examples'))
+        
+        examples = self.get_text('examples')
+        
+        # Check if any example button was clicked
+        example_clicked = None
+        cols = st.columns(2)
+        for idx, (category, example) in enumerate(examples):
+            with cols[idx % 2]:
+                if st.button(f"{category}: {example}", key=f"example_{idx}"):
+                    example_clicked = example
+        
+        # Process example query in the response container
+        if example_clicked:
+            self.process_query(example_clicked, response_container)
 
 def main():
-    """Main function to set up and run the chatbot"""
-    
-    # Configuration
-    DATA_DIRECTORY = r"C:\Users\hp\Downloads\final\data"
-    PERSIST_DIRECTORY = "vector_db_unified"
-    
-    print("🚀 Multi-File JSON Document Chatbot")
-    print("="*70)
-    
-    # Check if data directory exists
-    if not os.path.exists(DATA_DIRECTORY):
-        print(f"❌ Data directory not found: {DATA_DIRECTORY}")
-        print("Please check the path and try again.")
-        return
-    
-    # Create or load vector database
-    print(f"📁 Data directory: {DATA_DIRECTORY}")
-    
-    # Ask user if they want to rebuild the database
-    rebuild = input("\nRebuild vector database? (y/n): ").lower() == 'y'
-    
-    if rebuild or not os.path.exists(PERSIST_DIRECTORY):
-        print("\n🔄 Creating new vector database...")
-        vector_db = create_vector_database(DATA_DIRECTORY, PERSIST_DIRECTORY)
-        if not vector_db:
-            return
-    else:
-        print(f"\n📚 Loading existing vector database from {PERSIST_DIRECTORY}...")
-        try:
-            vector_db = Chroma(persist_directory=PERSIST_DIRECTORY, embedding_function=embedding_model)
-            print("   ✅ Vector database loaded successfully!")
-        except Exception as e:
-            print(f"   ❌ Error loading database: {e}")
-            print("   Creating new database...")
-            vector_db = create_vector_database(DATA_DIRECTORY, PERSIST_DIRECTORY)
-            if not vector_db:
-                return
-    
-    # Interactive chatbot
-    print("\n" + "="*70)
-    print("🤖 CHATBOT READY!")
-    print("="*70)
-    print("Available commands:")
-    print("  • Type your question normally")
-    print("  • 'quit' - Exit the program")
-    print("  • 'rebuild' - Rebuild the vector database")
-    print("  • 'stats' - Show database statistics")
-    print("  • 'help' - Show this help message")
-    print("="*70)
-    
-    # Default settings
-    show_images = True
-    display_method = 'console'
-    k_docs = 5
-    k_images = 10
-    
-    while True:
-        question = input("\n💬 Ask a question: ")
-        
-        if question.lower() == 'quit':
-            print("👋 Goodbye!")
-            break
-            
-        elif question.lower() == 'help':
-            print("\n📚 Available commands:")
-            print("  • Regular questions - Just type naturally")
-            print("  • rebuild - Recreate the vector database")
-            print("  • stats - Show database statistics")
-            print("  • quit - Exit the program")
-            
-        elif question.lower() == 'rebuild':
-            print("\n🔄 Rebuilding vector database...")
-            vector_db = create_vector_database(DATA_DIRECTORY, PERSIST_DIRECTORY)
-            if vector_db:
-                print("✅ Database rebuilt successfully!")
-            else:
-                print("❌ Failed to rebuild database")
-                
-        elif question.lower() == 'stats':
-            try:
-                # Get some statistics about the database
-                test_docs = vector_db.similarity_search("test", k=100)  # Get many docs to see variety
-                
-                print(f"\n📊 Database Statistics:")
-                print(f"   • Total documents available: {len(test_docs)}")
-                
-                # Count by source
-                sources = {}
-                images_count = 0
-                for doc in test_docs:
-                    if hasattr(doc, 'metadata') and doc.metadata:
-                        source = doc.metadata.get('source', 'unknown')
-                        sources[source] = sources.get(source, 0) + 1
-                        if doc.metadata.get('has_images', False):
-                            images_count += 1
-                
-                print(f"   • Documents with images: {images_count}")
-                print(f"   • Sources in database:")
-                for source, count in sources.items():
-                    print(f"     - {source}: {count} chunks")
-                    
-            except Exception as e:
-                print(f"❌ Error getting statistics: {e}")
-            
-        else:
-            if question.strip():
-                ask_question(vector_db, question, show_images, display_method, k_docs, k_images)
-            else:
-                print("❌ Please enter a question or command")
+    """Main application entry point"""
+    try:
+        chatbot = ProfessionalChatbot()
+        chatbot.render_main_interface()
+    except Exception as e:
+        error_text = "Failed to initialize the application. Please contact support." if st.session_state.get('language', 'English') == 'English' else "アプリケーションの初期化に失敗しました。サポートにお問い合わせください。"
+        st.error(error_text)
+        logger.error(f"Application initialization error: {e}")
 
 if __name__ == "__main__":
     main()
