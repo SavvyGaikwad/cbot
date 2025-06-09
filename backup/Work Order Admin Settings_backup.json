@@ -1,0 +1,942 @@
+{
+  "document_title": "Work Order Admin Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Work Order Admin Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Access Work Order Settings",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to  Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Module Settings heading, click Work Orders. The Work Order Settings screen displays."
+        },
+        {
+          "type": "info",
+          "text": "This screen contains the tabs:"
+        },
+        {
+          "type": "info",
+          "text": "General - set up the general settings, lookups, and require reset logs for PM's and component/tire installations."
+        },
+        {
+          "type": "info",
+          "text": "Workflow - set up the workflow of the work orders."
+        },
+        {
+          "type": "info",
+          "text": "Work Type - set up the default settings for the work type."
+        },
+        {
+          "type": "info",
+          "text": "Service Task  - set up the tasks and task groups."
+        },
+        {
+          "type": "info",
+          "text": "Vendor Work - set up the fields that are included on a work order that a vendor sees in the Vendor Portal."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up General Settings for Work Orders",
+      "content": [
+        {
+          "type": "info",
+          "text": "All changes to your Work Order Settings will impact ALL users."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to  Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Module Settings heading, click Work Orders.  The Work Order Settings screen displays."
+        },
+        {
+          "type": "info",
+          "text": "The General tab displays by default, and this contains:"
+        },
+        {
+          "type": "info",
+          "text": "General Settings"
+        },
+        {
+          "type": "info",
+          "text": "Lookups"
+        },
+        {
+          "type": "info",
+          "text": "Require reset logs for PM's and Component/Tire Installations"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "General Settings",
+      "content": [
+        {
+          "type": "info",
+          "text": "The General Settings include:"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Lookups",
+      "content": [
+        {
+          "type": "info",
+          "text": "The following lookups can be set up:"
+        },
+        {
+          "type": "step",
+          "text": "Other Cost Types:  Establish your choice of line-item expense options, that can appear on a work order."
+        },
+        {
+          "type": "info",
+          "text": "Work Orders and Purchase Orders share this library."
+        },
+        {
+          "type": "step",
+          "text": "Failure Codes:  Sets the options that will appear, on Work Types that have the Failure Mode turned on, see Work Type section below, for more details."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Require Logs for PM's and Component/Tire Installations",
+      "content": [
+        {
+          "type": "info",
+          "text": "This setting is used when you have the Tire Tracking module turned on."
+        },
+        {
+          "type": "info",
+          "text": "This allows you to set a requirement for meter or logs to be entered on a timely basis.  For example:  If you set Days since last entry to 7, and it has been 10 days since the last hour meter reading on your forklift, any work order created for that asset will require you to update the hour meter before you can complete it.   If it has been less than the days set here, the work order will not force you to include a meter reading."
+        },
+        {
+          "type": "info",
+          "text": "There are three system-generated Data Confidence Levels that the system can display:"
+        },
+        {
+          "type": "info",
+          "text": "Impact on Tech's completing Work Orders"
+        },
+        {
+          "type": "info",
+          "text": "If the tech enters a current meter reading while doing the Work Order then:"
+        },
+        {
+          "type": "info",
+          "text": "Continue as usual and no message will pop up when you complete the Work Order."
+        },
+        {
+          "type": "info",
+          "text": "If NO meter reading is entered on the Work Order then:"
+        },
+        {
+          "type": "info",
+          "text": "If completed within the number of days established on your data confidence level, no message will pop up when you complete the Work Order as usual."
+        },
+        {
+          "type": "info",
+          "text": "If completed AFTER the number of days established on your data confidence level, an error message will make it clear which specific Meter/Log entry is required."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up Workflow for Work Orders",
+      "content": [
+        {
+          "type": "info",
+          "text": "Your Administrator can set up a workflow that a work order will follow from creation to completion."
+        },
+        {
+          "type": "step",
+          "text": "Select the Settings icon located in the menu."
+        },
+        {
+          "type": "step",
+          "text": "Select Module Settings then Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "Click the Workflow tab. The Workflow tab displays."
+        },
+        {
+          "type": "info",
+          "text": "The default workflow contains the following:"
+        },
+        {
+          "type": "step",
+          "text": "Active"
+        },
+        {
+          "type": "info",
+          "text": "Active"
+        },
+        {
+          "type": "info",
+          "text": "Reopened"
+        },
+        {
+          "type": "step",
+          "text": "Completion"
+        },
+        {
+          "type": "info",
+          "text": "Completed"
+        },
+        {
+          "type": "step",
+          "text": "Inactive"
+        },
+        {
+          "type": "info",
+          "text": "Cancelled"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up a simple Workflow",
+      "content": [
+        {
+          "type": "info",
+          "text": "The workflow is easier to explain with an example, so let's set up this simple workflow. Below is an example of a simple workflow that includes Open, In Progress, Completed, Reopen, and Canceled."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Rename a Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can rename a status, in this example, the Active status will be renamed to Open."
+        },
+        {
+          "type": "step",
+          "text": "Click on the status."
+        },
+        {
+          "type": "step",
+          "text": "Hover on the status to see the More Actions icon."
+        },
+        {
+          "type": "step",
+          "text": "Click the More Actions  icon. A popup menu displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Rename menu item. The Rename status dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Name of status being renamed field, enter the name."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The status name is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a New Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can create a new status, in this example, the In Progress status is created."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create new status button. The Choose a status type dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "Select the status type, either:"
+        },
+        {
+          "type": "step",
+          "text": "Active - used for general statuses."
+        },
+        {
+          "type": "step",
+          "text": "Completion - used to finish a workflow."
+        },
+        {
+          "type": "step",
+          "text": "Inactive - used to make the work order inactive."
+        },
+        {
+          "type": "info",
+          "text": "The Name your new status displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Name your new status field, enter in the status name."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create button."
+        },
+        {
+          "type": "info",
+          "text": "The status is created."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Define the Workflow for each Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "You need to define where the status will flow to the next status."
+        },
+        {
+          "type": "info",
+          "text": "For example:"
+        },
+        {
+          "type": "step",
+          "text": "Click the status and requirement options and paths displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the path you want this status to flow to."
+        },
+        {
+          "type": "info",
+          "text": "The path will highlight and save."
+        },
+        {
+          "type": "step",
+          "text": "Repeat steps 1 to 2 to complete the flow for each status."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Define the Workflow Requirement Options",
+      "content": [
+        {
+          "type": "info",
+          "text": "You will see that each status has requirement options. In this example, the IN PROGRESS status's requirements will be defined."
+        },
+        {
+          "type": "step",
+          "text": "Click the status and requirement options and paths displays."
+        },
+        {
+          "type": "info",
+          "text": "The following requirements can be toggled on:"
+        },
+        {
+          "type": "step",
+          "text": "Service Tasks W/ Parts & Labor - Requires tasks to have at least 1 part and labor record on the work order."
+        },
+        {
+          "type": "step",
+          "text": "Labor - Requires at least 1 labor record on the work order."
+        },
+        {
+          "type": "step",
+          "text": "Parts - Requires at least 1 part on the work order."
+        },
+        {
+          "type": "step",
+          "text": "Meter / Log Entries - Requires all Meters / Logs from an asset. Note that recent log entries are ALWAYS required for log-based PM work orders regardless of this option."
+        },
+        {
+          "type": "step",
+          "text": "User Confirmation - Asks & requires employee credentials. (M+ Users, M+ Mobile Users)"
+        },
+        {
+          "type": "step",
+          "text": "E-Signature - On Mobile - Asks & requires electronic signature. (Customers, Requesters, or Operational Employees)"
+        },
+        {
+          "type": "step",
+          "text": "Approvals - Use security roles and maximum expense to add Approval Thresholds."
+        },
+        {
+          "type": "info",
+          "text": "Let's turn on the approvals."
+        },
+        {
+          "type": "step",
+          "text": "Click the Approval toggle to ON."
+        },
+        {
+          "type": "step",
+          "text": "Click the Edit  icon. The Thresholds Per Role dialog."
+        },
+        {
+          "type": "step",
+          "text": "From the Select a role drop-down, select either Administrator, Full User, or Read Only."
+        },
+        {
+          "type": "step",
+          "text": "In the Max expense field, enter the amount. This is the threshold amount that will trigger the approval, for example, when the work order for $5,001 then the approval will be triggered and if the work order is $5,000 then the approval is not triggered."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add threshold button. The threshold is saved."
+        },
+        {
+          "type": "step",
+          "text": "Repeat steps 4 to 6 to add another approval threshold."
+        },
+        {
+          "type": "step",
+          "text": "When you are finished click the X icon to close the dialog."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up Work Type for Work Orders",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work type settings determine work order requirements per work type such as failure mode, invoicing, and customers."
+        },
+        {
+          "type": "info",
+          "text": "The work type will display in the work order, for example, below is a corrective work order where failure is a required field as defined in work type settings."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit settings for an existing Work Type",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can edit existing work type and the default settings are Corrective, Predictive, and Preventive."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to  Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Module Settings heading, click Work Orders.  The Work Order Settings screen displays."
+        },
+        {
+          "type": "info",
+          "text": "From the Work Type drop-down, select either:"
+        },
+        {
+          "type": "step",
+          "text": "Corrective"
+        },
+        {
+          "type": "step",
+          "text": "Predictive"
+        },
+        {
+          "type": "step",
+          "text": "Preventive"
+        },
+        {
+          "type": "info",
+          "text": "From the Failure Mode drop-down, select either:"
+        },
+        {
+          "type": "step",
+          "text": "Not Applicable"
+        },
+        {
+          "type": "step",
+          "text": "Optional"
+        },
+        {
+          "type": "step",
+          "text": "Required at Creation"
+        },
+        {
+          "type": "step",
+          "text": "Required at Completion"
+        },
+        {
+          "type": "info",
+          "text": "Remember the failure codes, such as vandalism, part failure, are set up on the Work Order Setting tab."
+        },
+        {
+          "type": "step",
+          "text": "For the Do you want to invoice for this Work Type question, select No to change this to Yes."
+        },
+        {
+          "type": "step",
+          "text": "For the Require a Customer question, select No to change this to Yes."
+        },
+        {
+          "type": "step",
+          "text": "If you want to add, edit, or remove a custom field, see the section below."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create settings for a new Work Type",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need a new work type then this can be created and the settings defined."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to  Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Module Settings heading, click Work Orders.  The Work Order Settings screen displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Work Type tab. The Work Type tab displays."
+        },
+        {
+          "type": "step",
+          "text": "From the Save drop-down, click New."
+        },
+        {
+          "type": "step",
+          "text": "In the Work Type field, enter the name of work type."
+        },
+        {
+          "type": "info",
+          "text": "From the Failure Mode drop-down, select either:"
+        },
+        {
+          "type": "step",
+          "text": "Not Applicable"
+        },
+        {
+          "type": "step",
+          "text": "Optional"
+        },
+        {
+          "type": "step",
+          "text": "Required at Creation"
+        },
+        {
+          "type": "step",
+          "text": "Required at Completion"
+        },
+        {
+          "type": "step",
+          "text": "For the Do you want to invoice for this Work Type question, select No to change this to Yes. When this is enabled, then an invoice is automatically generated. For more information about Invoices, see Set up your Invoices."
+        },
+        {
+          "type": "step",
+          "text": "For the Require a Customer question, select No to change this to Yes. When this is enabled, then the customer field must be completed on work orders."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The new work type settings is saved and now you can add custom fields."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add, Edit, or Remove Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can add, edit, or remove custom fields to capture any additional  information that is not within the default fields."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add  icon. The Custom Fields dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Either select a custom field from the list or click the New button to create the new custom field."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add button. The custom field displays in the list."
+        },
+        {
+          "type": "step",
+          "text": "In the Hint Text field, enter a brief description of the purpose of the custom field or what information is required."
+        },
+        {
+          "type": "info",
+          "text": "In the Status Flow Requirements field, select one or many checkboxes:"
+        },
+        {
+          "type": "step",
+          "text": "New"
+        },
+        {
+          "type": "step",
+          "text": "Active"
+        },
+        {
+          "type": "step",
+          "text": "Completed"
+        },
+        {
+          "type": "step",
+          "text": "Reopened"
+        },
+        {
+          "type": "step",
+          "text": "Waiting for parts"
+        },
+        {
+          "type": "step",
+          "text": "Canceled"
+        },
+        {
+          "type": "step",
+          "text": "In the Default Value field, enter the display value of the custom field."
+        },
+        {
+          "type": "info",
+          "text": "The values are automatically saved."
+        },
+        {
+          "type": "info",
+          "text": "You can reorder the customs fields, drag and drop the reorder  icon or you can remove the custom field, click the Remove  icon."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up Service Tasks for Work Orders",
+      "content": [
+        {
+          "type": "info",
+          "text": "A service task is a single essential activity that needs to be accomplished within a certain time frame."
+        },
+        {
+          "type": "info",
+          "text": "Some of the more common types of service tasks are:"
+        },
+        {
+          "type": "info",
+          "text": "PM Task lists - where you can add a task to a PM"
+        },
+        {
+          "type": "info",
+          "text": "Industry specific procedural codes"
+        },
+        {
+          "type": "info",
+          "text": "Repair codes (can be specific to your corporation, or generic in nature)"
+        },
+        {
+          "type": "info",
+          "text": "Component Codes (VMRS codes, CPT codes, etc.)"
+        },
+        {
+          "type": "info",
+          "text": "If the task is a common one, it can appear in multiple PM's and Work Orders.  Therefore, a task is not bound exclusively to a single work order."
+        },
+        {
+          "type": "info",
+          "text": "When created, wherever the task appears, it will always contain the same:"
+        },
+        {
+          "type": "info",
+          "text": "Description"
+        },
+        {
+          "type": "info",
+          "text": "Estimated Time to complete"
+        },
+        {
+          "type": "info",
+          "text": "Suggested Parts list (Bill of Materials)"
+        },
+        {
+          "type": "info",
+          "text": "Instructions"
+        },
+        {
+          "type": "info",
+          "text": "In Work Orders, a task is a single step, found in the work order.  While some work orders have a single task, most usually have multiple tasks (or steps) that need to be completed, to satisfy the requirements of the maintenance manager."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Task",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to  Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Module Settings heading, click Work Orders.  The Work Order Settings screen displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Service Task tab. The Service Task tab displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create Task  button. The Task Details form displays."
+        },
+        {
+          "type": "info",
+          "text": "The required fields are Code, Class, and Invoice Labor Rate."
+        },
+        {
+          "type": "step",
+          "text": "In the Task Code field, enter the unique alphanumeric code. This is used to identify a task and make sure the name is meaningful to your employees."
+        },
+        {
+          "type": "step",
+          "text": "In the Description field, enter a brief description of what is expected, when performing this task."
+        },
+        {
+          "type": "step",
+          "text": "From the Class drop-down, select a class. While all tasks can belong to the same list, Task Class helps you organize all your tasks into different groups or classifications."
+        },
+        {
+          "type": "step",
+          "text": "In the Estimated Time field, enter the hours and minutes it will take on average to complete this task.  When you fill this out this will help estimate the total amount of time needed to complete a PM, and plan accordingly."
+        },
+        {
+          "type": "step",
+          "text": "In the Estimated Cost field, enter the cost."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Task Group",
+      "content": [
+        {
+          "type": "info",
+          "text": "A task group allows you to add multiple Service Tasks to a Work Order at once."
+        },
+        {
+          "type": "step",
+          "text": "For the tasks you want to group, check the tasks checkboxes."
+        },
+        {
+          "type": "step",
+          "text": "From the Actions drop-down, select Create Task Group."
+        },
+        {
+          "type": "info",
+          "text": "The Service Task Group dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Service Task Group Name field, enter the name of the group."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create Service Task Group button."
+        },
+        {
+          "type": "info",
+          "text": "The Task Group is now ready to add to a Work Order or PM."
+        },
+        {
+          "type": "info",
+          "text": "To edit or delete the Task Group, select the More Actions icon to the right of the Task Group and select Edit or Delete."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Manage Task Classes",
+      "content": [
+        {
+          "type": "info",
+          "text": "This lets you organize all your tasks into different groups or classifications. Remember the order of the Task Class list will be reflected in the Work Order."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Task Class",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the Manage Task Classes button. The Manage Task Classes form displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add  icon."
+        },
+        {
+          "type": "step",
+          "text": "In the New Class ID field, enter the class id."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Task Class",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Task Class can only be deleted if there are no associated Tasks."
+        },
+        {
+          "type": "step",
+          "text": "Hover over the task class."
+        },
+        {
+          "type": "step",
+          "text": "Click the Delete  icon. The class is automatically deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Rename a Task Class",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the task class."
+        },
+        {
+          "type": "step",
+          "text": "In the Class ID field, enter in the new name."
+        },
+        {
+          "type": "step",
+          "text": "Click off the name and it is automatically saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reorder Task Classes",
+      "content": [
+        {
+          "type": "info",
+          "text": "Task Classes appear in the arranged order within the Work Order Settings when associated to a Work Order."
+        },
+        {
+          "type": "step",
+          "text": "Drag and drop the task classes to reorder the list."
+        },
+        {
+          "type": "info",
+          "text": "The list is automatically saved."
+        },
+        {
+          "type": "info",
+          "text": "This will be reflected on the Work Order too."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up the Vendor's Work for Work Orders",
+      "content": [
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work Order Admin Settings/1.png"
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Module Settings heading, click Work Orders.  The Work Order Settings screen displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Vendor Work tab. The Vendor Work tab displays."
+        },
+        {
+          "type": "info",
+          "text": "This contains settings to enable and disable fields from the Vendor Portal:"
+        },
+        {
+          "type": "step",
+          "text": "Show Tasks - Enable to show task details on vendor work order."
+        },
+        {
+          "type": "step",
+          "text": "Show Notes - Enable to show notes on vendor work order."
+        },
+        {
+          "type": "step",
+          "text": "Before and After Pictures: - Enable to ask vendor for images of completed work."
+        },
+        {
+          "type": "step",
+          "text": "Tenant Signature - Enable to ask for a customer signature upon completion of work order."
+        },
+        {
+          "type": "step",
+          "text": "Vendor Credentials - Enable to ask vendor for signature upon completion of work order."
+        },
+        {
+          "type": "step",
+          "text": "Invoice Submission - Enable to prompt for upload of Invoice PDF upon completion of work order."
+        },
+        {
+          "type": "info",
+          "text": "The settings save automatically."
+        },
+        {
+          "type": "info",
+          "text": "Vendor Portal Example"
+        },
+        {
+          "type": "info",
+          "text": "Below is an example of the Vendor Portal that displays what a Vendor sees when assigned a Work Order."
+        },
+        {
+          "type": "info",
+          "text": "Setting | Description\nNext WO# spin box | Enter or select the next work order number.  Subsequent work order numbers will increase by 1. \nFor example, 200020 and then this will increase the number from this starting number.\nOverhead Part Markup spin box | The marks up your part on on your work order to account for overhead expenses.\nEnter or select the mark-up percentage (%).\nThis does not affect your invoice price points or markups.\nAutolink Parts to Assets toggle | Either toggle:\nON - we recommend this setting is turned on as it automatically links the parts used on work orders to the asset that was worked on. This automatically creates an accurate part list for your asset.\nOFF\nSet Inventory Consumed to Completed Date toggle | Either toggle:\nON - we recommend this setting is turned on as it sets the consumed date of parts used on work orders to the work order's completed date.  \nOFF - sets the consumed date to the day you listed the part on the work order\nSchedules Due At spin box | Set the percentage and this determines when your PM schedules are due. \nFor example, if you set this to 90%, the system will indicate early that it's time to turn your PMs into work orders, when they pass the 90% mark.\nPost Budget Transaction On drop-down | Determine when you would like budget expenses to be recorded.  Select from:\nDate Completed - this is the recommended, default setting.\nDate At Time Posted - this is used only if your organization has a policy against backlogging expenses.\nPost Re-Posted Budget Transaction drop-down | If you reopen a work order, the recorded transaction is reversed.  This let's you decide when the reposted transaction is dated. Select from: \nDate Completed - this is the recommended, default setting.\nDate of Time Posted  - this is used only if your organization has a policy against backlogging expenses.\nDefault Work Type drop-down | New, unscheduled work orders will start with this work type (does not apply to scheduled PMs, which have their work type pre-set).\nAssign Vendor toggle | This let's you assign vendors to a work order.\nEither toggle:\nON\nOFF"
+        },
+        {
+          "type": "info",
+          "text": "Good\n0-9 Days | Fair\n10-30 Days | Bad\n31+ Days"
+        },
+        {
+          "type": "info",
+          "text": "Status | Status | Path\nACTIVE | OPEN | IN PROGRESS\nCOMPLETED\nCANCELLED\nACTIVE | REOPEN | IN PROGRESS\nCANCELLED\nACTIVE | IN PROGRESS | COMPLETED\nCOMPLETION | COMPLETED | REOPEN\nINACTIVE | CANCELLED"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "document_title": "Inventory Import Template Data",
+  "content": [
+    {
+      "type": "section",
+      "title": "Data Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Do not change the column headers in Row 1 as this is used to complete the upload."
+        },
+        {
+          "type": "info",
+          "text": "The table below lists the columns and which columns are required or optional."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Site Name Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Site Name - Required field with maximum length of 50 characters."
+        },
+        {
+          "type": "info",
+          "text": "Determined from initial sale. Enter Company Name or division if multi-sites were purchased."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Warehouse Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Warehouse - Required field."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Part # Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Part # - Required field with maximum length of 36 characters."
+        },
+        {
+          "type": "info",
+          "text": "Each must be unique. Choose either the actual Part ID for this field, an assigned company number, or unique name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Description Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Description - Required field with maximum length of 100 characters."
+        },
+        {
+          "type": "info",
+          "text": "Description of the part."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Part Type Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Part Type - Required field with maximum length of 24 characters."
+        },
+        {
+          "type": "info",
+          "text": "Part type is a way to group similar parts or the field can be used to show what the part fits on."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Status Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Status - Required field with maximum length of 24 characters."
+        },
+        {
+          "type": "info",
+          "text": "Status of the part when purchased, New, Rebuilt, Used, Stock, Non-Stock, etc."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Unit of Measure Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Unit of Measure - Required field with maximum length of 24 characters."
+        },
+        {
+          "type": "info",
+          "text": "How the part is dispensed: Each, Gallons, Quarts, Ounces, Set, Pair, etc."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Barcode # Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Barcode # - Optional field with maximum length of 20 characters."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Bin Location Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Bin Location - Optional field with maximum length of 24 characters."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Vendor ID Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Vendor ID - Optional field with maximum length of 24 characters."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Vendor Part # Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Vendor Part # - Optional field with maximum length of 36 characters."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Each Cost Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Each Cost"
+        },
+        {
+          "type": "info",
+          "text": "The cost of the part. Enter only numbers, do not use currency symbols."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Year Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Year - Optional field."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Beginning Quantity Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Beginning Quantity - Required field."
+        },
+        {
+          "type": "info",
+          "text": "Quantity currently on hand."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Level Min Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Level Min - Optional field."
+        },
+        {
+          "type": "info",
+          "text": "This quantity triggers reorder notification. When inventory is less than the minimum, inventory reorder reports and purchase orders can be generated."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Level Norm Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Level Norm - Optional field."
+        },
+        {
+          "type": "info",
+          "text": "This is the preferred normal stock quantity."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Level Max Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Level Max - Optional field."
+        },
+        {
+          "type": "info",
+          "text": "Tracks stock overages. When the maximum quantity is surpassed, the item is listed on the inventory overage report."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Favorite Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Favorite - Optional field (T/F)."
+        },
+        {
+          "type": "info",
+          "text": "TRUE - Favorited items in a specific warehouse will be visible when looking at that warehouse."
+        },
+        {
+          "type": "info",
+          "text": "FALSE - Must go to the master parts list to see the part."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Tracked Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Tracked - Optional field (T/F)."
+        },
+        {
+          "type": "info",
+          "text": "TRUE - Tracks consumption. Will not allow work orders to use part if inventory is empty."
+        },
+        {
+          "type": "info",
+          "text": "FALSE - Will not track consumption."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Note Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Note - Optional field."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Custom Fields Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Custom Fields 1 to 6 - Optional fields."
+        },
+        {
+          "type": "info",
+          "text": "User Defined Fields: Please rename the field. For dropdown lists, the character limit is 24."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Data Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Site Name - Required - Company name or division for multi-sites"
+        },
+        {
+          "type": "info",
+          "text": "Warehouse - Required"
+        },
+        {
+          "type": "info",
+          "text": "Part # - Required - Unique identifier for the part"
+        },
+        {
+          "type": "info",
+          "text": "Description - Required - Description of the part"
+        },
+        {
+          "type": "info",
+          "text": "Part Type - Required - Groups similar parts or shows what part fits on"
+        },
+        {
+          "type": "info",
+          "text": "Status - Required - New, Rebuilt, Used, Stock, Non-Stock, etc."
+        },
+        {
+          "type": "info",
+          "text": "Unit of Measure - Required - Each, Gallons, Quarts, Ounces, Set, Pair, etc."
+        },
+        {
+          "type": "info",
+          "text": "Barcode # - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Bin Location - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Vendor ID - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Vendor Part # - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Each Cost - Optional - Cost of the part, numbers only"
+        },
+        {
+          "type": "info",
+          "text": "Year - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Beginning Quantity - Required - Quantity currently on hand"
+        },
+        {
+          "type": "info",
+          "text": "Level Min - Optional - Triggers reorder notification"
+        },
+        {
+          "type": "info",
+          "text": "Level Norm - Optional - Preferred normal stock quantity"
+        },
+        {
+          "type": "info",
+          "text": "Level Max - Optional - Tracks stock overages"
+        },
+        {
+          "type": "info",
+          "text": "Favorite - Optional - T/F for warehouse visibility"
+        },
+        {
+          "type": "info",
+          "text": "Tracked - Optional - T/F for consumption tracking"
+        },
+        {
+          "type": "info",
+          "text": "Note - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Custom Fields 1 to 6 - Optional - User defined fields"
+        }
+      ]
+    }
+  ]
+}

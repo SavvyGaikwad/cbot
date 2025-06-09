@@ -1,0 +1,189 @@
+{
+  "document_title": "Work Order Reports",
+  "content": [
+    {
+      "type": "section",
+      "title": "Create a Task Summary Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Task Summary Report provides a record of tasks performed within the Work Orders."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/1.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Work Orders > Task Summary."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/2.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Date Range - The timeframe within the work order was completed or created (dependent on date field selection). Date Field - Select between completed date, created date, or labor date to populate results based off the completion/creation of a Work Order or when the labor was performed. Group By - Use this field to group report results by Asset, Service Class/Task, Work Type, Work Order Number. Asset Selection (Optional Field) - Generate results for a specific Asset. Task Selection (Optional Field) - Filter results by Task"
+        },
+        {
+          "type": "step",
+          "text": "3. Select Run Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/3.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Work Order Labor Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Work Order Labor Report provides a record of the Labor hours logged within the Work Orders. This guide will demonstrate how to generate a Work Order Labor Report."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/4.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Work Orders > Work Order Labor."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/5.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: \n○ Date Range - The timeframe within which the work order was completed or created (dependent on date field selection). \n○ Date Field - Select between completed date or labor date to populate results based on completion of a Work Order or when the labor was performed. \n○ Group By - Use this field to group report results by Asset, Group, Labor Contact, Site, Task, Work Order Number, or Work Type. \n○ Contact Selection (Optional Field) - Generate results for a Contact assigned to a Work Order. \n○ Task Selection (Optional Field) - Filter results by Task."
+        },
+        {
+          "type": "step",
+          "text": "3. Select Generate Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/6.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Update Criteria"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Work Order Summary Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Work Order Summary Report provides a general record of the Work Orders based off selected criteria. This guide will demonstrate how to generate a Work Order Summary Report."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/7.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Work Orders > Work Order Summary."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/8.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Date Range - The timeframe within the work order was completed or created (dependent on date field selection). Date Field - Select between completed date, created date, due date, and scheduled date to populate results for either open, scheduled or completed Work Orders. Group By - Use this field to group report results by Asset, Assigned Name, Budget, Category, Site, Failure, Group, Priority, Status, Sub Category, or Work Type. Asset Selection (Optional Field) - Generate results for a Contact assigned to a Work Order. Show Chart - Toggle chart on and off. Display Chart By - Use this fields to display chart for Labor Hours, Total Cost, or Work Order Count"
+        },
+        {
+          "type": "step",
+          "text": "3. Select Generate Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/9.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Parts Used Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Parts Used Report provides a record of the work orders that utilized specific parts and which assets they were used on. This guide will demonstrate how to generate a Parts Used Report."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/10.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Work Orders > Parts Used."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/11.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Date Range - The timeframe within the work order was completed or created (dependent on date field selection). Date Field - Select between completed date or created date to populate results based off the completion or creation of a Work Order. Group By - Use this field to group report results by Asset, Group, Labor Contact, Site, Task, Work Order Number, or Work Type. Asset Selection (Optional Field) - Generate results for a specific Asset. Part Type Selection (Optional Field) - Filter results by Part Type"
+        },
+        {
+          "type": "step",
+          "text": "3. Select Generate Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Order%20Reports/12.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    }
+  ]
+}

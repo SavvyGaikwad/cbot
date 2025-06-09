@@ -1,0 +1,669 @@
+{
+  "document_title": "Vendor Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Vendor Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Vendors Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Vendors module contains your list of outside companies you do business with. By default, all listed vendors are treated as suppliers of parts to your organization and additionally:"
+        },
+        {
+          "type": "info",
+          "text": "Each vendor can be designated as an outside contractor allowing you to assign work to them."
+        },
+        {
+          "type": "info",
+          "text": "Indicate which supplier is preferred for each of your parts and inventory items."
+        },
+        {
+          "type": "info",
+          "text": "Include a rating option, allowing you to rate each vendor from 1-5 stars."
+        },
+        {
+          "type": "info",
+          "text": "Easily sort your Vendor list, by the type of services they provide (Vendor Type)"
+        },
+        {
+          "type": "info",
+          "text": "View ​and update the Vendors parts list from each vendor record"
+        },
+        {
+          "type": "info",
+          "text": "Upgrade your Vendors from suppliers to outside contractors"
+        },
+        {
+          "type": "info",
+          "text": "Vendor timeline shows the vendor's usage history between the work orders and purchase orders. See how recently parts were ordered through this Vendor, or the recent work orders assigned."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search and Filter Vendors from the List View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can see the full list of your Vendors, along with the vendor details at a glance."
+        },
+        {
+          "type": "info",
+          "text": "Each user can arrange the layout of the screen according to their own preferences and liking."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Search allows you to find any field within the Vendors list. The example below shows results populated for automotive."
+        },
+        {
+          "type": "info",
+          "text": "In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filter Active Vendors",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Active Vendors drop-down helps you view vendors by active or inactive status."
+        },
+        {
+          "type": "info",
+          "text": "Click on the Active Vendors drop-down."
+        },
+        {
+          "type": "info",
+          "text": "Select one of the following:"
+        },
+        {
+          "type": "info",
+          "text": "Active Vendors"
+        },
+        {
+          "type": "info",
+          "text": "Inactive Vendors"
+        },
+        {
+          "type": "info",
+          "text": "All Vendors"
+        },
+        {
+          "type": "info",
+          "text": "The vendors list is automatically filtered."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the Vendors list, you may want to change the vendor columns and sort order. The Save View let's you set up the vendor listing and then save it for next time."
+        },
+        {
+          "type": "info",
+          "text": "This is best explained using an example. I want to create a saved list view for vendors that are associated to automotive supplies and add the Vendor Address column to the list view."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Reorder Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Drag and drop the Type(s) column to the front of the list"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Filter the Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click on the filter  icon within the Type(s). The list of types display."
+        },
+        {
+          "type": "info",
+          "text": "Select BUILDING MAINTENANCE."
+        },
+        {
+          "type": "info",
+          "text": "Click the OK button. The types column is filtered to display all vendors under the building maintenance type."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Add a column from the Column Chooser",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions  icon."
+        },
+        {
+          "type": "info",
+          "text": "Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop the Asset Budget column to the Work Order Management column headings. The Asset Budget column displays on the work order list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select a who can access this view option, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Toggle List Grouping Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you view the work order list, you may want to group the list view by a column. This let's you see the work order listing in a different way. Let's look at the example where we group by vendor type."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Group by a Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions icon ."
+        },
+        {
+          "type": "info",
+          "text": "Select Toggle List Grouping."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop a column header to the group by. The Vendors list is toggled by group."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select who can access this view options, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "info",
+          "text": "Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "info",
+          "text": "Select a saved view."
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "info",
+          "text": "Click on apply selected. The saved view displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Vendor",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can quickly manually create a vendor or if you want to bulk upload your vendors, then go to Import your Vendors."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Vendors."
+        },
+        {
+          "type": "step",
+          "text": "Click the New Vendor button."
+        },
+        {
+          "type": "info",
+          "text": "Complete the fields:"
+        },
+        {
+          "type": "step",
+          "text": "Click the Create Vendor button and the vendor is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update existing Vendor",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Update Vendor's Details",
+      "content": [
+        {
+          "type": "info",
+          "text": "Your vendor's address and phone numbers can be easily updated. The Details tab contains the following expand tabs:"
+        },
+        {
+          "type": "info",
+          "text": "General"
+        },
+        {
+          "type": "info",
+          "text": "Configuration"
+        },
+        {
+          "type": "info",
+          "text": "Contact Information"
+        },
+        {
+          "type": "info",
+          "text": "Assets"
+        },
+        {
+          "type": "info",
+          "text": "Custom Info"
+        },
+        {
+          "type": "info",
+          "text": "Below details how to update the address and phone number details."
+        },
+        {
+          "type": "step",
+          "text": "From the menu, click Vendors."
+        },
+        {
+          "type": "step",
+          "text": "Click on a vendor you want to edit."
+        },
+        {
+          "type": "step",
+          "text": "Click the Contact Information expand tab."
+        },
+        {
+          "type": "step",
+          "text": "Update the phone number."
+        },
+        {
+          "type": "info",
+          "text": "Phone number fields are restricted to the following characters: [], (), X, \\, -, +, #, *, 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Notes to a Vendor",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can add notes to a vendor record."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Vendors."
+        },
+        {
+          "type": "step",
+          "text": "Select a Vendor to view the record."
+        },
+        {
+          "type": "step",
+          "text": "Click the Notes icon."
+        },
+        {
+          "type": "info",
+          "text": "Click the pencil on the note record to edit the record"
+        },
+        {
+          "type": "step",
+          "text": "Click the New Note button."
+        },
+        {
+          "type": "info",
+          "text": "To delete a note, click on the trash Delete icon at the top of the note record."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Associate a Part with a Vendor",
+      "content": [
+        {
+          "type": "info",
+          "text": "Associating a part with a vendor can be easily done by following these few simple steps."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Vendors."
+        },
+        {
+          "type": "info",
+          "text": "Select the desired Vendor record to open the Vendor detail window."
+        },
+        {
+          "type": "info",
+          "text": "Select the third icon  to view the Vendor Parts."
+        },
+        {
+          "type": "step",
+          "text": "To add a new part click on the Add Part button, search for the desired part (three-character minimum), then click on the part you want."
+        },
+        {
+          "type": "step",
+          "text": "After the part has been selected and you have clicked OK, select the Save icon and you have then associated the part with the Vendor."
+        },
+        {
+          "type": "step",
+          "text": "If the Vendor identifies the part with a different Part ID then your organization does, click on the Vendor Part ID box and enter the information."
+        },
+        {
+          "type": "step",
+          "text": "To Delete an existing part associated with a Vendor, click on the - icon on the left side of the part."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View the Vendor's Timeline",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can view your Vendor's Work Order and Purchase Order history."
+        },
+        {
+          "type": "step",
+          "text": "From the menu, click Vendors."
+        },
+        {
+          "type": "step",
+          "text": "Click the Vendor you want to view the timeline for."
+        },
+        {
+          "type": "step",
+          "text": "Click on the Timeline tab."
+        },
+        {
+          "type": "step",
+          "text": "By default, the timeline displays the Work Orders and the Purchase Orders. You can filter the timeline, for example click the Work Orders button to hide the work orders from the timeline."
+        },
+        {
+          "type": "info",
+          "text": "If you want to see the details, then click either:"
+        },
+        {
+          "type": "step",
+          "text": "Work Order - the work order displays."
+        },
+        {
+          "type": "step",
+          "text": "Purchase Order - the purchase order displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update Vendor's Contact Site",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Vendor is only selectable as a contact for Assets, Purchase Orders, or Work Orders if they are active, assigned to the same Site, and have the right to be assigned."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Vendors."
+        },
+        {
+          "type": "step",
+          "text": "Click on the vendor you want to edit."
+        },
+        {
+          "type": "step",
+          "text": "Click the Sites tab."
+        },
+        {
+          "type": "info",
+          "text": "From this tab, you can make the vendor a global vendor, add a site, or remove a site."
+        },
+        {
+          "type": "step",
+          "text": "Add Site"
+        },
+        {
+          "type": "step",
+          "text": "If this is a global vendor, then click the Make A Global Vendor check box or you can add individual sites."
+        },
+        {
+          "type": "step",
+          "text": "If you want to add a site, click the Add Site +."
+        },
+        {
+          "type": "info",
+          "text": "From the Select drop-down, select the site."
+        },
+        {
+          "type": "step",
+          "text": "Remove Site"
+        },
+        {
+          "type": "step",
+          "text": "Click the Remove  icon, next to the site's name and the site will be removed from the vendor."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add an Attachment or Link to a Vendor",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can add attachments, such as a user manual or product price list, or a link, such as the vendor's website or an internal link."
+        },
+        {
+          "type": "step",
+          "text": "From the menu, click Vendors."
+        },
+        {
+          "type": "step",
+          "text": "Click on the vendor you want to edit."
+        },
+        {
+          "type": "step",
+          "text": "Add Attachment"
+        },
+        {
+          "type": "info",
+          "text": "You can either:"
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Attachments button and then browse to the file and select it."
+        },
+        {
+          "type": "step",
+          "text": "Drag and drop the file onto the tab."
+        },
+        {
+          "type": "info",
+          "text": "The file will be uploaded."
+        },
+        {
+          "type": "step",
+          "text": "Add Link"
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Link button and the Add Attachment Link dialog."
+        },
+        {
+          "type": "step",
+          "text": "In the Attachment Link field, enter in the URL link. This link can be an intranet link, sharepoint link, or an external web link."
+        },
+        {
+          "type": "step",
+          "text": "Click the Upload Link button."
+        },
+        {
+          "type": "info",
+          "text": "The link displays in the tab."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Vendor Portal",
+      "content": [
+        {
+          "type": "info",
+          "text": "Much of your maintenance responsibilities may be performed by outside contractors or Vendors.  The Vendor Portal allows contractors to easily report back to you the work they performed and to list costs and expenses incurred while maintaining your assets and equipment. You'll enjoy greater ease in tracking and communicating with your vendor on a project, through the Vendor Portal."
+        },
+        {
+          "type": "info",
+          "text": "Generate and send an email to your vendor"
+        },
+        {
+          "type": "info",
+          "text": "Assign Work to a Vendor, and email the request directly to them"
+        },
+        {
+          "type": "info",
+          "text": "Vendor can accept or reject the work order from the email"
+        },
+        {
+          "type": "info",
+          "text": "Formatted to ideally work phone, tablet, or desktop email application"
+        },
+        {
+          "type": "info",
+          "text": "No vendor license or login is required for the vendor to interact with your work order!"
+        },
+        {
+          "type": "info",
+          "text": "Easy communication between the application and the vendor"
+        },
+        {
+          "type": "info",
+          "text": "Customize what the Vendor can see on the Work Order"
+        },
+        {
+          "type": "info",
+          "text": "Suggest what Vendor input you are looking for (pictures, attachments, signatures, etc.)"
+        },
+        {
+          "type": "info",
+          "text": "Vendor Status Updates appear on the Work Order"
+        },
+        {
+          "type": "info",
+          "text": "Easily change Vendor assigned"
+        },
+        {
+          "type": "info",
+          "text": "Invite your vendors to attach and submit their personal invoice when they are done with the work"
+        },
+        {
+          "type": "info",
+          "text": "Field | Description\nVendor ID | Unique identification code for the vendor. It can contain letters, numbers, or a combination of both, and can be up to 24 characters long. The Vendor ID must be something meaningful to you since the Vendor List is sorted by this ID by default.\nVendor Name | Full or official name of the vendor. It can contain letters, numbers, or a combination of both, and it can be up to 50 characters long.\nPreferred Name | Name of the vendor as filed. For example, if the vendor is Ken’s Chevron, you might prefer to file that vendor as Chevron, Ken’s or That-One-Place.\nURL | URL of vendor website.\nVendor Type | Type of vendor.\nRating | Rate your vendors on a one-to-four star rating.\nCan Be Assigned To Work | Leave blank if your vendor is only a supplier.  Check the box if you want to assign the Vendor to a Work Order."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "document_title": "Work Companion App",
+  "content": [
+    {
+      "type": "section",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Work Companion mobile app is for technicians and maintenance managers on the go. It is integrated with Eptura Asset so you can see all of your assets and equipment details; the mobile app enables you to respond to work orders, inspect assets, organize service tasks, and catalog preventive maintenance records. Mobilize your maintenance team with this powerful work order tool. It is fully loaded with your Asset and Equipment Lists, and all their maintenance activities. This includes PMs, Work Orders, Inspections, Service Tasks, etc. While Full Users can use the app, it is designed for Mobile Technicians, giving them the freedom to: chedule work for an individual or a team. review work assigned. update information. complete work orders while on the go. retains the most recent data even while offline. track the maintenance history of individual assets"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/1.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "App Features",
+      "content": [
+        {
+          "type": "info",
+          "text": "The app contains: Calendar: Sync with the planning board. My Work: Shows all the open work orders, highlighting the ones specifically assigned to that user."
+        },
+        {
+          "type": "info",
+          "text": "Work orders shown, will be for a single entity/site at a time"
+        },
+        {
+          "type": "info",
+          "text": "Work Orders: All the familiar aspects of the Eptura Asset work orders are found in the companion app -  Labor records.  Parts needed / parts used. Notes. Expenses. Important external attachments (e.g. photos, contracts, schematics, etc)."
+        },
+        {
+          "type": "info",
+          "text": "Assets: Those in the field have access to all asset classes, their history, and the results of their inspections."
+        },
+        {
+          "type": "info",
+          "text": "Barcodes: The mobile app allows the user to scan an asset's established barcode, and pull up the maintenance records"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Barcode to an Asset by Scanning",
+      "content": [
+        {
+          "type": "info",
+          "text": "Barcodes are great for speeding up the process of manually looking for an asset when creating or completing a Work Order. However, the process of inputting a new barcode is tedious and the likelihood of entering an incorrect character is high. To eliminate the chances of adding an incorrect barcode, scan the barcode using the Work Companion App."
+        },
+        {
+          "type": "info",
+          "text": "This will help you to: Eliminate manual Barcode entry through typing. Quickly add Barcodes to Assets.  Accurately input Barcodes through scanning"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Steps to Add a Barcode by Scanning",
+      "content": [
+        {
+          "type": "info",
+          "text": "User must have permissions to Edit Assets to add Barcodes by scanning."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to the asset from the Work Companion app and locate the Barcode/Tag field:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/2.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Select the Barcode Icon to open the barcode scanner"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/3.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Scan the Barcode to associate to the asset, and the Barcode populates in the field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/4.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Select the save icon"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/5.png"
+        },
+        {
+          "type": "info",
+          "text": "The scanned Barcode is now successfully associated with an Asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Download the Work Companion App",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can download the app from the App Stores."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Download from the Apple Store",
+      "content": [
+        {
+          "type": "info",
+          "text": "Quick link to the store: M+ Work Companion - https://apps.apple.com/au/app/m-work-companion/id1490898446"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/6.png"
+        },
+        {
+          "type": "info",
+          "text": "Complete the following steps to get the app you need set up on your device."
+        },
+        {
+          "type": "step",
+          "text": "1. Tap the App Store icon on your mobile device to access the iTunes App Store."
+        },
+        {
+          "type": "step",
+          "text": "2. In the upper-right corner, you'll see a Search field. Enter the name of the mobile app you want to download and tap Search. For example, search for the m+ work companion."
+        },
+        {
+          "type": "step",
+          "text": "3. Locate the appropriate app in the search results and tap +Get."
+        },
+        {
+          "type": "step",
+          "text": "4. Tap the Install button to download the app."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Download from the Google Play Store",
+      "content": [
+        {
+          "type": "info",
+          "text": "Quick link to the store: Eptura Asset Companion - https://play.google.com/store/apps/details?id=com.managerplus.x2.workcompanion"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/7.png"
+        },
+        {
+          "type": "info",
+          "text": "Complete the following steps to get the App you need, set up on your device."
+        },
+        {
+          "type": "step",
+          "text": "1. Tap the Play Store icon on your mobile device to access the Google Play Store."
+        },
+        {
+          "type": "step",
+          "text": "2. At the top of the screen, you'll see a Search field. Enter the name of the mobile app you want to download and tap the Search icon. For example, search for the eptura asset companion."
+        },
+        {
+          "type": "step",
+          "text": "3. Locate the appropriate app in the search results and tap the app. The App Overview screen displays."
+        },
+        {
+          "type": "step",
+          "text": "4. Tap the Install button to download the App. For Android versions prior to 6.0, a permissions window displays. Proceed to step 5. For Android 6.0 or newer, the App is downloaded."
+        },
+        {
+          "type": "step",
+          "text": "5. Tap the Accept button on the permissions window that displays. The app is downloaded."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Send your Sync Results to Support",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you have an unsuccessful synchronization, then you can send your results to our Support team."
+        },
+        {
+          "type": "info",
+          "text": "From the Work Companion App, complete the following:"
+        },
+        {
+          "type": "step",
+          "text": "1. From the main screen of the Mobile app, tap the More button."
+        },
+        {
+          "type": "step",
+          "text": "2. From the menu, tap the About."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/8.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/9.png"
+        },
+        {
+          "type": "info",
+          "text": "The About screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/10.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Tap the Success button."
+        },
+        {
+          "type": "info",
+          "text": "This displays a list of synchronizations you've done over the past few days with the unsuccessful synchronizations highlighted in red."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/11.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Tap a synchronization to display the details."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Work%20Companion%20App/12.png"
+        },
+        {
+          "type": "step",
+          "text": "5. If support wants a copy of the details, then tap Email. Your email application opens."
+        },
+        {
+          "type": "step",
+          "text": "6. Complete the support email address and then send the email."
+        }
+      ]
+    }
+  ]
+}

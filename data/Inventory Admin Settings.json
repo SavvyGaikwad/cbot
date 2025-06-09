@@ -1,0 +1,441 @@
+{
+  "document_title": "Inventory Admin Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Set up Brands and Models Settings for Inventory",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Brands and Models tab is where part's (A) brands and (B) models are added to use when creating a new part. This allows for uniformity when searching and filtering for a part by brand or model."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/1.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access the Brands and Models Tab",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Settings > Module Settings > Inventory > Brands and Models"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Brand",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. In the Brand drop-down, enter the name of the brand."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/2.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Click the + brand name and the brand is created."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Brand",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the Brand drop-down, select an existing brand name."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the edit brand name link."
+        },
+        {
+          "type": "step",
+          "text": "3. Change the Brand's name."
+        },
+        {
+          "type": "step",
+          "text": "4. Change the name."
+        },
+        {
+          "type": "step",
+          "text": "5. Click off the name and it is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Brand",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the Brand drop-down, select an existing brand name."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the delete link and the name is deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Model",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the Brand drop-down, select an existing brand name or create a new brand name."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Add Model area, click the + icon."
+        },
+        {
+          "type": "step",
+          "text": "3. In the Model field, enter the name of the model."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/4.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click off the name and it is saved."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/5.png"
+        },
+        {
+          "type": "step",
+          "text": "Rename the Model"
+        },
+        {
+          "type": "step",
+          "text": "Hover over the Model's Name."
+        },
+        {
+          "type": "step",
+          "text": "Click the Model's name."
+        },
+        {
+          "type": "step",
+          "text": "Change the name."
+        },
+        {
+          "type": "step",
+          "text": "Click off the name and it is saved."
+        },
+        {
+          "type": "step",
+          "text": "Delete the Model"
+        },
+        {
+          "type": "step",
+          "text": "Hover over the Model's Name."
+        },
+        {
+          "type": "step",
+          "text": "Click the X icon and the name is deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Rename the Model",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Hover over the Model's Name."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Model's name."
+        },
+        {
+          "type": "step",
+          "text": "3. Change the name."
+        },
+        {
+          "type": "step",
+          "text": "4. Click off the name and it is saved."
+        },
+        {
+          "type": "step",
+          "text": "Delete the Model"
+        },
+        {
+          "type": "step",
+          "text": "Hover over the Model's Name."
+        },
+        {
+          "type": "step",
+          "text": "Click the X icon and the name is deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete the Model",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Hover over the Model's Name."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the X icon and the name is deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up General Settings for Inventory",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Inventory General settings contains the default settings used when creating a new part, such as:"
+        },
+        {
+          "type": "info",
+          "text": "Inventory Defaults - Set the defaults for a new part: Method, Base Unit of Measure, Part Type, Part Status"
+        },
+        {
+          "type": "info",
+          "text": "Barcode Labels"
+        },
+        {
+          "type": "info",
+          "text": "List Setup - The following drop-downs contain lists and you can modify these lists: (A) Part Type (B) Part Status (C) Units of Measure"
+        },
+        {
+          "type": "info",
+          "text": "Custom Fields - If you need extra fields, then these can be defined."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/6.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Inventory Settings",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Settings > Module Settings > Inventory. The General tab from the Inventory Settings screen displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inventory Defaults",
+      "content": [
+        {
+          "type": "info",
+          "text": "Inventory defaults are used automatically when creating a new part, see Create a New Part."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/7.png"
+        },
+        {
+          "type": "step",
+          "text": "1. From the Method drop-down, select either: FIFO - First in, first out. LIFO - Last in, last out"
+        },
+        {
+          "type": "step",
+          "text": "2. From the Base Unit of Measure drop-down, select the default unit of measure for which the parts are consumed. This list is populated from the List Setup's Units of Measure."
+        },
+        {
+          "type": "step",
+          "text": "3. From the Type drop-down, select the default part type. This list is populated from the List Setup's Part Type."
+        },
+        {
+          "type": "step",
+          "text": "4. From the Status drop-down, select the default part status. This list is populated from the List Setup's Part Status."
+        },
+        {
+          "type": "info",
+          "text": "The changes are saved automatically."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Barcode Labels",
+      "content": [
+        {
+          "type": "info",
+          "text": "Barcodes for parts include up to four text lines to describe the associated part. The information that populates in the barcode is configured in the general inventory settings under barcode labels. "
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/8.png"
+        },
+        {
+          "type": "step",
+          "text": "1. To access the Barcode Labels form, click the Barcode Labels  icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/10.png"
+        },
+        {
+          "type": "step",
+          "text": "2. For the Text Lines, select the field you want to display in the barcode."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/11.png"
+        },
+        {
+          "type": "info",
+          "text": "If you want to remove a text line, then click the Remove  icon."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "List Setup",
+      "content": [
+        {
+          "type": "info",
+          "text": "List Setup is where the drop-down options for Part Status, Part Type, and Units of Measure are defined and more can be added."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/13.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a List Item",
+      "content": [
+        {
+          "type": "step",
+          "text": "1.Click the + icon."
+        },
+        {
+          "type": "step",
+          "text": "2.In the field, enter the name."
+        },
+        {
+          "type": "step",
+          "text": "3. Click off the name and it is saved to the list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/14.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click the list item."
+        },
+        {
+          "type": "step",
+          "text": "5. If the item needs decimal places, enter the number."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Rename a List Item",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the list item."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Rename button."
+        },
+        {
+          "type": "step",
+          "text": "3. In the Name field, enter the new name."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Pencil  icon to save the name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a list item",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the list item."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Delete button and the item is deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "Custom Fields are available for any information needed that is not within the default fields. Learn more in Custom Fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/16.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set a Part Type as a Tire for Tire Tracking",
+      "content": [
+        {
+          "type": "info",
+          "text": "To track tires effectively, they must be defined in the inventory settings. This allows new and existing part types to be recognized as tires when being added to a work order."
+        },
+        {
+          "type": "step",
+          "text": "The image below shows a selected Part Type with the is a tire toggle."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/17.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Module Settings > Inventory Settings > General. The general tab populates with the list of part types."
+        },
+        {
+          "type": "step",
+          "text": "2. Select a Part Type and enable the is a tire toggle."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/18.png"
+        },
+        {
+          "type": "info",
+          "text": "When adding a tire to a work order, the tire tracking icon notification appears on the work order."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Admin%20Settings/19.png"
+        }
+      ]
+    }
+  ]
+}

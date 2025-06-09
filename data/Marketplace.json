@@ -1,0 +1,491 @@
+{
+  "document_title": "Marketplace",
+  "content": [
+    {
+      "type": "section",
+      "title": "Marketplace Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Marketplace is the hub where all plugins are managed within the application. Use Marketplace to improve your work according to your needs. This section lets you: Add or remove plugins. Learn more about each plugin. Optimize your work by selecting which plugins to use"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Marketplace",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Tools and Support section, click Marketplace."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Marketplace/1.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Plugin Summary List",
+      "content": [
+        {
+          "type": "info",
+          "text": "1. API - Installed (Default) - Open API that makes Eptura Asset flexible, expandable, and connectable for comprehensive asset management."
+        },
+        {
+          "type": "info",
+          "text": "2. Asset Down Time - Needs to be installed - Tracks asset downtime and creates non-operable states for better utilization reporting and safety processes."
+        },
+        {
+          "type": "info",
+          "text": "3. Business Intelligence (BI) - Installed (Default) - Provides dynamic data analysis and automated reporting for business insights and problem-solving."
+        },
+        {
+          "type": "info",
+          "text": "4. Classic - Installed (Default) - Provides access to classic platform modules embedded into the lightning interface."
+        },
+        {
+          "type": "info",
+          "text": "5. Connectors - Needs to be installed - Enables data sharing with other business applications to streamline workflows in one place."
+        },
+        {
+          "type": "info",
+          "text": "6. Planning Board - Installed (Default) - Offers calendar view for crew scheduling with drag-and-drop work assignment and mobile app integration."
+        },
+        {
+          "type": "info",
+          "text": "7. Purchase Orders - Installed (Default) - Manages purchase orders for inventory replenishment and vendor service communication."
+        },
+        {
+          "type": "info",
+          "text": "8. Multi Site Toolkit - Installed (Default) - Enables multi-site functionality, multi-warehouse management, and security role access control."
+        },
+        {
+          "type": "info",
+          "text": "9. Parent Child Assets - Needs to be installed - Links assets together for inherited meter data, cost rollup, and shared location movement."
+        },
+        {
+          "type": "info",
+          "text": "10. Labor Codes- Installed (Default) - Creates multiple labor codes and rates for application-wide use with department-level overrides."
+        },
+        {
+          "type": "info",
+          "text": "11. Clock I/O - Work Order - Installed (Default) - Tracks accurate task completion times with clock-in/out functionality and automatic labor cost calculation."
+        },
+        {
+          "type": "info",
+          "text": "12. Vendor Portal - Installed (Default) - Provides mobile-friendly interface for vendors to complete work orders and submit invoices."
+        },
+        {
+          "type": "info",
+          "text": "13. Components - Installed (Default) - Manages serialized inventory parts with warranty information and installation tracking."
+        },
+        {
+          "type": "info",
+          "text": "14. Customers - Needs to be installed - Manages customer lists and related information."
+        },
+        {
+          "type": "info",
+          "text": "15. SSO (Single Sign On) - Installed (Default) - Integrates with active directory for centralized user and login credential management."
+        },
+        {
+          "type": "info",
+          "text": "16. Invoicing (Receivables) - Needs to be installed - Creates invoices from work orders with markup capabilities and receivable tracking."
+        },
+        {
+          "type": "info",
+          "text": "17. Tire Tracking - Premium - Specialized tire tracking with application setting modifications for data accuracy."
+        },
+        {
+          "type": "info",
+          "text": "18. Alternate Parts - Needs to be installed - Provides backup inventory options when primary parts are out of stock during order fulfillment."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "API Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "With our open API we want you to get the most out of Eptura Asset. And by making it flexible, expandable, connectable, and with API development—integral, we want to be the last asset management solution you'll ever need."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Down Time Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Needs to be installed"
+        },
+        {
+          "type": "info",
+          "text": "Part of the New Inspection Process, we are bringing downtime into the picture."
+        },
+        {
+          "type": "info",
+          "text": "Downtime will bring the Asset into a non-operable state, which will be indicated to Users and Operators."
+        },
+        {
+          "type": "info",
+          "text": "Key Benefits:"
+        },
+        {
+          "type": "info",
+          "text": "• Track Downtime on assets"
+        },
+        {
+          "type": "info",
+          "text": "• Allow inspections or work orders to bring assets down"
+        },
+        {
+          "type": "info",
+          "text": "• Give deeper reporting on Asset Utilization, Asset Up Time, Asset Mean Time to Failure"
+        },
+        {
+          "type": "info",
+          "text": "• Create better Safety processes around asset operations"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Business Intelligence (BI) Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "Gain new insights into your business operations with the NEW Eptura Asset Business Intelligence Tool."
+        },
+        {
+          "type": "info",
+          "text": "This is your one source for analyzing data fast and easy in a dynamic and intuitive way."
+        },
+        {
+          "type": "info",
+          "text": "Eptura Asset Business Intelligence will transform the way your organization solves tangible problems through integrated business insights, fast and easy data analysis, and automated & specialized reporting."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Classic Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "Access to some of our classic modules on our classic platform. Embedded into lightning for ease of use."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Connectors Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Needs to be installed"
+        },
+        {
+          "type": "info",
+          "text": "No more jumping from program to program."
+        },
+        {
+          "type": "info",
+          "text": "Eptura Asset Connectors enable Eptura Asset to share data with the other business applications you use, making it easier to get more done in one place."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Planning Board Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "Calendar view of your crew and what they have planned for the day, week, or month."
+        },
+        {
+          "type": "info",
+          "text": "Easily drag and drop work on their calendar and publish changes that will be pushed to their mobile app."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Purchase Orders Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "Manage Purchase Orders to replenish and receive parts/inventory or communicate intention to purchase services from a Vendor."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Multi Site Toolkit Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "Allows for multi site functionality, multi warehouse, & security roles to expand or restrict access across the company."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Parent Child Assets Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Needs to be installed"
+        },
+        {
+          "type": "info",
+          "text": "Linking one asset to another can have several benefits."
+        },
+        {
+          "type": "info",
+          "text": "This feature allows you to connect assets to another, with inheriting meter/log data, roll up cost breakdown, and shared movement across locations/sites."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Labor Codes Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "This feature allows you to create multiple labor codes and rates that are able to be used across the application, but can be overridden at the department or contact level."
+        },
+        {
+          "type": "info",
+          "text": "Learn more in Configure Labor Codes at https://knowledge.eptura.com/Asset/Modules/Settings/Configuration/Configure_Labor_Codes"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Clock I/O - Work Order Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "Want to get more accurate on how long certain tasks take to complete on a work order? Want to stop guessing when you started or stopped working on something?"
+        },
+        {
+          "type": "info",
+          "text": "Enabling this feature will allow you to clock in on a work order task, track the time, and then clock out."
+        },
+        {
+          "type": "info",
+          "text": "This will auto add a labor line to your work order and ultimately help you track costs for your maintenance."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Vendor Portal Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "Mobilize an outsourced work force."
+        },
+        {
+          "type": "info",
+          "text": "This feature puts your work orders in the hands of your Vendors in an easy, fast mobile friendly interface."
+        },
+        {
+          "type": "info",
+          "text": "They can do the work and easily submit an invoice when they are done."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Components Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "Components are serialized inventoried parts that may have warranty information."
+        },
+        {
+          "type": "info",
+          "text": "Create components for items that have a warranty or when it is critical to know how long they have been installed on an asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customers Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Needs to be installed"
+        },
+        {
+          "type": "info",
+          "text": "Manage your list of customers."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "SSO (Single Sign On) Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Installed (Default Plugin)"
+        },
+        {
+          "type": "info",
+          "text": "SSO options allow you to utilized your active directory to manage users and login credentials."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Invoicing (Receivables) Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Needs to be installed"
+        },
+        {
+          "type": "info",
+          "text": "Create invoices from work orders or on demand."
+        },
+        {
+          "type": "info",
+          "text": "Markup parts and services and track receivable invoices from your customers."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Tire Tracking Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Premium"
+        },
+        {
+          "type": "info",
+          "text": "Tire Tracking needs to make some modifications to your application settings to ensure data accuracy."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Alternate Parts Plugin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugin Status: Needs to be installed"
+        },
+        {
+          "type": "info",
+          "text": "Use this feature to choose backup items for any piece in your inventory."
+        },
+        {
+          "type": "info",
+          "text": "If the part you first chose is out of stock when you're filling an order, you can easily pick one of your backups instead."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Plugin Management",
+      "content": [
+        {
+          "type": "info",
+          "text": "Plugins can be installed or they can be uninstalled."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Uninstall Plugin",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Installed button. The Uninstall Feature dialog displays the message, 'This action will disable the feature and take out functionalities that you may currently be using.'"
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Uninstalled Feature button. The plugin is removed and the button displays 'Install'."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Install Plugin",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the Install button and the plugin is installed and the button displays 'Installed'."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Plugin Categories",
+      "content": [
+        {
+          "type": "info",
+          "text": "Default Plugins: API, Business Intelligence (BI), Classic, Planning Board, Purchase Orders, Multi Site Toolkit, Labor Codes, Clock I/O - Work Order, Vendor Portal, Components, SSO (Single Sign On)"
+        },
+        {
+          "type": "info",
+          "text": "Plugins that need to be installed: Asset Down Time, Connectors, Parent Child Assets, Customers, Invoicing (Receivables), Alternate Parts"
+        },
+        {
+          "type": "info",
+          "text": "Premium Plugins: Tire Tracking"
+        }
+      ]
+    }
+  ]
+}

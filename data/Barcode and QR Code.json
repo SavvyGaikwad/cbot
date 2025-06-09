@@ -1,0 +1,277 @@
+{
+  "document_title": "Barcode and QR Code",
+  "content": [
+    {
+      "type": "section",
+      "title": "Barcode and QR Code Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "We understand that large lists can be daunting, and manually searching for an item can be a very time-consuming task."
+        },
+        {
+          "type": "info",
+          "text": "Barcodes and QR Codes can be used to streamline your workflow, making searching for an item effortless."
+        },
+        {
+          "type": "info",
+          "text": "Eptura Asset has multiple types of codes to cater to your needs, and you can do everything from simply searching for an asset, to starting an inspection plan on the spot."
+        },
+        {
+          "type": "info",
+          "text": "Different barcodes and QR Codes available:"
+        },
+        {
+          "type": "info",
+          "text": "• Barcodes for Assets and Parts"
+        },
+        {
+          "type": "info",
+          "text": "• QR Codes for Work Request"
+        },
+        {
+          "type": "info",
+          "text": "• Operator Companion App QR Codes"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Barcodes for Assets and Parts",
+      "content": [
+        {
+          "type": "info",
+          "text": "All Assets and Parts automatically get a barcode, meaning that all new Assets and Parts created in the application will be assigned a system generated barcode by default."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/2.jpg"
+        },
+        {
+          "type": "info",
+          "text": "Asset Barcode Information: The barcode displays the Asset ID, Description, and the Asset Tag ID."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/14.png"
+        },
+        {
+          "type": "info",
+          "text": "Part Barcode Information: The barcode displays the PartID, Description, Bin Location, Part Type, and the Part Association ID."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/15.png"
+        },
+        {
+          "type": "info",
+          "text": "These Barcodes can be scanned through the app to quickly access the Asset or Part associated to the Barcode."
+        },
+        {
+          "type": "info",
+          "text": "Although barcodes are automatically generated, existing barcodes can also be associated to the Asset or Part, in addition to the system generated barcodes."
+        },
+        {
+          "type": "info",
+          "text": "Learn more about our Barcode Client, which is a cloud printing service that needs access to the barcode printer and the internet and will need to always remain running."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "QR Codes for Work Requests",
+      "content": [
+        {
+          "type": "info",
+          "text": "Tagging an Asset with a QR Code will give Requesters a direct link to your Request Portal with the Asset information already filled out. This allows for ease of use, eliminating the need to manually search for the Asset within the application."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/12.jpg"
+        },
+        {
+          "type": "info",
+          "text": "Work Request QR Code can be scanned from your camera app, which will direct you to the Request Portal."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Operator Companion Application QR Codes",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Operator Companion App QR codes are used on Assets that have an Inspection Plan associated to it."
+        },
+        {
+          "type": "info",
+          "text": "These QR codes are placed directly on your Assets."
+        },
+        {
+          "type": "info",
+          "text": "By scanning this code from your device, you are navigating directly to the inspection plan through the Operator Companion Application, allowing you to complete the inspection directly from the Asset location."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/6.jpg"
+        },
+        {
+          "type": "info",
+          "text": "QR Code Information: The QR code displays the Asset ID and Description."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/5.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/4.png"
+        },
+        {
+          "type": "info",
+          "text": "This QR code can be scanned from your camera app, which will direct you to the Operator Companion where inspections can be started and work orders can be generated."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up the Barcode Client",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Barcode client is a cloud printing service that needs access to the barcode printer and the internet and will need to always remain running."
+        },
+        {
+          "type": "info",
+          "text": "The Barcode Client lets you:Download and install the Barcode Client, Log into the Barcode Client, Find the Barcode Client in Classic, Select which printer will be used to print Barcodes"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Download and Install the Barcode Client",
+      "content": [
+        {
+          "type": "info",
+          "text": "Before you download the Barcode Client, contact your IT Administrator to make sure you are set up as a local admin on your computer. When this is completed, you will be able to install the Barcode Client software on your computer."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Tools and Support section, click Barcode Client."
+        },
+        {
+          "type": "info",
+          "text": "The Setting Up the Barcode Client screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/8.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Download button. The Barcode Client is downloaded as a file called MPlusBarcodeClientInstall.msi."
+        },
+        {
+          "type": "step",
+          "text": "4. Navigate to your download folder and then double click the filename to install."
+        },
+        {
+          "type": "info",
+          "text": "The ManagerPlus Barcode Print wizard dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/7.png"
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Next > button and the Select Installation Folder dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/10.png"
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Next > button and the Confirm Installation dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/9.png"
+        },
+        {
+          "type": "step",
+          "text": "7. Click the Next > button and the Barcode Client is installed."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Log into the Barcode Client",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Log in using your Company Code, Username, and Password"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/13.png"
+        },
+        {
+          "type": "info",
+          "text": "The Company Code is the first part of your Eptura Asset's URL. For example: https://testcompany.managerpluscloud.com/ Then your company's code is testcompany."
+        },
+        {
+          "type": "step",
+          "text": "2. After successfully logging in, click the Add button to add a Barcode Printer"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/11.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Add a system printer and customize your barcode settings."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Tools/16.png"
+        },
+        {
+          "type": "info",
+          "text": "After saving, you are ready to go!"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Barcode Scanning Benefits",
+      "content": [
+        {
+          "type": "info",
+          "text": "Barcodes and QR codes streamline workflow by making item searches effortless."
+        },
+        {
+          "type": "info",
+          "text": "They eliminate the time-consuming task of manually searching through large lists."
+        },
+        {
+          "type": "info",
+          "text": "QR codes provide direct links to relevant application functions, reducing navigation time."
+        },
+        {
+          "type": "info",
+          "text": "Operator Companion QR codes enable on-site inspection plan execution directly from asset locations."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "document_title": "PMs Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Planned Maintenance Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "PMs Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "In the world of asset management, finding ways to reduce expenditures is critical to your bottom line. Preventative maintenance is extremely effective at reducing the costs associated with downtime and breakdowns and is significantly cheaper to perform."
+        },
+        {
+          "type": "info",
+          "text": "Features of the module include the ability to:"
+        },
+        {
+          "type": "info",
+          "text": "Establish your own customized maintenance plan"
+        },
+        {
+          "type": "info",
+          "text": "Set up reoccurring schedules"
+        },
+        {
+          "type": "info",
+          "text": "Determine frequency of PMs"
+        },
+        {
+          "type": "info",
+          "text": "Manage due PMs"
+        },
+        {
+          "type": "info",
+          "text": "Alter the schedule as needed when things don't go according to plan"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Understand the PMs KPIs",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to PMs."
+        },
+        {
+          "type": "step",
+          "text": "Click the Show KPI icon."
+        },
+        {
+          "type": "info",
+          "text": "Going across the top of the screen, the following are:"
+        },
+        {
+          "type": "step",
+          "text": "PMs Ready for Work - How many PMs are ready for work (plus, the number of existing PMs that have active work orders)"
+        },
+        {
+          "type": "step",
+          "text": "Work form PMS - The percentage of Open Work Orders currently coming from PMs"
+        },
+        {
+          "type": "step",
+          "text": "Estimated Work - Monthly Past Estimated and Actual Work Orders created from PMs"
+        },
+        {
+          "type": "step",
+          "text": "Upcoming Workload Forecast - Shows the number of hours projected to be needed on upcoming PMs"
+        },
+        {
+          "type": "info",
+          "text": "You can reset the view, click the More Actions icon, and then Reset Grid."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customize the PMs View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can find your PMs:"
+        },
+        {
+          "type": "info",
+          "text": "Search"
+        },
+        {
+          "type": "info",
+          "text": "Filters"
+        },
+        {
+          "type": "info",
+          "text": "Quick Filters"
+        },
+        {
+          "type": "info",
+          "text": "Filters by Group"
+        },
+        {
+          "type": "info",
+          "text": "Saved View - Filter a Column Example"
+        },
+        {
+          "type": "info",
+          "text": "Saved View - Toggle List Grouping Example"
+        },
+        {
+          "type": "info",
+          "text": "Display your Saved View"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Search allows you to find any field within the PM list. The example below shows results populated for oil."
+        },
+        {
+          "type": "step",
+          "text": "In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Column Search",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you search for PMs, it will display only those PMs for the search criteria. Each column contains the search, and this will let you focus on the PMs you want."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filters",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you click the Filter  icon, a menu will appear showing you the items you can select."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Quick Filters",
+      "content": [
+        {
+          "type": "info",
+          "text": "From the Activate PMs drop-down, select either:"
+        },
+        {
+          "type": "step",
+          "text": "Active PMs - displays all PMs created."
+        },
+        {
+          "type": "step",
+          "text": "PMs Ready for Work - displays the PMs ready for work."
+        },
+        {
+          "type": "step",
+          "text": "PMs with Work - displays the number of PMs with work."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filters by Groups",
+      "content": [
+        {
+          "type": "info",
+          "text": "Filter by group helps you view PMs by group organization. These filter groups can be:"
+        },
+        {
+          "type": "info",
+          "text": "single address"
+        },
+        {
+          "type": "info",
+          "text": "floor plan"
+        },
+        {
+          "type": "info",
+          "text": "group of assets"
+        },
+        {
+          "type": "info",
+          "text": "These groups have been set up by your admin, see set up a site's location for more information."
+        },
+        {
+          "type": "step",
+          "text": "Click the Filter by Group button. The filter by group panel displays."
+        },
+        {
+          "type": "step",
+          "text": "Select a group to filter by. The PM list is filtered."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the PM list, you may want to change the PM columns and sort order. The Save View let's you set up the PM listing and then save it for next time."
+        },
+        {
+          "type": "info",
+          "text": "This is best explained using an example. I want to create a saved list view for PMs that are on the HVAC - CARRIER Maintenance Plan and add the Asset Purchase Date column to the list view."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Reorder Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Drag and drop the Maintenance Plan column to the front of the list"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Filter the Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click on the filter  icon within the Maintenance Plan column. The list of Maintenance Plans display."
+        },
+        {
+          "type": "info",
+          "text": "Select HVAC - CARRIER."
+        },
+        {
+          "type": "info",
+          "text": "Click the OK button. The status column is filtered to display all PMs under the HVAC - CARRIER Maintenance Plan."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Add a column from the Column Chooser",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions  icon."
+        },
+        {
+          "type": "info",
+          "text": "Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop the Asset Purchase Date column to the PM Management column headings. The Asset Purchase Date column displays on the PM list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select a who can access this view option, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Toggle List Grouping Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you view the PM list, you may want to group the list view by a column. This let's you see the PM listing in a different way. Let's look at the example where we group by Maintenance Plan."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Group by a Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions icon ."
+        },
+        {
+          "type": "info",
+          "text": "Select Toggle List Grouping."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop a column header to the group by. The PM list is toggled by group."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select who can access this view options, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "info",
+          "text": "Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "info",
+          "text": "Select a saved view."
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "info",
+          "text": "Click on apply selected. The saved view displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Navigate around the PMs List View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The PM (Planned Maintenance) list view lets you stay current on reoccurring jobs that have come due, future PMs, and current PMs being worked on."
+        },
+        {
+          "type": "info",
+          "text": "The PMs List View consists of the following:"
+        },
+        {
+          "type": "info",
+          "text": "List View Columns"
+        },
+        {
+          "type": "info",
+          "text": "PMs Details Panel"
+        },
+        {
+          "type": "info",
+          "text": "PMs Ready Button"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "List View Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "The List View displays the PMs and by default the list is sorted by Maturity Reached and PMs with notices on them."
+        },
+        {
+          "type": "info",
+          "text": "The List View contains the following columns with extra information:"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "PMs Details Panel",
+      "content": [
+        {
+          "type": "info",
+          "text": "From the view list, click a PM to display the PM Details panel."
+        },
+        {
+          "type": "step",
+          "text": "PM Progress - This displays the progress and if you need to, the progress can be adjusted."
+        },
+        {
+          "type": "step",
+          "text": "Vendors - This lets you assign a vendor, who will complete the work order."
+        },
+        {
+          "type": "step",
+          "text": "Assign Contacts - The contact is the person completing the work, so here you can assign a technician."
+        },
+        {
+          "type": "step",
+          "text": "PM History - This displays the history of the preventive maintenance."
+        },
+        {
+          "type": "info",
+          "text": "Finally, at the end of the panel, is where you can create the work order."
+        },
+        {
+          "type": "info",
+          "text": "Learn more in Update a PM Details and Update PMs in Bulk."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "PMs Ready Button",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can quickly generate work orders for PMs that are due at 100%."
+        },
+        {
+          "type": "step",
+          "text": "Click on the PMs Ready button. The Generate Work dialog displays the message \"You are about to generate work for 3 PMs due at 100% or greater. Do you want to continue?\""
+        },
+        {
+          "type": "step",
+          "text": "Click the Yes button and the work orders are generated."
+        },
+        {
+          "type": "info",
+          "text": "If you want to generate PMs for selected items, then see Update PMs in Bulk."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update a PM Details",
+      "content": [
+        {
+          "type": "info",
+          "text": "The PMs Details panel, lets you update the following:"
+        },
+        {
+          "type": "info",
+          "text": "PM Progress"
+        },
+        {
+          "type": "info",
+          "text": "Vendors"
+        },
+        {
+          "type": "info",
+          "text": "Assigned Contacts"
+        },
+        {
+          "type": "info",
+          "text": "Also, it lets you view the PM History."
+        },
+        {
+          "type": "step",
+          "text": "From the menu, click PMs and the PM Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "From the list view, click a PM. The PM Details panel displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "PM Progress",
+      "content": [
+        {
+          "type": "info",
+          "text": "This displays the progress and if you need to the progress can be adjusted."
+        },
+        {
+          "type": "step",
+          "text": "Click the PM Progress expand icon."
+        },
+        {
+          "type": "step",
+          "text": "Click the Adjust Progress expand icon."
+        },
+        {
+          "type": "step",
+          "text": "From the Next Date drop-down, select either Next Date or Last Done."
+        },
+        {
+          "type": "step",
+          "text": "Click the Date picker, select a date."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Vendors",
+      "content": [
+        {
+          "type": "info",
+          "text": "This lets you assign a vendor."
+        },
+        {
+          "type": "step",
+          "text": "Click the Vendors expand icon."
+        },
+        {
+          "type": "step",
+          "text": "Fom the Assigned Vendor drop-down, select the vendor."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Assign Contacts",
+      "content": [
+        {
+          "type": "info",
+          "text": "The contact is the person completing the work, so here you can assign a technician."
+        },
+        {
+          "type": "step",
+          "text": "Click the Assigned Contacts expand icon."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Contact button. The Contacts dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Either search for or browse the list for to find the worker's name."
+        },
+        {
+          "type": "step",
+          "text": "Check the contacts's check box. The first assigned contact will be designated as Primary and a badge displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Selected button."
+        },
+        {
+          "type": "info",
+          "text": "The contact name is added."
+        },
+        {
+          "type": "info",
+          "text": "When you have many contacts, then only one contact can be the primary contact and, if needed, you can change the primary contact."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "PM History",
+      "content": [
+        {
+          "type": "info",
+          "text": "This displays the history of the preventive maintenance. If need you can click the work order number to open the completed work order."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update PMs in Bulk",
+      "content": [
+        {
+          "type": "info",
+          "text": "The PMs in the list can have actions applied to them in bulk."
+        },
+        {
+          "type": "step",
+          "text": "From the menu, click PMs and the PM Management screen displays."
+        },
+        {
+          "type": "info",
+          "text": "In the list view you can search and filter the list."
+        },
+        {
+          "type": "step",
+          "text": "Select either the Select All check box (this is found in the column header) or select multiple PMs check boxes."
+        },
+        {
+          "type": "info",
+          "text": "From the Actions drop-down, select either:"
+        },
+        {
+          "type": "info",
+          "text": "Generate Work"
+        },
+        {
+          "type": "step",
+          "text": "Update Assigned To Contacts"
+        },
+        {
+          "type": "step",
+          "text": "Update Assigned To Vendor"
+        },
+        {
+          "type": "info",
+          "text": "Adjust Cycle Progress"
+        },
+        {
+          "type": "info",
+          "text": "The action will be applied to the selected PMs. See below for examples of the different actions."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Generate Work",
+      "content": [
+        {
+          "type": "info",
+          "text": "After you select Generate Work the message displays \"You are about to generate work for 4 PMs. Some of these are less than 100% due. Do you want to continue?"
+        },
+        {
+          "type": "step",
+          "text": "Click the Yes button and the work is generated."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update Assigned To Contacts",
+      "content": [
+        {
+          "type": "info",
+          "text": "After you select Update Assigned To Contacts, the Contact dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Either search for or browse the list for to find the worker's name."
+        },
+        {
+          "type": "step",
+          "text": "Check the contacts's check box. The first assigned contact will be designated as Primary and a badge displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Selected button and the contact name is added to the selected maintenance plans."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update Assigned To Vendor",
+      "content": [
+        {
+          "type": "info",
+          "text": "After you select Update Assigned To Vendor, the Assign Vendor dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "From the Assigned Vendor drop-down, select the vendor."
+        },
+        {
+          "type": "step",
+          "text": "Click the Assign button and the vendor is assigned to the selected maintenance plans."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Adjust Cycle Progress",
+      "content": [
+        {
+          "type": "info",
+          "text": "Remember you can only progress for items that are in the same schedule."
+        },
+        {
+          "type": "info",
+          "text": "After you select Adjust Cycle Progress, the Adjust Progress dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "From the Next Date drop-down, select either Next Date or Last Done."
+        },
+        {
+          "type": "step",
+          "text": "Click the Date picker, select a date."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button and the cycle progress is updated."
+        },
+        {
+          "type": "info",
+          "text": "Column | Description\nMaturity Reached | The 100% due on top, descending down to 0% due at the bottom.\n Schedule date is overdue\n Due but Linked\n Schedule date is coming up soon\n Within the scheduled date\nNext Date | This is the next date for log-based and PM cycles are calculated using the asset's daily utilization rate.\n\nSome dates may be accompanied by an alert symbol icon. This indicates that the reading may be inaccurate. This asset has not had a meter entry in more than 7 days.\nNotices | PMs with notifications on them, and this can include:\n Ready - PMs that are due to be worked on.\n Has WO - PM that has already been turned into an active work order."
+        }
+      ]
+    }
+  ]
+}

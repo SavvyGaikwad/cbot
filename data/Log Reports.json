@@ -1,0 +1,97 @@
+{
+  "document_title": "Log Reports",
+  "content": [
+    {
+      "type": "section",
+      "title": "Create a Log Cost Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Log Cost Report provides a cost analysis of costs incurred per unit based off the log type selected such as cost per distance in a vehicle."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Log%20Reports/1.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Logs > Log Cost."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Log%20Reports/2.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Date Range - The timeframe in which costs were incurred. Asset Category Selection - Report will generate results based off the selected Asset Category. Primary Log - Select the log type for the report to compare the cost to. Ex: Use distance to track cost per mile/km on a vehicle. Secondary Log (optional) - Additional log to support primary log. Ex: Fuel is used as a secondary log to track fuel used per distance. Display report in - Toggle between Kilometers and Miles"
+        },
+        {
+          "type": "step",
+          "text": "3. Select Run Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Log%20Reports/3.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Log Detail Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Log Detail Report provides an overview of the logs entered within a defined time period."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Log%20Reports/4.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Logs > Log Detail."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Log%20Reports/5.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Date Range - The timeframe in which logs were entered. Log Type - Select which Log Type to generate results for. Asset Selection (optional) - Generate results specific to a particular Asset(s). Display report in - Toggle between Kilometers and Miles when reporting by distance. Show Chart - Toggle on and off to display chart on report"
+        },
+        {
+          "type": "step",
+          "text": "3. Select Run Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Log%20Reports/6.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    }
+  ]
+}

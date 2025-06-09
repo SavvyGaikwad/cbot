@@ -1,0 +1,39 @@
+{
+  "document_title": "Planning Board Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Schedule Work Orders and Inspections",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can easily schedule the Work Orders and Inspections on the Planning Board, it is quick to drag and drop them to specific employees."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to the Planning Board. The Planning Board calendar displays with individuals on it whom you can schedule in 3 different timelines: Day, Week, and Month."
+        },
+        {
+          "type": "step",
+          "text": "Select the timeline you want."
+        },
+        {
+          "type": "step",
+          "text": "From the right, sort the fields by Work Orders, Inspections, or Past Due icons to sort the work orders."
+        },
+        {
+          "type": "step",
+          "text": "Drag and drop the work order or inspection to assign them to specific employees."
+        },
+        {
+          "type": "step",
+          "text": "After you have assigned the Work Orders and Inspections, click on the  Publish Changes."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Planning%20Board%20Settings/1.gif"
+        }
+      ]
+    }
+  ]
+}

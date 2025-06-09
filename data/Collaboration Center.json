@@ -1,0 +1,73 @@
+{
+  "document_title": "Collaboration Center",
+  "content": [
+    {
+      "type": "section",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "We believe it vitally important to collaborate with our clients, to ensure the success of both our clientele as well as our products. To that end, we invite you to take advantage of all the features offered in the Collaboration Center."
+        },
+        {
+          "type": "step",
+          "text": "1. Access the center, click Collaboration Center icon at the top, right hand side of the screen."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Collaboration%20Center/1.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Features",
+      "content": [
+        {
+          "type": "info",
+          "text": "We would love to hear from you, our customers, on what's important to you so we can build features that will address your needs and provide a delightful user experience. Suggest Ideas - this opens the Feature Roadmap to the Ideas Board and this is where you can click the Submit Idea button and then complete the short form. Upcoming Features - this opens the Feature Roadmap to display the features Under Construction. New Features - this opens the Feature Roadmap to display the features Released"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Lifetime Work Statistics",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you are curious about statistics then look at the charts that show the Lifetime Work of your company, including Preventative, Predictive and Repair Work Orders, your Personal Lifetime Work, and your Total Labor Hours."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Collaboration%20Center/2.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Quick Links",
+      "content": [
+        {
+          "type": "info",
+          "text": "You will find at the bottom of the screen the quick links to:"
+        },
+        {
+          "type": "info",
+          "text": "• Contact Support - this opens our Eptura Customer Hub - https://customer.eptura.com/s/"
+        },
+        {
+          "type": "info",
+          "text": "• Knowledge Center - this opens the Eptura Knowledge Center which you have already found"
+        },
+        {
+          "type": "info",
+          "text": "• Connectors & Integrations - this opens the Eptura EAM/CMMS Integration - https://managerplus.iofficecorp.com/solutions/connectors-api, Connectors and API page and for the knowledge articles head over to Connectors - https://knowledge.eptura.com/Asset/Integrations/Connectors"
+        },
+        {
+          "type": "info",
+          "text": "• API Documentation - this opens the auto-generated API V2 Documentation - https://demo.managerpluscloud.com/api2/docs/index.html#/"
+        }
+      ]
+    }
+  ]
+}

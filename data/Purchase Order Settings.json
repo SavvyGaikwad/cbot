@@ -1,0 +1,618 @@
+{
+  "document_title": "Purchase Order Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Purchase Order Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Purchase Orders Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "Purchase orders help forecast your inventory needs, suggest parts to be ordered, and maintain your stocking levels. Also, they allow you to update parts in bulk, rather than being forced to make adjustments one part at a time. This module will make a big difference in your management  of your inventory requisitions."
+        },
+        {
+          "type": "info",
+          "text": "Features of the module include the ability to:"
+        },
+        {
+          "type": "info",
+          "text": "Create and complete purchase orders"
+        },
+        {
+          "type": "info",
+          "text": "Receive new parts into inventory"
+        },
+        {
+          "type": "info",
+          "text": "Inventory returns through PO's"
+        },
+        {
+          "type": "info",
+          "text": "Audit your inventory via cycle counts"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Purchase Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Purchase orders help forecast your Inventory needs, suggest parts to be ordered, and maintain your stocking levels. Purchase Orders also allow you to update parts en mass, rather than being forced to make adjustments one part at a time."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Purchase Orders."
+        },
+        {
+          "type": "step",
+          "text": "Click the New Purchase Order button."
+        },
+        {
+          "type": "info",
+          "text": "Complete the fields:"
+        },
+        {
+          "type": "step",
+          "text": "Click the Create & Open button."
+        },
+        {
+          "type": "info",
+          "text": "If you click the Create Purchase Order button this will save the invoice and you can add the line items later."
+        },
+        {
+          "type": "info",
+          "text": "The Purchase Order has been created and now you can complete the details."
+        },
+        {
+          "type": "step",
+          "text": "Add a new line to the invoice, click the New Line button."
+        },
+        {
+          "type": "info",
+          "text": "You can either add a line item for:"
+        },
+        {
+          "type": "info",
+          "text": "Parts"
+        },
+        {
+          "type": "info",
+          "text": "Labor"
+        },
+        {
+          "type": "info",
+          "text": "Other Costs"
+        },
+        {
+          "type": "step",
+          "text": "Complete the details for the new line, such as quantity and price."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Suggested Purchase Orders",
+      "content": [
+        {
+          "type": "info",
+          "text": "When a Part quantity drops below the Suggested Quantity or a Non Stocked Part is required for a Work Order, the Part appears in the Suggestion List making it available to add to a Purchase Order."
+        },
+        {
+          "type": "info",
+          "text": "When viewing the list, the suggestion reason is identified in the Reason Column."
+        },
+        {
+          "type": "info",
+          "text": "Parts with low stock display the Inventory icon"
+        },
+        {
+          "type": "info",
+          "text": "Parts needed on a Work Order display the Work Orders Icon"
+        },
+        {
+          "type": "info",
+          "text": "Hover over the Work Order Icon to display the Work Order Numbers."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Work Order with Suggested Parts",
+      "content": [
+        {
+          "type": "info",
+          "text": "From the Suggested Purchase Orders screen, complete the following:"
+        },
+        {
+          "type": "step",
+          "text": "Check the Parts check box."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add To Order List button."
+        },
+        {
+          "type": "info",
+          "text": "The Select a Vendor dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "From the Vendor drop-down, select the vendor."
+        },
+        {
+          "type": "step",
+          "text": "If need check the Make preferred vendor check box."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "step",
+          "text": "In the Order Qty field, enter in the amount."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create Purchase Order(s) button."
+        },
+        {
+          "type": "info",
+          "text": "The Create Purchase Order(s) dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Confirmation the purchase order creation, click the Create button."
+        },
+        {
+          "type": "info",
+          "text": "The purchase order is now created."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Purchase Orders - Receiving Inventory",
+      "content": [
+        {
+          "type": "info",
+          "text": "When a shipment arrives it is important to complete the receiving of the ordered parts as this makes it instantly available to your business to use."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Receive Parts",
+      "content": [
+        {
+          "type": "info",
+          "text": "Receive parts on an open purchase order."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Purchase Orders."
+        },
+        {
+          "type": "info",
+          "text": "Click the purchase order you want to receive the shipment for."
+        },
+        {
+          "type": "step",
+          "text": "Click the Receive Shipment button."
+        },
+        {
+          "type": "step",
+          "text": "Click the Receive All button."
+        },
+        {
+          "type": "step",
+          "text": "Review the date and received amounts are correct and document any exceptions."
+        },
+        {
+          "type": "step",
+          "text": "If needed you can enter the Packing Slip number and the Invoice number."
+        },
+        {
+          "type": "step",
+          "text": "If the receiving date is incorrect then change it, click the Date calendar and then select the date."
+        },
+        {
+          "type": "step",
+          "text": "In the Note field, enter exceptions."
+        },
+        {
+          "type": "step",
+          "text": "7. Click the OK button."
+        },
+        {
+          "type": "info",
+          "text": "Stocked parts quantities are instantly updated upon receipt of the ordered parts on the purchase order."
+        },
+        {
+          "type": "info",
+          "text": "Non-Stock parts quantities will not be affected by a purchase order, but the cost will still be recorded as an expense."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Undo or Make a Correction to a Purchase Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need to undo or make a correction to a purchase order that already has some parts received, you may do so by removing the shipment."
+        },
+        {
+          "type": "step",
+          "text": "Click the Receiving tab."
+        },
+        {
+          "type": "step",
+          "text": "Move your cursor over the previously received shipment entry, and click on the Delete button at the end of that line."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Purchase Order Returns",
+      "content": [
+        {
+          "type": "info",
+          "text": "When parts need to be returned to the vendor, you can create a Return Purchase Order to track the return and decrease your inventory levels."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Return Parts",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Purchase Orders."
+        },
+        {
+          "type": "step",
+          "text": "Click on the arrow to the right of the New Purchase Order icon, and select New Return."
+        },
+        {
+          "type": "info",
+          "text": "Complete the fields:"
+        },
+        {
+          "type": "step",
+          "text": "Click the Create Return button."
+        },
+        {
+          "type": "step",
+          "text": "Click the New Line Item button to search for and add the parts to be returned."
+        },
+        {
+          "type": "step",
+          "text": "Confirm quantity and price."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Receive the Parts and Update your inventory levels",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the Return Line Items button."
+        },
+        {
+          "type": "step",
+          "text": "Click the Return All button.  Review the date & received amounts are correct - document any exceptions, then click OK."
+        },
+        {
+          "type": "step",
+          "text": "IN the RMA # field, enter the number and returns must be accompanied with an RMA (Return Merchandise Authorization) number."
+        },
+        {
+          "type": "info",
+          "text": "You can also opt to have the system to issue a credit memo to keep track of the amount of credit remaining with the vendor, for the next time you create a purchase order with the same vendor."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search and Filter Purchase Orders from the List View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can see the full list of your Purchase Orders, along with the purchase order details at a glance."
+        },
+        {
+          "type": "info",
+          "text": "Each user can arrange the layout of the screen according to their own preferences and liking."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Search allows you to find any field within the Purchase Order list. The example below shows results populated for ACEHeating."
+        },
+        {
+          "type": "info",
+          "text": "In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Advanced Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Advanced Search allows you to search for terms within any purchase order including the notes and sub records associated to a purchase order. Advanced search also allows you to search within a specified time period of when the purchase order was created or invoiced. The example below shows the advanced search query for purchase orders including ACEHeating, created between January 1st and May 31st, 2023."
+        },
+        {
+          "type": "info",
+          "text": "Click the more actions  icon."
+        },
+        {
+          "type": "info",
+          "text": "Select Advanced Search. The advanced search window displays."
+        },
+        {
+          "type": "info",
+          "text": "In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "In the date range, select either:"
+        },
+        {
+          "type": "info",
+          "text": "Created Date"
+        },
+        {
+          "type": "info",
+          "text": "Invoice Date"
+        },
+        {
+          "type": "info",
+          "text": "Click the calendar  icon and select a start date."
+        },
+        {
+          "type": "info",
+          "text": "Click the calendar  icon and select an end date."
+        },
+        {
+          "type": "info",
+          "text": "You can include the notes ans sub records in your search. To do so, Click the Search Notes and Search Sub Records checkboxes."
+        },
+        {
+          "type": "info",
+          "text": "Click the Search button."
+        },
+        {
+          "type": "info",
+          "text": "Search results populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the Purchase Orders list, you may want to change the purchase order columns and sort order. The Save View let's you set up the purchase order listing and then save it for next time."
+        },
+        {
+          "type": "info",
+          "text": "This is best explained using an example. I want to create a saved list view for purchase orders that are associated to ACEHeating & Air Vendor and add the Invoice number column to the list view."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Reorder Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Drag and drop the Vendor Name column to the front of the list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Filter the Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click on the filter  icon within the Vendor Name column. The list of Vendors display."
+        },
+        {
+          "type": "info",
+          "text": "Select ACEHeating & Air."
+        },
+        {
+          "type": "info",
+          "text": "Click the OK button. The Vendor Name column is filtered."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Add a column from the Column Chooser",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions  icon."
+        },
+        {
+          "type": "info",
+          "text": "Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop the Invoice Number column to the Purchase Order Management column headings. The Invoice Number column displays on the purchase order list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select a who can access this view option, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Toggle List Grouping Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you view the purchase order list, you may want to group the list view by a column. This let's you see the work order listing in a different way. Let's look at the example where we group by Vendor Name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1.Group by a Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions icon ."
+        },
+        {
+          "type": "info",
+          "text": "Select Toggle List Grouping."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop a column header to the group by. The Purchase Order list is toggled by group."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select who can access this view options, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "info",
+          "text": "Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "info",
+          "text": "Select a saved view."
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "info",
+          "text": "Click on apply selected. The saved view displays."
+        },
+        {
+          "type": "info",
+          "text": "Field | Description\nWarehouse | Who you are ordering for.\nThe warehouse that the purchase order is delivered to. To override the default setting, click the Warehouse field list, then select the desired warehouse.\nPO # | A unique purchase order number. The PO # is either automatically generated or you create it yourself, depending on how the purchase order module is configured in the module settings. You cannot use a purchase order number that has already been assigned.\nVendor | Who you are ordering form.\n Vendor assigned to the purchase order. If the vendor you want is not listed, you must first create a vendor record before you can generate a purchase order.\nBudget | Who is paying for the parts.\nBudget that the purchase order is assigned to.\nStatus | The current status of the purchase order is displayed in the top left corner of the page.  To change, select the appropriate status in the bottom right corner of the page.\nSales Tax | The sales tax used for this purchase. The initial sales tax setting is the default value from the selected vendor. To override the default setting, select NO TAX or a custom value created in the Vendor Module Settings.\nDate | Date of the purchase order. To override the default date, type a different date in the field or click the calendar icon in the Date field.\nShip To | Name of the entity, the item is being shipped to."
+        },
+        {
+          "type": "info",
+          "text": "Field | Description\nWarehouse | Which warehouse wants to return the parts.\nPO # | A unique purchase order number. The PO # is either automatically generated or you create it yourself, depending on how the purchase order module is configured in the module settings. You cannot use a purchase order number that has already been assigned.\nVendor | Who you are returning the parts to.\nBudget | Which budget will be credited for the returned parts.\nStatus | The current status of the purchase order is displayed in the top left corner of the page.  To change, select the appropriate status in the bottom right corner of the page.\nSales Tax | The sales tax used for this purchase. The initial sales tax setting is the default value from the selected vendor. To override the default setting, select NO TAX or a custom value created in the Vendor Module Settings.\nDate | Date of the purchase order. To override the default date, type a different date in the field or click the calendar icon in the Date field.\nShip To | Name of the entity, the item is being shipped to."
+        }
+      ]
+    }
+  ]
+}

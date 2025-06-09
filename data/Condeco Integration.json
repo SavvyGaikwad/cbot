@@ -1,0 +1,33 @@
+{
+  "document_title": "Condeco Integration",
+  "content": [
+    {
+      "type": "section",
+      "title": "Employee Service Request and Ticketing",
+      "content": [
+        {
+          "type": "info",
+          "text": "The integration between Condeco and Eptura Asset allows employees to easily submit a service request directly from Condeco's web and mobile applications, connecting them to the work orders used by Technicians for faster resolution. Condeco web and mobile apps have the Report Issue button, that opens the Eptura Asset request Portal. Employees can report maintenance issues with a resource and information automatically passed from Condeco to Eptura Asset. The integration enables efficient data transfer, enhances collaboration and communication, and centralizes maintenance issue management within Eptura Asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Eptura Asset Request Form",
+      "content": [
+        {
+          "type": "info",
+          "text": "The portal URL can be used to set some of the values for the request form using query string variables. This can be used to preload some of the fields on the form. The format of the URL is: https://mycompany.managerpluscloud.com/lt/portals/FacilitiesServices/main/open?assetid={asset_id}&subject={Subject}&description={Description}&email={email address}"
+        },
+        {
+          "type": "info",
+          "text": "Where the following will contain:assetid={asset_id},  subject={Subject}, description={Description}, email={email address}. These are the fields found on the Work Request form."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Condeco%20Integration/1.png"
+        }
+      ]
+    }
+  ]
+}

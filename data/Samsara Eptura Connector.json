@@ -1,0 +1,185 @@
+{
+  "document_title": "Samsara Eptura Connector",
+  "content": [
+    {
+      "type": "section",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "This is an out-of-box connector with Samsara that enables the integration of asset monitoring data and vehicle telematics into maintenance planning."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Samsara Connector",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Tools and Support section, click Eptura Connectors."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Samsara%20Eptura%20Connector/1.png"
+        },
+        {
+          "type": "info",
+          "text": "The Connectors screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Samsara%20Eptura%20Connector/2.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Configure the Samsara Connector",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click on the Samsara connector tile and the Configure Samsara screen displays."
+        },
+        {
+          "type": "info",
+          "text": "You will need to configure the following sections: Assets, Logs, DVIR (Driver Vehicle Inspection Report), Authentication."
+        },
+        {
+          "type": "info",
+          "text": "Eptura Asset will use the Samsara VIN field to map assets. If there is no VIN, assets will not be mapped or created in Eptura Asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Assets",
+      "content": [
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Samsara%20Eptura%20Connector/3.png"
+        },
+        {
+            "type": "step",
+            "text": "1. From the Default Site drop-down, select the site. This is used to identify the site and we will match the assets from Samsara to Eptura Asset’s assets."
+            },
+            {
+            "type": "step",
+            "text": "2. From the Default Group drop-down, select the group."
+            },
+            {
+            "type": "step",
+            "text": "3. From the Default Type drop-down, select the type."
+            },
+            {
+            "type": "step",
+            "text": "4. From the Default Budget drop-down, select the budget."
+            },
+            {
+            "type": "step",
+            "text": "5. From the Default Status drop-down, select the status. This lets you bring an asset from Samsara that is in an active or inactive status."
+            },
+            {
+            "type": "step",
+            "text": "6. Check the Create asset if VIN not found check box."
+            },
+            {
+            "type": "step",
+            "text": "7. Check the Create active assets only check box if you don’t want inactive assets created."
+            }
+        ]
+    },
+    {
+      "type": "section",
+      "title": "Logs",
+      "content": [
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Samsara%20Eptura%20Connector/4.png"
+        },
+        {
+        "type": "step",
+        "text": "1. From Odometer Log Type drop-down, select the odometer log type. Such as Distance, Down Hours, Hours, Miles, Trip Distance."
+        },
+        {
+        "type": "step",
+        "text": "2. From the Hour Log Type drop-down, select the hour log type."
+        },
+        {
+        "type": "step",
+        "text": "3. From the Sync Frequency options, select either On demand, Daily, or Weekly. This is where you can define the cadence you want to pull logs from Samsara. For example, daily at 2:30am."
+        },
+        {
+        "type": "step",
+        "text": "4. From the select the time drop-down, select the time."
+        },
+        {
+        "type": "step",
+        "text": "5. Check the Include record if no changes check box."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "DVIR (Driver Vehicle Inspection Report)",
+      "content": [
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Samsara%20Eptura%20Connector/5.png"
+        },
+        {
+          "type": "step",
+          "text": "1. From the Sync Frequency options, select On demand, Daily, or Weekly."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Select the time drop-down, select the time."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Authentication",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. In the API Token field, enter the API token from Samsara."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Operator drop-down, select the operator (must be the same in Eptura Asset and Samsara)."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Save Changes button."
+        },
+        {
+          "type": "info",
+          "text": "When this is connected, then the following will be automatically completed: Brings in meter and log data into Eptura Asset. Creates work orders with associated defects from Samsara DVIRs. Clears those defects in Samsara when the associated work order is corrected."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Manual Sync Options",
+      "content": [
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Samsara%20Eptura%20Connector/6.png"
+        },
+        {
+          "type": "step",
+          "text": "Click the Sync Log button to manually synchronize the logs."
+        },
+        {
+          "type": "step",
+          "text": "Click the Sync DVIR button to manually synchronize the DVIRs."
+        }
+      ]
+    }
+  ]
+}

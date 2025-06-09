@@ -1,0 +1,191 @@
+{
+  "document_title": "Connectors",
+  "content": [
+    {
+      "type": "section",
+      "title": "Connectors",
+      "content": [
+        {
+          "type": "info",
+          "text": "A connector allows the application to share data with other business applications you may use, making it easier to gather data in a central location."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Connectors/1.png"
+        },
+        {
+          "type": "info",
+          "text": "Share Data - Asset management information flows both ways when integrated via a Connector.  You can share data with other business applications you may use, making it easier to get more done in one place. This will allow you to gather data in a central location. The data can be used to create reports, dashboards, and graphs in the Business Intelligence module, giving you unprecedented insight into your business operations. Maximize Visibility - Asset data can connect to Accounting Monitoring information which can flow into Eptura Asset. You will see a broader and granular view into your operations. Improve Efficiency - No more manual entry or calculation to get the big picture. Consolidation of data provides information more quickly and accurately."
+        },
+        {
+          "type": "info",
+          "text": "For connectors to work, they need to be synchronizedize with the application. That can be done by gathering the connectors database name, email address, password, and ensuring that you get a dedicated service account that is API enabled. After these items have been gathered, you will need to reach out to our technical support team who will help set up the connector for you. "
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "ClearPath GPS",
+      "content": [
+        {
+          "type": "info",
+          "text": "ClearPathGPS™, headquartered in Santa Barbara, California, has brought easy-to-use and easy-to-afford GPS tracking solutions to small and mid-sized fleets since 2013. Their customers span a wide variety of industries including construction, field services, delivery, transportation, and distribution among many others. Their easy-to-use fleet management solutions are delivered as software-as-a-service (SaaS) and through our mobile applications enabling our customers to access their data from anywhere anytime. ClearPathGPS customers use these services to substantially increase productivity while driving down operational expenses of their mobile workforces. This connector automatically brings machine and vehicle data from ClearPathGPS. By bringing in hours and miles/kilometers from your ClearPathGPS enabled equipment, we can automatically progress your maintenance schedules, report on cost by utilization, and ensure even better asset management and reportability.  For more information on ClearPathGPS, visit www.clearpathgps.com. "
+        },
+        {
+          "type": "info",
+          "text": "Features and Benefits: Reduce data entry by synchronizing assets from ClearPathGPS to the application based on serial number or VIN*. Increase accuracy by automatically capturing vehicle and machine data such as machine hours and miles/kilometers from your ClearPathGPS enabled vehicles and equipment. Progress log-based schedules without manual log entries. Enhance your utilization of the application and ClearPathGPS with combined data reporting."
+        },
+        {
+          "type": "info",
+          "text": "If you are in need of help with implementing this connector you may reach out to Technical Support at the number shown below. In order to have a successful and timely set-up, there is some information you will need to gather before calling our Technical Support.  Listed below is the needed information that you will be asked to give our Support team: You must contact ClearPathGPS and get a dedicated service account that is API enabled. Obtain a ClearPathGPS database name, email address, and password."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Geotab",
+      "content": [
+        {
+          "type": "info",
+          "text": "For over a decade, Geotab has been a proven industry leader in the area of fleet management and vehicle tracking technology, also known as telematics. Geotab's advanced telematics is used to manage employee productivity and significantly reduce accidents. Geotab helps manage the maintenance, inventorying, and fuel management of the company's fleet vehicles. Geotab data is open and is easily integrated into your IT systems to automate. Many Fortune 500 companies rely on Geotab's technology to provide measurable management data. Since Geotab provides end-to-end hardware and software solutions that are entirely scalable, both enterprise organizations and small-to-medium-sized firms are active users. Geotab is the inventor and manufacturer of the products. These products are represented and sold worldwide through hundreds of partners. With over 100,000 daily users of Geotab software that processes over 900 million data points daily, Geotab has established itself as a world leader in helping businesses move forward. This connector automatically brings machine and vehicle data from Geotab. By bringing in hours and miles/kilometers from your Geotab-enabled equipment, we can automatically progress your maintenance schedules, report on cost by utilization, and ensure even better asset management and reportability. For more information on Geotab, visit www.geotab.com. "
+        },
+        {
+          "type": "info",
+          "text": "Some of the key features and benefits of Geotab are: The ability to reduce data entry by synchronizing assets from Geotab to the application based on serial number*. Being able to increase accuracy by automatically capturing machine data such as machine hours and miles/kilometers from your Getoab-enabled equipment. Having progress log-based schedules without manual log entries. Enhance your utilization of the application and Geotab with combined data reporting. Set up scheduled sync, but also have the ability to manually sync. "
+        },
+        {
+          "type": "step",
+          "text": "1. Get a dedicated API-enabled Geotab service account"
+        },
+        {
+          "type": "step",
+          "text": "2. Obtain database name, email, and password"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "GPS Insight",
+      "content": [
+        {
+          "type": "info",
+          "text": "GPS Insight works with businesses and government entities that have fleets of vehicles and other mobile assets to solve your unique challenges through increased revenue, reduced costs, and reduced risk. This connector automatically brings machine and vehicle data from GPS Insight. By bringing in hours and miles/kilometers from your GPS Insight enabled equipment, we can automatically progress your maintenance schedules, report on cost by utilization, and ensure even better asset management and reportability. For more information about GPS Insight, www.gpsinsight.com."
+        },
+        {
+          "type": "info",
+          "text": "Features and Benefits - Reduce data entry by synchronizing assets from GPS Insight to the application based on serial number*. Increase accuracy by automatically capturing machine data such as machine hours, and miles/kilometer from your GPS Insight enabled equipment. Progress log-based schedules without manual log entries. Enhance your utilization of the application and GPS Insight with combined data reporting."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "John Deere",
+      "content": [
+        {
+          "type": "info",
+          "text": "Connect your John Deere Operations Center with the application to view machine monitoring data from your JDLink enabled equipment. By bringing in hours and miles/kilometers from your JDLink enabled equipment, the application can automatically process your maintenance schedules, report on cost by utilization and ensure even better asset management.  For more information about John Deere, vist www.deere.com."
+        },
+        {
+          "type": "info",
+          "text": "Features and Benefits - Reduce data entry by synchronizing assets from Operations Center to the application based on serial number*. Increase accuracy by automatically capturing machine data such as machine hours and miles/kilometer from your JDLink enabled machines. Progress log-based schedules without manual log entries. Enhance your utilization of the application and John Deere Operations Center with combined data reporting."
+        },
+        {
+          "type": "step",
+          "text": "1. Get a dedicated API-enabled John Deere account"
+        },
+        {
+          "type": "step",
+          "text": "2. Obtain database name, email, and password"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Synovia Solutions",
+      "content": [
+        {
+          "type": "info",
+          "text": "Synovia Solutions provides the tools fleet managers need to improve safety, savings, and service. They have GPS tracking systems in over 90,000 vehicles across North America tracking fleets with more than 5,000 vehicles. For every customer they work with, their goal is to build tracking solutions that revolutionize the way fleets are managed. This connector automatically brings machine and vehicle data from Synovia. By bringing in hours and miles/kilometers from your Synovia-enabled equipment, we can automatically progress your maintenance schedules, report on cost by utilization, and ensure even better asset management and reportability. For more information about Synovia Solutions, visit www.synoviasolutions.com."
+        },
+        {
+          "type": "info",
+          "text": "Features and Benefits - Reduce data entry by synchronizing assets from Synovia to the application based on serial number*. Increase accuracy by automatically capturing machine data such as machine hours and miles/kilometers from your Synovia enabled equipment. Progress log-based schedules without manual log entries. Enhance your utilization of the application and Synovia with combined data reporting."
+        },
+        {
+          "type": "step",
+          "text": "1. Get a dedicated API-enabled Synovia account"
+        },
+        {
+          "type": "step",
+          "text": "2. Obtain database name, email, and password"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "VisionLink",
+      "content": [
+        {
+          "type": "info",
+          "text": "Cat® Product Link™ redefines fleet management effectiveness. Its easy-to-use interface, called VisionLink®, enables customized health and utilization reports, and mapping and mixed fleet capabilities. And Product Link transmits the information via cell and satellite. Product Link connects customers to our world-class dealer network. Product Link gets you accurate, timely and useful information about the location, utilization and condition of your equipment—the kind of information that can make a huge difference in the efficiency and costs of your entire operation. It pays to know the Cat Product Link. Let your Cat® dealer help you improve your bottom-line results by using Cat fleet management telematics information. This connector leverages your Cat® Product Link™ by bringing in machine data from Product Link™ enabled equipment.  For more information about VisionLink®, visit www.myvisionlink.com."
+        },
+        {
+          "type": "info",
+          "text": "Features and Benefits - Reduce data entry by synchronizing assets from VisionLink® to the application based on serial number*. Increase accuracy by automatically capturing machine data such as machine hours, and miles/kilometers from your Product Link enabled equipment. Progress log-based schedules without manual log entries. More accurate unit reporting on asset utilization and costs."
+        },
+        {
+          "type": "step",
+          "text": "1. Ensure serial numbers match between VisionLink and application"
+        },
+        {
+          "type": "step",
+          "text": "2. Obtain Cat VisionLink API database name, email, and password"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Volvo",
+      "content": [
+        {
+          "type": "info",
+          "text": "CareTrack is the Volvo Construction Equipment telematics system that gives you access to a wide range of machine monitoring information designed to save you time and money. This connector automatically brings machine and vehicle data from Volvo CareTrack. By bringing in hours and miles/kilometers from your CareTrack enabled equipment, we can automatically progress your maintenance schedules, report on cost by utilization and ensure even better asset management and reportability.  For more information about Volvo CareTrack, www.volvoce.com."
+        },
+        {
+          "type": "info",
+          "text": "Features and Benefits - Reduce data entry by synchronizing assets from CareTrack to the application based on serial number*. Increase accuracy by automatically capturing machine data such as machine hours and miles/kilometers from your CareTrack enabled equipment. Progress log-based schedules without manual log entries. Enhance your utilization of the application and CareTrack with combined data reporting."
+        },
+        {
+          "type": "step",
+          "text": "1. Get a dedicated API-enabled Volvo CareTrack account"
+        },
+        {
+          "type": "step",
+          "text": "2. Obtain database name, email, and password"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Zonar",
+      "content": [
+        {
+          "type": "info",
+          "text": "It all started with one big idea: Give truck drivers an easy-to-use, accurate tool to perform their pre- and post-trip inspections. This tool would use radio frequency identification (RFID) technology to track and transmit data, making inspections virtually automatic. Why does it matter? Because solid inspections ensure everyone goes home safely at the end of the day. Eric Manegold had the idea. Bill and Brett Brinton had the business expertise. Mike McQuade and Dan Mayer had the technical know-how. Together, they created the first Electronic Vehicle Inspection Report (EVIR) system in history. The original model was made from something fairly low-tech: a piece of wood. The first prototype was described as a “remote control on steroids.” Though designed for the trucking industry, this powerful tool would be launched in a very unusual way.  Soon, Zonar would be on board with trucking fleets, commercial vehicles, and school buses all across the country, helping fleet managers increase compliance, safety, efficiency, and savings. Over the years, Zonar has continued to grow and innovate, winning numerous patents and technology awards, including Frost and Sullivan’s North American Telematics Product Innovation of the Year, Edison Awards for Innovation, and Connected World magazine’s M2M Award for Innovation.  For more information about Zonar, visit www.zonarsystems.com. "
+        },
+        {
+          "type": "info",
+          "text": "Features and Benefits - Syncs assets from Zonar to the application. Periodically captures vehicle miles data from Zonar. Picks up defects from your Zonar inspections to create the work orders in the application.Communicates repaired defects back up to Zonar for driver approval."
+        },
+        {
+          "type": "step",
+          "text": "1. Get Zonar customer ID and form the API URL: https://[customerID].zonarsystems.net"
+        },
+        {
+          "type": "step",
+          "text": "2. Obtain customer ID, username, and password"
+        }
+      ]
+    }
+  ]
+}

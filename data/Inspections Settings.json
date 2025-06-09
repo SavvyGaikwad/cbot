@@ -1,0 +1,685 @@
+{
+  "document_title": "Inspections Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Inspections Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "Inspections are the most common form of preventive maintenance with most maintenance departments. The inspection help with tracking the When, What, and How."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "When inspections need to take place",
+      "content": [
+        {
+          "type": "info",
+          "text": "The inspections are performed for a variety of reasons: Proactively looking for potential issues and problems. Demonstrate the OSHA (Occupational Safety and Health Administration) safety compliance. Operators (rather than just the maintenance staff) to perform inspections and pre-checks before running equipment or using an asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "What needs to be inspected ...",
+      "content": [
+        {
+          "type": "info",
+          "text": "The inspection is created from a template, and this lets your technicians and operators know what needs to be inspected."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "How to respond when issues are discovered ...",
+      "content": [
+        {
+          "type": "info",
+          "text": "How you respond to a discovered issue depends on many factors: The industry you work in. The nature of the problem that was discovered.Resources available to respond."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Understand the Inspections KPIs",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Key Performance Indicators (KPIs) gives you a quick, at-a-glance, view of how the Inspections are doing."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Inspections."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Show KPI icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/1.png"
+        },
+        {
+          "type": "info",
+          "text": "Going across the top of the screen, the following dynamic tools are: Inspections - This shows you the number of inspections in progress, pending, and failed. Click on the segment to display the relevant inspections. Needs Attention - This shows the number of inspections that need attention. Pending Review - This shows the number of inspections that are pending review. Recent Defects - This is the weekly graph of the recent defects. Defects Ratio - This is the graph of the defects ratio, for example, Critical and Other. Recent Defects - This is the graph of the monthly recent defects. Click on the month's bar to see the defects for the month. To return to the monthly view, click the graph."
+        },
+        {
+          "type": "step",
+          "text": "3. Click on any of the KPI graphs, it will display the relevant inspections in the list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/2.gif"
+        },
+        {
+          "type": "info",
+          "text": "You can reset the view, click the More Actions  icon, and then Reset Grid."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/3.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/4.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customize the Inspections View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The inspections view is where you can find your inspections - Search. Filters. Filter by Group. Saved View - Filter a Column Example. Saved View - Toggle List Grouping Example. Display your Saved View"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Search allows you to find any field within the Inspection list. The example below shows results populated for fire extinguisher."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/5.png"
+        },
+        {
+          "type": "step",
+          "text": "1. In the Search field, enter the search term."
+        },
+        {
+          "type": "step",
+          "text": "2. Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Column Search",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you search for inspections, it will display only those inspections for the search criteria. Each column contains the search, and this will let you focus on the inspections you want to work on."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/6.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filters",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you click the Filter  icon, a menu will appear showing you the items you can select."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/7.png"
+        },
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/8.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filter by Group",
+      "content": [
+        {
+          "type": "info",
+          "text": "Filter by group helps you view inspections by group organization. These filter groups can be: single address. floor plan. group of assets. These groups have been set up by your admin, see set up a site's location for more information."
+        },
+        {
+          "type": "step",
+          "text": "1 Click the Location/Group button. The filter by group panel displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/9.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Select a group to filter by. The inspection list is filtered."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the Inspection list, you may want to change the inspection columns and sort order. The Save View let's you set up the inspection listing and then save it for next time."
+        },
+        {
+          "type": "info",
+          "text": "This is best explained using an example. I want to create a saved list view for failed inspections and display only the Inspection Number, Asset, Status and Inspection Date columns."
+        },
+        {
+          "type": "step",
+          "text": "1. Reorder Columns"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Drag and drop the Status column to the front of the list"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/11.gif"
+        },
+        {
+          "type": "step",
+          "text": "2. Filter the Column"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click on the filter  icon within the Status column. The list of statuses display."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/12.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Select Failed."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Click the OK button. The status column is filtered to display all inspections that have failed."
+        },
+        {
+          "type": "step",
+          "text": "3. Hide columns from the Column Chooser"
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Click the more actions  icon."
+        },
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/13.png"
+        },
+        {
+          "type": "substep",
+          "text": "3.2 Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "substep",
+          "text": "3.3 Drag and drop the Completed By, Defect Work Assigned To, Defects, Description, Form Title and Work Orders columns to the Column Chooser. The columns are removed from the inspection list column headings."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/14.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Save your View"
+        },
+        {
+          "type": "substep",
+          "text": "4.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/15.png"
+        },
+        {
+          "type": "substep",
+          "text": "4.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "4.3 Select a who can access this view option, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "substep",
+          "text": "4.4 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Toggle List Grouping Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you view the inspection list, you may want to group the list view by a column. This let's you see the inspection listing in a different way. Let's look at the example where we group by Status."
+        },
+        {
+          "type": "step",
+          "text": "1. Group by a Column"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Click the more actions icon ."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Select Toggle List Grouping."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 Drag and drop a column header to the group by. The Inspection list is toggled by group."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/16.gif"
+        },
+        {
+          "type": "step",
+          "text": "2. Save your View"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/17.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/18.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Select who can access this view options, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "substep",
+          "text": "2.4 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/18.png"
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "step",
+          "text": "2. Select a saved view."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/17.png"
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/19.png"
+        },
+        {
+          "type": "substep",
+          "text": "3. Click on apply selected. The saved view displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Converting Legacy Inspection PMs to New Inspection PMs",
+      "content": [
+        {
+          "type": "info",
+          "text": "We have created a process to migrate your legacy Inspection PMs over to Eptura Asset with a click of a button.  Legacy inspection PMs can be seen traditionally in your PMs and were a totally separate module and report.  They can be seen in your \"Schedules Due\" module in Desktop or Cloud as seen below.  These are the PMs that will be affected when you convert legacy Inspection PMs to Eptura Asset inspection PMs."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/20.png"
+        },
+        {
+          "type": "info",
+          "text": "There are two ways to convert legacy Inspection PMs to Eptura Asset PMs- Bulk Conversion and Individual Conversion. It is recommended that you migrate one first to experience the changes before doing them in bulk."
+        },
+        {
+          "type": "info",
+          "text": "Bulk Conversion of legacy PMs to Eptura Asset PMs - When you navigate to your Maintenance Plans or Inspection Templates and you are an admin you will see a new banner there indicating that you have legacy inspections.  You can convert inspections in bulk by clicking on the indicated text on the banner."
+        },
+        {
+          "type": "info",
+          "text": "Before you decide to convert ALL of your legacy inspections to Eptura Asset inspections, you need to prepared for a few important changes: If you do inspections on the current mobile app - you will need to now perform your inspections on the new Work Companion App downloadable from the app store or play store. This conversion process does NOT convert history. This will change the way you do inspections, so it will be important to communicate to your team the changes that are transpiring and the new tools they will have access to before migrating your inspections"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/21.png"
+        },
+        {
+          "type": "info",
+          "text": "You will then be prompted to select a new work type for the new PMs.  Then click process.  This is NOT reversible.  This will convert all legacy inspection PMs to Eptura Asset PMs.  It will preserve the assets' schedule progress and due date."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/22.png"
+        },
+        {
+          "type": "step",
+          "text": "Individual Conversion of legacy PMs to Eptura Asset PMs - You can decide to do this, one single maintenance plan at a time. If so, then you will find a new option on your maintenance plans."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the More Actions icon to display the options."
+        },
+        {
+          "type": "step",
+          "text": "2. Click Migrate option."
+        },
+        {
+          "type": "info",
+          "text": "The process is the same but will be executed only for the associated maintenance plan."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/23.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Changes in Inspections",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. As you review your new PMs that were migrated from your legacy inspections, you will notice that each PM now has a new service task associated with it.  This service task represents the new inspection template.  The name has some added numerical references to make it unique, but that can be changed in your inspection templates."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/24.png"
+        },
+        {
+          "type": "info",
+          "text": "2. A new inspection template was created representing your old legacy inspection."
+        },
+        {
+          "type": "info",
+          "text": "Here are just a few selected highlights you can explore: Legacy inspections had only 1 question type: Pass or Fail. Eptura Asset inspections offer a variety of question types that will suit all your inspection requirements. You now have access to the Operator Companion that extends your inspections to a tool designed for drivers and operators of the equipment."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/25.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Inspection - Fail",
+      "content": [
+        {
+          "type": "info",
+          "text": "Depending on the asset, you will need to complete an inspection to make sure it is in operating condition. In this article, the example used is a daily inspection for an air compressor and the inspection is created from Eptura Asset web app. You will learn what happens when the asset fails an inspection."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click Inspections."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the New Inspection button and the Inspections form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/26.png"
+        },
+        {
+          "type": "step",
+          "text": "3. In the Search field, enter the name of the asset."
+        },
+        {
+          "type": "info",
+          "text": "Next to the Search field are the following icons that can be used to find the asset."
+        },
+        {
+          "type": "info",
+          "text": "Show all assets  icon - this displays all the assets in a list that you can browse and then select an asset."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/27.png"
+        },
+        {
+          "type": "info",
+          "text": "Filter by Group icon - this lets you select a site and it will display all the assets by site. You can browse the list and then select an asset."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/28.png"
+        },
+        {
+          "type": "step",
+          "text": "4. From the search results, click the asset and the Asset Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Available Inspections drop-down."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/29.png"
+        },
+        {
+          "type": "info",
+          "text": "The inspections are listed."
+        },
+        {
+          "type": "step",
+          "text": "6. From the inspections list, click an inspection you want to perform."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/30.png"
+        },
+        {
+          "type": "info",
+          "text": "The inspection displays and in this example, there is a checklist that can be ticked off as you complete the tasks and then at the end you can Pass or Fail the inspection."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/31.png"
+        },
+        {
+          "type": "step",
+          "text": "7. Complete the inspection tasks and click each task to tick it off."
+        },
+        {
+          "type": "step",
+          "text": "8. When you find an issue and the inspection fails then click the Fail button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/32.png"
+        },
+        {
+          "type": "step",
+          "text": "9. If you want to include a photo, then click the add photo icon and then upload a photo."
+        },
+        {
+          "type": "step",
+          "text": "10. In the Add Comments field, enter a comment about the issue."
+        },
+        {
+          "type": "step",
+          "text": "11. When you have finished, you may need to sign off the inspection, click the Operable or Inoperable button."
+        },
+        {
+          "type": "step",
+          "text": "12. If the Inoperable button is click then you can add a failure comment."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/33.png"
+        },
+        {
+          "type": "step",
+          "text": "13. Click the Complete & Submit button to save the inspection."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inspection Fail Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "Below is an example of an inspection that has failed and from the Inspecitons form you can click the work order."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/34.png"
+        },
+        {
+          "type": "info",
+          "text": "This displays the work order which is ready for the service task to be added to it."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/35.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Inspection - Pass",
+      "content": [
+        {
+          "type": "info",
+          "text": "Depending on the asset, you will need to complete an inspection to make sure it is in operating condition. In this article, the example used is a daily inspection for an air compressor and the inspection is created from Eptura Asset web app. You will learn what happens when the asset passes an inspection."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click Inspections."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the New Inspection button and the Inspections form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspections%20Settings/36.png"
+        },
+        {
+          "type": "step",
+          "text": "3. In the Search field, enter the name of the asset."
+        },
+        {
+          "type": "info",
+          "text": "Next to the Search field are the following icons that can be used to find the asset."
+        },
+        {
+          "type": "info",
+          "text": "Show all assets  icon - this displays all the assets in a list that you can browse and then select an asset. Filter by Group icon - this lets you select a site and it will display all the assets by site. You can browse the list and then select an asset."
+        },
+        {
+          "type": "step",
+          "text": "4. From the search results, click the asset and the Asset Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Available Inspections drop-down."
+        },
+
+        {
+          "type": "info",
+          "text": "The inspections are listed."
+        },
+        {
+          "type": "step",
+          "text": "6. From the inspections list, click an inspection you want to perform."
+        },
+    
+        {
+          "type": "info",
+          "text": "The inspection displays and there is a checklist that can be ticked off as you complete the tasks and then at the end you can Pass or Fail the inspection."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "7. Complete the inspection tasks and click each task to tick it off."
+        },
+        {
+          "type": "step",
+          "text": "8. When the inspection passes then click the Pass button."
+        },
+        {
+          "type": "step",
+          "text": "9. When you have finished, you may need to sign off the inspection, click the Operable button."
+        },
+        {
+          "type": "step",
+          "text": "10. Click the Complete & Submit button to save the inspection."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inspection Pass Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "Below is an example of an inspection that has passed."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    }
+  ]
+}

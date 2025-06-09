@@ -1,0 +1,1014 @@
+{
+  "document_title": "Asset Admin Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Create and Edit Asset Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "This controls which statuses are available for your assets, and you can create new statuses or edit existing ones."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Module Settings > Assets. The Asset Setting screen displays with the General tab, Category Settings tab, and Makes and Modules tab."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/1.png"
+        },
+        {
+          "type": "info",
+          "text": "By default, the General tab displays the following columns: Status List - This shows the names of all current statuses of your assets, for example, ACTIVE, INACTIVE, or SOLD. Active - This indicates whether the status is in use or not in the system. Active status  icon - this indicates the status is used in the system. Inactive status   icon - this indicates the status is inactive in the system but it can still have work orders created, but their PMs (on their Maintenance Plans) will not come be included on the PM Management board (thus, not be eligible to be automatically turned into a work). Default - The default  icon indicates this is the default status every time an asset is created, and can only be assigned to a single status."
+        },
+        {
+          "type": "info",
+          "text": "ACTIVE"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/2.png"
+        },  
+        {
+          "type": "info",
+          "text": "INACTIVE"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "Default "
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/4.png"
+        }
+
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a New Status",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Add     +    icon.  The new status line will appear."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/5.png"
+        },
+        {
+          "type": "step",
+          "text": "2. In the Status field, enter the name of the status. By default, the new status will be treated as an Active status ."
+        },
+        {
+          "type": "step",
+          "text": "3. If you want the status to be a default, then click the Default  icon."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Make a Status Inactive",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. For the status you want to make inactive, uncheck the Active status  check box."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Status Name",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. For the status you want to edit, click Edit   icon."
+        },
+        {
+          "type": "step",
+          "text": "2. Change the status name."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Status",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. For the status you want to delete, click Edit   icon."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Delete   icon."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create, Edit, or Delete a Category or Subcategory",
+      "content": [
+        {
+          "type": "info",
+          "text": "Category Settings establish what kinds of assets you can create in the Assets module."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Module Settings > Assets."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Category Settings tab."
+        },
+        {
+          "type": "info",
+          "text": "There are three levels to all assets:  Class > Category > Sub Category"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/9.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Class",
+      "content": [
+        {
+          "type": "info",
+          "text": "All categories fall into one of four different Classes - Fixed Equipment - This is the default class.  Assets imported into the application (no matter the category) will land here. Fleet. Mobile Equipment. Facilities"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Category and Subcategory",
+      "content": [
+        {
+          "type": "info",
+          "text": "The relationship between category and subcategory is the most important when setting up your assets.  Category | Sub Category | Sub Category | Sub Category | Sub Category\nMachinery | Conveyor | Lathe | Mold | Press\nHeavy Equip | Bulldozer | Excavator | Grader | Backhoe\nVehicle | Van | Pickup | SUV | Motorcycle\nRental Facilities | Condominium | Home | Towne House | Storage Unit"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Category",
+      "content": [
+        {
+          "type": "info",
+          "text": "There is no limit to the number of Subcategories that can be added to a Category.  They cannot be moved to another Category.  If you change your mind and want a Subcategory placed under a different Category, it must be created under that other Category."
+        },
+        {
+          "type": "step",
+          "text": "1. Select the Class the category will be under."
+        },
+        {
+          "type": "step",
+          "text": "2. In the Category drop-down, enter the new category name."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/10.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Press the Enter key or click [+] category name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit an existing Category",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. For the category you want to edit, from the Category drop-down, select the category name."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the edit category name link."
+        },
+        {
+          "type": "step",
+          "text": "3. Change the category's name."
+        },
+        {
+          "type": "step",
+          "text": "4. Press the Enter key or click off the name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Category",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can only delete a category that has no historical record."
+        },
+        {
+          "type": "step",
+          "text": "1. For the category you want to delete, from the Category drop-down, select the category name."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the delete link."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Subcategory (Type of Asset)",
+      "content": [
+        {
+          "type": "info",
+          "text": "There is no limit to the number of Subcategories that can be added to a Category.  They cannot be moved to another Category.  If you change your mind and want a Subcategory placed under a different Category, it must be created under that other Category."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Subcategory",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Select the desired Category."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the + button under Add Sub Category."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/11.png"
+        },
+        {
+          "type": "step",
+          "text": "3. In the enter name field, enter the new subcategory name."
+        },
+        {
+          "type": "step",
+          "text": "4. Press the Enter key or click off the name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Subcategory",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the subcategory list, click the category name. The subcategory setup form displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Edit the subcategory's name, change the axle schema, or custom fields."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Subcategory",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can only delete a subcategory that has no historical record."
+        },
+        {
+          "type": "step",
+          "text": "1. From the subcategory list, click the category name. The subcategory setup form displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the delete link. The subcategory is deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Meter and Fluid Log to a Category",
+      "content": [
+        {
+          "type": "info",
+          "text": "Meters and Logs are established at the Category level. They apply to all Subcategories and all Assets listed under the selected Category."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate Settings > Module Settings > Assets."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Category Settings tab."
+        },
+        {
+          "type": "info",
+          "text": "Meters and Logs are established at the Category level.  They apply to all Subcategories and all Assets listed under the selected Category."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/12.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Meter of Fluid Log to a Category",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the Select a meter drop-down, select from the options."
+        },
+        {
+          "type": "step",
+          "text": "2. To remove a Meter from a Category, select a visible meter.  It will display the Minimum/Maximum settings for the Meter.  At the top of the window, click on remove from category."
+        },
+        {
+          "type": "info",
+          "text": "3. To establish a Minimum/Maximum level that will restrict the acceptable entries for a Meter on that Category, select a visible meter.  It will display the Minimum/Maximum settings for the Meter."
+        },
+        {
+          "type": "step",
+          "text": "4. Enter the numeric value."
+        },
+        {
+          "type": "step",
+          "text": "5. Press the Enter key."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Meter or Fluid Log",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Manage button.  It will display all available Meters."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the New Meter or Log, click the Add + icon."
+        },
+        {
+          "type": "step",
+          "text": "3. Decide which type of meter you want from the following options: Fluid Gauge Trip meter Meter "
+        },     
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/13.png"
+        },  
+        {
+          "type": "step",
+          "text": "4. Enter the name of the new log."
+        },
+        {
+          "type": "step",
+          "text": "5. Press the Enter button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "System Managed Logs",
+      "content": [
+        {
+          "type": "info",
+          "text": "There are two System Managed Logs that can be selected.  Both logs are System Managed, and cannot be altered or renamed."
+        },
+        {
+          "type": "info",
+          "text": "They are pre-set to operate a certain way, and require additional consideration:  Distance:  This meter will track the distance traveled on a set of tires, in the Tire Tracking application. Distance log's availability is established at the Site level by your System Administrator. Trip Distance:  This is the trip meter, as seen on most vehicles.  It is recommended that this be tracked separately from the main vehicle odometer."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "System Managed Logs - Distance",
+      "content": [ 
+        {
+          "type": "info",
+          "text": "This is pre-set to operate a certain way, and require additional consideration. This meter will track the distance traveled on a set of tires, in the Tire Tracking application. Distance log's availability is established at the Site level by your System Administrator."        },       
+        {
+          "type": "step",
+          "text": "1. Go to Settings > Administration > Sites."
+        },
+        {
+          "type": "step",
+          "text": "2. When you select your site, the details of the site will appear."
+        },
+        {
+          "type": "step",
+          "text": "3. Under Distance Unit you can decide if your distances will be measured in Metric or Imperial standards."
+        },
+        {
+          "type": "info",
+          "text": "Keep in mind, that this will be your standard across the entire Site.  Multiple sites can have different Distance standards."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/14.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "System Managed Logs - Trip Distance",
+      "content": [   
+        {
+          "type": "info",
+          "text": "This is pre-set to operate a certain way, and require additional consideration. This is the trip meter, as seen on most vehicles.  It is recommended that this be tracked separately from the main vehicle odometer."
+        },     
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/15.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update Category Standard Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "Each Category has six standard fields available to it: In Service Date, Manufacturer, Model, Year, Serial # (With Categories under the FLEET Class, this will appear as VIN #), Vendor"
+        },
+        {
+          "type": "info",
+          "text": "By default, all six are made visible for any Asset assigned to that Category.  These are all optional fields, when you create or edit an Asset."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Module Settings > Assets."
+        },
+        {
+          "type": "step",
+          "text": "2. Click Category Settings tab."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/16.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Make a Standard Field visible or invisible",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Visible icon "
+        },
+         {
+          "type": "step",
+          "text": "2. Change it to Not Visible"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Make a Standard Field mandatory or optional",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Not Required "
+        },
+         {
+          "type": "step",
+          "text": "2. Change it to Required "
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add or Edit Asset Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "Asset Custom Fields are determined at the Category level. New Categories have no Custom Fields and these must be added manually."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the the Module Settings section, click the Assets icon."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Category Settings tab."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/17.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Category Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can add or remove custom fields from the list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Custom Field",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click on the Add + icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/23.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Select all custom fields to be added."
+        },
+        {
+          "type": "step",
+          "text": "3. Click Add at the bottom  of the window."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Make a Custom Field mandatory or optional",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. To make the field mandatory when creating/editing an Asset, click the Not Required  icon and change it to Required  ."
+        },
+        {
+          "type": "info",
+          "path": "Required icon- "
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/21.png"
+        },
+        {
+          "type": "info",
+          "path": "Not Required icon-"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/20.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reorder the Custom Fields",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Hover over the custom field."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the double ellipsis icon and drag the custom field up or down to change the order."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/24.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Remove a Custom Field",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the X icon to remove the custom list from the list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need a specific custom field that is not in the list, then you can create a new custom field."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Custom Field",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click on the Add + icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/23.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Click the New button in the top right corner. The New Custom Field dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/25.png"
+        },
+        {
+          "type": "info",
+          "text": "3. Complete the following: "
+        },
+        {
+          "type": "info",
+          "text": "a) Name - Enter the name of the custom field."
+        },
+        {
+          "type": "info",
+          "text": "b) Group - Groups are only to help with organizing a lengthy list of Custom Fields."
+        },
+        { "type": "info", 
+        "text": "Type - This is the most important field when establishing a new custom field. It determines how the custom field will behave. When a Type is selected and saved, you cannot change to a different type. The following options are: Text: Any character, letter, symbol, or number, can be typed in this field. Checkbox: Creates a Yes/No style checkbox. Integer: Only numbers can be entered. Decimal: Numbers with a decimal point can be entered. Date: MM/DD/YY. Lookup: Creates a drop-down field, containing the options that may be selected from. Contact: Creates a drop-down field that brings up the list of Employees, Vendors, Customers, Users. Currency: Numbers entered will be preceded by your country's currency symbol" 
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "Now, you can add the custom field to the list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit an Existing Custom Field",
+      "content": [
+        {
+          "type": "info",
+          "text": "A custom field must be removed from the Category, before it can be edited."
+        },
+        {
+          "type": "step",
+          "text": "1. From the Custom Field list, click the X icon on the desired Custom Field, to remove it from the Category."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Add + icon. The Custom Fields dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "3. In the Search field, enter the custom field's name."
+        },
+        {
+          "type": "step",
+          "text": "4. Hover on the custom field and click the Edit   icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/28.png"
+        },
+        {
+          "type": "info",
+          "text": "The Edit Custom Field dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/29.png"
+        },
+        {
+          "type": "step",
+          "text": "5. Edit the Name, Group, or (if applicable) the Lookup field."
+        },
+        {
+          "type": "info",
+          "text": "The Type cannot be edited. After a Type is selected and saved, you cannot change that custom field to a different type."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create, Edit, or Delete Makes and Models",
+      "content": [
+        {
+          "type": "info",
+          "text": "The items listed in this tab, will be made available for the Asset Manufacturer and Model fields."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Module Settings > Assets."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Make and Models tab."
+        },
+        {
+          "type": "info",
+          "text": "Models are tied to Makes.  You cannot have a Model without a Make, but you can have a stand-alone Make/Manufacturer."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/31.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Make (Manufacturer) To create a NEW Make (Manufacturer)",
+      "content": [
+        {
+          "type": "info",
+          "text": "1. Click in the box below the Create or Select a Make."
+        },
+        {
+          "type": "step",
+          "text": "2.Start typing the Manufacturer's name.  If it's available, you can select it.  If not, click the Add + icon next to the name, to add the new Make to your database."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit an existing Make (Manufacturer)",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Select the Manufacturer of choice from the drop-down library."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the edit manufacturer name? link underneath the chosen Make.  This will open the edit option."
+        },
+        {
+          "type": "step",
+          "text": "3. Type in the changes and hit enter."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Attach a Module to an existing Make",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Select the Manufacturer of choice from the drop-down library."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Add + icon under the Add Model line."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/32.png"
+        },
+        {
+          "type": "step",
+          "text": "Type in the changes and hit enter. ​​​​"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Model",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. To edit a Model, move the cursor over the model of choice, and click the Edit icon to alter the name."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/33.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Model",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. To delete a Model, move the cursor over the model of choice, and click the X icon to alter the name."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/33.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Axle Schema for Tire Tracking",
+      "content": [
+        {
+          "type": "info",
+          "text": "Eptura Asset includes commonly used axle schemas. If you need a new schema then you can quickly create a new one."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Module Settings > Assets."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Category Settings tab."
+        },
+        {
+          "type": "step",
+          "text": "3. From the Class drop-down, select a Class."
+        },
+        {
+          "type": "info",
+          "text": "Tire tracking is only available for Categories under the FLEET or MOBILE EQUIPMENT Classes."
+        },
+        {
+          "type": "step",
+          "text": "4. From a Category drop-down, select a Category."
+        },
+        {
+          "type": "step",
+          "text": "5. Ensure tire tracking is toggled on for each desired Category under that Class."
+        },
+        {
+          "type": "step",
+          "text": "6. Click an existing sub-category or create a sub-category. In this example we clicked a sub-category and the form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/34.png"
+        },
+        {
+          "type": "step",
+          "text": "7. Click the Select default schema button."
+        },
+        {
+          "type": "step",
+          "text": "8. Click on \"create a new axle schema\" to populate the new axle schema form."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/35.png"
+        },
+        {
+          "type": "info",
+          "text": "The Create Axle Schema form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/36.png"
+        },
+        {
+          "type": "step",
+          "text": "9. In the Axle Schema Name field, enter the schema's name."
+        },
+        {
+          "type": "step",
+          "text": "10. Click Add Axle +. The axle types display."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/37.png"
+        },
+        {
+          "type": "step",
+          "text": "11. Click on an axle type to populate the tire configuration."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/38.png"
+        },
+        {
+          "type": "step",
+          "text": "12. To add another set of tires to the axle, click the + icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/39.png"
+        },
+        {
+          "type": "info",
+          "text": "The additional tires display."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/40.png"
+        },
+        {
+          "type": "step",
+          "text": "13. Click the Save button. The new axle displays and can be selected."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/41.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up an Axle Schema for Tire Tracking",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Category settings is where the default Axle Schema is defined for each asset subcategory with Tire Tracking enabled. This is useful when you have the same axle schema for multiple vehicles."
+        },
+        {
+          "type": "info",
+          "text": "Complete the following steps:"
+        },
+        {
+          "type": "step",
+          "text": "1. Enable Tire Tracking"
+        },
+        {
+          "type": "substep",
+          "text": "1. Navigate to Settings > Module Settings > Assets > Category Settings."
+        },
+        {
+          "type": "substep",
+          "text": "2. From the Class drop-down, select a Class."
+        },
+        {
+          "type": "substep",
+          "text": "3. Tire tracking is only available for Categories under the FLEET or MOBILE EQUIPMENT Classes."
+        },
+        {
+          "type": "substep",
+          "text": "4. From a Category drop-down, select a Category."
+        },
+        {
+          "type": "substep",
+          "text": "5. Ensure tire tracking is toggled on for each desired Category under that Class."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/42.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Set a default Axle Schema"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/43.png"
+        },
+        {
+          "type": "substep",
+          "text": "1. Click an existing subcategory or create a subcategory. In this example we clicked a subcategory and the form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/44.png"
+        },
+        {
+          "type": "substep",
+          "text": "2. Click the select default schema button. The axle configuration dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/45.png"
+        },
+        {
+          "type": "substep",
+          "text": "3. Click one of the default axle schemas or create a new axle schema. The set as default dialog displays with the message \"set this schema for all assets with the same sub-category?\"."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Asset%20Admin%20Settings/46.png"
+        },
+        {
+          "type": "substep",
+          "text": "4. Click the Yes button to set the default schema for the subcategory. The default schema is set and automatically saved."
+        },
+        {
+          "type": "info",
+          "text": "Now that the default axle schema is set, assets associated with the subcategory will automatically follow the selected default axle schema."
+        }
+      ]
+    }
+  ]
+}

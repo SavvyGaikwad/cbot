@@ -1,0 +1,37 @@
+{
+  "document_title": "PM Import Template Data",
+  "content": [
+    {
+      "type": "section",
+      "title": "General Information",
+      "content": [
+        {
+          "type": "info",
+          "text": "Our Implementation team can use this import to populate the PMs."
+        },
+        {
+          "type": "info",
+          "text": "Do not change the column headers in Row 1 as this is used to complete the upload."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Data Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Maintenance Plan - Required field with maximum length of 24 characters - Assets that get associated at this level will automatically be assigned all PMs tied to this MP. PMs can also be linked together within a maintenance plans so tasks carry over between them."
+        },
+        {
+          "type": "info",
+          "text": "PM - Required field with maximum length of 24 characters - The frequency of maintenance and specific tasks are associated at the PM level"
+        },
+        {
+          "type": "info",
+          "text": "Service Task - Required field with maximum length of 24 characters - Specific items to be checked off by technician during preventive maintenance"
+        }
+      ]
+    }
+  ]
+}

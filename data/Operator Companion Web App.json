@@ -1,0 +1,187 @@
+{
+  "document_title": "Operator Companion Web App",
+  "content": [
+    {
+      "type": "section",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Operator Companion allows the operators, drivers, and users of your equipment to perform Inspections, using the Operator Companion web app. The web app is available to be used by all licensed Operators."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Home",
+      "content": [
+        {
+          "type": "info",
+          "text": "The home screen contains a list of the following:  Recently used assets. Recently completed inspections."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/1.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Assets",
+      "content": [
+        {
+          "type": "step",
+          "text": "From the menu, tap Assets and the list of assets that relate to the inspections display."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/2.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Scan",
+      "content": [
+        {
+          "type": "step",
+          "text": "From the menu, tap Scan and the scanner is active and ready to scan an asset's bar code. This will display the asset and any available inspections."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inspections",
+      "content": [
+        {
+          "type": "step",
+          "text": "From the menu, tap Inspections and list displays the inspections that are in progress and in the other tab the completed inspections display."
+        },
+        {
+          "type": "info",
+          "text": "Inspections can be created in the Eptura Asset web application. Learn more in the Inspection Overview. Then the Operators of the equipment can then perform them through the Operator Companion web app. You will see the inspection has the same look and feel in both web apps. Required tasks will be highlighted with a special indicator."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/4.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Inspection",
+      "content": [
+        {
+          "type": "info",
+          "text": "Operators of the equipment don't have to wait for Maintenance Managers to create an inspection. With the Operator Companion, Operators can search for the desired Asset and start the inspection..."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/5.png"
+        },
+        {
+          "type": "info",
+          "text": "...or they can use the Scan feature to scan the Asset barcode, which will bring up the desired asset and display the available inspections"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/6.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inspection Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "Inspections that are already underway, will have a flag that says IN PROGRESS •"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/7.png"
+        },
+        {
+          "type": "info",
+          "text": "If the Operator attempts to open an inspection already in progress, they will see an alert asking them to decide between two options:  Back out of the inspection (Never Mind) and Restart the inspection (Start Over)"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/8.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Examples",
+      "content": [
+        {
+          "type": "info",
+          "text": "Drivers can perform state and federally required Vehicle Inspection Reports (DVIR), instantly reporting any issues that are discovered."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/9.png"
+        },
+        {
+          "type": "info",
+          "text": "Equipment operators can easily show they are in compliance with OSHA regulations, requiring them to conduct daily safety checks prior to operation."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/10.png"
+        },
+        {
+          "type": "info",
+          "text": "Results of an Operator's inspection are instantly relayed to Eptura Asset web app."
+        },
+        {
+          "type": "info",
+          "text": "Maintenance Managers can see in real-time, the current status of an ongoing inspection, and read the operator's findings even before the inspection is complete."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/11.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access the Operator Companion Web App",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can access the Operator Companion web app on a tablet or smartphone."
+        },
+        {
+          "type": "step",
+          "text": "1. Open your device's browser and we recommend using either Safari, Firefox, or Chrome."
+        },
+        {
+          "type": "step",
+          "text": "2. In the browser, enter your company's URL in the format <mycompanysname>.managerpluscloud.com/oc/ For example: https://abcompany.managerpluscloud.com/oc/"
+        },
+        {
+          "type": "info",
+          "text": "The Operator Companion login screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Operator%20Companion%20Web%20App/12.png"
+        },
+        {
+          "type": "step",
+          "text": "3. In the Username or email field and the password or pin field, enter your credentials."
+        },
+        {
+          "type": "step",
+          "text": "4. Tap the Log In button and you will be logged into the Operator Companion."
+        }
+      ]
+    }
+  ]
+}

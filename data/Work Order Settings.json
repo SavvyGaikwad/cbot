@@ -1,0 +1,1347 @@
+{
+  "document_title": "Work Order Settings",
+  "content": [
+    {
+      "type": "info",
+      "text": "Tab 1"
+    },
+    {
+      "type": "section",
+      "title": "Work Order Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Work Orders Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Work Orders module contains your maintenance history. When you understand your work orders, then you can track what is being worked on, who is doing the work, track the costs involved, and what parts are used. When you provide accurate information in your work orders, then the more Epura Asset can anticipate your maintenance needs in the future."
+        },
+        {
+          "type": "info",
+          "text": "This module lets you:"
+        },
+        {
+          "type": "step",
+          "text": "Update the Work Order module settings"
+        },
+        {
+          "type": "info",
+          "text": "Create and complete Work Orders"
+        },
+        {
+          "type": "info",
+          "text": "Assign and track who is doing the work"
+        },
+        {
+          "type": "info",
+          "text": "Include Service Tasks"
+        },
+        {
+          "type": "info",
+          "text": "Maintain employee and vendor labor records"
+        },
+        {
+          "type": "info",
+          "text": "Maintain parts and supplies"
+        },
+        {
+          "type": "info",
+          "text": "Attach external documentation"
+        },
+        {
+          "type": "info",
+          "text": "Work Orders are the primary source of your maintenance history, and this module is used to:"
+        },
+        {
+          "type": "info",
+          "text": "track what is being worked on"
+        },
+        {
+          "type": "info",
+          "text": "who is doing the work"
+        },
+        {
+          "type": "info",
+          "text": "track the costs involved"
+        },
+        {
+          "type": "info",
+          "text": "what parts are used"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Understand the Work Orders Key Performance Indicators",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "Click the Show KPI icon."
+        },
+        {
+          "type": "info",
+          "text": "Going across the top of the screen, the following dynamic tools are:"
+        },
+        {
+          "type": "info",
+          "text": "Unassigned - This shows how many work orders are unassigned."
+        },
+        {
+          "type": "info",
+          "text": "On Time Rating - This shows the percentage of work orders that are completed on time and it shows the number of work orders that are past-due."
+        },
+        {
+          "type": "info",
+          "text": "Weekly Workload - This gauge shows the number of estimated hours in the service task completed this week."
+        },
+        {
+          "type": "info",
+          "text": "Priority - This pie chart shows your jobs according to priority."
+        },
+        {
+          "type": "info",
+          "text": "Work Origin - This shows you where your work order comes from."
+        },
+        {
+          "type": "info",
+          "text": "When you click on a KPI, the grid is filtered."
+        },
+        {
+          "type": "info",
+          "text": "You can reset the view, click the More Actions  icon, and then Reset Grid."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customize the Work Order View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can see the full list of your Work Orders, along with the work order details at a glance. Each user can arrange the layout of the screen according to their own preferences and liking."
+        },
+        {
+          "type": "info",
+          "text": "The columns are:"
+        },
+        {
+          "type": "step",
+          "text": "Work Order Number: The application will automatically assign you a WO number upon creation"
+        },
+        {
+          "type": "step",
+          "text": "Work Type: The first indication of what type of job this is.  Defaults include Corrective, Preventive, and Predictive"
+        },
+        {
+          "type": "step",
+          "text": "Purpose:  Brief description of what the work order will accomplish."
+        },
+        {
+          "type": "step",
+          "text": "Asset:  Asset that is the subject of the work order."
+        },
+        {
+          "type": "step",
+          "text": "Assigned:  Employee assigned to this work order."
+        },
+        {
+          "type": "step",
+          "text": "Due Date:  The due date field allows you to set a date and time by which the Work Order should be completed"
+        },
+        {
+          "type": "step",
+          "text": "Status:  Status of the work order.  When a work order is generated automatically or created manually, the status is set to the default.  The status will change after the work order is completed."
+        },
+        {
+          "type": "step",
+          "text": "Notices: Identifies Work Order characteristics that you need to be aware of."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Search allows you to find any field within the Work Order list. The example below shows results populated for truck."
+        },
+        {
+          "type": "info",
+          "text": "In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filter",
+      "content": [
+        {
+          "type": "info",
+          "text": "Filter by group helps you view work orders by group organization. These filter groups can be:"
+        },
+        {
+          "type": "info",
+          "text": "single address"
+        },
+        {
+          "type": "info",
+          "text": "floor plan"
+        },
+        {
+          "type": "info",
+          "text": "group of assets"
+        },
+        {
+          "type": "info",
+          "text": "These groups have been set up by your admin, see set up a site's location for more information."
+        },
+        {
+          "type": "step",
+          "text": "Click the Filter by Group button. The filter by group panel displays."
+        },
+        {
+          "type": "step",
+          "text": "Select a group to filter by. The work order list is filtered."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the Work Orders list, you may want to change the work order columns and sort order. The Save View let's you set up the work order listing and then save it for next time."
+        },
+        {
+          "type": "info",
+          "text": "This is best explained using an example. I want to create a saved list view for work orders that are waiting for parts and add the Asset Budget column to the list view."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Reorder Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Drag and drop the Status column to the front of the list"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Filter the Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click on the filter  icon within the Status column. The list of statuses display."
+        },
+        {
+          "type": "info",
+          "text": "Select WAITING FOR PARTS."
+        },
+        {
+          "type": "info",
+          "text": "Click the OK button. The status column is filtered to display all work orders waiting for parts."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Add a column from the Column Chooser",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions  icon."
+        },
+        {
+          "type": "info",
+          "text": "Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop the Asset Budget column to the Work Order Management column headings. The Asset Budget column displays on the work order list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select a who can access this view option, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Toggle List Grouping Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you view the work order list, you may want to group the list view by a column. This let's you see the work order listing in a different way. Let's look at the example where we group by customer."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Add Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions  icon."
+        },
+        {
+          "type": "info",
+          "text": "Select Column Chooser. the column chooser displays."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop the Customer to the Work Order columns."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2.Group by a Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions icon ."
+        },
+        {
+          "type": "info",
+          "text": "Select Toggle List Grouping."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop a column header to the group by. The Work Order list is toggled by group."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select who can access this view options, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "info",
+          "text": "Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "info",
+          "text": "Select a saved view."
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "info",
+          "text": "Click on apply selected. The saved view displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Work Order",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "Click the New Work Order button. The New Work Order form displays."
+        },
+        {
+          "type": "info",
+          "text": "The required fields are Entity, Purpose, and Budget."
+        },
+        {
+          "type": "step",
+          "text": "From the Entity drop-down, select the site."
+        },
+        {
+          "type": "step",
+          "text": "In the Purpose Of Work Order field, select the purpose."
+        },
+        {
+          "type": "step",
+          "text": "In the Asset field, enter the asset."
+        },
+        {
+          "type": "step",
+          "text": "From the Work Type drop-down, select the type of work."
+        },
+        {
+          "type": "step",
+          "text": "From the Priority option buttons, select either Minor, Normal, Major, Critical."
+        },
+        {
+          "type": "step",
+          "text": "From the Assign To drop-down, select the person."
+        },
+        {
+          "type": "step",
+          "text": "From the Due Date calendar, select the date."
+        },
+        {
+          "type": "step",
+          "text": "From the Budget drop-down, select the budget."
+        },
+        {
+          "type": "step",
+          "text": "From the Customer drop-down, select the customer."
+        },
+        {
+          "type": "step",
+          "text": "If you want to add a task, click the + icon. Add Service Tasks dialog."
+        },
+        {
+          "type": "info",
+          "text": "Either search for the task, select the task, or create a new task."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add to WO button."
+        },
+        {
+          "type": "step",
+          "text": "Click on either Create & Open or Create Work Order."
+        },
+        {
+          "type": "info",
+          "text": "After the work order is saved, the work order is ready to be completed by the assigned worker."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Edit and update open work orders"
+        },
+        {
+          "type": "info",
+          "text": "Complete work orders when finished"
+        },
+        {
+          "type": "info",
+          "text": "Reopen work orders that need to be updated"
+        },
+        {
+          "type": "info",
+          "text": "View the full status history or the work order is visible to all users"
+        },
+        {
+          "type": "info",
+          "text": "The work order details can be viewed and edited."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Work Orders. The Work Order Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "From the Work Order Management screen, click on a work order to view the Work Order Details screen."
+        },
+        {
+          "type": "info",
+          "text": "The screen consists of:"
+        },
+        {
+          "type": "step",
+          "text": "Work Description - The field contains the requested work description that was submitted through the Requests module."
+        },
+        {
+          "type": "step",
+          "text": "Work Type - The type of work, for example, Corrective, Predictive, or Preventive."
+        },
+        {
+          "type": "info",
+          "text": "The Work Types are set up in the settings, see Set up Work Type for Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "Failure Code - Option on Corrective work types that states why the asset failed (Accident, Operator Error, Weather Damage, etc)."
+        },
+        {
+          "type": "step",
+          "text": "Schedule ID - Name of the scheduled PM that caused this work order to be created  (For scheduled PMs)."
+        },
+        {
+          "type": "step",
+          "text": "Priority - You can choose the state of the priority, including Minor, Normal, Major, and Critical."
+        },
+        {
+          "type": "step",
+          "text": "Budget - The budget that this work order will be assigned to.  This field is automatically populated with the budget assigned to the asset."
+        },
+        {
+          "type": "step",
+          "text": "Clock In (or Clock Out) icon"
+        },
+        {
+          "type": "step",
+          "text": "Purchase Order icon"
+        },
+        {
+          "type": "step",
+          "text": "Email icon"
+        },
+        {
+          "type": "step",
+          "text": "Print icon"
+        },
+        {
+          "type": "step",
+          "text": "Asset Downtime icon"
+        },
+        {
+          "type": "step",
+          "text": "Service Tasks Tab"
+        },
+        {
+          "type": "info",
+          "text": "The Service Tasks are set up in the settings, see Set up Service Tasks for Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "Labor Tab"
+        },
+        {
+          "type": "step",
+          "text": "Parts Tab"
+        },
+        {
+          "type": "step",
+          "text": "Notes Tab"
+        },
+        {
+          "type": "step",
+          "text": "Other Costs Tab"
+        },
+        {
+          "type": "step",
+          "text": "Attachments Tab"
+        },
+        {
+          "type": "step",
+          "text": "Meter Readings - Enter meter readings."
+        },
+        {
+          "type": "step",
+          "text": "Asset Details - Shows the 10 most recent work orders performed on the asset, as well as Manufacture/Model, and current location."
+        },
+        {
+          "type": "step",
+          "text": "Status History - Shows when and who changed the status of the work order, from start to finish."
+        },
+        {
+          "type": "step",
+          "text": "Status - Update the status of work order according to the defined workflow."
+        },
+        {
+          "type": "info",
+          "text": "The status workflow is set up in the settings, see Set up the Workflow for Work Orders."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Clock In and Out of a Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Tracking time on work orders allows you to manage your labor costs. When you are working on a task, use the clock in and clock out to help you keep track of your time spent and remember there is an easy way to make adjustments to your time too."
+        },
+        {
+          "type": "info",
+          "text": "We recommend that you don't use the clock in and clock out for HR purposes of time tracking for payroll as this is not its intended purpose."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Clock In and Out it is simple to track your Labor",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Clock into the Work Order",
+      "content": [
+        {
+          "type": "step",
+          "text": "Before you start, make sure you are assigned to the work order. In the Assigned field, enter your name and select it from the list OR leave it blank and when you start the clock in the work order will be assigned to you."
+        },
+        {
+          "type": "step",
+          "text": "From the toolbar, click the Clock In  icon and the Clock In dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Optional - From the select a task drop-down, select a Service Task."
+        },
+        {
+          "type": "step",
+          "text": "Click the Clock In button and y​​​​​ou are clocked in and the timer begins tracking your time."
+        },
+        {
+          "type": "info",
+          "text": "When you return to the list, you will see the Clock In icon displays next to the work order."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Clocked In Profile Reminder",
+      "content": [
+        {
+          "type": "info",
+          "text": "Additionally, you will see the Clocked In icon next to your profile as a reminder."
+        },
+        {
+          "type": "info",
+          "text": "Click the Clocked in icon if you want to check the timings."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Clock out of the Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you have finished working on the service task, you can clock out of the work order, and this can be done via:"
+        },
+        {
+          "type": "info",
+          "text": "the Clocked In icon next to your profile"
+        },
+        {
+          "type": "info",
+          "text": "the work order"
+        },
+        {
+          "type": "step",
+          "text": "Quickly Clock Out"
+        },
+        {
+          "type": "info",
+          "text": "This is available on any screen where the Clocked In icon is present next to your profile."
+        },
+        {
+          "type": "step",
+          "text": "Click the Clocked In  icon."
+        },
+        {
+          "type": "info",
+          "text": "Hover over the green Clocked In icon and it turns red."
+        },
+        {
+          "type": "step",
+          "text": "Click Clocked In icon."
+        },
+        {
+          "type": "step",
+          "text": "Click Clock out button and the Clock Out dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Clock Out button and this will automatically record time in the work order."
+        },
+        {
+          "type": "step",
+          "text": "Clock Out in the Work Order"
+        },
+        {
+          "type": "step",
+          "text": "From the Work Order list, find the work order with the Clocked In icon."
+        },
+        {
+          "type": "step",
+          "text": "Click the work order to display its details."
+        },
+        {
+          "type": "info",
+          "text": "Click the Clocked In icon and the Clock Out dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Clock Out button and this will automatically record the time in the work order."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add, Adjust, or Delete the Labor Hours from the Service Tasks tab",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Add Labor Hours",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need to add labor hours, this can be easily done."
+        },
+        {
+          "type": "step",
+          "text": "Open the work order."
+        },
+        {
+          "type": "step",
+          "text": "In the Service Task tab, click on the Add  icon."
+        },
+        {
+          "type": "info",
+          "text": "The Task form displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Labor  icon."
+        },
+        {
+          "type": "step",
+          "text": "From the Contact drop-down, select the person's name."
+        },
+        {
+          "type": "step",
+          "text": "In the Quantity, enter the hours and/or minutes."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button and the labor is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Adjust the Labor Hours",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need to adjust labor hours, this is easily done."
+        },
+        {
+          "type": "step",
+          "text": "Open the work order."
+        },
+        {
+          "type": "step",
+          "text": "In the Service Task tab, click on the Add  icon and the Task form displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Labor  icon."
+        },
+        {
+          "type": "info",
+          "text": "Click the Expand icon to display the labor times."
+        },
+        {
+          "type": "info",
+          "text": "Click on the time entry."
+        },
+        {
+          "type": "step",
+          "text": "Enter in the hours and minutes. The entry is automatically saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete the Labor Hours",
+      "content": [
+        {
+          "type": "info",
+          "text": "If needed, labor hours can be deleted."
+        },
+        {
+          "type": "step",
+          "text": "Open the work order."
+        },
+        {
+          "type": "step",
+          "text": "In the Service Task tab, click on the Add  icon and the Task form displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Labor icon."
+        },
+        {
+          "type": "info",
+          "text": "If you have multiple labor entries, then click the Labor drop-down."
+        },
+        {
+          "type": "step",
+          "text": "Click the Delete  icon to delete the labor time."
+        },
+        {
+          "type": "info",
+          "text": "The Delete Labor dialog displays the message \"Are you sure you want to delete this labor item?"
+        },
+        {
+          "type": "step",
+          "text": "Click the Yes button."
+        },
+        {
+          "type": "info",
+          "text": "The deletion is automatically saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add, Adjust, or Delete the Labor Hours from the Labor Tasks tab",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Add Labor Hours",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can quickly add any missing labor hours."
+        },
+        {
+          "type": "step",
+          "text": "Open the work order."
+        },
+        {
+          "type": "step",
+          "text": "Click the Labor tab."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Labor button and a new line displays."
+        },
+        {
+          "type": "step",
+          "text": "Complete the Contact, Task Code, Labor Date, Hours, Labor Rate, and Budget."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Adjust Labor Hours",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need to adjust labor hours, this is easily done."
+        },
+        {
+          "type": "step",
+          "text": "Open the work order."
+        },
+        {
+          "type": "step",
+          "text": "Click the Labor tab."
+        },
+        {
+          "type": "step",
+          "text": "Click the labor item."
+        },
+        {
+          "type": "step",
+          "text": "Change the hours and/or minutes."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete Labor Hours",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need to delete labor hours, this is easily done."
+        },
+        {
+          "type": "step",
+          "text": "Open the work order."
+        },
+        {
+          "type": "step",
+          "text": "Click the Labor tab."
+        },
+        {
+          "type": "step",
+          "text": "Click the Delete link to delete the labor time."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Someone started the wrong work order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Where someone has started a work order and released that is was the wrong work order, then they clock out, then you will see zero hours.You can either adjust the time; click on the time to adjust it, or you can click the Delete  icon."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Someone forgot to clock out of a work order",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you see a large amount of time on a task, then someone has forgotten to clock out and the time it keeps running.You can either adjust the time; click on the time to adjust it, or you can click the Delete  icon.Email a Work Order to the Assigned Employee"
+        },
+        {
+          "type": "info",
+          "text": "After you complete your work order you can quickly email the work order to the assigned employee."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "Create a new Work Order or open an already existing Work Order."
+        },
+        {
+          "type": "step",
+          "text": "Click the Email icon."
+        },
+        {
+          "type": "step",
+          "text": "Click on the Add + icon, then, select the employee you want to send the email to from the drop-down menu."
+        },
+        {
+          "type": "step",
+          "text": "After you selected the employee, a message may be added to the email, then select Send."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Link a Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work Orders are excellent for keeping track of what work needs to be completed however, there may be instances where one or more Work Orders are related. This is where linking work orders becomes a useful  as this can be used to tie associated Work Orders together. You can use this to:"
+        },
+        {
+          "type": "info",
+          "text": "Indicate whether a Work Order is blocked by another Work Order"
+        },
+        {
+          "type": "info",
+          "text": "Quickly find Work Orders that are related to one another"
+        },
+        {
+          "type": "info",
+          "text": "Important notes to consider:"
+        },
+        {
+          "type": "info",
+          "text": "Work Orders will remain independent of each other and must be closed out individually."
+        },
+        {
+          "type": "info",
+          "text": "Work Orders cannot be deleted if they are linked to another Work Order."
+        },
+        {
+          "type": "info",
+          "text": "Instructions"
+        },
+        {
+          "type": "step",
+          "text": "Navigate to the Work Order module."
+        },
+        {
+          "type": "step",
+          "text": "Click a Work Order you want to link."
+        },
+        {
+          "type": "step",
+          "text": "Click the  Link + under the Linked Work Orders section."
+        },
+        {
+          "type": "step",
+          "text": "From the Select Link drop-down, select the type of link."
+        },
+        {
+          "type": "step",
+          "text": "Related To - A Work Order that is associated whether by similarity of tasks, assigned to the same asset etc."
+        },
+        {
+          "type": "step",
+          "text": "Split To - A Work Order that was created from the existing Service Tasks. (Selecting this option will NOT create a new Work Order. See article on Splitting Work Orders for more information)"
+        },
+        {
+          "type": "step",
+          "text": "Split From - The original Work Order where the Service Tasks originated from. (Selecting this option will NOT create a new Work Order. See article on Splitting Work Orders for more information)."
+        },
+        {
+          "type": "step",
+          "text": "Blocking - A Work Order that cannot be completed until the current Work Order is completed"
+        },
+        {
+          "type": "step",
+          "text": "Blocked By - A Work Order that must be completed before the current Work Order is Completed"
+        },
+        {
+          "type": "info",
+          "text": "Select the checkbox beside the work order(s) being linked"
+        },
+        {
+          "type": "step",
+          "text": "Click the Link to Selected button."
+        },
+        {
+          "type": "info",
+          "text": "The work order will now be listed in the Linked Work Orders section"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Split a Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work orders may include Service Tasks that require completion before a Work Order is closed out. However, suppose you have a Work Order with one Service Task that cannot yet be completed or must be assigned to another contact. This Service Task can be split into another Work Order."
+        },
+        {
+          "type": "info",
+          "text": "Use this feature to:"
+        },
+        {
+          "type": "info",
+          "text": "Split Service Tasks into another Work Order"
+        },
+        {
+          "type": "info",
+          "text": "Complete a Work Order while redistributing outstanding Service Tasks to a new Work Order"
+        },
+        {
+          "type": "info",
+          "text": "Reassign a Service Task to another contact"
+        },
+        {
+          "type": "info",
+          "text": "Instructions"
+        },
+        {
+          "type": "step",
+          "text": "Navigate to the Work Order module."
+        },
+        {
+          "type": "step",
+          "text": "Click on any Work Order you want to split."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create Work Order button.\n\n\nThe Add Tasks to New Work Order dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Select which Service Tasks to split into another Work Order."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create & Open WO button."
+        },
+        {
+          "type": "info",
+          "text": "The Service Tasks have now been split into another Work Order and the new Work Order will appear in the Linked Work Orders Section"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Start Asset Downtime",
+      "content": [
+        {
+          "type": "info",
+          "text": "Being able to take an asset offline due to repairs or other maintenance is part of the asset's life, and you can track the downtime of any particular asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Manually Take an Asset Offline",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "From the Work Orders list, click on a Work Order."
+        },
+        {
+          "type": "step",
+          "text": "Click the Downtime  icon. The form displays."
+        },
+        {
+          "type": "info",
+          "text": "This shows if an asset is Active or Down. If it is already Active, click on the Down option, and you will be prompted to give a reason for why it is down. A graph is also available showing you the History of the Assets Downtime."
+        },
+        {
+          "type": "step",
+          "text": "Click the Down tab."
+        },
+        {
+          "type": "step",
+          "text": "In the Reason to being asset down field, enter the reason."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The asset is marked as Down."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Work Order to Downtime",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can take an asset offline with Add Work Order to Downtime."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "From the Work Orders list, click on a Work Order."
+        },
+        {
+          "type": "step",
+          "text": "Click the Downtime  icon. The form displays."
+        },
+        {
+          "type": "step",
+          "text": "Click Add Work Order to Downtime."
+        },
+        {
+          "type": "info",
+          "text": "The Asset is marked as down"
+        },
+        {
+          "type": "info",
+          "text": "To reactivate the asset, complete the Work Order added to downtime and the asset is automatically marked active."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Manually Reactive an Asset",
+      "content": [
+        {
+          "type": "step",
+          "text": "From the Work Orders list, click on a Work Order."
+        },
+        {
+          "type": "step",
+          "text": "Click the Downtime  icon. The form displays."
+        },
+        {
+          "type": "step",
+          "text": "Click on the Active tab.  The Reactivate Asset Manually dialog displays the message \"Please confirm manual asset activation\"."
+        },
+        {
+          "type": "step",
+          "text": "Click the Yes button."
+        },
+        {
+          "type": "info",
+          "text": "The asset is now active."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Use an Alternate Part on a Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Alternate parts quickly locates other parts that can be used  to continue the work order if the current part is unavailable or if stock is too low. The example below displays a fire extinguisher inspection where 17 safety pins are required, but there are not enough of that part in stock."
+        },
+        {
+          "type": "step",
+          "text": "Hover over the Alternate Parts  icon, a message displays \"You don't have enough of this part. See alternatives\"."
+        },
+        {
+          "type": "info",
+          "text": "Prerequisites"
+        },
+        {
+          "type": "info",
+          "text": "To use an alternate part, you must first assign an alternate part."
+        },
+        {
+          "type": "step",
+          "text": "Steps"
+        },
+        {
+          "type": "info",
+          "text": "Complete the following steps to use an alternate part:"
+        },
+        {
+          "type": "step",
+          "text": "From a work order, click on the Parts  icon. The Parts tab displays."
+        },
+        {
+          "type": "step",
+          "text": "Click on the Alternate Parts  icon."
+        },
+        {
+          "type": "info",
+          "text": "The Alternate Parts form displays with available parts. The form also indicates the total amount of parts required to complete the work order."
+        },
+        {
+          "type": "step",
+          "text": "Hover over a part to display the checkbox."
+        },
+        {
+          "type": "step",
+          "text": "Click on the checkbox. The quantity field displays."
+        },
+        {
+          "type": "step",
+          "text": "Adjust the quantity by clicking the + or - icons."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add to work order + button.\nThe alternate part is now associated to the work order and parts quantities automatically adjust according to the required amount to complete the work order."
+        },
+        {
+          "type": "step",
+          "text": "When there are enough stock of alternate parts to replace the original part entirely,  click Replace original part to substitute the entire quantity."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View the Status History on a Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Being able to view the Status History on a Work Order is an integral part of managing your Work Order.  Viewing Status History is an important feature of the Work Order and can be done by the following steps:"
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "Open an already existing Work Order from your Work Order list."
+        },
+        {
+          "type": "step",
+          "text": "Click the History hyperlink found on the bottom of the page. The Status History dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "This lets you view the status history of the work order."
+        }
+      ]
+    }
+  ]
+}

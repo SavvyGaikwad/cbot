@@ -1,0 +1,307 @@
+{
+  "document_title": "Asset Import Template Data",
+  "content": [
+    {
+      "type": "section",
+      "title": "Data Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Do not change the column headers in Row 1 as this is used to complete the upload."
+        },
+        {
+          "type": "info",
+          "text": "The table below lists the columns and which columns are required or optional."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset ID Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Asset ID - Required field with maximum length of 100 characters."
+        },
+        {
+          "type": "info",
+          "text": "Unique identifier for your asset. This can be alpha, numeric, or combination. Duplicates are not allowed."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Description Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Description - Required field with maximum length of 100 characters."
+        },
+        {
+          "type": "info",
+          "text": "Brief description of the asset. Make sure you use a consistent description to help users search for assets."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Group Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Asset Group - Required field with maximum length of 100 characters."
+        },
+        {
+          "type": "info",
+          "text": "Shows where the asset physically is located or the department/division it belongs to. It helps maintenance know where to go to complete a repair."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Category Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Asset Category - Required field with maximum length of 100 characters."
+        },
+        {
+          "type": "info",
+          "text": "The asset category groups and asset types together to separate and distinguish the log types and custom fields."
+        },
+        {
+          "type": "info",
+          "text": "We recommend that you do not create a lot of categories."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Type Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Asset Type - Required field with maximum length of 100 characters."
+        },
+        {
+          "type": "info",
+          "text": "The asset type (subcategory)."
+        },
+        {
+          "type": "info",
+          "text": "Example: Heavy Equipment category can have Backhoe, Loader, Excavator asset types with Fuel, Hours, Miles/Kilometers log types."
+        },
+        {
+          "type": "info",
+          "text": "Example: Vehicles category can have Pickup, Car asset types with Fuel, Miles/Kilometers log types."
+        },
+        {
+          "type": "info",
+          "text": "Example: Equipment category can have Forklift asset type with Fuel, Hours log types."
+        },
+        {
+          "type": "info",
+          "text": "Example: Buildings category can have Office, Fire Systems asset types with Not applicable log types."
+        },
+        {
+          "type": "info",
+          "text": "Example: Facility Equipment category can have Boiler asset type with Temperature log types."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Budget Group Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Budget Group - Required field with maximum length of 24 characters."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Default Budget Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Default Budget - Required field."
+        },
+        {
+          "type": "info",
+          "text": "This is the budget which is used to track expenses. Budgets can be Departments, Job Codes, or Operations."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Status Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Status - Required field with maximum length of 24 characters."
+        },
+        {
+          "type": "info",
+          "text": "This is used to determine if the asset is Active or Inactive."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Vendor Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Vendor - Optional field with maximum length of 100 characters."
+        },
+        {
+          "type": "info",
+          "text": "Unique identifier for a vendor. If the vendor doesn't exist in the system then the new vendor will be uploaded."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customer Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Customer - Optional field with maximum length of 100 characters."
+        },
+        {
+          "type": "info",
+          "text": "Unique identifier for a customer. If the customer doesn't exist in the system then the new vendor will be uploaded."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Make Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Make - Optional field."
+        },
+        {
+          "type": "info",
+          "text": "The make of the asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Model Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Model - Optional field with maximum length of 32 characters."
+        },
+        {
+          "type": "info",
+          "text": "The model name or number of the asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Year Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Year - Optional field with maximum length of 4 characters."
+        },
+        {
+          "type": "info",
+          "text": "The year the asset was manufactured."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Serial Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Serial - Optional field with maximum length of 32 characters."
+        },
+        {
+          "type": "info",
+          "text": "Used for either Serial Number or VIN."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Barcode-Tag Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Barcode-Tag - Optional field with maximum length of 50 characters."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Purchase Cost Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Purchase Cost - Optional numeric field."
+        },
+        {
+          "type": "info",
+          "text": "Cost of the asset when it was purchased."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Purchase Date Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Purchase Date - Optional date field."
+        },
+        {
+          "type": "info",
+          "text": "The date the asset was purchased."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "In Service Date Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "In Service Date - Optional date field."
+        },
+        {
+          "type": "info",
+          "text": "The date of the vehicle was put to use after the purchase."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Useful Life Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Useful Life(Months) - Optional numeric field."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Salvage Value Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Salvage Value - Optional numeric field."
+        }
+      ]
+    }
+  ]
+}

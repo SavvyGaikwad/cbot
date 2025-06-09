@@ -1,0 +1,503 @@
+{
+  "document_title": "Invoices Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Invoices Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Invoices module allows you to create digital invoices to be sent to your customers.  These can be created as needed or auto-generated when a work order is completed. This module lets you: Set and track custom rates, agreed to with preferred clients. Let the application generate the invoice for you automatically, when the work order is completed. Go paperless to lessen clerical errors and you can digitally transmit invoices to your clients. Easily view and manage your outstanding invoices and totals"
+        },
+        {
+          "type": "info",
+          "text": "Let's say you have repaired a piece of equipment for one of your customers or for another department within your organization.  You track who did the work, how long it took, and how many parts were used.  Your total costs are $190.79. You have a client agreement to perform the work for $200 per hour.  The parts used will be billed with a 30% markup. The customer invoice lists the total cost at $350.53.  You see a net profit of $159.74."
+        },
+        {
+          "type": "info",
+          "text": "Unlike the work orders, customer invoices don't concern themselves with the names of the employees who did the work. Instead, it lists what services were provided, what parts were used, and their costs."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "Key Benefits and Features - Create customer invoices on demand. Connect to your work orders, to auto-generate customer invoices. Set price points to pre-determine the markup percentage on labor and parts used. Set fixed prices for services that are always delivered at a guaranteed amount"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Invoice from a Completed Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work Orders and Invoices have different priorities."
+        },
+        {
+          "type": "info",
+          "text": "Work Orders\tCustomer Invoice\n●\tNAME OF EMPLOYEE who did the work\t●\tSERVICES provided at client cost\n●\tSERVICES provided\t●\tHOURS worked\n●\tHOURS worked at your costs\t●\tPARTS used at client cost\n●\tPARTS used at your costs"
+        },
+        {
+          "type": "info",
+          "text": "Work Orders:\n● NAME OF EMPLOYEE who did the work\n● SERVICES provided\n● HOURS worked at your costs\n● PARTS used at your costs\n\nCustomer Invoice:\n● SERVICES provided at client cost\n● HOURS worked\n● PARTS used at client cost"
+        },
+        {
+          "type": "info",
+          "text": "Work Orders closed without any services listed (only labor entries) will produce a blank invoice, forcing you to fill out the invoice manually. When you enable the Invoice feature this does NOT mean every work order creates an invoice."
+        },
+        {
+          "type": "info",
+          "text": "A completed work order must have two things, for it to generate an invoice: Work type that is set for Invoices. Have a customer attached."
+        },
+        {
+          "type": "info",
+          "text": "If it doesn't have both, the work order will simply close without generating an invoice."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Instructions",
+      "content": [
+        {
+          "type": "info",
+          "text": "To ensure the invoice generates properly, every part and every labor entry must be connected to a service item."
+        },
+        {
+          "type": "step",
+          "text": "1. Complete the Work Order."
+        },
+        {
+          "type": "step",
+          "text": "2. In the top right corner of the work order, you will see the link to your invoice in red."
+        },
+        {
+          "type": "step",
+          "text": "3. Click on the red INV number.  This will take you to your invoice."
+        },
+                {
+          "type": "info",
+          "text": "The invoice will contain the elements from your work order, that are connected to a service item.  They will be marked up according to the price point that was set as default for the customer. If you need to, each line item price point can be changed to another one for that invoice only."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Invoice",
+      "content": [
+        {
+          "type": "info",
+          "text": "You need to create an invoice, that is not connected to a work order for a customer."
+        },
+        {
+          "type": "info",
+          "text": "Invoice creation is easy as:"
+        },
+        {
+          "type": "step",
+          "text": "1. Quickly fill in the Invoice Fields - who your customer is, which Asset was worked on (if applicable), why the invoice is needed (Purpose)"
+        },
+        {
+          "type": "step",
+          "text": "2. Complete the Line Items List - services provided, parts used"
+        },
+        {
+          "type": "step",
+          "text": "3. Send it out to your customer - The invoice be sent out digitally to your customer, for a faster response."
+        },
+        {
+          "type": "info",
+          "text": "While possible to create Invoices on-the-go, it is strongly recommended you set up a connection between your Work Orders and your Invoices, so the Invoices will be auto-generated when the work order is completed."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "Instructions"
+        },
+        {
+          "type": "info",
+          "text": "Let's create a new Invoice."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Invoices."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the New Invoice button."
+        },
+        {
+          "type": "info",
+          "text": "The New Invoice tab displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Complete the following: Entity drop-down: List the site responsible for the work being performed (This is auto-generated if you only have one Site/Entity).\nCustomer drop-down: Client name, for whom the Invoice is being generated.\nBudget drop-down: This is an account that was specifically created to track invoices. It is NOT one of your maintenance budgets.\nPrice Point drop-down: The markup percentage on parts & labor, that was established by a system administrator.\nSales Tax drop-down: Can be applied to services, parts, or both.\nPurpose field: Reason for the invoice being generated.\nAsset field: The equipment that was serviced (list pulls from the Asset module).\nWe recommend you list the assets when you create the invoice. This will save you time as it will auto-generate the majority of the required fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Create & Open button."
+        },
+        {
+          "type": "info",
+          "text": "If you click the Create Invoice button this will save the invoice and you can add the line items later. The Invoice has been created, now you can complete the details and submitted it to the client."
+        },
+        {
+          "type": "step",
+          "text": "4. Add a new line to the invoice, click the New Line button."
+        },
+        {
+          "type": "info",
+          "text": "5. You can either add a line item for: Parts"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Click the  Add Part item. The new line item is added."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Search for the part(s) and then select the part."
+        },
+        {
+          "type": "substep",
+          "text": "1.3When you have completed adding the parts, then click the New Line item button."
+        },
+        {
+          "type": "info",
+          "text": "5. You can either add a line item for: Labor"
+        },
+                {
+          "type": "substep",
+          "text": "2.1 Click the Add Labor button. Add Service Tasks displays."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Select the service task."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Click the Add to Invoice button."
+        },
+        {
+          "type": "substep",
+          "text": "2.4After all items items are in the invoice, then Save button."
+        },
+        {
+          "type": "info",
+          "text": "Your invoice can now be printed or sent to your customer electronically."
+        },
+        {
+          "type": "info",
+          "text": "5. You can either add a line item for: Other Costs"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Estimate",
+      "content": [
+        {
+          "type": "info",
+          "text": "Estimates allow you to preview the total invoice costs prior to creating a work order for a customer."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Invoices."
+        },
+        {
+          "type": "step",
+          "text": "2. From the New Invoice drop-down, select New Estimates."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "The Create Estimate form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Complete the following fields: Entity drop-down: Select the site the estimate belongs to.\nCustomer drop-down: Similar to Invoices, estimates are for the customer.\nBudget drop-down: Select the budget account for the estimate.\nPrice Point drop-down: Price points determine the mark up on the invoice. The price points are set up in the invoice settings.\nSales Tax drop-down: Select the appropriate sales tax for the customer. The sales tax is set up in the invoice settings.\nPurpose field: Enter a summary of what work is being done.\nAsset field: Select which asset the Estimate is for."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Create & Open button."
+        },
+        {
+          "type": "info",
+          "text": "You are then directed to the New Estimate which is ready to be reviewed and converted to a Work Order for the customer."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search and Filter Invoices from the List View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can see the full list of your Invoices, along with the invoice details at a glance. Each user can arrange the layout of the screen according to their own preferences and liking."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Search allows you to find any field within the Invoice list. The example below shows results populated for tire."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "1. In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the invoice list, you may want to change the invoice columns and sort order. The Save View let's you set up the invoice listing and then save it for next time. This is best explained using an example. I want to create a saved list view for invoices that are associated to customer County Road Co and add the Budget column to the list view."
+        },
+        {
+          "type": "step",
+          "text": "1. Reorder Columns"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Drag and drop the Customer column to the front of the list"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Filter the Column"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click on the filter  icon within the Customer column. The list of customers display."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Select County Road Co."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Click the OK button. The status column is filtered to display all invoices for County Road Co."
+        },
+        {
+          "type": "step",
+          "text": "3. Add a column from the Column Chooser"
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Click the more actions  icon."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 Select Column Chooser. The column chooser displays."
+        },
+         {
+          "type": "substep",
+          "text": "3.3 Drag and drop the Budget column to the Invoice Management column headings. The Budget column displays on the invoice list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Save your View"
+        },
+        {
+          "type": "substep",
+          "text": "4.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "substep",
+          "text": "4.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "4.3 Select a who can access this view option, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "substep",
+          "text": "4.4 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Toggle List Grouping Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you view the invoice list, you may want to group the list view by a column. This let's you see the invoice listing in a different way. Let's look at the example where we group by customer."
+        },
+        {
+          "type": "step",
+          "text": "1. Group by a Column"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Click the more actions icon."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Select Toggle List Grouping."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 Drag and drop a column header to the group by. The Invoice list is toggled by group."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Save your View"
+        },
+               {
+          "type": "substep",
+          "text": "2.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Select who can access this view options, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "substep",
+          "text": "2.4 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "substep",
+          "text": "2. Select a saved view."
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "step",
+          "text": "3. Click on apply selected. The saved view displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Turn an Estimate into a Work Order",
+      "content": [
+        {
+          "type": "info",
+          "text": "After an estimate is created, it is then ready for review prior to creating a work order for the customer."
+        },
+        {
+          "type": "info",
+          "text": "Let's turn an estimate into a work order."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Invoices."
+        },
+        {
+          "type": "info",
+          "text": "2. You can either: Create a New Estimate. If there is an existing estimate, then select the existing estimate."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "The New Estimate screen displays."
+        },
+        {
+          "type": "step",
+          "text": "3. To add a line to the estimate, click the New Line Item button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    }
+  ]
+}

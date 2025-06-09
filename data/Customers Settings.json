@@ -1,0 +1,447 @@
+{
+  "document_title": "Customers Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Customers Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "View your customer's performance and keep your customer records up-to-date. This modules lets you: View the Customer KPIs. Maintain your Customer Details. Maintain your Customer site assignments. Add attachments or links. View  the Customer Invoices and Work Order History"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Attachments and Links on a Customer Record",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can quickly add an an attachment or to a customer record."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Customers."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Customer Record. The Customer Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Attachment  tab."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/1.png"
+        },
+        {
+          "type": "step",
+          "text": "4. You can add an attachment by either drag and drop the file to the designated area or click the Add Attachment button and then select the file to upload it."
+        },
+        {
+          "type": "step",
+          "text": "5. If you want to add a link, then click the Add Link button. The Add Attachment Link dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "6. In the Attachment Link field, enter the link."
+        },
+        {
+          "type": "step",
+          "text": "7. Click the Upload Link button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/2.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Notes on a Customer Record",
+      "content": [
+        {
+          "type": "info",
+          "text": "Notes can be added to your customer records."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Customers."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Customer Record. By default the Details tab displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Notes  tab."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click the New Note button.  The New Public Note dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "5. Enter or paste in your text."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Add Note button."
+        },
+        {
+          "type": "info",
+          "text": "The note is automatically saved."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/4.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add or Remove Customer Site Assignments",
+      "content": [
+        {
+          "type": "info",
+          "text": "The sites that customers are assigned to can be managed and this lets you add or remove sites."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Customers."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Customer Record. By default the Details tab displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Sites  tab. The Customer Sites displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/5.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Add customer to new site button."
+        },
+        {
+          "type": "step",
+          "text": "5. From the Site drop-down, select the site."
+        },
+        {
+          "type": "info",
+          "text": "The site is automatically saved."
+        },
+        {
+          "type": "info",
+          "text": "To remove a site, click  the Remove  icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/6.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/7.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Customer",
+      "content": [
+        {
+          "type": "info",
+          "text": "Creating a Customer Record is a simple process.  In just a few simple steps, you can have a Customer Record up and running."
+        },
+        {
+          "type": "step",
+          "text": "1. Select the Customers icon in the menu ribbon on the left side of the screen."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the New Customer button."
+        },
+        {
+          "type": "step",
+          "text": "3. Complete the fields. Customer ID\tUnique identification code for the customer.  It can contain letters, numbers, or a combination of both, and can be up to 24 characters long.  The Customer ID needs be something meaningful to you since the Customer List will be sorted by this ID by default. Name\tFull or official name of the customer.  It can contain letters, numbers, or a combination of both, and it can be up to 50 characters long. File As\tName of the customer as filed.  For example, if the customer is Luis Acosta, you might prefer to file that customer as Acosta, Luis. Status\tStatus of the customer.  The available options are determined when you set up the Customer Module. Email\tCustomer’s email address. Price Point\tThe price point (percentage markup) applied to the customer’s inventory purchases.  Leave this field blank to use a global price point or select from price points set to be restricted to select customers. Barcode/Tag\tSpecify a custom barcode using your company's naming convention. System generated and custom barcodes can be both be used."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Create Customer button. The customer is created."
+        },
+        {
+          "type": "info",
+          "text": "After the customer is saved, you can add the customer to the asset."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/8.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customize the Customers List View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can see the full list of your Customers, along with the customer details at a glance. Each user can arrange the layout of the screen according to their own preferences and liking."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/9.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "info",
+          "text": "Search allows you to find any field within the Customers list. The example below shows results populated for springfield."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/10.png"
+        },
+        {
+          "type": "step",
+          "text": "1. In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filter Active Customers",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Active Customers drop-down helps you view customers by active or inactive status."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/11.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Click on the Active Customers drop-down."
+        },
+        {
+          "type": "step",
+          "text": "2. Select one of the following: Active Customers. Inactive Customers. All Customers"
+        },
+        {
+          "type": "step",
+          "text": "3. The customers list is automatically filtered."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the Customers list, you may want to change the customer columns and sort order. The Save View let's you set up the customer listing and then save it for next time."
+        },
+        {
+          "type": "info",
+          "text": "This is best explained using an example. I want to create a saved list view for customers that are associated to springfield."
+        },
+        {
+          "type": "step",
+          "text": "1. Reorder Columns"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Drag and drop the Customer Name column to the front of the list"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/12.gif"
+        },
+        {
+          "type": "step",
+          "text": "2. Filter the Column"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click on the search field within the Customer Name column."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Type springfield into the search field."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 The Customer Name column is filtered to display all Customers containing springfield"
+        },
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/13.png"
+        },
+         {
+          "type": "step",
+          "text": "3. Save your View"
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 Select a who can access this view option, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "substep",
+          "text": "3.3 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/15.png"
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "step",
+          "text": "2. Select a saved view."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/16.png"
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Customer's Contact Information",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can edit the customer's contact information."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Customers."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Customer Record. By default the Details tab displays."
+        },
+        {
+          "type": "step",
+          "text": "3. For the Contact Information area, click the Expand  icon."
+        },
+        {
+          "type": "step",
+          "text": "4. Update the contact information, such as address, phone number, email, or website."
+        },
+        {
+          "type": "info",
+          "text": "The information is automatically saved."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/19.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Understand the Customer KPIs",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Key Performance Indicators (KPIs)  give you a quick, at-a-glance, view of how a particular Customer is doing. Navigate to Customers. Click the Show KPI icon."
+        },
+        {
+          "type": "info",
+          "text": "Going across the top of the screen the following dynamic tools are: Active Customers. WO Request Customers. Contact Status. Top 10 Customers by Work. Top 10 Customers by Paid Invoices"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/20.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/21.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View Customer Invoice and Work Order History",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can view Invoices and Work Orders associated with a Customer on the history tab."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Customers."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Customer Record. The Customer Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Timeline   tab. By default, the tab lists both views."
+        },
+        {
+          "type": "step",
+          "text": "4. Click either the Invoices button or the Work Orders button to filter the list."
+        },
+        {
+          "type": "step",
+          "text": "5. Click a timeline records to see more details."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/22.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customers%20Settings/23.gif"
+        }
+      ]
+    }
+  ]
+}

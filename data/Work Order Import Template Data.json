@@ -1,0 +1,129 @@
+{
+  "document_title": "Work Order Import Template Data",
+  "content": [
+    {
+      "type": "section",
+      "title": "General Information",
+      "content": [
+        {
+          "type": "info",
+          "text": "Do not change the column headers in Row 1, as this is used to complete the upload."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Data Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work order number - Required field - This is a unique identifier of a work order. Multiple work orders can be uploaded with the same work order number."
+        },
+        {
+          "type": "info",
+          "text": "Purpose - Required field with maximum length of 100 characters - The purpose of creating the work order, e.g. Repairing car break."
+        },
+        {
+          "type": "info",
+          "text": "Asset - Conditional required field - The asset for which a work order will be created, e.g. Car. This is a conditional mandatory field; the condition here is that either asset or budget must be provided. If uploaded, then the asset must match the asset ID present in the system."
+        },
+        {
+          "type": "info",
+          "text": "Budget - Conditional required field - Eptura Asset allows users to keep track of their spending on assets, Work orders, Purchase orders using Budget accounts. Budget accounts belong to an entity. These budget accounts are referred to as Budget in Work Order. This is a conditional mandatory field; the condition here is that either budget or asset must be provided. If uploaded, it must match budget accounts present in the system and match the budget account for work order entity."
+        },
+        {
+          "type": "info",
+          "text": "Type - Optional field - Type, also known as Work Type, categorizes the kind of work that will be done for the work order, such as preventive, corrective, inspection, and so on. We can set one of the work types as the default work type. If provided, this must match the work types present in the system. Work types are defined in Settings > Work Order Settings > Work Type."
+        },
+        {
+          "type": "info",
+          "text": "Priority - Optional field - Priority helps to mark the urgency for a work order. Eptura Asset has the following priorities: Major, Minor, Normal, Critical. If provided, this must match the types of priorities present in the system."
+        },
+        {
+          "type": "info",
+          "text": "Status - Optional field - Status helps to define the flow of work orders. Eptura Asset defines status, under active, completion, and inactive categories; also it lets you set the starting status, also known as default status. An example of statuses that can fall under the active category can be New, Reopened, Requires parts. If provided, this must match any of the status present in the system. These status can be configured in Settings > Work Order Settings > Workflow."
+        },
+        {
+          "type": "info",
+          "text": "Due Date - Optional field with Date format - This date specifies when the work order needs to be completed. The due dates must match the DD/MM/YYYY format. Eptura Asset will display a warning message if due date is 10 years before or after the current date. The due date needs to be greater than the work order created date."
+        },
+        {
+          "type": "info",
+          "text": "Vendor - Optional field - By default, all listed vendors are treated as suppliers of parts to your organization and additionally: Each vendor can be specified as an outside contractor, allowing you to assign work to them. Indicate which supplier is preferred for each of your parts and inventory items. Include a rating option, allowing you to rate each vendor from 1-5 stars. Vendors belong to an entity. If uploaded, this must match the vendors in the system and the vendor must belong the entity of the work order."
+        },
+        {
+          "type": "info",
+          "text": "Assignee - Optional field - Assignee is the user to whom the work order can be assigned for completion. This user belongs to an entity. If uploaded, this must match with any of the User's ID in the system and they must belong to the work order entity."
+        },
+        {
+          "type": "info",
+          "text": "Customer - Optional field - Work orders and invoices can be associated with a customer. This customer user belongs to an entity. If uploaded, this must match with any of the customers in the system and that customer user must belong to the work order entity."
+        },
+        {
+          "type": "info",
+          "text": "Created Date - Optional field with Date format - This field specifies the work order creation date. The created date must match the DD/MM/YYYY format. Eptura Asset will display a warning message if the created date is 10 years before the current date. The created date cannot be a future date."
+        },
+        {
+          "type": "info",
+          "text": "Completed Date - Optional field with Date format - This field specifies the work order completed date. The completed date must match the DD/MM/YYYY format. Eptura Asset will display a warning message if a completed date is 10 years before or after the current date. For a work order with completed status, the completed date cannot be a future date."
+        },
+        {
+          "type": "info",
+          "text": "Custom field - Optional field - Eptura Asset lets you add custom fields that can be filled in when creating assets, work orders, etc. The following are the types of custom fields supported: Text: Any character, letter, symbol, or number, can be typed in this field. Check box: Creates a Yes/No style check box. Integer: Only numbers can be entered. Decimal: Numbers with a decimal point can be entered. Date:  MM/DD/YY Lookup: Creates a drop-down field, containing the options that can be selected from. Contact: Creates a drop-down field that brings up the list of Employees, Vendors, Customers, Users. Currency: Numbers entered will be preceded by your country's currency symbol. Numbers, symbols, and characters allowed. If text length beyond 250 characters, then - Value must be no longer than 250 characters."
+        },
+        {
+          "type": "info",
+          "text": "Work description - Optional field with maximum length of 100 characters - This is a text field to provide any description related to the work order."
+        },
+        {
+          "type": "info",
+          "text": "Part - Conditional required field - If this field is present in the work order section, then this is a combination of Part ID and Description. This is a conditional mandatory field, and the Part ID is needed if any other part fields are uploaded. Allow only stocked and non-stocked part types."
+        },
+        {
+          "type": "info",
+          "text": "Cost - Optional field with maximum length of 16 characters - This field provides the cost of the part needed to complete the work order. This field can be integer or floating decimals. 2 digits are allowed post-decimal for cost. Length of digits with/without decimal will be 16."
+        },
+        {
+          "type": "info",
+          "text": "Quantity - Optional field - Quantity of the part uploaded. This field can be integer or floating decimals. No limit on the length of the digits with/without decimal."
+        },
+        {
+          "type": "info",
+          "text": "Budget - Optional field - The budget that is spent on the parts to complete the work order. The budget of the work order will also be applied to the parts record of the work order."
+        },
+        {
+          "type": "info",
+          "text": "Task Code - Optional field - Service task code of the task performed using the part. If this field is uploaded, then it must match one of the service task codes."
+        },
+        {
+          "type": "info",
+          "text": "Warehouse - Optional field - This field tells the warehouse of the part. If this field is uploaded, then it must match the warehouse with respect to entity selected for work order."
+        },
+        {
+          "type": "info",
+          "text": "Labor contact - Optional field - This field provides the name of the labor contact who will work on the work order. If any of the remaining fields are uploaded (Labor Hour, Labor Task, Labor Rate and Labor Code) then this field is required. Labor contact must belong the work order entity."
+        },
+        {
+          "type": "info",
+          "text": "Labor rate - Optional field - This field provides the rate/amount configured per hour for the labor/person who work on the work order. This can be integer or floating digits. No other symbols or text apart from currency symbols allowed."
+        },
+        {
+          "type": "info",
+          "text": "Labor code - Optional field - This field provides the amount configured per hour for the labor/person working on the work order. This can be integer or floating digits. No other symbols or text apart from currency symbols allowed."
+        },
+        {
+          "type": "info",
+          "text": "Labor hours - Optional field - This field specifies the hours and minutes worked by the labor on a task. Hours - Only integers between 0 - 99 will be considered valid. Minutes - Only integers between 0-59 will be considered valid."
+        },
+        {
+          "type": "info",
+          "text": "Labor cost - Optional field - Labor Cost = Labor rate * Labor hours. Labor Cost = Labor code * Labor hours."
+        },
+        {
+          "type": "info",
+          "text": "Task Code - Optional field - Service task code of the task performed by the labor."
+        }
+      ]
+    }
+  ]
+}

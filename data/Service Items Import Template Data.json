@@ -1,0 +1,61 @@
+{
+  "document_title": "Service Items Import Template Data",
+  "content": [
+    {
+      "type": "section",
+      "title": "General Information",
+      "content": [
+        {
+          "type": "info",
+          "text": "Our Implementation team can use this import to populate the service items."
+        },
+        {
+          "type": "info",
+          "text": "Do not change the column headers in Row 1 as this is used to complete the upload."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Data Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Service Class - Required field with maximum length of 24 characters - States type of Person, Vendor, Skill or if *SAFETY* item. Asterisks are used for Safety to make sure it comes first on work orders!"
+        },
+        {
+          "type": "info",
+          "text": "Service Task - Required field with maximum length of 24 characters - Each are unique and setup to describe the type of labor being performed for reporting and search purposes."
+        },
+        {
+          "type": "info",
+          "text": "Description - Required field with maximum length of 255 characters - Describes the task in greater detail"
+        },
+        {
+          "type": "info",
+          "text": "Active - Optional - T/F, task can be set to false if no longer used"
+        },
+        {
+          "type": "info",
+          "text": "Invoice Labor Rate - Optional - Invoice Labor Rate - Standard Rate: Uses the Employee's set hourly labor rate when assigned to the job. Override Rate - Set dollar amount. Example: Vendor provides the service at $150 regardless of the number of actual hours. (Set the Estimated Time to 1 in this instance.)"
+        },
+        {
+          "type": "info",
+          "text": "Estimated Time - Optional - Expected or average time to do the job in hours"
+        },
+        {
+          "type": "info",
+          "text": "Estimated Labor Rate - Optional - Average labor rate per job skill based on estimate hours"
+        },
+        {
+          "type": "info",
+          "text": "Labor Price - Optional - Actual cost of service"
+        },
+        {
+          "type": "info",
+          "text": "Task Instructions - Optional - Details instructions"
+        }
+      ]
+    }
+  ]
+}

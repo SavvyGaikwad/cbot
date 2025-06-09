@@ -1,0 +1,515 @@
+{
+  "document_title": "Inspection Template Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Inspection Templates Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "Inspection templates give you the ability to: Easily prepare planned reoccurring inspections for your maintenance schedules. On-demand inspections are available at a moments notice. Know exactly when an Inspection standard was established and last updated. Establish To-Do Lists & Critical Checklists. Work Orders can be auto-generated when a problem is discovered. Integrates seamlessly with Work Orders, Operator Companion, and Work Companion. Templates can be pushed out to specific assets or groups of assets"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Inspection Category",
+      "content": [
+        {
+          "type": "info",
+          "text": "An Inspection Category is a way to organize your inspections into groups, so you can quickly find your inspections."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Libraries section, click Inspections Templates."
+        },
+        {
+          "type": "step",
+          "text": "3. Select the + icon and a new line displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/1.png"
+        },
+        {
+          "type": "step",
+          "text": "4. In the new line field, enter category name."
+        },
+        {
+          "type": "step",
+          "text": "5. Click away from the field and the category name will save"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a New Inspection Template",
+      "content": [
+        {
+          "type": "info",
+          "text": "Inspections are the most common for of Preventive Maintenance and typically involve a list of tasks and check-points to avoid costly breakdowns."
+        },
+        {
+          "type": "info",
+          "text": "Use this feature to:"
+        },
+        {
+          "type": "info",
+          "text": "Easily prepare planned reoccurring inspections for your maintenance schedules. After the inspection template is created, then it can be added to a Maintenance Plan as a task. Learn more in Add Tasks to a Maintenance Plan. Create Templates so that On-demand inspections are available at a moments notice. Establish To-Do Lists and Critical Checklists."
+        },
+        {
+          "type": "info",
+          "text": "Inspection templates are divided up into the following main sections:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/2.png"
+        },
+        {
+          "type": "step",
+          "text": "Header: Contains the assigned description of the Inspection, and the assigned Service Code."
+        },
+        {
+          "type": "step",
+          "text": "Body: This is the heart of the Inspection template.  The options for the person conducting the inspection are: To Do List: A list of tasks to be performed, see Create a To Do List. Failure Checklist: Items to be marked if one is found to be deficient, see Create a Failure Checklist. Pass / Fail: Single standard per item. It either passes or fails. See Create a Pass / Fail Section. Photos: Pictures of the working or damaged equipment. See Add Photos to an Inspection Template. Meter / Log Entry: Record Mileage, Hours, Fuel, Temp., etc. See Add Meter / Log Entries to an Inspection Template. Text Entry - See Add Text Entries to an Inspection Template."
+        },
+        {
+          "type": "step",
+          "text": "Signature: Final inspection verdict of: Safe/Unsafe, Pass/Fail, Operable/Inoperable"
+        },
+        {
+          "type": "info",
+          "text": "Additionally, the inspection template can be made available for the recommended Assets, Asset categories, or Types of Assets."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/3.jpg"
+        },
+        {
+          "type": "step",
+          "text": "Steps"
+        },
+        {
+          "type": "info",
+          "text": "Complete the following steps:"
+        },
+        {
+          "type": "step",
+          "text": "1. Create a new Inspection Template"
+        },
+               {
+          "type": "info",
+          "text": "To create an Inspection Template, follow the steps below:"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 From the menu, click Settings."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Under the Libraries section, click Inspection Templates."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 Select an Inspection Category or create a new Inspection Category."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/4.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.4 Click the + Create New Template button and the Form Builder displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Complete the Inspection Template Name and Details"
+        },
+         {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/5.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 In the Untitled Form field, enter the name of the inspection."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 In the Describe Form Here field, enter the description."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 By default, the Active toggle is ON and this means the template is available for use."
+        },
+        {
+          "type": "substep",
+          "text": "2.4 By default, the Visible in OC App toggle is ON and means the template is visible in the Operator Companion Application."
+        },
+        {
+          "type": "step",
+          "text": "3. Complete the Sections and Question / Action"
+        },
+        {
+          "type": "info",
+          "text": "When you have completed the name, then the rest of the form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/6.png"
+        },
+        {
+          "type": "info",
+          "text": "The Service Code displays and if needed, you can edit this field. This code is used to identify the inspection when it is added to a PM or Work Order."
+        },
+        {
+          "type": "substep",
+          "text": "3.1 In the Untitled Section field, enter what will be performed during the inspection."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/7.png"
+        },
+        {
+          "type": "substep",
+          "text": "3.2 Next, in the Question / Action field, enter the tasks to include in the inspection."
+        },
+        {
+          "type": "info",
+          "text": "When you enter the task, the Task menu will pop-out."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/7.png"
+        },
+        {
+          "type": "substep",
+          "text": "3.3 From the Select drop-down, select either: To Do List. Failure Checklist. Pass/Fail. Photos. Meter / Log Entry. Text Entry. Optional - Click the Description toggle to ON, if you want to add a description to the task. Optional - Click the Required toggle to ON, if you want the task to be required."
+        },
+        {
+          "type": "step",
+          "text": "4. Add more Sections and Questions / Actions"
+        },
+        {
+            "type": "info",
+            "text": "Below are examples that you can explore and use in your inspection forms."
+          },
+                    {
+            "type": "media",
+            "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/8.png"
+          },
+          {
+            "type": "info",
+            "text": "To Do List - A list of tasks to perform during Inspection. Learn more in Create a To Do List."
+          },
+          {
+            "type": "media",
+            "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/9.png"
+          },
+          {
+            "type": "info",
+            "text": "Failure Checklist - A list of items being inspected, indicating which items failed Inspection. Learn more in Create a Failure Checklist."
+          },
+          {
+            "type": "media",
+            "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/10.png"
+          },
+          {
+            "type": "info",
+            "text": "Pass / Fail - A list of checkpoints indicating overall Pass or Fail. Learn more in Create a Pass/Fail."
+          },
+          {
+            "type": "media",
+            "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/11.png"
+          },
+          {
+            "type": "info",
+            "text": "Photos - Photos of Inspection submitted upon completing the Inspection. Learn more in Add Photos to an Inspection Template."
+          },
+          {
+            "type": "media",
+            "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/12.png"
+          },
+          {
+            "type": "info",
+            "text": "Meter/Log Entry - Meter reading or Log entries to complete the Inspection. Learn more Add Meter/Log Entry to an Inspection Template."
+          },
+          {
+            "type": "media",
+            "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/13.png"
+          },
+          {
+            "type": "info",
+            "text": "Text Entry - Text explanation of findings to describe results of the Inspection. Learn more in Add Text Entry to an Inspection Template."
+          },
+           {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/14.png"
+        },
+                 {
+          "type": "info",
+          "text": "When you have the Question / Action selected, then you will see icons."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/15.png"
+        },
+        {
+          "type": "info",
+          "text": "Click one the following icons to build out your inspection template:"
+        },
+        {
+          "type": "info",
+          "text": "Add a new task to a section icon"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/16.png"
+        },
+        {
+          "type": "info",
+          "text": "Create a copy of this task icon"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/17.png"
+        },
+        {
+          "type": "info",
+          "text": "Add a new section icon"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/18.png"
+        },
+        {
+          "type": "step",
+          "text": "5. Complete the Signoff Text"
+        },
+               {
+          "type": "substep",
+          "text": "5.1 In the Signoff Text field, enter the signoff text. For example, Confirmation Signature."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/19.png"
+        },
+        {
+          "type": "substep",
+          "text": "5.2 Click the Certification Text field to display the menu pop-out."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/20.png"
+        },
+        {
+          "type": "substep",
+          "text": "5.3 From the Pass/Fail drop-down select either: Pass/Fail - this is the default settings. Safe/Unsafe. Operable/Inoperable"
+        },
+        {
+          "type": "info",
+          "text": "The Inspection Template is now complete and ready for use on a PM or Work Order."
+        },
+        {
+          "type": "step",
+          "text": "6. Make the template available for the Assets"
+        },
+        {
+          "type": "info",
+          "text": "After the Inspection has been created, it can be made available for the recommended assets, asset categories, or types of assets."
+        },
+        {
+          "type": "info",
+          "text": "By default, Inspection Templates are available for use with all asset categories."
+        },
+        {
+          "type": "substep",
+          "text": "1. From the the Asset Categories drop-down and search for an asset category and then select it. You can select multiple asset categories."
+        },
+        {
+          "type": "substep",
+          "text": "2. Repeat this for the Asset Sub-Categories and Assets fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/21.png"
+        },
+        {
+          "type": "step",
+          "text": "7. Print the QR Codes for the Operator Companion App"
+        },
+        {
+          "type": "info",
+          "text": "The QR Code icons lets you select a printer so that you can print the QR Code Labels."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/22.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Generate a QR Code for the Operator Companion App",
+      "content": [
+        {
+          "type": "info",
+          "text": "Inspections can be started from anywhere from the convenience of the Operator Companion Application, by simply scanning a QR code."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Libraries section, click Inspection Templates."
+        },
+        {
+          "type": "step",
+          "text": "3. Locate and select the Inspection Template requiring a QR Code."
+        },
+        {
+          "type": "step",
+          "text": "4. Select the QR code icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/23.png"
+        },
+        {
+          "type": "step",
+          "text": "5. Select which printer to send the QR code to."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Print button."
+        },
+        {
+          "type": "info",
+          "text": "The QR code is available to attach to an asset and then you can start an inspection from the Operator Companion Application."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/24.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inspection Template",
+      "content": [
+        {
+          "type": "info",
+          "text": "As Maintenance Plans evolve, it is important to maintain and create new inspection templates to keep up to date with current processes. Maintain your library of Inspection templates by inactivating inspections that are no longer in use, editing out dated inspections, and duplicating similar inspections."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inactivate or Delete an Inspection Template",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Libraries section, click Inspection Templates."
+        },
+        {
+          "type": "step",
+          "text": "3. Locate the inspection template."
+        },
+        {
+          "type": "step",
+          "text": "4. Hover on inspection template and click the More Actions icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/25.png"
+        },
+        {
+          "type": "step",
+          "text": "5. Click either inactivate or delete."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reactivate a Template",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Scroll to the bottom of the screen."
+        },
+        {
+          "type": "step",
+          "text": "2. Check the Show Inactive Templates checkbox and the inactive templates display."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/26.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Hover on inspection template and click the More Actions icon."
+        },
+        {
+          "type": "step",
+          "text": "4. Click Activate and the template is active."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Template",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Locate the inspection template."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the inspection template and the left-hand panel displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inspection%20Template%20Settings/27.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Edit Template button."
+        },
+        {
+          "type": "info",
+          "text": "For further information on how to add sections, see Create a New Inspection Template."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Duplicate an Inspection Template",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Locate the inspection template."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the inspection template and the left-hand panel displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Create a Copy button. The copy is created and you will see (Copy) in the name of the template."
+        },
+        {
+          "type": "step",
+          "text": "4. Now, you can edit the inspection template."
+        }
+      ]
+    }
+  ]
+}

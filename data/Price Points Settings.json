@@ -1,0 +1,420 @@
+{
+  "document_title": "Price Points Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Price Points Admin Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Price Points",
+      "content": [
+        {
+          "type": "info",
+          "text": "Price points define the markup on your products and services. Whether you are charging for labor or parts, you can have markups based on a percentage or a fixed rate. Price points can be applied globally or be tailored to specific sites."
+        },
+        {
+          "type": "info",
+          "text": "You can also create exceptions or overrides for certain parts or customers."
+        },
+        {
+          "type": "info",
+          "text": "You can either create a new price point to edit an existing one."
+        },
+        {
+          "type": "info",
+          "text": "Edit a Price Point"
+        },
+        {
+          "type": "info",
+          "text": "Create a Price Point"
+        },
+        {
+          "type": "info",
+          "text": "Add Overrides to a Price Point"
+        },
+        {
+          "type": "info",
+          "text": "Edit or Delete an Override"
+        },
+        {
+          "type": "info",
+          "text": "Add Price Point Overrides to a Customer"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Price Point",
+      "content": [
+        {
+          "type": "step",
+          "text": "If you want to edit a price point, then click the name of the price point. The screen is the same as create, see below for instructions."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Price Point",
+      "content": [
+        {
+          "type": "info",
+          "text": "As the screens are the same, let's create a new price point."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create New link and the price point screen displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Name field, enter the name of the price point. This is a short name used to identify the price point."
+        },
+        {
+          "type": "step",
+          "text": "In the Parts Markup Percentage (%) field, enter the percentage increase over what was listed on the work order."
+        },
+        {
+          "type": "step",
+          "text": "In the Labor / Service Hourly Rate ($) field, enter customer's hourly labor rate charged for each service performed on the work order. If nothing is entered, the invoice will default back to the Billable Labor Rate listed in the Invoice Settings Defaults."
+        },
+        {
+          "type": "step",
+          "text": "From the Start Date calendar picker, select the start date."
+        },
+        {
+          "type": "step",
+          "text": "From the End Date calendar picker, select the end date. If the Price Point doesn't expire, then leave the end date empty."
+        },
+        {
+          "type": "step",
+          "text": "If you want this to apply to all sites, then click the Apply this price point to al site toggle to ON."
+        },
+        {
+          "type": "step",
+          "text": "If this applies only to specific sites, then click the Site / Locations tile to display the Choose Locations / Sites dialog."
+        },
+        {
+          "type": "info",
+          "text": "Check the Sites check box that you want this price point to apply to."
+        },
+        {
+          "type": "step",
+          "text": "Click the Apply To Price Point button. The sites/ locations are added."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create Price Point button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Overrides to a Price Point",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need overrides, these can be added to the price point. The overrides are the exceptions to the price points."
+        },
+        {
+          "type": "step",
+          "text": "If you want to edit a price point, then click the name of the price point."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Override button the the Add Override form displays."
+        },
+        {
+          "type": "info",
+          "text": "Here you can add a Part override or a Labor/Service override."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Part",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can add a fixed price or percentage exception to be charged for a part used."
+        },
+        {
+          "type": "step",
+          "text": "Click the Part button and field display."
+        },
+        {
+          "type": "step",
+          "text": "Click the Part field, to display the Parts Master form."
+        },
+        {
+          "type": "step",
+          "text": "In the Search field, enter the name of the part."
+        },
+        {
+          "type": "step",
+          "text": "From the search results, click on the part you want and the Part field is populated."
+        },
+        {
+          "type": "step",
+          "text": "From the Price Type drop-down, select either Fixed Price ($) or Percentage (%)."
+        },
+        {
+          "type": "step",
+          "text": "In the Value field, enter the value."
+        },
+        {
+          "type": "step",
+          "text": "In the Minimum Quantity field, enter the minimum quantity of the part."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Override button and this is added and the price point is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Labor/Service",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can add a fixed rate or hourly rate exception to be charged for a particular service task."
+        },
+        {
+          "type": "step",
+          "text": "Click the Labor/Service button and the fields display."
+        },
+        {
+          "type": "step",
+          "text": "Click the Service Task field to display the Add Service Task dialog."
+        },
+        {
+          "type": "step",
+          "text": "Browse or search for the service task."
+        },
+        {
+          "type": "step",
+          "text": "Check the service task's check box to select it."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Selected button and the Service Task field is populated."
+        },
+        {
+          "type": "step",
+          "text": "From the Price Type drop-down, select either Fixed Rate ($) or Hourly Rate ($)."
+        },
+        {
+          "type": "step",
+          "text": "In the Value field, enter the value."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Override button and this is added and the price point is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit or Delete an Override",
+      "content": [
+        {
+          "type": "step",
+          "text": "Edit"
+        },
+        {
+          "type": "step",
+          "text": "If you want to edit a price point, then click the name of the price point."
+        },
+        {
+          "type": "step",
+          "text": "Click on the override tile and the Edit Override form displays."
+        },
+        {
+          "type": "step",
+          "text": "Complete your edits."
+        },
+        {
+          "type": "step",
+          "text": "Click the Update Override button and edit is saved in the price point."
+        },
+        {
+          "type": "step",
+          "text": "Delete"
+        },
+        {
+          "type": "step",
+          "text": "If you want to edit a price point, then click the name of the price point."
+        },
+        {
+          "type": "step",
+          "text": "For the override you no longer want, click the Delete  icon and the message \"Are you sure you want to delete this override?\" displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Yes button and the override is deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Price Point Overrides to a Customer",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you have overrides (exceptions) these can be linked to a customer. So, when you complete a customer's work order, then the system will generate the invoice at their price point markup."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Customers."
+        },
+        {
+          "type": "step",
+          "text": "Click an existing customer to edit and the edit form displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Sites tab and this lists each site the customer needs to appear on."
+        },
+        {
+          "type": "step",
+          "text": "From the Default Price Point drop-down, select the price point and the customer's details are saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Import your Price Point Overrides",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Price Point Overrides import is used to populate the overrides for your Parts and Service Tasks."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Download our sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Settings > Libraries > Price Points."
+        },
+        {
+          "type": "step",
+          "text": "Click the name of the price point and the edit screen displays."
+        },
+        {
+          "type": "step",
+          "text": "From the Add Override button, click the drop-down arrow."
+        },
+        {
+          "type": "step",
+          "text": "Click the Import Overrides."
+        },
+        {
+          "type": "info",
+          "text": "The Price Point Override Import screen displays."
+        },
+        {
+          "type": "step",
+          "text": "Click on Sample-PricePoint-Override-File.Csv to download the sample Import template."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Complete the sample file section",
+      "content": [
+        {
+          "type": "step",
+          "text": "Open the Sample-PricePoint-Override-File.Csv file in Microsoft Excel."
+        },
+        {
+          "type": "step",
+          "text": "Remember the data in this file is a sample, you must delete these rows as you do not want to import these in."
+        },
+        {
+          "type": "step",
+          "text": "Under each of the Column Headers, complete the row data. For details on the data, see Price Point Override Import Template Data."
+        },
+        {
+          "type": "step",
+          "text": "After all the data has been entered on the sheet, save the file to your computer."
+        },
+        {
+          "type": "info",
+          "text": "Below displays an example of a price points override import."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Upload the completed sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the Choose File button."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to the file and select it. The file name displays in the screen."
+        },
+        {
+          "type": "step",
+          "text": "Click the Map Data button. The import file fields display."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Map the data",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Map Data table shows which fields from the import file are being mapped to the fields in the application. Use the Map Data table to align the correct fields from the import file to the application. In this example, Status is mapped to Serial, which needs to be corrected."
+        },
+        {
+          "type": "step",
+          "text": "Verify that all ManagerPlus Fields are matched with the correct Import File Fields."
+        },
+        {
+          "type": "info",
+          "text": "If you find a discrepancy, then you can correct the mapping."
+        },
+        {
+          "type": "step",
+          "text": "Click the Preview button. The Review Your Data screen displays."
+        },
+        {
+          "type": "info",
+          "text": "If your import has errors, then click the Errors tab to view them. You can correct the error, click into the field, and then change the entry."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 5. Import",
+      "content": [
+        {
+          "type": "step",
+          "text": "Now you are ready to import. Click on the Import button and the price point overrides are imported."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Price Point Override Template Data",
+      "content": [
+        {
+          "type": "info",
+          "text": "The table below lists the columns and which columns are required or optional."
+        },
+        {
+          "type": "info",
+          "text": "Column name | Column Required | Notes\nPart ID | Yes - When you are adding a Part this is required. | Unique identifier for the Part.\nPart Price Type | Yes | This is set to either Fixed or Percentage.\nPart  Value | Yes | The monetary value.\nMinimum Quantity | Yes | The minimum quantity of the part.\nService Task | Yes - When you are adding a Service Task this is required. | Unique identifier for the Service Task.\nService Price Type | Yes | This is set to either Fixed or Hourly.\nService Value | Yes | The monetary value."
+        }
+      ]
+    }
+  ]
+}

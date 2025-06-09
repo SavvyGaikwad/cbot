@@ -1,0 +1,659 @@
+{
+  "document_title": "Glossary",
+  "content": [
+    {
+      "type": "section",
+      "title": "API \"Application Programming Interface\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "An API allows for a software program to easily exchange data with another program. The platform integrates with third-party applications to increase its ability to collect data and eliminate double entry of that data."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "An item controlled by a company from which a benefit is derived. Assets are a part of the data that goes into building up an Asset Maintenance platform. Examples include buildings, equipment, vehicles, tools, HVAC systems, furniture, etc."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Category",
+      "content": [
+        {
+          "type": "info",
+          "text": "A broad way of classifying assets by what they are. i.e. Vehicles, Fixed Equipment, HVAC, etc."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "sset Description",
+      "content": [
+        {
+          "type": "info",
+          "text": "A longer descriptive statement defining the asset. This includes a combination of characteristics, including the asset's common name, type, make, ownership, area, and other attributes to help people identify the asset beyond its asset ID."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset ID",
+      "content": [
+        {
+          "type": "info",
+          "text": "The unique identifier that belongs to a particular asset. No two assets can have the same Asset ID."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Group",
+      "content": [
+        {
+          "type": "info",
+          "text": "A description of an asset that separates it by location or department."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Hierarchy",
+      "content": [
+        {
+          "type": "info",
+          "text": "A method for asset organization that uses groups in the same way that a computer organizes files with folders."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Lifecycle",
+      "content": [
+        {
+          "type": "info",
+          "text": "The period during which an asset is productive and profitable. The asset lifecycle is over when an organization sells or retires the asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Hierarchy",
+      "content": [
+        {
+          "type": "info",
+          "text": "A method for asset organization that uses groups in the same way that a computer organizes files with folders."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Management",
+      "content": [
+        {
+          "type": "info",
+          "text": "The systematic process of deploying, operating, maintaining, upgrading, and disposing of assets in a cost-effective manner. This process is enhanced by a CMMS or asset management platform which can oversee the scheduling, handling, directing, and governing of your assets."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Type",
+      "content": [
+        {
+          "type": "info",
+          "text": "The systematic process of deploying, operating, maintaining, upgrading, and disposing of assets in a cost-effective manner. This process is enhanced by a CMMS or asset management platform which can oversee the scheduling, handling, directing, and governing of your assets."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Structure",
+      "content": [
+        {
+          "type": "info",
+          "text": "Complete details of everything you need to know about a specific asset. This could include location, purchase amounts, vin or equipment number, and the parts associated with its maintenance or repairs."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Backlog",
+      "content": [
+        {
+          "type": "info",
+          "text": "An accumulation of work orders that have not yet been completed and need to be dealt with. The Backlog consists of work orders from PM Schedules, repairs, requests for work, failed inspections, and other indicators that work is required."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Bar Coding",
+      "content": [
+        {
+          "type": "info",
+          "text": "Using barcode printing to create unique barcodes for an asset. This is used to track different assets and access asset information."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "BI \"Business Intelligence\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "Create dashboards and real-time visualizations of your data, including custom reporting for a detailed insight into your organization."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Cloud Based Platform",
+      "content": [
+        {
+          "type": "info",
+          "text": "Software applications that are accessible from anywhere using the internet."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "CMMS",
+      "content": [
+        {
+          "type": "info",
+          "text": "Computerized Maintenance Management System. Software that is used for scheduling the maintenance of your assets."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Component",
+      "content": [
+        {
+          "type": "info",
+          "text": "A complex part that can be used in the repair of an asset. They are distinct from other parts due to warranty tracking and having a serial number."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Conditional Monitoring",
+      "content": [
+        {
+          "type": "info",
+          "text": "The use of sensors and inspections to monitor assets for a specific set of parameters or conditions on an asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Connectors",
+      "content": [
+        {
+          "type": "info",
+          "text": "Connect the application with other software to integrate your data with other crucial parts of your business."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Corrective Maintenance",
+      "content": [
+        {
+          "type": "info",
+          "text": "Maintenance work intended to correct an existing problem. Repair Orders are the most common type of Corrective Maintenance."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Down Time",
+      "content": [
+        {
+          "type": "info",
+          "text": "A period of time when an asset in unable to be used because it is out of service and needs some form of maintenance."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Corrective Maintenance",
+      "content": [
+        {
+          "type": "info",
+          "text": "Maintenance work intended to correct an existing problem. Repair Orders are the most common type of Corrective Maintenance."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "EAM \"Enterprise Asset Management\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "A term to describe software that provides Asset Management from an asset lifecycle \"holistic\" viewpoint. EAM software is designed to enable organizations to control and proactively optimize their asset operations."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Employee Certifications",
+      "content": [
+        {
+          "type": "info",
+          "text": "Used to track employee certifications, like CDL's, Insurance, Training, and more."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Entity",
+      "content": [
+        {
+          "type": "info",
+          "text": "A division in asset groups that is used to separate physical locations or branches, as well as their security clearances. These are limited to use with our Enterprise level platform."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Implementation",
+      "content": [
+        {
+          "type": "info",
+          "text": "The process of incorporating an asset management solution into the daily operations of your organization."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inspection",
+      "content": [
+        {
+          "type": "info",
+          "text": "A specific task scheduled to test, evaluate, check, review, investigate, or run analysis on a specific asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Integration",
+      "content": [
+        {
+          "type": "info",
+          "text": "The process of connecting multiple software applications so they can work in sync and exchange data."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inventory",
+      "content": [
+        {
+          "type": "info",
+          "text": "Goods, materials, or parts a company has bought and stored with the expectation of using them for repair and maintenance."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inventory Adjustments",
+      "content": [
+        {
+          "type": "info",
+          "text": "The method used to account for new purchases in inventory stock or losses incurred."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inventory Management",
+      "content": [
+        {
+          "type": "info",
+          "text": "The process of managing the number of parts in an organization's inventory, ensuring that parts are available when needed, but not too many are stored."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inventory Transfers",
+      "content": [
+        {
+          "type": "info",
+          "text": "A method of tracking the transfer of inventory parts from one warehouse or storage location to another."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Invoicing",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work with your clients, issuing invoices and tracking their status with the application."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "KPI \"Key Performance Indicator\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "KPI's are the metrics you use to measure your success and the potential problems within your organization."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Logs",
+      "content": [
+        {
+          "type": "info",
+          "text": "a record of a specific measurable aspect of an asset, e.g. miles, hours, temperature, etc"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Maintenance",
+      "content": [
+        {
+          "type": "info",
+          "text": "Activities performed on an asset to ensure intended performance and prevent unnecessary asset breakdowns."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Mobile Application",
+      "content": [
+        {
+          "type": "info",
+          "text": "A mobile application is an app that has been built for use exclusively on a mobile device. This is different from being directed to a mobile browser or accessing a SaaS application via web browser."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Modules",
+      "content": [
+        {
+          "type": "info",
+          "text": "Secondary applications that are specifically built to enhance and provide added functionality to the core application. They enable an organization to customize the CMMS to fit their specific needs."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Notify",
+      "content": [
+        {
+          "type": "info",
+          "text": "A system within the application that is used to automatically create notifications and send them to technicians, managers, or executives as needed."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Onboarding",
+      "content": [
+        {
+          "type": "info",
+          "text": "A designated period of time for educational sessions during which an organization will be taught how to use the platform."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Operational Efficiency",
+      "content": [
+        {
+          "type": "info",
+          "text": "Strategy and techniques used to accomplish the basic goal of delivery of quality goods or services to a customer in the most cost-effective and timely"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Parent-Child Asset Relationships",
+      "content": [
+        {
+          "type": "info",
+          "text": "Assets can be assigned children assets or to be a parent to other children assets. This relationship allows the assets to be managed and reported on together and scheduled together for maintenance."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Planning and Assignment Board",
+      "content": [
+        {
+          "type": "info",
+          "text": "A master scheduling tool that allows you to assign work orders and inspections to your employees. See employee schedules by the day, week, or month and by location and team. Assigned work can be viewed on mobile devices by the employees. Updated information on assigned work orders and inspections will notify the employee via email and text of the changes."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Plugins",
+      "content": [
+        {
+          "type": "info",
+          "text": "Additional services and software add-ons that can be added to the application to increase functionality as needed. Current Plugins include: Bi, Connectors/API, Invoicing and Request Management."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "PM \"Preventive Maintenance\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "This is the cyclical maintenance, usually prescribed by the manufacturer, designated as the standard of upkeep for the asset."
+        },
+        {
+          "type": "info",
+          "text": "A maintenance strategy that utilizes conditional monitoring and inspections to anticipate and predict maintenance needs before a breakdown occurs."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Predictive Maintenance",
+      "content": [
+        {
+          "type": "info",
+          "text": "A technique, and processes combined with strategy to help determine the condition of an in-service equipment or assets in order to predict when maintenance should be performed. This technique could provide cost savings over a standard time-based preventive maintenance programs."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Proactive Maintenance",
+      "content": [
+        {
+          "type": "info",
+          "text": "Taking action before something happens: anticipating possibilities and getting ahead of the game. In maintenance, it means an emphasis on preventive maintenance instead of corrective."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "PO \"Purchase Orders\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "A document given by a buyer to a seller indicating types, quantities, and prices for products or services the buyer would like to buy. These usually are considered one-time contracts."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reactive Maintenance",
+      "content": [
+        {
+          "type": "info",
+          "text": "Maintenance actions performed not based on a prescribed PM schedule."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Regulatory Compliance",
+      "content": [
+        {
+          "type": "info",
+          "text": "Ensuring an organization is obeying all of the laws, regulations and guidelines set forth by the industry, governing associations, and government."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Release Notes",
+      "content": [
+        {
+          "type": "info",
+          "text": "A report from our support team explaining the changes that were made in each update. These typically include bug fixes and other improvements. Click here to see the latest Release Notes"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reporting",
+      "content": [
+        {
+          "type": "info",
+          "text": "A report from our support team explaining the changes that were made in each update. These typically include bug fixes and other improvements. Click here to see the latest Release Notes"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Request Management",
+      "content": [
+        {
+          "type": "info",
+          "text": "Manage your work requests with custom portals and cutting edge planning board to schedule your work orders."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "SaaS \"Software as a Service\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "This is software which is hosted and maintained on the cloud. It is accessed by subscription through a web browser via login portal on any internet connected device."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Schedule Groups",
+      "content": [
+        {
+          "type": "info",
+          "text": "A set of PM work orders that are applied with a scheduled repetition. A Schedule Group can be applied to an asset and it will receive all associated Work orders and their triggers."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Scheduling Tasks",
+      "content": [
+        {
+          "type": "info",
+          "text": "Relaying dates and time of when specific work order needs to happen."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "TCO \"Total Cost of Ownership\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "This metric is the total cost that an asset will have to your organization. TCO typically includes purchase cost, the cost to maintain an asset, including inventory and labor. It also typically subtracts the eventual resale value upon retiring the asset (where applicable)."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "TPM \"Total Productive Maintenance\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "This is a method of maintaining and improving the integrity of production and quality systems through the assets, employees, and supporting processes."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Uptime",
+      "content": [
+        {
+          "type": "info",
+          "text": "The time that an asset is functional and being utilized by the organization."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Utilization",
+      "content": [
+        {
+          "type": "info",
+          "text": "A measure of the time that an asset is actually used out of the total time that an asset is available to be used."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Vendors",
+      "content": [
+        {
+          "type": "info",
+          "text": "Other businesses or organizations from which you purchase inventory stock or maintenance services."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "WO \"Work Order\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "An assignment to fix, repair, maintain, or complete a maintenance project. It will typically include details about the work to be done and can include labor, parts, service notes, and components. They can be generated from PM's, work requests, inspections or emergencies."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Work Order Lifecycle",
+      "content": [
+        {
+          "type": "info",
+          "text": "The time in between when a work order is created and the time it is marked as complete."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "WR \"Work Request\"",
+      "content": [
+        {
+          "type": "info",
+          "text": "An online form used for expressing a desire for work to occur, usually for some form of maintenance or repairs. Work Requests, once approved, are automatically converted into a work order."
+        }
+      ]
+    }
+  ]
+}

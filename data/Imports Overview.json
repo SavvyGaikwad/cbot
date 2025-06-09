@@ -1,0 +1,905 @@
+{
+  "document_title": "Imports Overview",
+  "content": [
+    {
+      "type": "section",
+      "title": "Imports Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you have a large amount of new assets, logs, or meter readings, inventory, or vendors, manually entering them into the platform one by one is a time-consuming task. Imports can help you cut down on manual entry by using a template that has already been generated for you. The following can be imported using the import tool:Import your Assets, Import your Logs & Meter Readings, Import your Inventory, Import your Vendors, Import your Work Orders. Our Implementation team uses the PM Import Template Data and the Service Items Import Template Data to populate this data."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Navigate to the Import Tool",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Tools and Support heading, click Import. The Import Tool dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/8.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Import your Assets",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Assets Import is used to add new categories, site structure, etc."
+        },
+        {
+            "type": "step",
+            "text":"Step 1. Download our sample file"
+        },
+        {
+            "type": "substep",
+            "text": "2. From Tools and Support, click on the Import icon. The Import Tool dialog displays."
+        },
+        {
+            "type": "substep",
+            "text": "3. Click Assets. The Asset Import Screen displays."
+        },
+        {
+            "type": "media",
+            "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/28.png"
+        },
+        {
+            "type": "substep",
+            "text": "4. Click on Sample-Asset-File.Csv to download the sample import template."
+        },
+        {
+            "type": "step",
+            "text":"Step 2. Complete the sample file"
+        },
+        {
+          "type": "substep",
+          "text": "1. Open the Sample-Asset-File.csv file in Microsoft Excel."
+        },
+        {
+          "type": "substep",
+          "text": "2. Remember the data in this file is a sample, you must delete these rows as you do not want to import these in."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/5.png"
+        },
+        {
+          "type": "substep",
+          "text": "3. Under each of the Column Headers, complete the row data. For details on the data, see Assets Import Template Data."
+        },
+        {
+          "type": "substep",
+          "text": "4. After all the data has been entered on the sheet, save the file to your computer."
+        },
+        {
+            "type": "step",
+            "text":"Step 3. Upload the completed sample file"
+        },
+        {
+          "type": "substep",
+          "text": "1. Click the Choose File button."
+        },
+        {
+          "type": "substep",
+          "text": "2. Navigate to the file and select it. The file name displays in the screen."
+        },
+        {
+          "type": "substep",
+          "text": "3. Click the Map Data button. The import file fields display."
+        },
+        {
+            "type": "step",
+            "text":"Step 4. Map the data"
+        },
+        {
+        
+          "type": "info",
+          "text": "The Map Data table shows which fields from the import file are being mapped to the fields in the application. Use the Map Data table to align the correct fields from the import file to the application. In this example, Status is mapped to Serial, which needs to be corrected."
+        },
+        {
+          "type": "substep",
+          "text": "1. Verify that all ManagerPlus Fields are matched with the correct Import File Fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/22.png"
+        },
+        {
+          "type": "substep",
+          "text": "2. When you find a discrepancy, click on the incorrect import field and the drop-down arrow displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/18.png"
+        },
+        {
+          "type": "substep",
+          "text": "3. Click the arrow to display the import file field drop-down."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/31.png"
+        },
+        {
+          "type": "substep",
+          "text": "4. From the import file field drop-down, select Status. The data is now mapped correctly."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/6.png"
+        },
+        {
+          "type": "substep",
+          "text": "5. Click the Preview button. The Review Your Data screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/20.png"
+        },
+        {
+            "type": "step",
+            "text":"Step 5. Validate and import"
+        },
+        {
+          "type": "info",
+          "text": "Use the Import and Errors tabs to validate and review your data before importing."
+        },
+        {
+          "type": "substep",
+          "text": "1. The import tab displays successful line items. In this example, one truck will be imported successfully."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/15.png"
+        },
+        {
+          "type": "substep",
+          "text": "2. Click on the Errors tab. The line items with errors display. All records can be edited before importing. In this example, two of the trucks have errors present in the file. This must be corrected before the trucks can be imported."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/19.png"
+        },
+        {
+          "type": "info",
+          "text": "Fields highlighted in: Red, such as Budget Group, indicates that a required field is missing information and must be filled in.  Yellow, such as Asset Type, indicates that the entered asset type does not exist but will be created upon importing."
+        },
+        {
+          "type": "info",
+          "text": "Let's look at how to correct the errors."
+        },
+        {
+          "type": "substep",
+          "text": "3. In the row Asset ID TRK-102, click in the Budget Group field. Now you can edit the field."
+        },
+        {
+          "type": "substep",
+          "text": "4. In the Budget Group field, enter the budget group, for example: Operations Costs."
+        },
+        {
+          "type": "substep",
+          "text": "5. Click in the Default Budget field. Now you can edit the field."
+        },
+        {
+          "type": "substep",
+          "text": "6. In the Default Budget field, enter the budget, for example: Operations."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/4.png"
+        },
+        {
+          "type": "substep",
+          "text": "7. Click anywhere to exit the Default Budget field. The text saves automatically and the line moves to the import tab."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/25.png"
+        },
+        {
+          "type": "substep",
+          "text": "8. Review all the data in the import tab and correct any errors. Drag the scroll bar from left to right in the bottom row to view all the mapped fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/29.png"
+        },
+        {
+          "type": "substep",
+          "text": "9. Now you are ready to import. Click on the Import button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/2.png"
+        },
+        {
+          "type": "info",
+          "text": "The trucks are now imported and available in the assets module."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/37.png"
+        }
+
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Import your Inventory",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Inventory Import is used to import your inventory into a warehouse."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Download our sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. From Tools and Support, click on the Import icon. The Import Tool dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click Inventory. The Part Import Screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/35.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click on Sample-Log-File.Csv to download the sample import template."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Complete the sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Open the Sample-Log-File.csv file in Microsoft Excel."
+        },
+        {
+          "type": "step",
+          "text": "2. Remember the data in this file is a sample; you must delete these rows as you do not want to import these in."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/17.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Under each of the Column Headers, complete the row data. For details on the data, see Inventory Import Template Data."
+        },
+        {
+          "type": "step",
+          "text": "4. After all the data has been entered on the sheet, save the file to your computer."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Upload the completed sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the Select a Site drop-down, select a site."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Select a Warehouse drop-down, select a warehouse."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Choose File button."
+        },
+        {
+          "type": "step",
+          "text": "4. Navigate to the file and select it. The file name displays in the screen."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Map Data button. The import fields displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Map the data",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Map Data table shows which fields from the import file are being mapped to the fields in the application. Use the Map Data table to align the correct fields from the import file to the application. In this example, Status is mapped to Serial, which needs to be corrected."
+        },
+        {
+          "type": "step",
+          "text": "1. Verify that all ManagerPlus Fields are matched with the correct Import File Fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/22.png"
+        },
+        {
+          "type": "info",
+          "text": "If you find a discrepancy, click on the incorrect import field and the drop-down arrow displays. Then you can click the arrow to select the field to map to."
+        },
+        {
+          "type": "step",
+          "text": "2. If need, click the +Add Custom Field link to add any custom fields."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Preview button. The Review Your Data screen displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 5. Validate and import",
+      "content": [
+        {
+          "type": "info",
+          "text": "Use the Import and Errors tabs to validate and review your data before importing."
+        },
+        {
+          "type": "step",
+          "text": "1. The import tab displays successful line items."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/11.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the Errors tab. The line items with errors display. All records can be edited before importing."
+        },
+        {
+          "type": "step",
+          "text": "3. Review all the data in the import tab and correct any errors. Drag the scroll bar from left to right in the bottom row to view all the mapped fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/27.png"
+        },
+        {
+          "type": "info",
+          "text": "Fields highlighted in: Red - Indicates that a required field is missing information and must be filled in. Click in the field and complete the data. Yellow - Indicates that the entered asset type does not exist but will be created upon importing."
+        },
+        {
+          "type": "step",
+          "text": "4. Now you are ready to import. Click on the Import button. The inventory data is imported and available in the Inventory module."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/37.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Import your Logs and Meter Readings",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Logs and Meter Readings Import is used to import meter readings, gauges, trip distance, and fluid levels."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Download our sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. From Tools and Support, click the Import icon. The Import Tool dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click Logs & Meter Readings. The Log Import Screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/32.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click on Sample-Log-File.Csv to download the sample import template."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Complete the sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Open the Sample-Log-File.csv file in Microsoft Excel."
+        },
+        {
+          "type": "step",
+          "text": "2. Remember the data in this file is a sample; you must delete these rows as you do not want to import these in."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/9.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Under each of the Column Headers, complete the row data. For details on the data, see Log Import Template Data."
+        },
+        {
+          "type": "step",
+          "text": "4. After all the data has been entered on the sheet, save the file to your computer."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Upload the completed sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the Select a Site drop-down, click on the arrow to display the drop-down menu. Select which site to import the logs to."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Choose File button."
+        },
+        {
+          "type": "step",
+          "text": "3. Navigate to the file and select it. The file name displays in the screen."
+        },
+        {
+          "type": "step",
+          "text": "4. If you want to use an import definition, then from the Select an Import Definition drop-down, select a definition."
+        },
+        {
+          "type": "info",
+          "text": "Import Definitions"
+        },
+        {
+          "type": "info",
+          "text": "When you upload your meter readings in bulk, your file may not have the meter readings for every asset or log type. This depends on where your assets are located, or based on your meter reading routine (weekly/biweekly etc.). You can use the saved Import Definitions as a preset when uploading meter readings so the appropriate columns are mapped automatically."
+        },
+        {
+          "type": "info",
+          "text": "Create Import Definition"
+        },
+        {
+          "type": "info",
+          "text": "When you map a log import and this contains the import definitions you want, then you can save the definition."
+        },
+        {
+          "type": "step",
+          "text": "1. In the Save Import Definition field, enter a name."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Save button and you will be able to use this import definition for future imports."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/12.png"
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Map Data button. The import fields displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Map the data",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Map Data table shows which fields from the import file are being mapped to the fields in the application. Use the Map Data table to align the correct fields from the import file to the application. In this example, Status is mapped to Serial, which needs to be corrected."
+        },
+        {
+          "type": "step",
+          "text": "1. Verify that all ManagerPlus Fields are matched with the correct Import File Fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/10.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Preview button. The Review Your Data screen displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 5. Validate and import",
+      "content": [
+        {
+          "type": "info",
+          "text": "Use the Import and Errors tabs to validate and review your data before importing."
+        },
+        {
+          "type": "step",
+          "text": "1. The import tab displays successful line items."
+        },
+        {
+          "type": "info",
+          "text": "If you find a discrepancy, click on the incorrect import field and the drop-down arrow displays. Then you can click the arrow to select the field to map to."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the Errors tab. The line items with errors display. All records can be edited before importing."
+        },
+        {
+          "type": "step",
+          "text": "3. Review all the data in the import tab and correct any errors. Drag the scroll bar from left to right in the bottom row to view all the mapped fields."
+        },
+        {
+          "type": "info",
+          "text": "Fields highlighted in:"
+        },
+        {
+          "type": "info",
+          "text": "• Red - Indicates that a required field is missing information and must be filled in. Click in the field and complete the data."
+        },
+        {
+          "type": "info",
+          "text": "• Yellow - Indicates that the entered asset type does not exist but will be created upon importing."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Preview button. The Review Your Data screen displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 5. Validate and import",
+      "content": [
+        {
+          "type": "info",
+          "text": "Use the Import and Errors tabs to validate and review your data before importing."
+        },
+        {
+          "type": "step",
+          "text": "1. The import tab displays successful line items."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the Errors tab. The line items with errors display. All records can be edited before importing."
+        },
+        {
+          "type": "step",
+          "text": "3. Review all the data in the import tab and correct any errors. Drag the scroll bar from left to right in the bottom row to view all the mapped fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/13.png"
+        },
+        {
+          "type": "info",
+          "text": "Fields highlighted in: Red, such as Budget Group, indicates that a required field is missing information and must be filled in. Yellow, such as Asset Type, indicates that the entered asset type does not exist but will be created upon importing."
+        },
+        {
+          "type": "step",
+          "text": "4. Now you are ready to import, click on the Import button. The log data is imported and available in the Assets module."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/16.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Import your Vendors",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Vendors Import is used to import your vendor details, lead time, labor rate, etc."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Download our sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. From Tools and Support, click the Import icon. The Import Tool dialog displays."
+        },
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%2Overview/30.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Click Vendors. The Vendor Import Screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%2Overview/10.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click on Sample-Log-File.Csv to download the sample import template."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Complete the sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Open the Sample-Log-File.csv file in Microsoft Excel."
+        },
+        {
+          "type": "step",
+          "text": "2. Remember the data in this file is a sample; you must delete these rows as you do not want to import these in."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/9.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Under each of the Column Headers, complete the row data. For details on the data, see Vendor Import Template Data."
+        },
+        {
+          "type": "step",
+          "text": "4. After all the data has been entered on the sheet, save the file to your computer."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Upload the completed sample file",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the Select a Site drop-down, click on the arrow to display the drop-down menu. Select which site to import the logs to."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Choose File button."
+        },
+        {
+          "type": "step",
+          "text": "3. Navigate to the file and select it. The file name displays in the screen."
+        },
+        {
+          "type": "step",
+          "text": "4. If you want to use an import definition, then from the Select an Import Definition drop-down, select a definition."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Map Data button. The import fields displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Map the data",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Map Data table shows which fields from the import file are being mapped to the fields in the application. Use the Map Data table to align the correct fields from the import file to the application. In this example, Status is mapped to Serial, which needs to be corrected."
+        },
+        {
+          "type": "step",
+          "text": "1. Verify that all ManagerPlus Fields are matched with the correct Import File Fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/10.png"
+        },
+        {
+          "type": "info",
+          "text": "If you find a discrepancy, click on the incorrect import field and the drop-down arrow displays. Then you can click the arrow to select the field to map to."
+        },
+        {
+          "type": "step",
+          "text": "2. If need, click the +Add Custom Field link to add any custom fields."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Preview button. The Review Your Data screen displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 5. Validate and import",
+      "content": [
+        {
+          "type": "info",
+          "text": "Use the Import and Errors tabs to validate and review your data before importing."
+        },
+        {
+          "type": "step",
+          "text": "1. The import tab displays successful line items."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the Errors tab. The line items with errors display. All records can be edited before importing."
+        },
+        {
+          "type": "step",
+          "text": "3. Review all the data in the import tab and correct any errors. Drag the scroll bar from left to right in the bottom row to view all the mapped fields."
+        },
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20verview/13.png"
+        },
+        {
+          "type": "info",
+          "text": "Fields highlighted in:"
+        },
+        {
+          "type": "info",
+          "text": "• Red - Indicates that a required field is missing information and must be filled in. Click in the field and complete the data."
+        },
+        {
+          "type": "info",
+          "text": "• Yellow - Indicates that the entered asset type does not exist but will be created upon importing."
+        },
+        {
+          "type": "step",
+          "text": "4. Now you are ready to import, click on the Import button. The log data is imported and available in the Vendor module."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/16.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Import your Work Orders",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Work Order Import is used to populate multiple work orders and include details such as asset, inventory, labor, and costs."
+        },
+        {
+            "type": "step",
+            "text":"Step 1. Download our sample file"
+        },
+        {
+          "type": "substep",
+          "text": "1. Navigate to Settings."
+        },
+        {
+          "type": "substep",
+          "text": "2. From Tools and Support, click on the Import icon. The Import Tool dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/30.png"
+        },
+        {
+          "type": "substep",
+          "text": "3. Click Work Orders. The Work Order Import Screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/1.png"
+        },
+        {
+          "type": "substep",
+          "text": "4. Click on Sample-WO-File.Csv to download the sample import template."
+        },
+        {
+            "type": "step",
+            "text":"Step 2. Complete the sample file section"
+        },
+        {
+          "type": "substep",
+          "text": "1. Open the Sample-WO-File.csv file in Microsoft Excel."
+        },
+        {
+          "type": "substep",
+          "text": "2. Remember the data in this file is a sample, you must delete this row as you do not want to import these in."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/9.png"
+        },
+        {
+          "type": "substep",
+          "text": "3. Under each of the Column Headers, complete the row data. For details on the data, see Work Order Import Template Data."
+        },
+        {
+          "type": "substep",
+          "text": "4. After all the data has been entered on the sheet, save the file to your computer"
+        },
+        {
+            "type": "step",
+            "text":"Step 3. Upload the completed sample file"
+        },
+        {
+            "type": "substep",
+            "text":"1. Click the Choose File button. "
+        },
+        {
+            "type": "substep",
+            "text":"2. Navigate to the file and select it. The file name displays in the screen. "
+        },
+        {
+            "type": "substep",
+            "text":"3. Click the Map Data button. The import file fields display."
+        },
+        {
+            "type": "step",
+            "text":"Step 4. Map the data "
+        },
+        {
+          "type": "info",
+          "text": "The Map Data table shows which fields from the import file are being mapped to the fields in the application."
+        },
+        {
+          "type": "info",
+          "text": "Use the Map Data table to align the correct fields from the import file to the application."
+        },
+        {
+          "type": "info",
+          "text": "In this example, Status is mapped to Serial, which needs to be corrected."
+        },
+        {
+            "type": "substep",
+            "text":"1. Verify that all ManagerPlus Fields are matched with the correct Import File Fields."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/39.png"
+        },
+        {
+            "type": "info",
+            "text":"If you find a discrepancy, then you can correct the mapping."
+        },
+        {
+            "type": "substep",
+            "text":"5. Click the Preview button. The Review Your Data screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/34.png"
+        },
+        {
+            "type": "info",
+            "text":"The work orders are imported and available in the work order module."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Imports%20Overview/38.png"
+        }
+      ]
+    }
+  ]
+}

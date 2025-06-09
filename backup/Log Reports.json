@@ -1,0 +1,142 @@
+{
+  "document_title": "Log Reports",
+  "content": [
+    {
+      "type": "section",
+      "title": "Log Reports",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Create a Log Cost Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Log Cost Report provides a cost analysis of costs incurred per unit based off the log type selected such as cost per distance in a vehicle. This guide will demonstrate how to generate a Log Cost Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Logs > Log Cost."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Date Range"
+        },
+        {
+          "type": "info",
+          "text": "The timeframe in which costs were incurred"
+        },
+        {
+          "type": "step",
+          "text": "Asset Category Selection"
+        },
+        {
+          "type": "info",
+          "text": "Report will generate results based off the selected Asset Category"
+        },
+        {
+          "type": "step",
+          "text": "Primary Log"
+        },
+        {
+          "type": "info",
+          "text": "Select the log type for the report to compare the cost to. Ex: Use distance to track cost per mile/km on a vehicle"
+        },
+        {
+          "type": "step",
+          "text": "Secondary Log (optional)"
+        },
+        {
+          "type": "info",
+          "text": "Additional log to support primary log. Ex: Fuel is used as a secondary log to track fuel used per distance"
+        },
+        {
+          "type": "step",
+          "text": "Display report in"
+        },
+        {
+          "type": "info",
+          "text": "Toggle between Kilometers and Miles"
+        },
+        {
+          "type": "step",
+          "text": "Show Chart"
+        },
+        {
+          "type": "info",
+          "text": "Toggle on and off to display cost chart on report"
+        },
+        {
+          "type": "info",
+          "text": "Select  \n\nThe report populates based on selected criteria and is displayed above the report and is now available to be exported:\n\n\n\nTo change any of the report criteria, select"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Log Detail Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Log Detail Report provides an overview of the logs entered within a defined time period. This guide will demonstrate how to generate a Log Detail Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Logs > Log Detail."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Date Range"
+        },
+        {
+          "type": "info",
+          "text": "The timeframe in which logs were entered"
+        },
+        {
+          "type": "step",
+          "text": "Log Type"
+        },
+        {
+          "type": "info",
+          "text": "Select which Log Type to generate results for"
+        },
+        {
+          "type": "step",
+          "text": "Asset Selection (optional)"
+        },
+        {
+          "type": "info",
+          "text": "Generate results specific to a particular Asset(s)"
+        },
+        {
+          "type": "step",
+          "text": "Display report in"
+        },
+        {
+          "type": "info",
+          "text": "Toggle between Kilometers and Miles when reporting by distance"
+        },
+        {
+          "type": "step",
+          "text": "Show Chart"
+        },
+        {
+          "type": "info",
+          "text": "Toggle on and off to display chart on report"
+        },
+        {
+          "type": "info",
+          "text": "Select  \n\nThe report populates based on selected criteria and is displayed above the report and is now available to be exported:\n\n\n\nTo change any of the report criteria, select"
+        }
+      ]
+    }
+  ]
+}

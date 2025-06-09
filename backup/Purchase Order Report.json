@@ -1,0 +1,126 @@
+{
+  "document_title": "Purchase Order Report",
+  "content": [
+    {
+      "type": "section",
+      "title": "Purchase Order Reports",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Create a Line Item List Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Purchase Order Line Item List Report shows parts and other costs per warehouse throughout a specified date range. This guide will demonstrate how to generate a Purchase Order Line Item List Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Purchase Orders > Line Item List."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Date Range"
+        },
+        {
+          "type": "info",
+          "text": "Define the time period in which Purchase Orders were generated"
+        },
+        {
+          "type": "step",
+          "text": "Warehouse"
+        },
+        {
+          "type": "info",
+          "text": "Select the warehouse the purchase orders in the report are associated to"
+        },
+        {
+          "type": "step",
+          "text": "Group By"
+        },
+        {
+          "type": "info",
+          "text": "Group the report results by Line Item, Part Type, Purchase Order Number, or Vendor"
+        },
+        {
+          "type": "info",
+          "text": "Select  \n\nThe report populates based on selected criteria and is displayed above the report and is now available to be exported:\n\n\n\nTo change any of the report criteria, select"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Purchase Order Summary Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Purchase Order Summary Report provides a snapshot of total Purchase Order Costs incurred throughout a specified date range. This guide will demonstrate how to generate a Purchase Order Summary Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Purchase Orders > Purchase Order Reports."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Date Range"
+        },
+        {
+          "type": "info",
+          "text": "Define the time period in which Purchase Orders were generated"
+        },
+        {
+          "type": "step",
+          "text": "Warehouse"
+        },
+        {
+          "type": "info",
+          "text": "Select the warehouse the purchase orders in the report are associated to"
+        },
+        {
+          "type": "step",
+          "text": "Group By"
+        },
+        {
+          "type": "info",
+          "text": "Group the report results by Vendor"
+        },
+        {
+          "type": "step",
+          "text": "Show Chart"
+        },
+        {
+          "type": "info",
+          "text": "Toggle chart data on and off from the report"
+        },
+        {
+          "type": "step",
+          "text": "Display Chart By"
+        },
+        {
+          "type": "info",
+          "text": "Select whether to display chart by Total Cost or Purchase Order Count"
+        },
+        {
+          "type": "step",
+          "text": "Select a Chart"
+        },
+        {
+          "type": "info",
+          "text": "Select whether to display the chart as a line chart or bar graph"
+        },
+        {
+          "type": "info",
+          "text": "Select  \n\nThe report populates based on selected criteria and is displayed above the report and is now available to be exported:\n​​​​​​​\n\n\nTo change any of the report criteria, select"
+        }
+      ]
+    }
+  ]
+}

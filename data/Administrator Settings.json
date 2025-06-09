@@ -1,0 +1,2308 @@
+{
+  "document_title": "Administrator Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Edit your Company Information",
+      "content": [
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/1.png"
+        },
+        {
+          "type": "info",
+          "text": "It is important to set up your company information, including your address, logo, and time offset. Your address and logo will show up on reports and the time offset will set up your time zone."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Company"
+        },
+       {
+        "type": "step",
+        "text": "2. Complete the following:\n\nDefault Company Locale  drop-down\tFrom the drop-down, select your company's locale. This will determine the language used in the system. Such as, English (United States); English (Australia), Italiana (Italia), etc. See below for Company Locale Examples.\nYour users can override the company setting in their profile. Learn how to change your language preference setting in the Update your Preferences article.\nTime Zone drop-down\tFrom the drop-down, select the company's time zone.\nEach user can set their own time zone override, which will override the time zone chosen by the company.\nFor example: Your company is in Texas, USA, and sets the database's Time Zone to Central.  However, you work remotely in Florida, USA.  Since you want to see all the entries displayed in the Eastern Time zone, you use the Time Zone Override, to override what the company's default displays.\nDefault Sales Tax drop-down\tFrom the drop-down, select the default sales tax.\n\nFax field\tEnter your company's fax number.\nPhone field\tEnter your company's phone number.\nAddress field\tEnter your company's address.\nCity field\tEnter your company's city.\nState drop-down\tFrom the drop-down, select the state.\nZip field\tEnter your company's zip code or postal code.\nCountry drop-down\tFrom the drop-down, select your company's country.\nCustom Printable Work Order drop-down\tFrom the drop-down, select the custom printable work order.\n\nCustom Printable Purchase Order drop-down\tFrom the drop-down, select the custom printable purchase order.\nCustom Printable Inspection drop-down\tFrom the drop-down, select the custom printable inspections.\nCustom Printable Invoice drop-down\tFrom the drop-down, select the custom printable invoice.\nStart fiscal year in drop-down\tFrom the drop-down, select your company's fiscal year start month.\nCurrency drop-down\tFrom the drop-down, select your company's currency.\nIf you change this setting, it will only change the currency symbol that is displayed. The currency amounts entered will not be converted."
+      },
+        {
+          "type": "step",
+          "text": "3. Click Save to apply changes."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Company Settings Configuration",
+      "content": [
+        {
+          "type": "info",
+          "text": "Default Company Locale drop-down - From the drop-down, select your company's locale. This will determine the language used in the system. Such as, English (United States); English (Australia), Italiana (Italia), etc. Your users can override the company setting in their profile. Learn how to change your language preference setting in the Update your Preferences article."
+        },
+        {
+          "type": "info",
+          "text": "Time Zone drop-down - From the drop-down, select the company's time zone. Each user can set their own time zone override, which will override the time zone chosen by the company. For example: Your company is in Texas, USA, and sets the database's Time Zone to Central. However, you work remotely in Florida, USA. Since you want to see all the entries displayed in the Eastern Time zone, you use the Time Zone Override, to override what the company's default displays."
+        },
+        {
+          "type": "info",
+          "text": "Default Sales Tax drop-down - From the drop-down, select the default sales tax."
+        },
+        {
+          "type": "info",
+          "text": "Fax field - Enter your company's fax number."
+        },
+        {
+          "type": "info",
+          "text": "Phone field - Enter your company's phone number."
+        },
+        {
+          "type": "info",
+          "text": "Address field - Enter your company's address."
+        },
+        {
+          "type": "info",
+          "text": "City field - Enter your company's city."
+        },
+        {
+          "type": "info",
+          "text": "State drop-down - From the drop-down, select the state."
+        },
+        {
+          "type": "info",
+          "text": "Zip field - Enter your company's zip code or postal code."
+        },
+        {
+          "type": "info",
+         "text": "Country drop-down - From the drop-down, select your company's country."
+       },
+        {
+          "type": "info",
+          "text": "Custom Printable Work Order drop-down - From the drop-down, select the custom printable work order."
+        },
+        {
+          "type": "info",
+          "text": "Custom Printable Purchase Order drop-down - From the drop-down, select the custom printable purchase order."
+        },
+        {
+          "type": "info",
+          "text": "Custom Printable Inspection drop-down - From the drop-down, select the custom printable inspections."
+        },
+        {
+          "type": "info",
+          "text": "Custom Printable Invoice drop-down - From the drop-down, select the custom printable invoice."
+        },
+        {
+          "type": "info",
+          "text": "Start fiscal year in drop-down - From the drop-down, select your company's fiscal year start month."
+        },
+        {
+          "type": "info",
+          "text": "Currency drop-down - From the drop-down, select your company's currency. If you change this setting, it will only change the currency symbol that is displayed. The currency amounts entered will not be converted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Localization Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Default Company Locale in company settings is a global setting and it displays the application's interface in the selected language. This includes date, time, and number formats."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/2.png"
+        },
+        {
+          "type": "info",
+          "text": "The languages available are: English (United States), English (Australia), English (Canada), English (Malaysia), English (United Kingdom), Deutsch (Deutschland), Espanol (Mexico), French (France), French (Canada), Italian (Italia), Dutch (Netherlands), Polish (Poland), Portuguese (Portugal), Portuguese (Brasil), Japanese (Japan), Chinese Simplified (China)"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Language (Region) Override",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Language (Region) Override setting (in your preferences) lets you override the global setting. The application displays the interface in your preferred language. This includes date, time, and currency formats."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Currency Settings",
+      "content": [
+        {
+          "type": "info",
+          "text": "The currency setting updates the currency symbol displayed throughout the application when you view costing information and reporting. The Default Company Locale and Language (Region) Override determines the placement of the symbol on a monetary value."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/4.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Employee & Users",
+      "content": [
+        {
+          "type": "info",
+          "text": "When an employee joins your company, you can create new employees to be users of Eptura Asset."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Administration heading, click Employees & Users. The Employee Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Create New Employee button and the Contact Profile form displays the tabs to complete."
+        },
+        {
+          "type": "step",
+          "text": "4. Complete the Employee Type tab"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/5.png"
+        },
+        {
+          "type": "info",
+          "text": "In the Employee Type panel, select a type (this is a license type): Full User - Has all features with Roles to control/restrict access. Mobile User - Has full mobile access with limited web access. Includes Email Alerts and Requests. Requester - Submit work to Request Portals. Limited communication with Asset Managers. Operator - Grants access to the Operator Companion to perform inspections, submit requests, and view asset information. After you select an employee type, the Contact Profile form displays. After you select an employee type, the Contact Profile form displays."
+        },
+        {
+          "type": "step",
+          "text": "5. Complete the Employee Details tab"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/6.png"
+        },
+        {
+          "type": "substep",
+          "text": "1. In the User Id field, enter the unique identifier of the employee."
+        }, 
+        {
+          "type": "substep",
+          "text": "2. In the Full Name field, enter the full name of the employee"
+        }, 
+        {
+          "type": "substep",
+          "text": "3. Uncheck the Same as full name check box and then enter the employee's preferred name."
+        }, 
+        {
+          "type": "substep",
+          "text": "4. In the Email Address field, enter the email address of the employee."
+        }, 
+        {
+          "type": "substep",
+          "text": "5. In the Department field, enter the department the employee belongs to."
+        }, 
+        {
+          "type": "substep",
+          "text": "6. Click the Next button."
+        }, 
+        {
+          "type": "step",
+          "text": "6. Complete the Security Roles"
+        },
+        {
+          "type": "info",
+          "text": "You will need to grant the user access to the sites/entities they need."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/7.png"
+        },
+        {
+          "type": "substep",
+          "text": "1. Click the Add icon."
+        },
+        {
+          "type": "substep",
+          "text": "2. From the Site drop-down, select the site and then the site displays."
+        }, 
+        {
+          "type": "substep",
+          "text": "3. Click the Save button and the employee is saved and the Contact Profile form displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit an Employee",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can edit an employee to include additional information, and when the employee leaves your company, they can be made inactive"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings."
+        },      
+        {
+          "type": "step",
+          "text": "2. Under the Administration heading, click Employees & Users. The Employee Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Browser or search the list for the employee."
+        }, 
+        {
+          "type": "step",
+          "text": "4. Click the employee's name and the Contact Profile form displays the following tabs:"
+        },
+        {
+          "type": "substep",
+          "text": "1. Employee Details Tab"
+        }, 
+        {
+          "type": "info",
+          "text": "The Employee Details Tab contains the following expand tabs:"
+        },
+        {
+          "type": "info",
+          "text": "a) Configuration expand tab"
+        }, 
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/9.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Click the Role icon and the Security Roles tab displays."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 In the Teams field, enter the team(s)."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 In the Teams field, enter the team(s)."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 In the Barcode/Tag field, enter the employee's badge number"
+        },
+        {
+          "type": "substep",
+          "text": "1.4 Either use the default or uncheck the Can be assigned to work check box if they will not be assigned work orders."
+        },
+        {
+          "type": "info",
+          "text": "The employee's department and team are set up in Set up Employee Contacts."
+        },
+        {
+          "type": "info",
+          "text": "b)Contact Details expand tab"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click the Contact Details expand icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/11.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.2 In the User Id field, enter the unique identifier of the employee."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 In the Full Name field, enter the full name of the employee."
+        },
+        {
+          "type": "substep",
+          "text": "2.4 Uncheck the Same as full name check box and then enter the employee's preferred name."
+        },
+        {
+          "type": "substep",
+          "text": "2.5 In the Email Address field, enter the email address of the employee."
+        },
+        {
+          "type": "substep",
+          "text": "2.6 In the Phone field, enter the phone number of the employee."
+        },
+        {
+          "type": "substep",
+          "text": "2.7 In the Mobile Phone field, enter the mobile phone number of the employee."
+        },
+        {
+          "type": "info",
+          "text": "c) Address expand tab"
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Click the Address Details expand icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/12.png"
+        },
+        {
+          "type": "substep",
+          "text": "3.2 In the Street Address field, enter the address of the employee."
+        },
+        {
+          "type": "substep",
+          "text": "3.3 In the City field, enter city of the employee."
+        },
+        {
+          "type": "substep",
+          "text": "3.4 From the State drop-down, select the state."
+        },
+        {
+          "type": "substep",
+          "text": "3.5 In the Zip field, enter the zip code or postal code."
+        },
+        {
+          "type": "substep",
+          "text": "3.6 From the Country drop-down, select the country"
+        },
+        {
+          "type": "info",
+          "text": "d) Assets expand tab"
+        },
+        {
+          "type": "info",
+          "text": "e) Custom Info expand tab"
+        },
+        {
+          "type": "substep",
+          "text": "5.1 Click the Custom Info expand icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/13.png"
+        },
+        {
+          "type": "substep",
+          "text": "5.2 Complete any custom fields."
+        },
+        {
+          "type": "substep",
+          "text": "5.3 When you have finished making edits, click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The employee's custom fields are set up in Set up Employee Contacts."
+        },
+        {
+          "type": "substep",
+          "text": "2. Security Roles and Labor Codes Tab"
+        }, 
+        {
+          "type": "substep",
+          "text": "1.1 Click the Role icon and the Security Roles tab displays."
+        }, 
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/14.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Click the Add icon."
+        }, 
+        {
+          "type": "substep",
+          "text": "1.3 From the Site drop-down, select the site and then the site displays."
+        }, 
+        {
+          "type": "substep",
+          "text": "1.4 From the Role drop-down, select either: Administrator, Full User, Read-Only, and No Access. Learn more about the roles, in Security Roles and Roles Management."
+        }, 
+        {
+          "type": "substep",
+          "text": "1.5 For the Site, click the Expand icon to see the labor codes."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/15.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.6 Click the Add + icon and the Add Labor Codes dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/16.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.7 Select the labor code."
+        },
+        {
+          "type": "substep",
+          "text": "1.8 Click the OK button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/17.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.9 Click the Rate Override check box."
+        },
+        {
+          "type": "substep",
+          "text": "1.10 For the labor rate, enter the amount."
+        },
+        {
+          "type": "substep",
+          "text": "1.11 When you have finished making edits, click the Save button."
+        },
+        {
+          "type": "substep",
+          "text": "3. Timeline Tab"
+        }, 
+        {
+          "type": "substep",
+          "text": "1.1 Click the Timeline icon to display the employee activity."
+        },
+        {
+          "type": "substep", 
+          "text": "1.2 Click on an item to display the history details."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 When you have finished making edits, click the Save button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/18.png"
+        },
+        {
+          "type": "substep",
+          "text": "4. Notes Tab"
+        }, 
+        {
+          "type": "substep",
+          "text": "1.1 Click the Note icon."
+        },
+        {
+          "type": "substep", 
+          "text": "1.2 Click either New Internal Note or New Public Note to enter notes about the employee."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 When you have finished making edits, click the Save button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/19.png"
+        },
+        {
+          "type": "substep",
+          "text": "5. Devices Tab"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Click the Timeline icon to display the employee activity."
+        },
+        {
+          "type": "substep", 
+          "text": "1.2 Click on an item to display the history details."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 When you have finished making edits, click the Save button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/21.png"
+        },
+        {
+          "type": "info",
+          "text": "When you have finished making edits, click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Remove an Employee",
+      "content": [
+        {
+          "type": "info",
+          "text": "When an employee leaves the company, you can make them inactive."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Administration heading, click Employees & Users. The Employee Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Browse or search the list for the employee."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the employee's name and the Contact Profile form displays."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Active toggle and change it to Inactive."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Save button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/22.png"
+        },
+        {
+          "type": "info",
+          "text": "The employee will now be found on the Inactive list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/23.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Sites and Site Setup",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Settings > Sites and click + to create a new site."
+        },
+        {
+          "type": "info",
+          "text": "Enter region, site name, time zone, distance unit, and email for replies."
+        },
+        {
+          "type": "step",
+          "text": "Click Save Changes to register the site."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/create_site.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up a Site",
+      "content": [
+       {
+        "type": "info",
+        "text": "Sites is the top level of organizing your assets in the application. Sites allow you to group together assets, people, and work orders that belong to a specific entity, in order to streamline which information is seen, and by whom. Each Site can have multiple groups below it.\n● SITE 1\n● Group\n● Group\n● SITE 2\n● Group\n● Group\nWhen managing teams in separate departments or buildings, it is important to differentiate what work belongs to them in a simple manner to avoid confusion and clutter. Sites can help you achieve this. After you have set up the sites your company needs, you will need to grant your users access."
+      }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Site",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Administration heading, click Sites. The Site Settings screen displays."
+        },
+        {
+          "type": "info",
+          "text": "Typically there is only a single region. If more than one region displays, then select the region first."
+        },
+        {
+          "type": "step",
+          "text": "3. If there is only a single region, then hover over the region and click the + icon. A popup menu displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/24.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Add Site. The Create a New Site dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/25.png"
+        },
+        {
+          "type": "step",
+          "text": "5. From the Region drop-down, select the region."
+        },
+        {
+          "type": "step",
+          "text": "6. In the Site Name field, enter the name of the site."
+        },
+        {
+          "type": "step",
+          "text": "7. From the Time Zone drop-down, select the time zone."
+        },
+        {
+          "type": "step",
+          "text": "8. From the Distance Unit options, select either Metric or Imperial."
+        },
+        {
+          "type": "step",
+          "text": "9. Check the Use Another Site's Budget check box if you want to use a different site's budget."
+        },
+        {
+          "type": "step",
+          "text": "10. In the Reply To Email field, enter the reply to email address."
+        },
+        {
+          "type": "step",
+          "text": "11. Click the Save Changes button. The site is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit the Site",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the new site. The site's details form displays and contains the following tabs:\n● Details\n● Payable Address\n● Warehouses\n● Labor Codes"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/26.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Details",
+      "content": [
+        {
+          "type": "info",
+          "text": "Field\tDescription"
+        },
+        {
+          "type": "step",
+          "text": "Upload Image: For the image, if this division of your organization has its own logo, you can click the upload image and select an image to upload."
+        },
+        {
+          "type": "step",
+          "text": "Entity Name: Enter the name of the site."
+        },
+        {
+          "type": "step",
+          "text": "Use Another Site's Budget: Check the Use Another Site's Budget check box if you want to use a different site's budget."
+        },
+        {
+          "type": "step",
+          "text": "Default Sales Tax 1: Select the sales tax. By default, uses the default sales tax established in your Company settings found in Settings > Administration > Company."
+        },
+        {
+          "type": "step",
+          "text": "Default Revenue Budget: Select the revenue budget. By default, uses the default revenue budget established in your Company settings found in Settings > Administration > Company."
+        },
+        {
+          "type": "step",
+          "text": "Custom Printable Work Order: Overrides the default report and uses a custom report you can build in BI."
+        },
+        {
+          "type": "step",
+          "text": "Custom Printable Inspection: Overrides the default report and uses a custom report you can build in BI."
+        },
+        {
+          "type": "step",
+          "text": "Time Zone: Select the time zone."
+        },
+        {
+          "type": "step",
+          "text": "Region: Select the region."
+        },
+        {
+          "type": "step",
+          "text": "Primary Warehouse: Select the default warehouse for this site’s Inventory (see Warehouses below)."
+        },
+        {
+          "type": "step",
+          "text": "Work Week – Days In Operation: Select which days of the week calendar-based PMs come due."
+        },
+        {
+          "type": "step",
+          "text": "Default Sales Tax 2: Select the sales tax. By default, uses the default sales tax established in your Company settings found in Settings > Administration > Company."
+        },
+        {
+          "type": "step",
+          "text": "Reply To Email: Enter the reply to email address."
+        },
+        {
+          "type": "step",
+          "text": "Distance Unit: Select either Metric or Imperial."
+        },
+        {
+          "type": "step",
+          "text": "Custom Printable Purchase Order: Overrides the default report and uses a custom report you can build in BI."
+        },
+        {
+          "type": "step",
+          "text": "Custom Printable Invoice: Overrides the default report and uses a custom report you can build in BI."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Payable Address",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Payable Address expand icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/27.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/28.png"
+        },
+        {
+          "type": "step",
+          "text": "2. In the Description drop-down, select [+] Manage address."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/29.png"
+        },
+        {
+          "type": "info",
+          "text": "The Address Manager dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/30.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Click the New Address button. The New Address dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/31.png"
+        },
+        {
+          "type": "step",
+          "text": "4. In the Deliver To field, enter the name."
+        },
+        {
+          "type": "step",
+          "text": "5. In the Address 1 and Address 2 fields, enter the address."
+        },
+        {
+          "type": "step",
+          "text": "6. In the City field, enter the city."
+        },
+        {
+          "type": "step",
+          "text": "7. In the Postal Code field, enter the post or zip code."
+        },
+        {
+          "type": "step",
+          "text": "8. From the Country drop-down, select the country."
+        },
+        {
+          "type": "step",
+          "text": "9. From the State drop-down, select the state."
+        },
+        {
+          "type": "step",
+          "text": "10. In the Description field, enter a description."
+        }
+      ]
+    },
+    {
+  "type": "section",
+  "title": "Warehouses",
+  "content": [
+    {
+      "type": "info",
+      "text": "You can set the default warehouse for the site."
+    },
+    {
+      "type": "step",
+      "text": "1. Click the Payable Address expand icon. The Parts Room displays by default."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/32.png"
+    },
+    {
+      "type": "step",
+      "text": "2. Click the + icon. The New Warehouse dialog displays."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/33.png"
+    },
+    {
+      "type": "step",
+      "text": "3. In the Warehouse Name field, enter the name."
+    },
+    {
+      "type": "step",
+      "text": "4. From the Purchasing Budget drop-down, select the budget for purchasing inventory."
+    },
+    {
+      "type": "step",
+      "text": "5. From the Replenishment Source drop-down, select the source. Determine if you restock these shelves through Inventory Transfers from Another Warehouse or order as needed through Purchase Orders."
+    },
+    {
+      "type": "step",
+      "text": "6. From the Warehouse Manager drop-down, select the manager. This is the primary contact."
+    },
+    {
+      "type": "step",
+      "text": "7. From the Delivery Address drop-down, select the address if it is different from the billing address."
+    },
+    {
+      "type": "step",
+      "text": "8. From the Billing Address drop-down, select the address."
+    },
+    {
+      "type": "step",
+      "text": "9. Click the Save button."
+    }
+  ]
+},
+
+    {
+  "type": "section",
+  "title": "Labor Codes",
+  "content": [
+    {
+      "type": "info",
+      "text": "You can set default labor code for a site. The labor codes are set up by your Administrator, in Set up Employee Contacts and Labor Codes."
+    },
+    {
+      "type": "step",
+      "text": "1. Click the Labor Codes expand icon."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/34.png"
+    },
+    {
+      "type": "step",
+      "text": "2. Click the + icon. The Add Departments dialog displays."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/35.png"
+    },
+    {
+      "type": "step",
+      "text": "3. Select the department(s)."
+    },
+    {
+      "type": "step",
+      "text": "4. Click the OK button. The department's labor codes are added to the site."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/36.png"
+    },
+    {
+      "type": "step",
+      "text": "5. Click the Department's Labor Code expand icon."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/37.png"
+    },
+    {
+      "type": "step",
+      "text": "6. Click the + icon."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/38.png"
+    },
+    {
+      "type": "step",
+      "text": "7. Select the labor code(s) you want to add."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/39.png"
+    },
+    {
+      "type": "step",
+      "text": "8. Click the OK button and the labor codes are added and saved."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/40.png"
+    },
+    {
+      "type": "step",
+      "text": "9. For the labor code, check the Default check box to apply this as a default."
+    },
+    {
+      "type": "step",
+      "text": "10. If you want to apply the override, then check the Rate Override check box. The settings are automatically updated."
+    }
+  ]
+},
+    {
+      "type": "section",
+      "title": "Set up a Site’s Location",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you have a site containing assets within multiple buildings, locations, or floor plans, your assets must be grouped to distinguish where they belong. The Site Structure is where groups are created to further organize your assets in the application. Each Site can have multiple groups below it. Site 1\n  • Group\n    ◦ Sub Group\n  • Group\n    ◦ Sub Group\n    ◦ Sub Group\n• Site 2\n  • Group\n  • Group\n• City Council\n• Administration\n  ◦ Reception Area\n• Development\n  ◦ Roads, drains and footpath\n  ◦ Planning\n• Parks and Recreation\n• Park 1\n• Park 2"
+        },
+        {
+          "type": "info",
+          "text": "This will help you to:  separate assets by Location. narrow down work orders when filtering by Group. increase reporting accuracy."
+        }
+      ]
+    },
+{
+  "type": "section",
+  "title": "Create a Group",
+  "content": [
+    {
+      "type": "step",
+      "text": "1. Navigate to Settings."
+    },
+    {
+      "type": "step",
+      "text": "2. Under the heading Administration, select Sites."
+    },
+    {
+      "type": "step",
+      "text": "3. Click the Site Structure tab."
+    },
+    {
+      "type": "step",
+      "text": "4. Select the site."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/41.png"
+    },
+    {
+      "type": "step",
+      "text": "5. Click the + icon. The What type of location is this? dialog displays."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/42.png"
+    },
+    {
+      "type": "step",
+      "text": "6. Select the type of location from:"
+    },
+    {
+      "type": "step",
+      "text": "○ Single Address - For buildings, simple locations, properties, etc."
+    },
+    {
+      "type": "substep",
+      "text": "1.1 Select the Single Address."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/43.png"
+    },
+    {
+      "type": "substep",
+      "text": "1.2 In the Location Name field, enter the name."
+    },
+    {
+      "type": "substep",
+      "text": "1.3 Click the Create button."
+    },
+    {
+      "type": "step",
+      "text": "○ Floor Plan - For anything with blueprints or specified layouts."
+    },
+    {
+      "type": "substep",
+      "text": "2.1 Select the Floor Plan."
+    },
+    {
+      "type": "substep",
+      "text": "2.2 In the Location Name field, enter the name."
+    },
+    {
+      "type": "substep",
+      "text": "2.3 Click the Create button."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/44.png"
+    },
+    {
+      "type": "step",
+      "text": "○ Group of Assets - For when you want to group assets."
+    },
+    {
+      "type": "substep",
+      "text": "3.1 Select the Group of Assets."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/45.png"
+    },
+    {
+      "type": "substep",
+      "text": "3.2 In the Location Name field, enter the name."
+    },
+    {
+      "type": "substep",
+      "text": "3.3 Click the Create button."
+    }
+  ]
+},
+    {
+  "type": "section",
+  "title": "Sub Groups for General Locations",
+  "content": [
+    {
+      "type": "info",
+      "text": "For general locations that contain more specific locations within them such as a building with multiple rooms or a 100 acre farm with separate fields and buildings, sub groups are created to accommodate more specific locations."
+    },
+    {
+      "type": "step",
+      "text": "1. Hover over the group's name."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/46.png"
+    },
+    {
+      "type": "step",
+      "text": "2. Click the Add icon. The Add Location dialog displays."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/48.png"
+    },
+    {
+      "type": "step",
+      "text": "3. Select the type of location."
+    },
+    {
+      "type": "step",
+      "text": "4. In the Location Name field, enter the name."
+    },
+    {
+      "type": "step",
+      "text": "5. Click the Create button. The sub group displays."
+    }
+  ]
+},
+    {
+      "type": "section",
+      "title": "Budget Accounts",
+      "content": [
+        {
+          "type": "info",
+          "text": "Budget Accounts help you track costs such as labor costs on Work Orders or purchasing inventory on Purchase Orders get logged as transactions against accounts."          },
+        {
+          "type": "info",
+          "text": "This section lets you:"
+        },
+        {
+          "type": "info",
+          "text": "• Create Budgets and Budget Accounts\nThis activity may be something you do often for projects or when expanding to new sites or locations. For example:"
+        },
+        {
+          "type": "info",
+          "text": "• set up a budget account to track a capital improvement project.\n• Set the default budget account for work orders assigned to this project to track those expenses separately from your general maintenance and repair budgets."
+        },
+        {
+          "type": "info",
+          "text": "Note that you can do this activity programmatically with our Developer API if you want to keep your account list in sync with another system such as an accounting or ERP solution."
+        },
+        {
+          "type": "info",
+          "text": "• Complete Budget Planning\nSo that you can track spending by accounts or projects. You can choose to set budgeted amounts per account on a weekly or yearly basis, either way you have the flexibility to set goals and track spending."
+        },
+        {
+          "type": "info",
+          "text": "• View Budget Transactions\nTrack spending per budget account and you can see costs month by month or yearly."
+        },
+        {
+          "type": "info",
+          "text": "You can have an unlimited number of budget accounts. After you have created your Budget Accounts, then you can edit the budget accounts to complete the budget planning."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/50.png"
+        }
+      ]
+   },
+   {
+  "type": "section",
+  "title": "Budgets and Budget Accounts Overview",
+  "content": [
+    {
+      "type": "info",
+      "text": "In the Settings module, you will find the Budgets and Budget Accounts."
+    },
+    {
+      "type": "info",
+      "text": "• (A) Sites - Your Sites will have Budgets and Budget Accounts.\n• (B) Budgets - All Budget Accounts are placed under a Budget folder, will be bound by the properties of the main budget.\n• (C) Budget Accounts - All expenses will be tracked against one or more budget accounts."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/49.png"
+    },
+    {
+      "type": "info",
+      "text": "By default, you will see the following:"
+    },
+    {
+      "type": "info",
+      "text": "• Operating folder will contain the Operation Costs budget with the budget account called Operation - All Operation Costs.\n• Purchasing folder will contain the Purchasing Costs budget with the budget account called Purchasing - All Purchasing Costs.\n• Revenue folder will contain the Revenue Transactions budget with the budget account called Revenue Transactions - Receivable Invoice Related Trans."
+    },
+    {
+      "type": "info",
+      "text": "When you want to create a budget, the following can be created:"
+    },
+    {
+      "type": "info",
+      "text": "• Operating - This budget is used for most general maintenance costs and expense transactions. Such as Work Order expenses, Asset costs, etc.\n• Purchasing - This budget is designed for Purchase Orders and Inventory adjustments. This shows how much is being spent to acquire the parts and hold on to them.\n• Revenue - This budget is used for receivable invoicing transactions, which are associated with the Invoicing Module."
+    },
+    {
+      "type": "info",
+      "text": "Learn more in Create a Budget and after you have done the creation, you will need to Create a Budget Account for that budget."
+    }
+  ]
+},
+    {
+  "type": "section",
+  "title": "Budget Transactions",
+  "content": [
+    {
+      "type": "info",
+      "text": "When you want to find the budget transactions for a particular budget account, you can view or create these."
+    },
+    {
+      "type": "info",
+      "text": "From the Budget Account screen, click on the budget and then click the budget account you want to view. The budget transactions for this month will display. See Budget Transactions for more details."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/51.png"
+    }
+  ]
+},
+    {
+      "type": "section",
+      "title": "Budgets Planning",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can choose to set budgeted amounts per account on a monthly or yearly basis. This gives you the ability to set budget goals, and track your actual spending against those budgeted goals."
+        },
+        {
+          "type": "info",
+          "text": "• Monthly - Specify the budgeted amount for the months that require a budget."
+        },
+        {
+          "type": "info",
+          "text": "• Yearly - Specify your annual budgeted amount to be divided equally during the 12-month fiscal year. When divided equally, you can raise or lower any individual month; this adjustment is useful for months that require more budget."
+        }
+      ]
+    },
+{
+  "type": "section",
+  "title": "Create a Monthly Budget Amount",
+  "content": [
+    {
+      "type": "info",
+      "text": "You can specify the budgeted amount for the months that require a budget."
+    },
+    {
+      "type": "step",
+      "text": "1. To start the planning, click the Budget Planning button. The default when you open Budget Planning, is to establish a monthly budget. The current month will appear on the screen, with all Active accounts for the chosen budget."
+    },
+    {
+      "type": "step",
+      "text": "2. For each budget account, enter the budgeted amount."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/52.png"
+    },
+    {
+      "type": "step",
+      "text": "3. Click the > arrow next to the month to proceed to the next month."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/53.png"
+    },
+    {
+      "type": "step",
+      "text": "4. For each budget account, enter the budgeted amount."
+    },
+    {
+      "type": "step",
+      "text": "5. Repeat steps 3 to 4 for the months that you need to set a budgeted amount for."
+    }
+  ]
+},
+    {
+  "type": "section",
+  "title": "Create a Yearly Budget Amount",
+  "content": [
+    {
+      "type": "info",
+      "text": "Specify your annual budgeted amount to be divided equally during the 12-month fiscal year. When divided equally, you can raise or lower any individual month; this adjustment is useful for months that require more budget."
+    },
+    {
+      "type": "step",
+      "text": "1. To start the planning, click the Budget Planning button."
+    },
+    {
+      "type": "step",
+      "text": "2. Click the Yearly icon to display Adjusting Yearly Budget Amount. The budget amount is divided equally across the 12-month fiscal year."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/55.png"
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/56.png"
+    },
+    {
+      "type": "step",
+      "text": "3. You can either check \"This will override the all monthly budgets\" check box OR leave it blank and this will apply the budget amount to those months without a entered budget amount."
+    }
+  ]
+},
+{
+  "type": "section",
+  "title": "Create a Budget",
+  "content": [
+    {
+      "type": "info",
+      "text": "The Budget will act as the 'folder' for all of the Budget Accounts you create and assign to various assets and track expenses on work orders. Every single account listed under that budget MUST share the same budget properties. For example, if you establish an Operating budget, all the accounts placed under that budget will only be available for modules that use Operating budget accounts (Assets, Work Orders, etc)."
+    },
+    {
+      "type": "step",
+      "text": "1. From the menu, click Settings."
+    },
+    {
+      "type": "step",
+      "text": "2. Under the Administration heading, click Budget Accounts."
+    },
+    {
+      "type": "step",
+      "text": "3. Click the + icon in the top left corner of the screen to create a new budget."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/57.png"
+    },
+    {
+      "type": "info",
+      "text": "The Choose a Budget Type dialog displays."
+    },
+    {
+      "type": "step",
+      "text": "4. Select the budget type, either:"
+    },
+    {
+      "type": "info",
+      "text": "Operating - This budget is used for most general maintenance costs and expense transactions. Such as Work Order expenses, Asset costs, etc."
+    },
+    {
+      "type": "info",
+      "text": "Purchasing - This budget is designed for Purchase Orders and Inventory adjustments. This shows how much is being spent to acquire the parts and hold on to them."
+    },
+    {
+      "type": "info",
+      "text": "Revenue - This budget is used for receivable invoicing transactions, which are associated with the Invoicing Module."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/58.png"
+    },
+    {
+      "type": "info",
+      "text": "The New Budget dialog displays."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/59.png"
+    },
+    {
+      "type": "step",
+      "text": "5. In the Budget name field, enter the name."
+    },
+    {
+      "type": "step",
+      "text": "6. In the Budget description field, enter the description."
+    },
+    {
+      "type": "step",
+      "text": "7. Click the Create button to save. The new budget folder will display in the budget list."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/create_budget_step4.png"
+    },
+    {
+      "type": "info",
+      "text": "Next, you can create your budget accounts."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/create_budget_step5.png"
+    }
+  ]
+},
+{
+  "type": "section",
+  "title": "Create a Budget Account",
+  "content": [
+    {
+      "type": "info",
+      "text": "After the Budget is created, then you can create one or many budget accounts. It is important to remember that every Budget Account listed under that budget MUST share the same budget properties. For example, if you establish an Operating budget, all the Budget Accounts under that budget will only be available for modules that use Operating budget accounts, such as Assets, Work Orders, etc."
+    },
+    {
+      "type": "step",
+      "text": "1. From the menu, click Settings."
+    },
+    {
+      "type": "step",
+      "text": "2. Under the Administration heading, click Budget Accounts."
+    },
+    {
+      "type": "step",
+      "text": "3. Click the +Create Account button at the top center of the screen to create your account."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/60.png"
+    },
+    {
+      "type": "info",
+      "text": "The Create New Account dialog displays."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/62.png"
+    },
+    {
+      "type": "step",
+      "text": "4. In the Account Name field, enter the name. When you create a budget account, give it a clear name. If you have many budget accounts with similar names, it can be confusing."
+    },
+    {
+      "type": "step",
+      "text": "5. In the Account Description field, enter the description."
+    },
+    {
+      "type": "step",
+      "text": "6. In the Account yearly budget amount field, enter the amount or you can set the amount to 0."
+    },
+    {
+      "type": "step",
+      "text": "7. Click the Create button. The Budget Account is created under the Budget folder."
+    }
+  ]
+},
+{
+      "type": "section",
+      "title": "Edit a Budget Account",
+      "content": [
+        {
+          "type": "info",
+          "text": "The ability to edit a Budget Account is carefully protected. Those authorized to do so, will be limited to: Set the Budget Account to Active or Inactive. Edit the Budget Account's Name and Description. Delete the Budget Account. Move a Budget Account to another Budget. Establish a yearly or monthly budgeted amount for each account. See Complete Budget Planning. View Last Year's Budget Amount and Expenses"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set the Budget Account to Active or Inactive",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Budget in the left column. This will give you access to all your active budget accounts for the chosen budget."
+        },
+        {
+          "type": "step",
+          "text": "2. From the menu, click Settings > Budget Accounts. "
+        },
+        {
+          "type": "step",
+          "text": "3. Hover over the budget account and the More Actions icon displays."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Active toggle to OFF and this will make the budget account Inactive."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/62.png"
+        },
+        {
+          "type": "info",
+          "text": "When the budget account is Inactive it will disappear from the screen."
+        },
+        {
+          "type": "step",
+          "text": "5. To see it again, click on the More Action   icon next to the +Create Account button at the top of the screen. There you will find the option to show or hide Inactive Accounts. "
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/63.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/64.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit Budget Account's Name and Description",
+      "content": [
+        {
+          "type": "info",
+          "text": "Remember, the budget account name displays throughout Eptura Asset so you will need to make sure your staff easily recognizes this name."
+        },
+        {
+          "type": "step",
+          "text": "1. Hover budget account and the More Actions icon displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the More Actions icon."
+        },
+        {
+          "type": "step",
+          "text": "3. Select Edit and the Editing Account dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/66.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Now you can edit the name of the account and the description."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Save Changes button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Budget Account",
+      "content": [
+        {
+          "type": "info",
+          "text": "When it has no history and is not tied to another record in the application. If the budget account has history and you click Delete, only the past transactions will be deleted, and the expenses will be brought to $0.00 and the budget account will remain."
+        },
+        {
+          "type": "step",
+          "text": "1. Hover budget account and the More Actions icon displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the More Actions icon."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Delete and confirm delete message displays 'Are you sure you want to delete this account?'"
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Yes button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Move a Budget Account to another Budget",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you want to move a budget account to another budget, this can be easily done."
+        },
+        {
+          "type": "step",
+          "text": "1. Hover budget account and the More Actions icon displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the More Actions icon."
+        },
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/65.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/67.png"
+        },
+        {
+          "type": "step",
+          "text": "3. From the Budget drop-down, select the budget. The budget account is moved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View Last Year's Budget Amount and Expenses",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Hover over the Budget Account, and the previous year's total budgeted amount and the actual expenses will appear on the right side of the account line."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/68.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Budget Transactions",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you want to find the budget transactions for a particular budget account, you can view or create these."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View Budget Transactions",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Administration heading, click Budget Transactions. The transactions display for the current year."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/69.png"
+        },
+        {
+          "type": "info",
+          "text": "(A) Search - Search allows you to find any field within the Transactions list."
+        },
+        {
+          "type": "info",
+          "text": "(B) Filter - You can change the filter to either Current Year, Last Year, or All."
+        },
+        {
+          "type": "info",
+          "text": "(C) More Actions - The More Actions icon contains:"
+        },
+        {
+          "type": "info",
+          "text": "Reset Grid - Resets any altered grid settings."
+        },
+        {
+          "type": "info",
+          "text": "Toggle List Grouping - Lets you group list by a column."
+        },
+        {
+          "type": "info",
+          "text": "Export all data - Downloads the transactions list to an XLSX file."
+        },
+        {
+          "type": "info",
+          "text": "Column Chooser - Lets you add or remove columns from the grid view."
+        },
+        {
+          "type": "info",
+          "text": "(D) Column Search - Allows column-level search and filtering of transactions."
+        },
+        {
+          "type": "info",
+          "text": "Reorder Columns - Drag and drop columns to rearrange. Click header to sort."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Toggle List Grouping",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the More Actions icon."
+        },
+        {
+          "type": "step",
+          "text": "2. Select Toggle List Grouping."
+        },
+        {
+          "type": "step",
+          "text": "3. Drag and drop a column header to the group by."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/69.png"
+        },
+        {
+          "type": "info",
+          "text": "The transaction list is toggled by group."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Column Chooser",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the More Actions icon."
+        },
+        {
+          "type": "step",
+          "text": "2. Select Column Chooser and the column chooser displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Drag and drop the columns you want onto the grid view."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/72.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create Transaction",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can create a transaction as an expense or credit."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the New Transaction button and the Create Transaction form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/73.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Complete the following:"
+        },
+        {
+          "type": "info",
+          "text": "Entry Date - Leave as the default date or select from the calendar picker the entry date."
+        },
+        {
+          "type": "info",
+          "text": "Budget - From the drop-down, select the budget."
+        },
+        {
+          "type": "info",
+          "text": "Type - From the drop-down, select either Expense or Credit."
+        },
+        {
+          "type": "info",
+          "text": "Amount - Enter the transaction amount."
+        },
+        {
+          "type": "info",
+          "text": "Description - Enter the description of the transaction."
+        },
+        {
+          "type": "info",
+          "text": "Vendor - From the drop-down, select the vendor."
+        },
+        {
+          "type": "info",
+          "text": "Invoice # - Enter the invoice number."
+        },
+        {
+          "type": "info",
+          "text": "Invoice Date - Select from the calendar picker the invoice date."
+        },
+        {
+          "type": "info",
+          "text": "Check # - Enter the check / cheque number."
+        },
+        {
+          "type": "info",
+          "text": "Check Date - Select from the calendar picker the check / cheque date."
+        },
+        {
+          "type": "info",
+          "text": "Transaction Date - Select from the calendar picker the transaction date."
+        },
+        {
+          "type": "step",
+          "text": "3. When finished, click the Post Transaction button and the transaction is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Security Roles",
+      "content": [
+        {
+          "type": "info",
+          "text": "Security Roles determine what the user can see and do in Eptura Asset. Your Administrator has the ability to add new roles and the default roles are:"
+        },
+        {
+          "type": "info",
+          "text": "• Administrator\n• Full User\n• No Access\n• Read Only"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Security Roles",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "2. Under the Administration section, click Security Roles and the Roles Management screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/74.png"
+        },
+        {
+          "type": "info",
+          "text": "Your Administrator will create roles and define the modules access this will help with:"
+        },
+        {
+          "type": "info",
+          "text": "• Administrators - When you limit access to the configuration and settings this prevents well-intentioned users from changing settings or configuration for others."
+        },
+        {
+          "type": "info",
+          "text": "• Inventory quantities - When you only allow certain roles to update or change inventory quantities, this helps to protect the integrity of your inventory numbers."
+        },
+        {
+          "type": "info",
+          "text": "• Technician and Operators - When you have many technicians or operators then these users can be in the same group you will know what they can see and what they can access."
+        },
+        {
+          "type": "info",
+          "text": "In this example, the user is set up as an Administrator."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/75.png"
+        }
+      ]
+    },
+    {
+  "type": "section",
+  "title": "Add a New Role",
+  "content": [
+    {
+      "type": "info",
+      "text": "You can create additional roles."
+    },
+    {
+      "type": "step",
+      "text": "1. Click the + icon."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/76.png"
+    },
+    {
+      "type": "info",
+      "text": "The Add New Role dialog displays."
+    },
+    {
+      "type": "media",
+      "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/77.png"
+    },
+    {
+      "type": "step",
+      "text": "2. In the New Role Name field, enter the name of the role."
+    },
+    {
+      "type": "step",
+      "text": "3. Click the Save button."
+    },
+    {
+      "type": "info",
+      "text": "After the role has been created, then you can define the role's module access."
+    }
+  ]
+},
+
+    {
+      "type": "section",
+      "title": "Define the Role's Module Access",
+      "content": [
+        {
+          "type": "info",
+          "text": "After the role has been created, then you can define the role."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/78.png"
+        },
+        {
+          "type": "info",
+          "text": "By default, the Administrator role is the only one to give you access to all six main Module permissions:"
+        },
+        {
+          "type": "info",
+          "text": "• Create - Allows the user to create a new record that did not exist previously."
+        },
+        {
+          "type": "info",
+          "text": "• Edit - With this permission, the user can add or alter documentation to an existing record (including change names, correct errors, add notes, change ID's, etc)."
+        },
+        {
+          "type": "info",
+          "text": "• Delete - The record can be deleted entirely, with no possibility of recovery. Even if you have Delete rights, most modules will block you from deleting a record, if that record has any recorded history on it. This includes: Assets, Budgets, Employees, Inventory, PMs, Users, and Vendors."
+        },
+        {
+          "type": "info",
+          "text": "• View - The user can view any/all of the details of that module. Unless they have additional rights granted, this is all they can do inside the selected module."
+        },
+        {
+          "type": "info",
+          "text": "• Reports - The user can run any of the reports of the selected module."
+        },
+        {
+          "type": "info",
+          "text": "• Configure - This grants the user permission to change the settings of the selected module, and amend what options all other users will be able to see in the module."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Grant Module Access",
+      "content": [
+        {
+          "type": "info",
+          "text": "On the right side of the screen, you will notice security settings that are unique for specific modules."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/79.png"
+        },
+        {
+          "type": "info",
+          "text": "Let's clarify a few of these:"
+        },
+        {
+          "type": "info",
+          "text": "• Employees\n   View Labor Rates - User and employees can see labor rates on Work Orders."
+        },
+        {
+          "type": "info",
+          "text": "• Inspections\n  Restrict to Assigned - When turned ON, the user can ONLY see Inspections assigned to them."
+        },
+        {
+          "type": "info",
+          "text": "• Inventory\n  Inventory - Include expected count in cycle count - This will allow you to export the cycle count parts with or without the expected count."
+        },
+        {
+          "type": "info",
+          "text": "• Purchase Orders\n  Allow Qty Mismatch - This allows the purchase order to receive a different amount than was ordered. If you ordered 3 and only received 2, this allows the user to close the purchase order."
+        },
+        {
+          "type": "info",
+          "text": "• Work Orders\n  Restrict to Assigned - When turned ON, the user can ONLY see Work Orders assigned to them."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Turn Full Administration Access ON vs granting specific Module Access",
+      "content": [
+        {
+          "type": "info",
+          "text": "When the Full Admin Access toggle is ON at the top of the screen then access to all the Module Settings is granted. It is NOT the same as manually granting the user Configure rights on all modules. It simply allows the user permission to open and view the module settings and the configure rights are still needed to make changes."
+        },
+        {
+          "type": "info",
+          "text": "Full Admin Access is NOT necessary if the user only requires Configure rights to one or more modules. However, if they will also need control of Administration Tools, or global settings (such as Company addresses, Inventory warehouse setup, Asset Group/Location setup, etc.), Full Admin Access will be required."
+        },
+        {
+          "type": "info",
+          "text": "Full Admin Access will also grant you viewing access to these tools & administration areas on the Settings Page shown below:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/80.jpg"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "Custom fields can be created and then added to the following modules:"
+        },
+        {
+          "type": "info",
+          "text": "• Assets\n• Work Request"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Custom Fields",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the menu, click Settings > Custom Fields. The Custom Fields dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/81.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a New Custom Field",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need a specific custom field that is not in the list, then you can create a new custom field."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the New button and the New Custom Field dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/82.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Complete the following:"
+        },
+        {
+          "type": "info",
+          "text": "Name - Enter the name of the custom field."
+        },
+        {
+          "type": "info",
+          "text": "Group - Groups are only to help with organizing a lengthy list of Custom Fields."
+        },
+        {
+          "type": "info",
+          "text": "Create or Edit a Custom Field Group"
+        },
+        {
+          "type": "substep",
+          "text": "1. Click the Manage Groups button and the Manage Groups dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/83.png"
+        },
+        {
+          "type": "substep",
+          "text": "2. In Add a Field Group field, enter the name of the group."
+        },
+        {
+          "type": "substep",
+          "text": "3. Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "Delete a Custom Field Group"
+        },
+        {
+          "type": "substep",
+          "text": "1. For the group you want to delete, click the Delete icon."
+        },
+        {
+          "type": "substep",
+          "text": "2. Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "Type - This is the most important field when establishing a new custom field. It determines how the custom field will behave. When a Type is selected and saved, you cannot change to a different type."
+        },
+        {
+          "type": "info",
+          "text": "The following options are:"
+        },
+        {
+          "type": "info",
+          "text": "• Text: Any character, letter, symbol, or number, can be typed in this field"
+        },
+        {
+          "type": "info",
+          "text": "• Checkbox: Creates a Yes/No style checkbox"
+        },
+        {
+          "type": "info",
+          "text": "• Integer: Only numbers can be entered"
+        },
+        {
+          "type": "info",
+          "text": "• Decimal: Numbers with a decimal point can be entered"
+        },
+        {
+          "type": "info",
+          "text": "• Date: MM/DD/YY"
+        },
+        {
+          "type": "info",
+          "text": "• Lookup: Creates a drop-down field, containing the options that may be selected from"
+        },
+        {
+          "type": "info",
+          "text": "• Contact: Creates a drop-down field that brings up the list of Employees, Vendors, Customers, Users"
+        },
+        {
+          "type": "info",
+          "text": "• Currency: Numbers entered will be preceded by your country's currency symbol"
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Save button. Now, you can add the custom field to the list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit an Existing Custom Field",
+      "content": [
+        {
+          "type": "info",
+          "text": "A custom field must be removed from the Category, before it can be edited."
+        },
+        {
+          "type": "step",
+          "text": "1. From the Custom Field list, click the X icon on the desired Custom Field, to remove it from the Category."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Add + icon. The Custom Fields dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "3. In the Search field, enter the custom field's name."
+        },
+        {
+          "type": "step",
+          "text": "4. Hover on the custom field and click the Edit icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/87.png"
+        },
+        {
+          "type": "info",
+          "text": "The Edit Custom Field dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/88.png"
+        },
+        {
+          "type": "step",
+          "text": "5. Edit the Name, Group (remember, you can edit the Groups from this dialog), or (if applicable) the Lookup field."
+        },
+        {
+          "type": "info",
+          "text": "The Type cannot be edited. After a Type is selected and saved, you cannot change that custom field to a different type."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Save button."
+        }
+      ]
+    },
+  {
+    "type": "section",
+    "title": "Azure Single Sign-On Setup",
+    "content": [
+      {
+        "type": "info",
+        "text": "When you enable Microsoft Azure Single Sign On (SSO) in ManagerPlus, this will force the web app to authenticate users through your organization's Azure login policies."
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Turn on the option to use Azure SSO",
+    "content": [
+      {
+        "type": "info",
+        "text": "Before connecting to your network's Single Sign-On, you need to enable SSO in ManagerPlus."
+      },
+      {
+        "type": "step",
+        "text": "1. Go to Settings > Tools and Support > Marketplace."
+      },
+      {
+        "type": "step",
+        "text": "2. Find the SSO (Single Sign On) option, and slide the button to the right to turn on the feature"
+      },
+      {
+        "type": "media",
+        "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/89.png"
+      },
+      {
+        "type": "step",
+        "text": "3. When switched on, the Settings > Administration section will now display the Single Sign-on (SSO) settings Icon"
+      },
+      {
+        "type": "media",
+        "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/90.png"
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Enable Azure SSO in ManagerPlus",
+    "content": [
+      {
+        "type": "info",
+        "text": "Next, enable Azure's SSO in ManagerPlus:"
+      },
+      {
+        "type": "step",
+        "text": "1. Go to Settings > Administration  > Single Sign-On (SSO)"
+      },
+      {
+        "type": "step",
+        "text": "2. Switch on Azure Sign-On Enabled"
+      },
+      {
+        "type": "media",
+        "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/91.png"
+      },
+      {
+        "type": "step",
+        "text": "3. Now you can configure which domains can log in to your ManagerPlus database, by completing each field."
+      },
+      {
+        "type": "info",
+        "text": "Explanation of fields and options:\n● Add Row - Use this option to create your first domain entry or add additional domains. Adding additional domains will allow you to configure settings differently per ManagerPlus entity.\n● Domain – This filters which domains are allowed to access your ManagerPlus.\n● Site – This is the default site/entity that will be used when new users are created – the new user will be registered under this site.\n● Default Security User Role – New users will be registered with this security role when signing in for the first time from the main application. Note: By default, this setting is set to not [Don't Create User]\n● Default Mobile User Role – New users will be registered with this security role when signing in for the first time from a mobile device. Note: By default, this setting is set to not auto create users."
+      },
+      {
+        "type": "step",
+        "text": "4. Click the Save Changes button."
+      },
+      {
+        "type": "info",
+        "text": "After enabling your SSO settings in ManagerPlus, log out of your current ManagerPlus session."
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "Register ManagerPlus with Azure",
+    "content": [
+      {
+        "type": "info",
+        "text": "Now that your SSO connection settings have been configured, it's time to log back into ManagerPlus."
+      },
+      {
+        "type": "step",
+        "text": "1. Open your ManagerPlus Lightning website and you will notice that login page has changed."
+      },
+      {
+        "type": "media",
+        "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/92.png"
+      },
+      {
+        "type": "step",
+        "text": "2. Click the Microsoft Sign In button."
+      },
+      {
+        "type": "step",
+        "text": "3. Sign in as an Azure Administrator."
+      },
+      {
+        "type": "media",
+        "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/93.png"
+      },
+      {
+        "type": "step",
+        "text": "4. Accept the requested app permissions"
+      },
+      {
+        "type": "media",
+        "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/94.png"
+      },
+      {
+        "type": "media",
+        "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/95.png"
+      },
+      {
+        "type": "step",
+        "text": "5. After accepting, you will be granted access to the ManagerPlus application."
+      },
+      {
+        "type": "info",
+        "text": "After you have successfully logged in then ManagerPlus will be registered into your Azure Instance."
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "title": "API",
+    "content": [
+      {
+        "type": "info",
+        "text": "An API (Application Programming Interface) connector is a tool that allows the application to share data with other business applications you may use, making it easier to get more done in one place. This will allow you to gather data in a central location. The data can be used to create reports, dashboards, and graphs in our Business Intelligence tool, giving you unprecedented insight into your business operations."
+      },
+      {
+        "type": "info",
+        "text": "In order for connectors to work, they need to sync with ManagerPlus. That can be done by gathering the connector's database name, email address, password, and ensuring that you get a dedicated service account that is API enabled. Once these items have been gathered, you will need to reach out to our technical support team who will help set up the connector for you."
+      },
+      {
+        "type": "media",
+        "path": "https://github.com/SavvyGaikwad/img/blob/main/Administrator%20Settings/96.png"
+      },
+      {
+        "type": "info",
+        "text": "API changes now in effect with the release of API Version 2. For developers using the API, see the API V2 Documentation. The now-deprecated API V1 will be discontinued October 1, 2021."
+      },
+      {
+        "type": "info",
+        "text": "The following is a list of changes that will impact your ability to connect to ManagerPlus:\n• API keys will no longer be accepted in the query string (like `?api_key=...`). API keys must now be provided in the Authorization header (like `Authorization: ...`). This change prevents API keys from being saved in server logs—both our server logs and other Internet operators' logs.\n• Note that customers' existing API keys will continue to work.\n• The API URL is changing from `/api` to `/api2`."
+      },
+      {
+        "type": "info",
+        "text": "Additional changes that don't cause breakage for customers or their API integrations:\n• Code and infrastructure have been updated under the hood. We're hoping to see performance improvements.\n• The documentation UI is different. It should provide the same information.\n• New endpoints have been added, including information about entities (sites), with more on the way.\n• The capitalization of some parameters has changed in the documentation, but all of those should be case insensitive. Old cases should still work. If they don't, it's a bug, though it's probably one of low priority.\n• Some API methods (mostly PATCH requests) now have different, improved error messages."
+      },
+      {
+        "type": "info",
+        "text": "API keys can now be managed directly in the application. They are still available to manage in Classic."
+      },
+      {
+        "type": "info",
+        "text": "Connectors Available:\n● ClearPath GPS\n● GEOTAB\n● GPS Insight\n● John Deere\n● Synovia Solutions\n● VisionLink\n● Volvo\n● Zonar."
+      }
+    ]
+  }
+]
+}

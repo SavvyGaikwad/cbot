@@ -1,0 +1,307 @@
+{
+  "document_title": "Invoices Admin Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Set up your Invoices",
+      "content": [
+        {
+          "type": "info",
+          "text": "To set the Invoices module, the following settings will need completed:"
+        },
+        {
+          "type": "step",
+          "text": "1. Invoices settings - establish your defaults."
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Navigate to Settings > Module Settings > Invoices > General."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/1.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Price Points Settings - establish markup amounts."
+        },
+        {
+          "type": "info",
+          "text": "Price Points are the most critical aspect of the Invoices. It sets the difference between your expenses, and what your customer is asked to pay. See Set up your Price Points."
+        },
+        {
+          "type": "step",
+          "text": "3. Work Orders Settings - enable auto-invoice generation."
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Navigate to  Settings > Module Settings > Work Orders."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 Select the Work Type tab."
+        },
+        {
+          "type": "info",
+          "text": "The Work Order Settings displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/2.png"
+        },
+        {
+          "type": "info",
+          "text": "Look at the list of Work Types, and decide which ones need to be eligible to generate Invoices."
+        },
+        {
+          "type": "substep",
+          "text": "3.3 From the Work Type drop-down, select the work type."
+        },
+        {
+          "type": "substep",
+          "text": "3.4 For the Do you invoice for this Work Type? toggle, switch the setting to Yes."
+        },
+        {
+          "type": "substep",
+          "text": "3.5 Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "When you enable this it will create an invoice when the work order is completed​​​​​. When this is enabled then this does NOT mean every work order under this work type will create an invoice.  For it to generate an invoice, a completed work order must have two things: Work Type that is set for Invoices and Have a Customer attached"
+        },
+        {
+          "type": "info",
+          "text": "If it doesn't have both, the work order will simply close without generating an invoice."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "General tab",
+      "content": [
+        {
+          "type": "info",
+          "text": "Invoice Defaults - These are the default values used when creating new invoices."
+        },
+        {
+          "type": "info",
+          "text": "Status: The starting status for the invoice, when it is created."
+        },
+        {
+          "type": "info",
+          "text": "Billable Labor Rate: Set the default labor rate that should be used on customer invoices, unless otherwise specified on particular tasks."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Estimate Defaults",
+      "content": [
+        {
+          "type": "info",
+          "text": "Status: The starting status of the estimate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "List Setup",
+      "content": [
+        {
+          "type": "info",
+          "text": "These are the default values used when creating new invoices."
+        },
+        {
+          "type": "info",
+          "text": "Other Cost Types: These cost types are all shared between Work Order, Purchase Order, and Invoices modules.  Add a new type here, and it will be added to all three modules as well"
+        },
+        {
+          "type": "info",
+          "text": "Sales Tax: These tax rate options are all shared between Work Order, Purchase Order, and Invoices modules.  Add a new tax rate here, and it will be added to all three modules as well"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "These are the fields unique to this module.  Data entered here will only appear in the invoice module, and no where else."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Work Flow tab",
+      "content": [
+        {
+          "type": "info",
+          "text": "Set up a workflow for the invoice and the estimate."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Settings > Module Settings > Invoices > Workflow."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Invoice Statuses",
+      "content": [
+        {
+          "type": "info",
+          "text": "These are all the existing statuses in the module.  Each can be renamed if needed, but cannot be deleted after it has been used in an invoice."
+        },
+        {
+          "type": "step",
+          "text": "Click Create New Status to establish a new one.  4 options are available:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/4.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Security Options",
+      "content": [
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/5.png"
+        },
+        {
+          "type": "info",
+          "text": "Approvals:  Use Security Roles And Maximum Expense To Add Approval Thresholds.  These work the same as Work Orders or Purchase Orders security settings. If desired, turn on the feature"
+        },
+        {
+          "type": "info",
+          "text": "Select one of the security roles. Name the maximum expense allowed before the user level is blocked from selecting the status"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Paths",
+      "content": [
+        {
+          "type": "step",
+          "text": "Select a status from the list, and its Pathway will be displayed."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/6.png"
+        },
+        {
+          "type": "info",
+          "text": "The highlighted ones show the status options you can navigate to, from the current status. From there, you can go to Customer Billed, Paid, and Cancelled. Reopened is not an option. To make it an option, click on it. Changes are automatically saved"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Service Tasks tab",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Module Settings > Invoices and then click the Service Task tab."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/7.png"
+        },
+        {
+          "type": "info",
+          "text": "This is the same Service Task library as seen in the Work Order Settings.  As it is a shared library, editing in either location, will be visible in the other. As service tasks are required for invoices, you'll need to visit this library often. Select the desired Service Task to view and updated any existing information"
+        },
+        {
+          "type": "info",
+          "text": "Details Tab - Code\tEnter the name of the task.\nDescription\tEnter a detailed description of the task.\nClass\tFrom the drop-down, select a class.\nEstimate Time\tEnter the estimated time.\nEstimate Cost\tEnter the estimated cost.\nInvoice Labor Rate\tEnter the invoice labor rate."
+        },
+        {
+          "type": "info",
+          "text": "Bill of Materials Tab"
+        },
+        {
+          "type": "step",
+          "text": "Notes Tab - In the Notes tab you can enter the task instructions, add an attachment, such as images, or a URL link."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/8.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "To create a new task",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Create Task button."
+        },
+        {
+          "type": "step",
+          "text": "2. Complete the following fields:"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "To create a new task",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Create Task button."
+        },
+        {
+          "type": "step",
+          "text": "2. Complete the following fields:"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Bill of Materials Tab",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you add a part here then Eptura Asset will suggest what type of part needs be used when performing the service. It can be a different part each time you provide the service, depending on what asset you worked on. The actual part number will be named on the work order. Then the next time you perform the service on that Asset,  the application will remember what part was used, and make that the suggested part."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Add + icon to display the inline form."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Invoices%20Admin%20Settings/9.png"
+        },
+        {
+          "type": "step",
+          "text": "2. From the Part Type drop-down, select the part type."
+        },
+        {
+          "type": "step",
+          "text": "3. In the Qty field, enter the quantity to be used."
+        },
+        {
+          "type": "step",
+          "text": "4. From U of M drop-down, select the unit of measurement."
+        },
+        {
+          "type": "step",
+          "text": "5. In the Note field, enter a short note."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Save button."
+        }
+      ]
+    }
+  ]
+}

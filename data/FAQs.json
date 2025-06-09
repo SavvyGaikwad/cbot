@@ -1,0 +1,99 @@
+{
+  "document_title": "FAQs",
+  "content": [
+    {
+      "type": "section",
+      "title": "Can the application interface with other software applications?",
+      "content": [
+        {
+          "type": "info",
+          "text": "The application is able to communicate with other software applications through our Connectors and our API. To see our full current list of Connectors click https://www.managerplus.com/solution/connectors.",
+          "links": [
+            "https://www.managerplus.com/solution/api",
+            "https://www.managerplus.com/solution/connectors"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Will the application ever use my data?",
+      "content": [
+        {
+          "type": "info",
+          "text": "No. The application will only access a clients software when directed to by the client."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Who can have access to the Software?",
+      "content": [
+        {
+          "type": "info",
+          "text": "Only those you allow access to will be able to view and or edit items within the application. There are many reasons for this, the most important is for your own data security and the second is for data cleanliness."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Is there a mobile app?",
+      "content": [
+        {
+          "type": "info",
+          "text": "Yes, ManagerPlus Mobile allows you to work functionally in your database in a connected or disconnected state. The disconnected state allows you to work on the go and then syncs your data when you are back in a connected state."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Licensing Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "User licenses determine which individuals in an organization can access the application, as well as their level of access. The following is a breakdown of the different user types available."
+        },
+        {
+          "type": "info",
+          "text": "Named User License - A named user can access anything in the program. This type of license is \"used up\" when the named user is created, and it is generally designated for one specific person. The named user can only log in at one place at any given time."
+        },
+        {
+          "type": "info",
+          "text": "Concurrent User License - A concurrent user license is \"used up\" when one of the users actually logs in, and is released when they log out. One license is not designated for a specific person, and could thus support multiple users, but only one person can log in at any given time. These users can only access the main application."
+        },
+        {
+          "type": "info",
+          "text": "Mobile User License - Mobile users work like named users, but mobile users are limited to the mobile module."
+        },
+        {
+          "type": "info",
+          "text": "Mobile + Concurrent User License - If you have concurrent users available, then a mobile user can log into the main application. When the mobile user does log into the main application, it \"uses up\" a concurrent user."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "What are Work Requests Users?",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work Requests users are unlimited with purchase of the Work Requests module. These users can only access the work requests tools (mobile app, website, email), and cannot access the full program."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "What is Work Requests, and how does it work?",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work Requests is the work order request module. This application allows non-users to submit \"work requests\" that can be processed into work orders within the system. Additionally, logs (i.e., meters such as hours, miles, etc.)"
+        },
+        {
+          "type": "info",
+          "text": "Note: This answer appears to be incomplete in the source document."
+        }
+      ]
+    }
+  ]
+}

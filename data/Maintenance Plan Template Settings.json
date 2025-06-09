@@ -1,0 +1,528 @@
+{
+  "document_title": "Maintenance Plan Template Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Planned Maintenance Template Setting",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Access Maintenance Plans",
+      "content": [
+        {
+          "type": "step",
+          "text": "From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Libraries heading, click Maintenance Plans."
+        },
+        {
+          "type": "info",
+          "text": "It is here that you can (A) create Plan Categories, (B) create Maintenance Plans, and (C) show the inactive Maintenance Plans."
+        },
+        {
+          "type": "info",
+          "text": "Learn how to create a plan in Create a Maintenance Plan for a Sprinkler System and in Create a Maintenance Plan for a Truck."
+        },
+        {
+          "type": "info",
+          "text": "Additionally, you can edit the plan, rename the plan's name, duplicate a plan, and make a plan inactive."
+        },
+        {
+          "type": "info",
+          "text": "Within the Maintenance Plan, you can (D) add parts, add public or private notes, and add attachments. The plans allow you to (E) set parameters on your assets to automatically create Work Orders based on the criteria you set. Then you can have those Work Orders assigned to your workers or employees."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a New Maintenance Plan Category",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Plan Category is a way to organize your Maintenance Plans into a group. This group folder helps you to better organize all of your PM plans.  This article will show you how to create a new Plan Category."
+        },
+        {
+          "type": "info",
+          "text": "Click the Settings icon on the side ribbon."
+        },
+        {
+          "type": "info",
+          "text": "When you have clicked the Settings icon, you’ll click the Maintenance Plans button, found in the Libraries section."
+        },
+        {
+          "type": "info",
+          "text": "To create a new Plan Category, click the + icon next to the Plan Categories title, then give the new Category a name."
+        },
+        {
+          "type": "info",
+          "text": "To create a New Plan, click the + Create New Plan icon under the Maintenance Plans title, then give the New Plan a name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a New Maintenance Plan",
+      "content": [
+        {
+          "type": "info",
+          "text": "Planned Maintenance is an important part of the application.  Being able to create and maintain Planned Maintenance is critical for successful Asset Management."
+        },
+        {
+          "type": "step",
+          "text": "1.  Click the Settings icon on the side ribbon."
+        },
+        {
+          "type": "step",
+          "text": "2.  Once you have clicked the Settings icon, you’ll click the Maintenance Plans button, found in the Libraries section."
+        },
+        {
+          "type": "step",
+          "text": "3.  Click the sub-category of the Plan Category you wish to add a Planned Maintenance to, followed by Create New Plan, or click an already existing Plan, then click Create New PM."
+        },
+        {
+          "type": "step",
+          "text": "4.  Upon clicking Create New Plan, give the plan a name, then click Create New PM."
+        },
+        {
+          "type": "step",
+          "text": "5.  Fill in the appropriate information, including PM Name, Purpose, Work Type, Set Work Order Due Date, and Reset Timing, then click Save."
+        },
+        {
+          "type": "step",
+          "text": "6.  After clicking Save, you may then add specific Tasks or Schedule Rules if needed."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a PM Record on a Maintenance Plan",
+      "content": [
+        {
+          "type": "info",
+          "text": "Planned Maintenance is an important part of the application.  Being able to create and maintain Planned Maintenance is critical for successful Asset Management. This article shows you how to access an existing PM Record on a Maintenance Plan."
+        },
+        {
+          "type": "step",
+          "text": "1.  Click the Settings icon on the side ribbon."
+        },
+        {
+          "type": "step",
+          "text": "2.  Once you have clicked the Settings icon, you’ll click the Maintenance Plans button, found in the Libraries section."
+        },
+        {
+          "type": "step",
+          "text": "3.  Click the sub-category of the Plan Category, followed by the Plan, you wish to edit."
+        },
+        {
+          "type": "step",
+          "text": "4.  Upon clicking on the Plan, click the specific PM that you wish to edit."
+        },
+        {
+          "type": "step",
+          "text": "5.  Upon doing so, you may edit any of the information shown on the menu."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Task to a PM",
+      "content": [
+        {
+          "type": "info",
+          "text": "A task is a single essential activity that needs to be accomplished within a certain time frame. If the task is a common one, it can appear in multiple PM's and Work Orders. Therefore, a Task is not bound exclusively to a single PM."
+        },
+        {
+          "type": "info",
+          "text": "When created, wherever the task appears, it will always contain the same:"
+        },
+        {
+          "type": "info",
+          "text": "Description"
+        },
+        {
+          "type": "info",
+          "text": "Estimated Time to complete"
+        },
+        {
+          "type": "info",
+          "text": "Suggested Parts list (Bill of Materials)"
+        },
+        {
+          "type": "info",
+          "text": "Instructions"
+        },
+        {
+          "type": "info",
+          "text": "In Maintenance Plans, a task is a single step, found in a PM.  While some PM's have a single Task, most PM's usually have multiple tasks (or steps) that need to be completed, to satisfy the requirements of the PM and the PM manager."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add an existing Task to a PM",
+      "content": [
+        {
+          "type": "info",
+          "text": "Open the desired PM record to add your Task."
+        },
+        {
+          "type": "info",
+          "text": "Tasks can be set up in group which let you add multiple service tasks to work orders at once, see Set up Tasks for Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Maintenance Plans by clicking on Settings > Libraries > Maintenance Plans."
+        },
+        {
+          "type": "info",
+          "text": "Search for the existing PM plan or narrow down the list by selecting a Plan Category."
+        },
+        {
+          "type": "info",
+          "text": "Select the desired Maintenance plan."
+        },
+        {
+          "type": "info",
+          "text": "Open a PM on the chosen Maintenance Plan."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Task button."
+        },
+        {
+          "type": "step",
+          "text": "Select the Task to be added."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a new Task",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the Add Task button"
+        },
+        {
+          "type": "step",
+          "text": "Select the Create New Task button on the screen"
+        },
+        {
+          "type": "info",
+          "text": "Fill in the required information:"
+        },
+        {
+          "type": "step",
+          "text": "Task Code:  Unique alphanumeric ID you create to name the task"
+        },
+        {
+          "type": "step",
+          "text": "Task Description:  Brief description of what is expected, when performing this task"
+        },
+        {
+          "type": "step",
+          "text": "Task Class:  While all tasks can belong to the same list, Task Class helps you organize all your tasks into different groups or classifications"
+        },
+        {
+          "type": "step",
+          "text": "Standard Estimated Time:  Hours and Minutes it should take on average to complete this task.  Filling this out helps estimate he total amount of time needed to complete a PM, and plan accordingly"
+        },
+        {
+          "type": "info",
+          "text": "Click a save button, either:"
+        },
+        {
+          "type": "step",
+          "text": "Save & Add button which saves the newly created Task, and adds it to your PM"
+        },
+        {
+          "type": "step",
+          "text": "Save & Select button which saves the newly created Task, and allows you to continue selecting other Tasks as well"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reorder PM Tasks",
+      "content": [
+        {
+          "type": "info",
+          "text": "To Reorder PM Tasks, select the Task on the right hand side to drag and drop to the correct order."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/tree/main/Maintenance%20Plan%20Template%20Settings/1.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Season",
+      "content": [
+        {
+          "type": "info",
+          "text": "Let's say you have a PM that only needs to be performed during the cold winter months. It could be a school bus that only needs a regular service only during the school year (and not over summer break).  You can create specific seasons during which you perform a PM. This can be customized to your unique maintenance needs:"
+        },
+        {
+          "type": "info",
+          "text": "Traditional calendar seasons (Spring, Summer, Autumn, Winter)"
+        },
+        {
+          "type": "info",
+          "text": "Event seasons (Summer break, Busy Season, Harvest)"
+        },
+        {
+          "type": "info",
+          "text": "Seasonal business cycles (Ski Season, Allergy season, Football season)"
+        },
+        {
+          "type": "info",
+          "text": "Using the PM Schedule Rules, Add Season option allows you to:"
+        },
+        {
+          "type": "info",
+          "text": "Create a custom season"
+        },
+        {
+          "type": "info",
+          "text": "Name the start date"
+        },
+        {
+          "type": "info",
+          "text": "Name the end date"
+        },
+        {
+          "type": "info",
+          "text": "PM's with a Season attached will only occur during that time period. After the time period has ended, the PM will be suspended, until the season comes up again."
+        },
+        {
+          "type": "step",
+          "text": "Click the Settings icon on the side ribbon"
+        },
+        {
+          "type": "step",
+          "text": "Under Libraries section, click the Maintenance Plans button."
+        },
+        {
+          "type": "step",
+          "text": "Open the Maintenance Plan you want to edit."
+        },
+        {
+          "type": "step",
+          "text": "Open one of the PMs in that Maintenance Plan"
+        },
+        {
+          "type": "step",
+          "text": "Under Schedule Rules, select Create New Rule"
+        },
+        {
+          "type": "step",
+          "text": "Create your rule, then select + Add Season"
+        },
+        {
+          "type": "step",
+          "text": "Select a Season. If the Season you want does not appear, then click the New button."
+        },
+        {
+          "type": "info",
+          "text": "Fill out:"
+        },
+        {
+          "type": "step",
+          "text": "Season ID (name of your desired season)"
+        },
+        {
+          "type": "info",
+          "text": "Start Month / Day"
+        },
+        {
+          "type": "info",
+          "text": "End Month / Day"
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "Doing this will cause the PM to only occur between the start and end days of your selected season."
+        },
+        {
+          "type": "info",
+          "text": "Seasons cannot be edited after they are in use by any PM.  If a different season period is needed, it will need to be newly created."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Link PMs to other PMs",
+      "content": [
+        {
+          "type": "info",
+          "text": "If there are multiple PMs in a single Maintenance Plan, they can be linked together. This means:"
+        },
+        {
+          "type": "info",
+          "text": "Linking PM's results in fewer work orders."
+        },
+        {
+          "type": "info",
+          "text": "Allows the system to synchronize PM schedules and mitigate redundant downtime for Assets results in you being more productive."
+        },
+        {
+          "type": "info",
+          "text": "Fewer work orders means consolidated tasks - which means...less paperwork."
+        },
+        {
+          "type": "info",
+          "text": "For example, if you have a Maintenance plan that includes:"
+        },
+        {
+          "type": "info",
+          "text": "Monthly PM"
+        },
+        {
+          "type": "info",
+          "text": "Quarterly PM"
+        },
+        {
+          "type": "info",
+          "text": "Annual PM"
+        },
+        {
+          "type": "step",
+          "text": "You can link the greater PM, back to the lesser PMs. The Annual PM can be told to Include or Override the instructions on the Quarterly PM or Monthly PM.  By linking the schedules together, the three PMs that come due at the same time once a year, will either be:"
+        },
+        {
+          "type": "step",
+          "text": "combined into one work order (Include)"
+        },
+        {
+          "type": "step",
+          "text": "only the Annual will be generated, with the other two being overridden (Override)"
+        },
+        {
+          "type": "info",
+          "text": "Schedule linking has safeguards to make sure you set it up right."
+        },
+        {
+          "type": "info",
+          "text": "When you create Maintenance plans, users are only able to link PM's to other PM's of a lesser or equal interval."
+        },
+        {
+          "type": "info",
+          "text": "Example: The Maintenance plan shown below contains 5 PMs."
+        },
+        {
+          "type": "info",
+          "text": "If you attempt to link the Annual Inspection to the others, it will give 3 \"lesser\" options to choose from. Note that the 2 -year Bi-Annual Service is not an option."
+        },
+        {
+          "type": "step",
+          "text": "If you attempt to link two PMs of different cycle types, the application will allow it, but gives a warning that says PM cycle types do not match."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add an Attachment to a Maintenance Plan",
+      "content": [
+        {
+          "type": "info",
+          "text": "Planned Maintenance is an important part of the application.  Being able to create and maintain Planned Maintenance is critical for successful Asset Management."
+        },
+        {
+          "type": "step",
+          "text": "1.  Click the Settings icon on the side ribbon."
+        },
+        {
+          "type": "step",
+          "text": "2.  Once you have clicked the Settings icon, you’ll click the Maintenance Plans button, found in the Libraries section."
+        },
+        {
+          "type": "step",
+          "text": "3.  Click the sub-category of the Plan Category, followed by the Plan, you wish to add an Attachment to."
+        },
+        {
+          "type": "step",
+          "text": "4.  Upon clicking the Plan, click the specific PM that you wish to add an Attachment to."
+        },
+        {
+          "type": "step",
+          "text": "5.  Click the ellipses on the top right corner of the screen, then select Attachments."
+        },
+        {
+          "type": "step",
+          "text": "6.  After clicking the Attachments icon, you may enter the specific Attachment by either drag and drop or searching for the file in the Add Attachment section."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Note to a Maintenance Plan",
+      "content": [
+        {
+          "type": "info",
+          "text": "Planned Maintenance is an important part of the application.  Being able to create and maintain Planned Maintenance is critical for successful Asset Management."
+        },
+        {
+          "type": "step",
+          "text": "1.  Click on the Settings icon on the side ribbon."
+        },
+        {
+          "type": "step",
+          "text": "2.  Once you have clicked the Settings icon, you’ll click on the Maintenance Plans button, found in the Libraries section."
+        },
+        {
+          "type": "step",
+          "text": "3.  Click on the sub-category of the Plan Category, followed by the Plan, you wish to add a Note to."
+        },
+        {
+          "type": "step",
+          "text": "4.  Upon clicking on the Plan, click on the specific PM that you wish to add a Note to."
+        },
+        {
+          "type": "step",
+          "text": "5.  Click on the ellipses on the top right corner of the screen, then select Notes."
+        },
+        {
+          "type": "step",
+          "text": "6.  After clicking on the Notes icon, you may enter a New Internal Note or a New Public Note.   Once the Note has been entered, click on the Add Note icon."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Inactivate, Edit, and Duplicate a Maintenance Plan Record",
+      "content": [
+        {
+          "type": "info",
+          "text": "Planned Maintenance is an important part of the application.  Being able to create and maintain Planned Maintenance is critical for successful Asset Management."
+        },
+        {
+          "type": "step",
+          "text": "1.  Click the Settings icon on the side ribbon."
+        },
+        {
+          "type": "step",
+          "text": "2.  Once you have clicked the Settings icon, you’ll click the Maintenance Plans button, found in the Libraries section."
+        },
+        {
+          "type": "step",
+          "text": "3.  Click the sub-category of the Plan Category, followed by the ellipses next to the Plan, you wish to Inactivate, Edit, or Duplicate."
+        },
+        {
+          "type": "step",
+          "text": "4.  Upon clicking the appropriate item in the ellipses option menu, you may edit that element."
+        },
+        {
+          "type": "info",
+          "text": "With the Inactivate option, you will be given the choice to keep the file, but simply deactivate the Plan, or Delete the Plan altogether."
+        }
+      ]
+    }
+  ]
+}

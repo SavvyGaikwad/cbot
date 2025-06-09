@@ -1,0 +1,408 @@
+{
+  "document_title": "Purchase Order Admin Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Purchase Order Admin Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Access Purchase Order Settings",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to  Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Module Settings heading, click Purchase Orders. The Purchase Order Settings screen displays."
+        },
+        {
+          "type": "info",
+          "text": "This screen contains the tabs:"
+        },
+        {
+          "type": "info",
+          "text": "General - set up the purchase order defaults, budget transaction dates, returns, list setup and custom fields."
+        },
+        {
+          "type": "info",
+          "text": "Workflow - set up the workflow of the purchase orders."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up General Settings for Purchase Orders",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to  Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Module Settings heading, click Purchase Orders.  The Purchase Order Settings screen displays."
+        },
+        {
+          "type": "info",
+          "text": "The General tab displays by default, and this contains:"
+        },
+        {
+          "type": "info",
+          "text": "Purchase Order Defaults"
+        },
+        {
+          "type": "info",
+          "text": "Budget Transaction Dates"
+        },
+        {
+          "type": "info",
+          "text": "Returns"
+        },
+        {
+          "type": "info",
+          "text": "List Setup"
+        },
+        {
+          "type": "info",
+          "text": "Custom Fields"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Purchase Order Defaults",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Purchase Order Defaults include:"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Budget Transaction Dates",
+      "content": [
+        {
+          "type": "info",
+          "text": "The following budget transaction dates can be set up:"
+        },
+        {
+          "type": "step",
+          "text": "On-Post: Select either the original invoice date or date at time of posting to be displayed when posting a transaction."
+        },
+        {
+          "type": "step",
+          "text": "On Re-post: Select either the original invoice date or date at time of posting to be displayed when re-posting a transaction."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Returns",
+      "content": [
+        {
+          "type": "info",
+          "text": "This allows you to set whether or not a credit memo number is required on all credit memos."
+        },
+        {
+          "type": "step",
+          "text": "Toggle the CM# Required on all Credit Memos to ON."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "List Setup",
+      "content": [
+        {
+          "type": "info",
+          "text": "The following lists can be set up:"
+        },
+        {
+          "type": "step",
+          "text": "Other Cost Types:  Establish your choice of line-item expense options, that can appear on a purchase order."
+        },
+        {
+          "type": "info",
+          "text": "Work Orders and Purchase Orders share this library."
+        },
+        {
+          "type": "step",
+          "text": "Sales Tax:  Establish your choice sales tax options, that can appear on a purchase order."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "Custom Fields are available for any information needed that is not within the default fields."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up Workflow for Purchase Orders",
+      "content": [
+        {
+          "type": "info",
+          "text": "Administrator can set up a workflow that a work order will follow from creation to completion."
+        },
+        {
+          "type": "step",
+          "text": "Select the Settings icon located in the menu."
+        },
+        {
+          "type": "step",
+          "text": "Select Module Settings then Purchase Orders."
+        },
+        {
+          "type": "step",
+          "text": "Click the Workflow tab. The Workflow tab displays."
+        },
+        {
+          "type": "info",
+          "text": "The default workflow contains the following:"
+        },
+        {
+          "type": "step",
+          "text": "Active"
+        },
+        {
+          "type": "info",
+          "text": "New"
+        },
+        {
+          "type": "info",
+          "text": "Ordered"
+        },
+        {
+          "type": "info",
+          "text": "Received"
+        },
+        {
+          "type": "info",
+          "text": "Reopened"
+        },
+        {
+          "type": "step",
+          "text": "Completion"
+        },
+        {
+          "type": "info",
+          "text": "Completed"
+        },
+        {
+          "type": "step",
+          "text": "Inactive"
+        },
+        {
+          "type": "info",
+          "text": "Canceled"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up a simple Workflow",
+      "content": [
+        {
+          "type": "info",
+          "text": "The workflow is easier to explain with an example, so let's set up this simple workflow. Below is an example of a simple workflow that includes New, Ordered,Received, Completed, Reopen, and Canceled."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Rename a Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can rename a status, in this example, the Active status will be renamed to Open."
+        },
+        {
+          "type": "step",
+          "text": "Click on the status."
+        },
+        {
+          "type": "step",
+          "text": "Hover on the status to see the More Actions icon."
+        },
+        {
+          "type": "step",
+          "text": "Click the More Actions  icon. A popup menu displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Rename menu item. The status name is highlighted and becomes editable."
+        },
+        {
+          "type": "step",
+          "text": "In the Name of status being renamed field, enter the name."
+        },
+        {
+          "type": "info",
+          "text": "Click anywhere on the screen to save the new name automatically."
+        },
+        {
+          "type": "info",
+          "text": "The status name is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a New Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can create a new status, in this example, the In Progress status is created."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create new status button. The Choose a status type dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "Select the status type, either:"
+        },
+        {
+          "type": "step",
+          "text": "Active - used for general statuses."
+        },
+        {
+          "type": "step",
+          "text": "Completion - used to finish a workflow."
+        },
+        {
+          "type": "step",
+          "text": "Inactive - used to make the purchase order inactive."
+        },
+        {
+          "type": "info",
+          "text": "The Name your new status form displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Name your new status field, enter in the status name."
+        },
+        {
+          "type": "step",
+          "text": "Click the Create button."
+        },
+        {
+          "type": "info",
+          "text": "The status is created."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Define the Workflow for each Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "You need to define where the status will flow to the next status."
+        },
+        {
+          "type": "info",
+          "text": "For example:"
+        },
+        {
+          "type": "step",
+          "text": "Click the status and requirement options and paths displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the path you want this status to flow to."
+        },
+        {
+          "type": "info",
+          "text": "The path will highlight and save."
+        },
+        {
+          "type": "step",
+          "text": "Repeat steps 1 to 2 to complete the flow for each status."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Define the Workflow Requirement Options",
+      "content": [
+        {
+          "type": "info",
+          "text": "You will see that each status has requirement options. In this example, the RECEIVED status's requirements will be defined."
+        },
+        {
+          "type": "step",
+          "text": "Click the status and requirement options and paths displays."
+        },
+        {
+          "type": "info",
+          "text": "The following requirements can be toggled on:"
+        },
+        {
+          "type": "step",
+          "text": "Restrict Line Item Changes - Line items cannot be added or edited in this status."
+        },
+        {
+          "type": "step",
+          "text": "Allow Accounts Payable Invoices - Allow invoices to be associated to received batches."
+        },
+        {
+          "type": "step",
+          "text": "Allow Receiving Batches - Allow line items to be received in this status."
+        },
+        {
+          "type": "step",
+          "text": "Approvals - Use security roles and maximum expense to add Approval Thresholds."
+        },
+        {
+          "type": "info",
+          "text": "Let's turn on the approvals."
+        },
+        {
+          "type": "step",
+          "text": "Click the Approval toggle to ON."
+        },
+        {
+          "type": "step",
+          "text": "Click the Edit  icon. The Thresholds Per Role dialog."
+        },
+        {
+          "type": "step",
+          "text": "From the Select a role drop-down, select either Administrator, Full User, or Read Only."
+        },
+        {
+          "type": "step",
+          "text": "In the Max expense field, enter the amount. This is the threshold amount that will trigger the approval, for example, when the purchase order for $5,001 then the approval will be triggered and if the work order is $5,000 then the approval is not triggered."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add threshold button. The threshold is saved."
+        },
+        {
+          "type": "step",
+          "text": "Repeat steps 4 to 6 to add another approval threshold."
+        },
+        {
+          "type": "step",
+          "text": "When you are finished click the X icon to close the dialog."
+        },
+        {
+          "type": "info",
+          "text": "Next PO # field | Enter or select the next purchase order number.  Subsequent purchase order numbers will increase by 1. \nFor example, 200020 and then this will increase the number from this starting number.\nUse System Generated PO # toggle | Either toggle:\nON - we recommend this setting is turned on as it automatically supplies an unchangeable system generated PO number.\nOFF - allows you to supply a PO number and update the PO number.\nMost organizations keep this option on unless they are correlating their PO numbers with another system.\nBarcode Labels button | Click the button to display the Barcode Labels form. \n\nBarcode labels contain up to 4 text lines, use the form to configure which fields display on the barcodes used for parts within a purchase order."
+        },
+        {
+          "type": "info",
+          "text": "Status | Path\nACTIVE | OPEN | ORDERED\nRECEIVED\nCOMPLETED\nCANCELLED\nACTIVE | ORDERED | RECEIVED\nCOMPLETED\nCANCELED\nACTIVE | RECEIVED | COMPLETED\nACTIVE | REOPENED | COMPLETED\nCOMPLETION | COMPLETED | REOPENED\nINACTIVE | CANCELED"
+        }
+      ]
+    }
+  ]
+}

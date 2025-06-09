@@ -1,0 +1,97 @@
+{
+  "document_title": "Inventory Reports",
+  "content": [
+    {
+      "type": "section",
+      "title": "Create an Inventory Shortages Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "An Inventory Shortages Report provides a quick review of which parts need to be ordered."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Report/1.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Inventory > Inventory Shortages."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Report/2.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Warehouse - Select which warehouse to populate the shortages report for. Preferred Vendor (optional) - Use this field to generate inventory shortages per vendor."
+        },
+        {
+          "type": "step",
+          "text": "3. Select Run Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Report/3.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Inventory Valuation Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "An Inventory Valuation Report shows the total value of the parts on hand."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Report/4.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Inventory > Inventory Valuation."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Report/5.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Valuation As Of - Select a date to generate Inventory Valuation from. Warehouse - Select which warehouse to populate the valuation report for. Show Part Detail - Provides a detailed list of Parts."
+        },
+        {
+          "type": "step",
+          "text": "3. Select Run Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Inventory%20Report/6.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    }
+  ]
+}

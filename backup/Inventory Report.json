@@ -1,0 +1,94 @@
+{
+  "document_title": "Inventory Report",
+  "content": [
+    {
+      "type": "section",
+      "title": "Inventory Reports",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Create an Inventory Shortages Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "An Inventory Shortages Report provides a quick review of which parts need to be ordered. This guide will demonstrate how to generate an Inventory Shortages Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Inventory > Inventory Shortages."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Warehouse"
+        },
+        {
+          "type": "info",
+          "text": "Select which warehouse to populate the shortages report for"
+        },
+        {
+          "type": "step",
+          "text": "Preferred Vendor (optional)"
+        },
+        {
+          "type": "info",
+          "text": "Use this field to generate inventory shortages per vendor"
+        },
+        {
+          "type": "info",
+          "text": "Select  \n\nThe report populates based on selected criteria and is displayed above the report and is now available to be exported:\n\n\n\nTo change any of the report criteria, select"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Inventory Valuation Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "An Inventory Valuation Report shows the total value of the parts on hand. This guide will demonstrate how to generate an Inventory Valuation Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Inventory > Inventory Valuation."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Valuation As Of"
+        },
+        {
+          "type": "info",
+          "text": "Select a date to generate Inventory Valuation from"
+        },
+        {
+          "type": "step",
+          "text": "Warehouse"
+        },
+        {
+          "type": "info",
+          "text": "Select which warehouse to populate the valuation report for"
+        },
+        {
+          "type": "step",
+          "text": "Show Part Detail"
+        },
+        {
+          "type": "info",
+          "text": "Provides a detailed list of Parts"
+        },
+        {
+          "type": "info",
+          "text": "Select  \n\nThe report populates based on selected criteria and is displayed above the report and is now available to be exported:\n\n\n\nTo change any of the report criteria, select"
+        }
+      ]
+    }
+  ]
+}

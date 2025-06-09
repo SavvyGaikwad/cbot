@@ -1,0 +1,427 @@
+{
+  "document_title": "Business Intelligence",
+  "content": [
+    {
+      "type": "section",
+      "title": "Business Intelligence Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "BI (Business Intelligence) allows you the flexibility to create, edit, and manage your own reports.This module is used to: Access existing BI dashboards & reports. Determine who has access to BI reports. Building your own express reports"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/1.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Copy a Report or Dashboard",
+      "content": [
+        {
+          "type": "info",
+          "text": "Copying a Report or Dashboard for your Business Intelligence module is a good way to organize your general and custom reports."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. In the Reports section, open the folders that contain the desired report and click on the Options menu and select Duplicate."
+        },
+        {
+          "type": "step",
+          "text": "3. You will be prompted to enter the name of the duplicated report.  At this time, you can also select where the duplicated report will be stored by clicking on the desired folder.  When completed, click on the Okay icon."
+        },
+        {
+          "type": "info",
+          "text": "Notes:"
+        },
+        {
+          "type": "1. step",
+          "text": "If you need to rename the report, then click the Options menu and then select Rename."
+        },
+        {
+          "type": "step",
+          "text": "2. To delete a report, click the Options menu and select delete."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/2.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Advanced Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "1. Create an Advanced Report from your Business Intelligence module is a simple process."
+        },
+        {
+          "type": "step",
+          "text": "2. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "3. Click on the Create New Report icon on the top left corner of the page, followed by Advanced Report."
+        },
+        {
+          "type": "step",
+          "text": "4. Name the new report in the field Enter the Report Name section and select the folder for the report, then select Next."
+        },
+        {
+          "type": "step",
+          "text": "5. Then, select the categories you want to include in the report.  When you have selected the desired categories, click Next. There is the option to suppress any duplications in the fields selected.  Click on the box next to the field and this will remove any duplication."
+        },
+        {
+          "type": "step",
+          "text": "6. Select the appropriate Sort Fields.  After selecting the Sort Fields, click Next."
+        },
+        {
+          "type": "step",
+          "text": "7. Select the appropriate Filters.  After selecting the Filters, click Next."
+        },
+        {
+          "type": "step",
+          "text": "8. Pick the appropriate Layout column.  After choosing the Layout columns, click Finish."
+        },
+        {
+          "type": "step",
+          "text": "9. Now run the report by selecting it in the folder it's created in."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/3.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Express Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "Create an Express Report from your Business Intelligence module is a simple process.  The following steps will help you create an Express Report."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Create New Report icon on the top left corner of the screen, and then click Express Report."
+        },
+        {
+          "type": "step",
+          "text": "3. Name the new report in the field Enter the Report Name section and select the folder for the report."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Next button."
+        },
+        {
+          "type": "step",
+          "text": "5. Select the categories you want to include in the report."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Next button."
+        },
+        {
+          "type": "step",
+          "text": "7. There is the option to suppress any duplication's in the fields selected. Click the box next to the field and this will remove any duplications."
+        },
+        {
+          "type": "step",
+          "text": "8. Select the appropriate Sort Fields is the next section."
+        },
+        {
+          "type": "step",
+          "text": "9. Click the Next button."
+        },
+        {
+          "type": "step",
+          "text": "10. Select the appropriate Filters."
+        },
+        {
+          "type": "step",
+          "text": "11. Click the Next button."
+        },
+        {
+          "type": "step",
+          "text": "12. Pick the appropriate Layout column."
+        },
+        {
+          "type": "step",
+          "text": "13. Click the Next button."
+        },
+        {
+          "type": "step",
+          "text": "14. In the Options section, select the information in the categories: General, Export, and Advanced."
+        },
+        {
+          "type": "step",
+          "text": "15. Click Save and Close."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/4.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Express View Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "Create an Express View Report from your Business Intelligence module is a simple process."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the Create New Report icon on the top left corner of the page, followed by ExpressView."
+        },
+        {
+          "type": "step",
+          "text": "3. Open the appropriate fields, then drag and drop into space labeled Drag and Drop Fields Here."
+        },
+        {
+          "type": "step",
+          "text": "4. To delete a field, click on the round menu on the top left corner of the field, then click on Delete."
+        },
+        {
+          "type": "step",
+          "text": "5. When completed, click on the Save icon.     Fill in the needed information, then click on Save Report Info."
+        },
+        {
+          "type": "step",
+          "text": "6. A slide-out window will appear on the right-hand side."
+        },
+        {
+          "type": "step",
+          "text": "7. Fill in the needed information, then click on Save Report Info."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/5.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Chained Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "Create a Chained Report from your Business Intelligence module is a simple process."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Create New Report icon on the top left corner of the screen and then click Chained Report."
+        },
+        {
+          "type": "info",
+          "text": "3. You will be prompted to enter a name for the report and then select the folder for the report and enter a description for the report."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Next button."
+        },
+        {
+          "type": "step",
+          "text": "5. Select the Reports that you want to include in the output of the Chained Report by dragging and dropping them into the assigned area."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Next button."
+        },
+        {
+          "type": "step",
+          "text": "7. Select from the General Options, the Options that you would like to be in your chained report, then select Save and Close."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/6.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Dashboard",
+      "content": [
+        {
+          "type": "info",
+          "text": "Create a Dashboard from your Business Intelligence module is a simple process."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the Create New Report icon on the top left corner of the screen, followed by Dashboard."
+        },
+        {
+          "type": "step",
+          "text": "3. Click and drag the icon New Tile into the dashboard designer."
+        },
+        {
+          "type": "step",
+          "text": "4. Then click on the field you want to add to the tile that has just been created and drag and drop into the tile. Repeat for all the fields that you want to add. You can adjust the size of the tile as well as other elements of the tile by selecting on the ellipses icon or the chart/table icon in the bottom right-hand corner of the tile."
+        },
+        {
+          "type": "step",
+          "text": "5. After completed, click on the Save icon.  A side panel will appear, asking for the dashboard to be named, be given a description, and what folder the dashboard will be saved in. When completed, click on Save Dashboard."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/7.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Tire Aging Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Tire Aging reports are a one stop shop for all things tire tracking. Using the Tire aging by asset, and Tire aging by year reports, you can get a view of relevant dates such as install and manufacture dates, tire positioning, DOT information, and more."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Reports menu, click ManagerPlus > Assets > Reports."
+        },
+        {
+          "type": "step",
+          "text": "3. Select either the Tire Aging by Asset or Tire Aging by Asset report."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Run icon to view the report."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/8.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Run a Business Intelligence Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "Running a Business Intelligence Report is a simple process."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the Browse Reports icon on the top left corner of the screen."
+        },
+        {
+          "type": "step",
+          "text": "3. Select the report that you wish to open from the list of reports available in the Reports column."
+        },
+        {
+          "type": "step",
+          "text": "4. Click on the Run icon for the specific report you want to run."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/9.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Schedule a Business Intelligence Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "Scheduling a Business Intelligence Report is a simple process."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Browse Reports icon in the top left corner of the page and select the report that you would like to schedule."
+        },
+        {
+          "type": "step",
+          "text": "3. Select the menu icon, followed by the option Schedule Report."
+        },
+        {
+          "type": "step",
+          "text": "4. Fill in the necessary information on the Recurrence screen, including Schedule Name, Export Type, whether to execute immediately, and the scheduled time and frequency.  Then, click Next."
+        },
+        {
+          "type": "step",
+          "text": "5. Select the filters that you want to add to the report, then click Next."
+        },
+        {
+          "type": "step",
+          "text": "6. The last step is to enter an email address for whom the report is to be sent."
+        },
+        {
+          "type": "step",
+          "text": "7. After completing the recipient and the email, click Finish."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/10.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View the Standard BI Reports",
+      "content": [
+        {
+          "type": "info",
+          "text": "With the Business Intelligence module, there are standard reports that come already pre-build and are ready to be accessed."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu click BI."
+        },
+        {
+          "type": "step",
+          "text": "2. On the left-hand side, under Reports, there are the folders that come with all Business Intelligence accounts: Custom Reports ManagerPlus"
+        },
+        {
+          "type": "step",
+          "text": "3. Click the ManagerPlus folder, to display the sub-folders: Assets, Info Panel, Inspections, Inventory, Work Orders, Work Requests"
+        },
+        {
+          "type": "step",
+          "text": "4. In each sub-folder are two additional folders titled Dashboard and Reports.  Clicking the Dashboard icon, will show you the graphs and charts associated with that sub-folder.  Clicking the Reports folder will show you all the available reports"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Business%20Intelligence/11.gif"
+        }
+      ]
+    }
+  ]
+}

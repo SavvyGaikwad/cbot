@@ -1,0 +1,811 @@
+{
+  "document_title": "Cycle Counts",
+  "content": [
+    {
+      "type": "section",
+      "title": "Cycle Counts Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "Regular inventory counts help your business to keep reliable records of stock levels, thereby ensuring that your inventory costs are accurate. Having accurate counts helps to identify inventory loss, trends in demand, and reduce stockouts due to discrepancies. When you want to create a new cycle count, there are various ways you can select the parts: Bin Location Only - Create a Cycle Count using only Bin Locations and no additional filters. High Cost Per Item - Create a count list for high-cost parts by setting a minimum part cost. Inventory Shortages - Count parts with qualities below their minimum stocking level. Not Recently - Count parts that have not been counted since a selected date. Part Type - Count parts based on a specific Part Type. I want to pick specific pars on the cycle count itself"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Understand the Cycle Counts Key Performance Indicators",
+      "content": [
+        {
+          "type": "info",
+          "text": "This provides the a quick overview of the inventory accuracy and current progress of inventory counts."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, navigate Inventory > Cycle Counts."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Show KPI icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/1.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/2.png"
+        },
+        {
+          "type": "info",
+          "text": "Going across the top of the screen, the following statistics are: Inventory Counted - Percentage counted in the last 12 months. Cycle Count Status - Number of cycle counts for each status. You can see how many are not started or started. How many are fully counted and how many require recounts. Inventory Accuracy - This graph plots the percentage accuracy of all counts for the last 12 months. Quantity Variance - Calculates the sum of all discrepancies found in part counts. The negative number is the number of parts missing from the count. The positive number shows the extra parts counted. Cost Variance - The dollar representation of the quantity variance and the discrepancies are not necessarily from the same parts; the dollar adjustments are different."
+        },
+        {
+          "type": "info",
+          "text": "You can reset the view, click the More Actions  icon, and then Reset Grid."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customize the Cycle Count View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can see the full list of your Cycle Counts and their status. You can arrange the layout of grid according to your own needs. Each user can arrange the layout of the screen according to their own preferences and liking. Search. Filter by Warehouse. Filter for Closed and Open Cycle Counts. Saved View - Filter a Column Example. Display your Saved View"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "info",
+          "text": "Search allows you to find any field within the cycle list. The example below shows results populated for Cycle Count ID 30."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/3.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/4.png"
+        },
+        {
+          "type": "step",
+          "text": "1. In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filter by Warehouse",
+      "content": [
+        {
+          "type": "info",
+          "text": "Switch Warehouse helps you view cycle counts by Warehouse organization. Warehouses have been set up by your admin, see set up a site for more information."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Switch Warehouse button. The Switch Warehouse panel displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/5.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Select a Warehouse to filter by. The Cycle Count list is filtered."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/6.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filter for Closed and Open Cycle Counts",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Open Cycle Counts drop-down allows you to filter the cycle counts by open or closed status."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/7.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Open Cycle Counts drop-down."
+        },
+        {
+          "type": "step",
+          "text": "2. Select one of the following: Open Cycle Counts. Closed Cycle Counts. All Cycle Counts"
+        },
+        {
+          "type": "step",
+          "text": "3. The cycle count list is automatically filtered."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the Inventory list, you may want to change the cycle count columns and sort order. The Save View let's you set up the Cycle Count listing and then save it for next time. This is best explained using an example. I want to create a saved list view for cycle counts that need a recount."
+        },
+        {
+          "type": "step",
+          "text": "1. Add a column from the Column Chooser"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Click the more actions  icon."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 Drag and drop the Needs Recount column to the Cycle Count column headings. The Needs Recount column displays on the Cycle Count list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/9.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Save your View"
+        },
+         {
+          "type": "substep",
+          "text": "2.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Select a who can access this view option, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "step",
+          "text": "2.4 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/11.png"
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "step",
+          "text": "2. Select a saved view."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/12.png"
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "step",
+          "text": "3. Click on apply selected. The saved view displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Cycle Count",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you want to complete a count, stocktake, or audit of your inventory parts, you can easily create a cycle count."
+        },
+        {
+          "type": "step",
+          "text": "1. Select the Cycle Count type"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 From the menu, navigate Inventory > Cycle Counts."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Click the New Cycle Count button."
+        },
+        {
+          "type": "info",
+          "text": "The New Cycle Count form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/14.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.3 From the panel, select a type either: Bin Location Only - Crate a Cycle Count using only Bin Locations and no additional filters. High Cost Per Item - Create a count list for hight cost parts by setting a minimum part cost. Inventory Shortages - Count parts with quantities below their minimum stocking level. Not Recently Counted - Count parts that have not been counted since a selected date. Part Type - Count parts based on a specific Part Type. I want to pick specific parts on the cycle count itself"
+        },
+        {
+          "type": "info",
+          "text": "It is important to remember that when you set the Require Recount toggle, this can't be changed after you have created the cycle count."
+        },
+        {
+          "type": "step",
+          "text": "2. Criteria and Create"
+        },
+        {
+          "type": "info",
+          "text": "Depending on the type of cycle count selected, different criteria fields display."
+        },
+        {
+          "type": "info",
+          "text": "Bin Location Only - Type 1. In the Purpose field, enter the purpose. 2. From the Warehouse drop-down, select a warehouse. Remember that Cycle Counts can only be performed on one warehouse at a time. 3. From the Budget drop-down, select the budget. 4. By default, the Require recounts toggle is ON, where the recount is accepted when two consecutive counts match. If you don't need the recount, then click the toggle to turn this OFF. 5. From the Cycle Count Type drop-down, select the type. 6. From the Assigned drop-down, select a person. 7. If you need additional people, then: a. Click the Assign Additional link and the Assign Additional Contacts displays. b. Select the contacts. c. Click the OK button. 8. When you have completed the type, click the Next button. Criteria & Save - 9. Either click Select All or click the Bin Location(s). 10. Click on the Create icon and your Cycle Count displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/15.png"
+        },
+        {
+          "type": "info",
+          "text": "High Cost Per Item Type 1. In the Purpose field, enter the purpose. 2. From the Warehouse drop-down, select a warehouse. Remember that Cycle Counts can only be performed on one warehouse at a time. 3. From the Budget drop-down, select the budget. 4. By default, the Require recounts toggle is ON, where the recount is accepted when two consecutive counts match. If you don't need the recount, then click the toggle to turn this OFF. 5. From the Cycle Count Type drop-down, select the type. 6. From the Assigned drop-down, select a person. 7. If you need additional people, then: a. Click the Assign Additional link and the Assign Additional Contacts displays. b. Select the contacts. c. Click the OK button. 8. In the Select minimum cost field, enter the cost. 9. When you have completed the type, click the Next button. Criteria & Save 10. In the Select minimum cost, enter the cost. 11. Either click Select All or click the Bin Location(s). 12. Click on the Create icon and your Cycle Count displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/16.png"
+        },
+        {
+          "type": "info",
+          "text": "Inventory Shortages Type 1. In the Purpose field, enter the purpose. 2. From the Warehouse drop-down, select a warehouse. Remember that Cycle Counts can only be performed on one warehouse at a time. 3. From the Budget drop-down, select the budget. 4. By default, the Require recounts toggle is ON, where the recount is accepted when two consecutive counts match. If you don't need the recount, then click the toggle to turn this OFF. 5. From the Cycle Count Type drop-down, select the type. 6. From the Assigned drop-down, select a person. 7. If you need additional people, then: a. Click the Assign Additional link and the Assign Additional Contacts displays. b. Select the contacts. c. Click the OK button. 8. When you have completed the type, click the Next button. Criteria & Save 9. Either click Select All or click the Bin Location(s). 10. Click on the Create icon and your Cycle Count displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/17.png"
+        },
+        {
+          "type": "info",
+          "text": "Not Recently Counted Type 1. In the Purpose field, enter the purpose. 2. From the Warehouse drop-down, select a warehouse. Remember that Cycle Counts can only be performed on one warehouse at a time. 3. From the Budget drop-down, select the budget. 4. By default, the Require recounts toggle is ON, where the recount is accepted when two consecutive counts match. If you don't need the recount, then click the toggle to turn this OFF. 5. From the Cycle Count Type drop-down, select the type. 6. From the Assigned drop-down, select a person. 7. If you need additional people, then: a. Click the Assign Additional link and the Assign Additional Contacts displays. b. Select the contacts. c. Click the OK button. 8. From the Not counted since (date) calendar picker, select a date. 9. When you have completed the type, click the Next button. Criteria & Save 10. From the Not counted since (date) calendar picker, select a date. 11. Either click Select All or click the Bin Location(s). 12. Click on the Create icon and your Cycle Count displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/18.pngg"
+        },
+        {
+          "type": "info",
+          "text": "Not Recently Counted Type 1. In the Purpose field, enter the purpose. 2. From the Warehouse drop-down, select a warehouse. Remember that Cycle Counts can only be performed on one warehouse at a time. 3. From the Budget drop-down, select the budget. 4. By default, the Require recounts toggle is ON, where the recount is accepted when two consecutive counts match. If you don't need the recount, then click the toggle to turn this OFF. 5. From the Cycle Count Type drop-down, select the type. 6. From the Assigned drop-down, select a person. 7. If you need additional people, then: a. Click the Assign Additional link and the Assign Additional Contacts displays. b. Select the contacts. c. Click the OK button. 8. From the Select part type drop-down, select a part type. 9. When you have completed the type, click the Next button. Criteria & Save 10. From the Select part type drop-down, select a part type. 11. From the Not counted since (date) calendar picker, select a date. 12. Click on the Create icon and your Cycle Count displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/19.png"
+        },
+        {
+          "type": "info",
+          "text": "I want to pick specific parts on the cycle count itself Type 1. In the Purpose field, enter the purpose. 2. From the Warehouse drop-down, select a warehouse. Remember that Cycle Counts can only be performed on one warehouse at a time. 3. From the Budget drop-down, select the budget. 4. By default, the Require recounts toggle is ON, where the recount is accepted when two consecutive counts match. If you don't need the recount, then click the toggle to turn this OFF. 5. From the Cycle Count Type drop-down, select the type. 6. From the Assigned drop-down, select a person. 7. If you need additional people, then: a. Click the Assign Additional link and the Assign Additional Contacts displays. b. Select the contacts. c. Click the OK button. 8. When you have completed the type, click the Next button. Criteria & Save No criteria displays and the cycle count is created."
+        },
+        {
+          "type": "step",
+          "text": "Next Step - Complete a Cycle Count"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Import and Export Parts for a Cycle Count",
+      "content": [
+        {
+          "type": "info",
+          "text": "This lets you export the parts to a file, next you can modify the files, and then later import it back into the cycle count."
+        },
+        {
+          "type": "step",
+          "text": "1. Create the Cycle Count"
+        },
+       {
+          "type": "step",
+          "text": "1.1 Learn how to create the cycle count."
+        },
+        {
+          "type": "step",
+          "text": "2. Export the Parts from the Cycle Count"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click the Export button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/21.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Navigate to the download file called DataGrid.csv."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Open the DataGrid.csv file."
+        },
+        {
+          "type": "step",
+          "text": "For example:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/22.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.3 The columns in the export file contain: PartID. Description. Part. Type. Bin. Location. Current Count. Part Cost"
+        },
+        {
+          "type": "step",
+          "text": "3. Modify the file and record the Cycle Count"
+        },
+               {
+          "type": "substep",
+          "text": "3.1 Modify the export file so it will become the import file."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 Save the file with a new Import Filename. For example, Filter Parts Cycle Count Import."
+        },
+        {
+          "type": "info",
+          "text": "Export File Description Import File PartID Same column name Part ID, Description Same column name Description, Part Type Delete this column., Bin Location Same column name If the part is in a different bin location. Bin Location, Current Count Same column name This is the count of the part. Current count, Part Cost Change column name to Current cost If the part's cost is incorrect, enter the current cost. Current cost"
+        }, 
+        {
+          "type": "step",
+          "text": "4. Physical Count"
+        },
+        {
+          "type": "step",
+          "text": "4.1 Your assign contact(s) complete the physical count using the spreadsheet."
+        },
+        {
+          "type": "step",
+          "text": "5. Import the Parts into Cycle Count"
+        },
+        {
+          "type": "info",
+          "text": "Now, you are ready to import the cycle count."
+        },
+        {
+          "type": "substep",
+          "text": "5.1 Click the Import Parts button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/23.png"
+        },
+        {
+          "type": "info",
+          "text": "The Cycle Count Parts Import screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/24.png"
+        },
+        {
+          "type": "substep",
+          "text": "5.2 Click the Choose File button."
+        },
+        {
+          "type": "substep",
+          "text": "5.3 Navigate to, select, and open the import file."
+        },
+        {
+          "type": "step",
+          "text": "5.4 Click the Map Data button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/25.png"
+        },
+        {
+          "type": "substep",
+          "text": "5.5 Click the Preview button."
+        },
+        {
+          "type": "step",
+          "text": "This lets you check your columns and import data, and the Error tab lets you correct any errors in the import."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/26.png"
+        },
+        {
+          "type": "substep",
+          "text": "5.6 When you are ready, click the Import button and the data is imported in.(A) You will see that the status is still NOT STARTED."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/27.png"
+        },
+        {
+          "type": "step",
+          "text": "(B) Click the Post Count to submit the count into the system."
+        },
+        {
+          "type": "step",
+          "text": "After the count is posted, Eptura Asset displays the (C) status as RECOUNT REQUIRED as in this example the counts need to be entered again. Learn more about the status and the (D) notices icons in Complete the Cycle Counts article."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/28.png"
+        },
+        {
+          "type": "step",
+          "text": "6. Recount the Physical Parts"
+        },
+               {
+          "type": "info",
+          "text": "Let's continue with this example ..."
+        },
+        {
+          "type": "substep",
+          "text": "6.1 Adjust the Import spreadsheet to remove the parts that had their Current Count column display in green, as these don't need a recount."
+        },
+        {
+          "type": "substep",
+          "text": "6.2 The assigned contact(s) returns to the Warehouse and completes a recount only for the parts that need a recount."
+        },
+        {
+          "type": "substep",
+          "text": "6.3 Where in this example, this results in the sample counts being recorded."
+        },
+        {
+          "type": "substep",
+          "text": "6.4 Next, you upload the cycle count import again, repeating Step 5. Import the Parts into Cycle Count."
+        },
+        {
+          "type": "substep",
+          "text": "6.5 Click the Post Count button."
+        },
+        {
+          "type": "info",
+          "text": "This results in the following:"
+        },
+        {
+          "type": "info",
+          "text": "(E) The status is changed to CLOSED"
+        },
+        {
+          "type": "info",
+          "text": "(F) The Current Count column displays either the accepted recount count in green and the discrepancy of the current count in red."
+        },
+        {
+          "type": "info",
+          "text": "(G) The Notices column displays the recount has been accepted and it displays any work orders the part is allocated to."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/29.png"
+        },
+        {
+          "type": "info",
+          "text": "Inventory has a setting in the Roles Management called “Inventory - Include expected count in cycle count” which allows you to export the cycle count parts with or without the expected count. Learn more about roles in Security Roles and Roles Management. The Export and the Import of the parts has a maximum limit of 1,000 parts."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Complete a Cycle Count",
+      "content": [
+        {
+          "type": "info",
+          "text": "Your open cycle counts are ready for you to complete. When you complete a cycle count, it will move through the different statuses: Not Started . Started . Recount Required . Closed"
+        },
+        {
+          "type": "info",
+          "text": "When you are working on an Open Cycle Counts you can complete the following: Start the Cycle Count - Add the part counts and correct any costs. Add Parts - If you realize that you need to add more parts. Import and Export Parts - Use this when you want to export the parts list, complete the count, and then import the parts list back into the cycle count. Assign the Cycle Count to a Contact. View the Cycle Count Details. Print the Cycle Cycle. Add a Comment. Delete Cycle Count - If you no longer need a cycle count, this can be deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Open Cycle Counts",
+      "content": [
+      {
+          "type": "info",
+          "text": "NOT STARTED - Status - The beginning status is NOT STARTED."
+      },
+      {
+          "type": "info",
+          "text": "STARTED - Status - The beginning status is NOT STARTED."
+      },
+      {
+          "type": "step",
+          "text": "1. From the main Cycle Counts screen, click on the cycle count to display the Cycle Count Number. For example, Cycle Count #53."
+        },
+        {
+          "type": "step",
+          "text": "2. For each inventory item, complete the following: a) In the Bin Location column, enter the part's bin location, if the listed bin location is incorrect. b) In the Current Count column, enter the part's count. c) In the Part Cost column, enter the part's cost, if the listed cost is incorrect."
+        },
+        {
+          "type": "step",
+          "text": "​​​​3. ​At any time, go to the bottom of the screen and click Post Count. This will change the cycle count status from NOT STARTED to STARTED."
+        },
+        {
+          "type": "step",
+          "text": "4. The look at the Notices Column to see the following:"
+        },
+        {
+          "type": "step",
+          "text": "Recount Accepted - If your count matches current inventory levels or the recount is accepted, then this icon displays."
+        },
+        {
+          "type": "info",
+          "text": "If the part is successfully counted and shows a discrepancy, the Current Count number will appear in red as shown below: 15 of 72 states that 15 is the new quantity showing in inventory, against the 72 that were showing previously.  A discrepancy of -57. 22 of 1 shows that 22 is the new accepted count, and 1 is the old.  A discrepancy of +21.  Because this is an increase, the value of the inventory also goes up by the listed cost per part."
+      },
+        {
+          "type": "step",
+          "text": "Recount Rejected - If the count doesn't match the inventory level, then this icon displays. Additionally, the status will change to RECOUNT REQUIRED."
+        },
+        {
+          "type": "step",
+          "text": "Allocated to Work Orders - When you hover over this icon, the work order numbers display, and the number of parts allocated to it."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/34.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "RECOUNT REQUIRED - Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "When the status changes to Recount Required, then you will need to complete the following:"
+        },
+        {
+          "type": "step",
+          "text": "1. In the Current Count column, enter the count."
+        },
+        {
+          "type": "step",
+          "text": "2. In the Part Cost column, enter the cost, if the listed cost is incorrect."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Post Count button."
+        },
+        {
+          "type": "step",
+          "text": "4. Complete steps 1 to 3, until there are 2 consecutive entries that match."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "CLOSED - Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "After all the parts are counted, the cycle count will automatically change the status to CLOSED."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Parts",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you have a cycle count open and realize that you need to count more parts, then you can manually add more part(s)."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Add Part button and the Parts Master form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/35.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "New Part",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. If the part is a new part, then click the New Part button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/36.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Then complete the part's details, learn more in Create a New Part and Create a New Tire Record."
+        },
+        {
+          "type": "step",
+          "text": "3. The part is added to the cycle count."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Existing Part",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. If the part is an existing part, then in the Search parts master field, enter the name of the part."
+        },
+        {
+          "type": "step",
+          "text": "2. Hover over the part and then click the Add  icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/38.png"
+        },
+        {
+          "type": "info",
+          "text": "The part is added to the cycle count."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Assign the Cycle Count to a Contact",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the Assigned drop-down, select the contact's name."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/39.png"
+        },
+        {
+          "type": "step",
+          "text": "2. If you need additional contacts, then click the Assign Others link and the Assign Additional Contacts displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Select the contacts."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the OK button and the contacts are added."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Print the Cycle Count",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the Print  icon."
+        },
+        {
+          "type": "media",
+          "path": "hhttps://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/41.png"
+        },
+        {
+          "type": "step",
+          "text": "2. The cycle count report displays and you can either download or print the report."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/42.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Comment",
+      "content": [
+        {
+          "type": "step",
+          "text": "In the comment field, enter a short comment about the cycle count."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View the Cycle Count Details",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the Details  icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "The Cycle Count Details form displays. It is important to remember that the details can't be modified."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Closed Cycle Counts",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need to view a closed cycle count, then these can be displayed."
+        },
+        {
+          "type": "step",
+          "text": "1. From the view drop-down, click the Closed Cycle Counts."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the closed cycle count that you want to view."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete Cycle Count",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you don't want to continue with a count cycle, then this can be deleted."
+        },
+        {
+          "type": "step",
+          "text": "1. Select the cycle count(s) you want to delete."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Actions drop-down, click Delete and the cycle count is deleted."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Cycle%20Counts/47.png"
+        }
+      ]
+    }
+  ]
+}

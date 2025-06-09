@@ -1,0 +1,93 @@
+{
+  "document_title": "System Requirements",
+  "content": [
+    {
+      "type": "section",
+      "title": "System Requirements Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The application is a web-based SaaS (software as a service) application that runs in a web browser."
+        },
+        {
+          "type": "info",
+          "text": "Our products require a broadband internet connection and an operating system capable of running the latest version of common web browsers."
+        },
+        {
+          "type": "info",
+          "text": "Ensure that your operating system meets or exceeds the browser's minimum or recommended requirements."
+        },
+        {
+          "type": "info",
+          "text": "The application is supported on browsers running Windows or macOS."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Browsers Supported",
+      "content": [
+        {
+          "type": "info",
+          "text": "The following browsers are supported for accessing the application:"
+        },
+        {
+          "type": "info",
+          "text": "• Google Chrome (recommended)"
+        },
+        {
+          "type": "info",
+          "text": "• Mozilla Firefox (recommended)"
+        },
+        {
+          "type": "info",
+          "text": "• Apple Safari"
+        },
+        {
+          "type": "info",
+          "text": "• Microsoft Edge"
+        },
+        {
+          "type": "info",
+          "text": "You must be running the most recent version of your selected browser -- most browsers are kept up-to-date automatically."
+        },
+        {
+          "type": "info",
+          "text": "While older browser versions will most likely work we develop and test using the latest browser versions thus older versions are not supported."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Mobile Applications",
+      "content": [
+        {
+          "type": "info",
+          "text": "The main application is not supported in mobile browsers, instead you will need to use one of our mobile apps."
+        },
+        {
+          "type": "info",
+          "text": "• Google Android - supported versions"
+        },
+        {
+          "type": "info",
+          "text": "• Apple iOS - supported versions"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Internet Connection Requirements",
+      "content": [
+        {
+          "type": "info",
+          "text": "A broadband internet connection is required for optimal performance."
+        },
+        {
+          "type": "info",
+          "text": "The application is web-based and requires a stable internet connection to function properly."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "document_title": "Requests Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Work Requests Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Work Requests",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Work Request can be used in several ways. The primary use is to receive requests from others outside the maintenance staff and then either resolve the issue at the request level or create a Work Order to resolve the issue."
+        },
+        {
+          "type": "info",
+          "text": "This module gives you the ability to:"
+        },
+        {
+          "type": "info",
+          "text": "Submit work requests to the maintenance supervisor"
+        },
+        {
+          "type": "info",
+          "text": "Decide what information is required on work requests"
+        },
+        {
+          "type": "info",
+          "text": "Manage incoming work requests, and turning them into work orders"
+        },
+        {
+          "type": "info",
+          "text": "Determine who can submit work requests."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Work Request",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Work Request can be used in several ways. The primary use is to receive requests from others outside the maintenance staff and then either resolve the issue at the request level or create a Work Order to resolve the issue."
+        },
+        {
+          "type": "info",
+          "text": "Remember you can create a request from either the  Mobile App, Request Management Console, or the custom Request Portal."
+        },
+        {
+          "type": "info",
+          "text": "To create a Work Request using the Request Management Console:"
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Request."
+        },
+        {
+          "type": "step",
+          "text": "Click the New Request tab to create a new Work Request."
+        },
+        {
+          "type": "info",
+          "text": "Complete the fields:"
+        },
+        {
+          "type": "step",
+          "text": "4.  Click the Save New Request button to create a new work request."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search and Filter Requests from the List View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can see the full list of your Requests along with the request details at a glance."
+        },
+        {
+          "type": "info",
+          "text": "Each user can arrange the layout of the screen according to their own preferences and liking."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Search allows you to find any field within the Request list. The example below shows results populated for water."
+        },
+        {
+          "type": "info",
+          "text": "In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Advanced Search",
+      "content": [
+        {
+          "type": "step",
+          "text": "Advanced Search allows you to search for terms within any request including the notes within a request. Advanced search also allows you to search within a specified time period of when the request was submitted or closed. The example below shows the advanced search query for requests including the term leak, submitted between January 1st and September 1st, 2023."
+        },
+        {
+          "type": "info",
+          "text": "Click the more actions  icon."
+        },
+        {
+          "type": "info",
+          "text": "Select Advanced Search. The advanced search window displays."
+        },
+        {
+          "type": "info",
+          "text": "In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "In the date range, select either:"
+        },
+        {
+          "type": "info",
+          "text": "Submitted Date"
+        },
+        {
+          "type": "info",
+          "text": "Closed Date"
+        },
+        {
+          "type": "info",
+          "text": "Click the calendar  icon and select a start date."
+        },
+        {
+          "type": "info",
+          "text": "Click the calendar  icon and select an end date."
+        },
+        {
+          "type": "info",
+          "text": "You can include the notes field in your search. Click Search Notes checkbox."
+        },
+        {
+          "type": "info",
+          "text": "Click the Search button."
+        },
+        {
+          "type": "info",
+          "text": "Search results populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filter",
+      "content": [
+        {
+          "type": "info",
+          "text": "Filter by group helps you view requests by group organization. These filter groups can be:"
+        },
+        {
+          "type": "info",
+          "text": "single address"
+        },
+        {
+          "type": "info",
+          "text": "floor plan"
+        },
+        {
+          "type": "info",
+          "text": "group of assets"
+        },
+        {
+          "type": "info",
+          "text": "These groups have been set up by your admin, see set up a site's location for more information."
+        },
+        {
+          "type": "step",
+          "text": "Click the Filter by Group button. The filter by group panel displays."
+        },
+        {
+          "type": "step",
+          "text": "Select a group to filter by. The request list is filtered."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the request list, you may want to change the request columns and sort order. The Save View let's you set up the requests listing and then save it for next time."
+        },
+        {
+          "type": "info",
+          "text": "This is best explained using an example. I want to create a saved list view for Springfield City and add the Asset column to the list view."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 1. Reorder Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Drag and drop the Entity column to the front of the list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 2. Filter the Column",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click on the filter  icon within the Manufacturer column. The list of entities display."
+        },
+        {
+          "type": "info",
+          "text": "Select Springfield City."
+        },
+        {
+          "type": "info",
+          "text": "Click the OK button. The Manufacturer column is filtered to display FORD."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 3. Add a column from the Column Chooser",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the more actions  icon."
+        },
+        {
+          "type": "info",
+          "text": "Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "info",
+          "text": "Drag and drop the Year column to the Request column headings. The year column displays on the request list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Step 4. Save your View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "info",
+          "text": "Select a who can access this view option, either:"
+        },
+        {
+          "type": "info",
+          "text": "Private- Don't share this view with anyone."
+        },
+        {
+          "type": "info",
+          "text": "Everyone - Share this view with everyone."
+        },
+        {
+          "type": "info",
+          "text": "Security Roles - Share this view with specific roles in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "info",
+          "text": "Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "info",
+          "text": "Select a saved view."
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "info",
+          "text": "Click on apply selected. The saved view displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View the Asset Details History on a Work Request",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you are working on a work request you may need to look back on the history of the request."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Request."
+        },
+        {
+          "type": "step",
+          "text": "Double-click a work request to open it."
+        },
+        {
+          "type": "step",
+          "text": "At the bottom of the screen link the History link. The Asset Details dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "The asset details contains the history of the work orders and you can quickly see the type, id number, purpose, creation date, completion date, and status."
+        },
+        {
+          "type": "info",
+          "text": "Fields | Description\nPurpose of request here field | Enter a brief description of the purpose of this work request.\nAsset field | This is optional, because the work request may not be for an asset that is tracked .\nIf the work request is associated with an asset, then you will need to enter the asset.\nEntity drop-down | Select the entity for the location the work request originates from.\nDate Submitted calendar | Select the date that the work request was submitted.\nPriority drop-down | The priority is automatically set based on the defaults in the module settings. You can change the priority based on the importance and schedule of the work request.\nRequested By drop-down | Person that is requesting the work. This field is automatically populated with the name of the user creating the work request, but it can be edited.\nAssigned drop-down | Select the person who the work request is assigned to.\nDate Closed | This is the date that the work request was finished.\nOrigin | Where the request was created, for example, in the web application or M+ Work Requests. This field is automatically populated when you create the work request and is not editable.\nAlt Phone field | Enter the alternative phone number.\nIssue Description field | Enter any additional description of the issue."
+        }
+      ]
+    }
+  ]
+}

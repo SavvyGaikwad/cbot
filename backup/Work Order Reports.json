@@ -1,0 +1,298 @@
+{
+  "document_title": "Work Order Reports",
+  "content": [
+    {
+      "type": "section",
+      "title": "Work Order Reports",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Create a Task Summary Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Task Summary Report provides a record of tasks performed within the Work Orders. This guide will demonstrate how to generate a Task Summary Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Work Orders > Task Summary."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Date Range"
+        },
+        {
+          "type": "info",
+          "text": "The timeframe within the work order was completed or created (dependent on date field selection)"
+        },
+        {
+          "type": "step",
+          "text": "Date Field"
+        },
+        {
+          "type": "info",
+          "text": "Select between completed date, created date, or labor date to populate results based off the completion/creation of a Work Order or when the labor was performed"
+        },
+        {
+          "type": "step",
+          "text": "Group By"
+        },
+        {
+          "type": "info",
+          "text": "Use this field to group report results by Asset, Service Class/Task, Work Type, Work Order Number"
+        },
+        {
+          "type": "step",
+          "text": "Asset Selection (Optional Field)"
+        },
+        {
+          "type": "info",
+          "text": "Generate results for a specific Asset"
+        },
+        {
+          "type": "step",
+          "text": "Task Selection (Optional Field)"
+        },
+        {
+          "type": "info",
+          "text": "Filter results by Task"
+        },
+        {
+          "type": "info",
+          "text": "Select"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Work Order Labor Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Work Order Labor Report provides a record of the Labor hours logged within the Work Orders. This guide will demonstrate how to generate a Work Order Labor Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Work Orders > Work Order Labor."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Date Range"
+        },
+        {
+          "type": "info",
+          "text": "The timeframe within the work order was completed or created (dependent on date field selection)"
+        },
+        {
+          "type": "step",
+          "text": "Date Field"
+        },
+        {
+          "type": "info",
+          "text": "Select between completed date or labor date to populate results based off the completion of a Work Order or when the labor was performed"
+        },
+        {
+          "type": "step",
+          "text": "Group By"
+        },
+        {
+          "type": "info",
+          "text": "Use this field to group report results by Asset, Group, Labor Contact, Site, Task, Work Order Number, or Work Type"
+        },
+        {
+          "type": "step",
+          "text": "Contact Selection (Optional Field)"
+        },
+        {
+          "type": "info",
+          "text": "Generate results for a Contact assigned to a Work Order"
+        },
+        {
+          "type": "step",
+          "text": "Task Selection (Optional Field)"
+        },
+        {
+          "type": "info",
+          "text": "Filter results by Task"
+        },
+        {
+          "type": "info",
+          "text": "Select"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Work Order Summary Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Work Order Summary Report provides a general record of the Work Orders based off selected criteria. This guide will demonstrate how to generate a Work Order Summary Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Work Orders > Work Order Summary."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Date Range"
+        },
+        {
+          "type": "info",
+          "text": "The timeframe within the work order was completed or created (dependent on date field selection)"
+        },
+        {
+          "type": "step",
+          "text": "Date Field"
+        },
+        {
+          "type": "info",
+          "text": "Select between completed date, created date, due date, and scheduled date to populate results for either open, scheduled or completed Work Orders"
+        },
+        {
+          "type": "step",
+          "text": "Group By"
+        },
+        {
+          "type": "info",
+          "text": "Use this field to group report results by Asset, Assigned Name, Budget, Category, Site, Failure, Group, Priority, Status, Sub Category, or Work Type"
+        },
+        {
+          "type": "step",
+          "text": "Asset Selection (Optional Field)"
+        },
+        {
+          "type": "info",
+          "text": "Generate results for a Contact assigned to a Work Order"
+        },
+        {
+          "type": "step",
+          "text": "Show Chart"
+        },
+        {
+          "type": "info",
+          "text": "Toggle chart on and off"
+        },
+        {
+          "type": "step",
+          "text": "Display Chart By"
+        },
+        {
+          "type": "info",
+          "text": "Use this fields to display chart for Labor Hours, Total Cost, or Work Order Count"
+        },
+        {
+          "type": "info",
+          "text": "Select"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Parts Used Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A Parts Used Report provides a record of the work orders that utilized specific parts and which assets they were used on. This guide will demonstrate how to generate a Parts Used Report."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Reports > Work Orders > Parts Used."
+        },
+        {
+          "type": "info",
+          "text": "Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "step",
+          "text": "Date Range"
+        },
+        {
+          "type": "info",
+          "text": "The timeframe within the work order was completed or created (dependent on date field selection)"
+        },
+        {
+          "type": "step",
+          "text": "Date Field"
+        },
+        {
+          "type": "info",
+          "text": "Select between completed date or created date to populate results based off the completion or creation of a Work Order"
+        },
+        {
+          "type": "step",
+          "text": "Group By"
+        },
+        {
+          "type": "info",
+          "text": "Use this field to group report results by Asset, Group, Labor Contact, Site, Task, Work Order Number, or Work Type"
+        },
+        {
+          "type": "step",
+          "text": "Asset Selection (Optional Field)"
+        },
+        {
+          "type": "info",
+          "text": "Generate results for a specific Asset"
+        },
+        {
+          "type": "step",
+          "text": "Part Type Selection (Optional Field)"
+        },
+        {
+          "type": "info",
+          "text": "Filter results by Part Type"
+        },
+        {
+          "type": "info",
+          "text": "Select"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select"
+        }
+      ]
+    }
+  ]
+}

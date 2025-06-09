@@ -1,0 +1,143 @@
+{
+  "document_title": "Asset Reports",
+  "content": [
+    {
+      "type": "section",
+      "title": "Create an Asset Downtime Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "An Asset Downtime Report provides a summary of Asset Downtime during a defined time period including mean time between failures and mean time to repair."
+        },
+        {
+          "type": "media",
+          "path": "media/image11.gif"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to REPORTS > ASSETS > ASSET DOWNTIME"
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "media/image10.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Date Range - The time period in which downtime was reported. Date Field - Select between Time Down and Time Up. Asset Selection (optional) - Generate results specific to a particular Asset(s). Sub Category Selection - Select the Sub Category for the Assets to include in the report. Show Chart - Toggle downtime chart on and off"
+        },
+        {
+          "type": "step",
+          "text": "3. Select Run Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "media/image16.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Total Cost of Ownership Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "A total cost of ownership for your assets from maintenance costs and labor, to depreciation and logs."
+        },
+        {
+          "type": "media",
+          "path": "media/image12.gif"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Assets > Total Cost of Ownership."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "media/image8.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Group By - Choose whether to group results by Category/Sub Type or Status. Asset Selection (optional) - Generate results specific to a particular Asset(s). Include Inactive Assets - Select this option to include Inactive Assets in the report. Show Chart - Toggle KPI chart on and off to show a visual representation of costs on the report"
+        },
+        {
+          "type": "step",
+          "text": "3. Select Run Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "media/image15.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Update Criteria"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Asset Log Summary Report",
+      "content": [
+        {
+          "type": "info",
+          "text": "An Asset Log Summary Report provides a snapshot of all the current logs and meter readings for your Assets."
+        },
+        {
+          "type": "media",
+          "path": "media/image9.gif"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Reports > Assets > Log Summary."
+        },
+        {
+          "type": "step",
+          "text": "2. Below are the available report criteria, make the appropriate selections using the drop down menu for each field"
+        },
+        {
+          "type": "media",
+          "path": "media/image13.png"
+        },
+        {
+          "type": "info",
+          "text": "Available report criteria: Log Types - Select the Log Type to generate report results for. Group By - Select whether to group results by Asset or Log Type. Asset Selection (optional) - Generate results specific to a particular Asset(s)"
+        },
+        {
+          "type": "step",
+          "text": "3. Select Run Report"
+        },
+        {
+          "type": "info",
+          "text": "The report populates based on selected criteria and is displayed above the report and is now available to be exported:"
+        },
+        {
+          "type": "media",
+          "path": "media/image14.png"
+        },
+        {
+          "type": "info",
+          "text": "To change any of the report criteria, select Edit Criteria"
+        }
+      ]
+    }
+  ]
+}

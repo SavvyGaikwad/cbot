@@ -1,0 +1,77 @@
+{
+  "document_title": "Log Import Template Data",
+  "content": [
+    {
+      "type": "section",
+      "title": "General Information",
+      "content": [
+        {
+          "type": "info",
+          "text": "Do not change the column headers in Row 1 as this is used to complete the upload."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Data Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Asset ID - Required - The Asset ID of the vehicle or machine you are tracking logs on"
+        },
+        {
+          "type": "info",
+          "text": "Post Date - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Contact - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Site - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Miles - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Hours - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Oil - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Oil Cost - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Oil Budget Group - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Oil Budget - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Oil Part - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Oil Warehouse - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Fuel - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Fuel Cost - Optional"
+        }
+      ]
+    }
+  ]
+}

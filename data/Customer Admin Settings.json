@@ -1,0 +1,195 @@
+{
+  "document_title": "Customer Admin Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Set up the Customer Contacts",
+      "content": [
+        {
+          "type": "info",
+          "text": "This is where you set up the Contact Settings for your Customer, so you can define the Customer Status and any custom fields: Customer Status - Add Customer Status    Edit Customer Status. Custom Fields - Add Custom Fields. See the Customer Contact Settings in Action."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Customer Settings",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Module Settings > Contact > Customer.  The customer tab displays under contact settings."
+        },
+        {
+          "type": "info",
+          "text": "The Customer tab in contact settings is where customer statuses are defined. Use customer status to differentiate customers for better organization."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customer Status",
+      "content": [
+        {
+          "type": "info",
+          "text": "Customer Status is used to differentiate your customers in the Customers Management screen."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Customer Status",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the customer status + button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customer%20Admin%20Settings/1.png"
+        },
+        {
+          "type": "step",
+          "text": "2. In the Name field, enter in the customer status."
+        },
+        {
+          "type": "step",
+          "text": "3. Click off the field and it is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit Customer Status",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click on the existing labor code and the pop-up displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customer%20Admin%20Settings/2.png"
+        },
+        {
+          "type": "step",
+          "text": "2. If you want to rename the labor code, then complete the following:"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click the Rename button."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Edit the customer status name."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Click off the field to save."
+        },
+        {
+          "type": "step",
+          "text": "3. By default, the Active toggle is ON and if you want to de-activate this status, then click the toggle to turn it OFF."
+        },
+        {
+          "type": "info",
+          "text": "If you need to delete the customer status, click the Delete button. If the customer status is in use then the system will not let you delete the customer status."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can add extra custom fields to the Customer Contact and these will display in the Customer form."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Custom Fields",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the custom fields + button and the Custom Fields dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customer%20Admin%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "2. From the list select a custom field. If you need to create a new custom field, then see Create or Edit Custom Fields."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Add button and the custom field is added."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Make a Custom Field mandatory or optional",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. To make the field mandatory, click the Not Required  icon and change it to Required   or vice versa."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Custom Field from the Customer Settings",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click the X icon, next to the custom field's name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reorder the Custom Fields",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Hover over the custom field."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the double ellipsis icon and then drag and drop the custom field up or down to change the order."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "See the Customer Contact Settings in Action",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you have set up the customer contact settings for customer status and custom fields, then you will see these fields in the Customer's Contact Profile form."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Customers."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the customer's name and the edit form displays."
+        },
+        {
+          "type": "info",
+          "text": "Here you see the (A) Status drop-down contains the statuses and the (B) Custom Info contains the custom fields."
+        },
+        {
+          "type": "info",
+          "text": "Learn more about how to add or edit customer records in the Customers module."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Customer%20Admin%20Settings/6.png"
+        }
+      ]
+    }
+  ]
+}

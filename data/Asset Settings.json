@@ -1,0 +1,1296 @@
+{
+  "document_title": "Asset Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Assets Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Asset module allows for the management of various equipment, such as fleet vehicles, heavy machinery, forklifts, presses, conveyors, and physical structures. It also has the capability to monitor data for each individual asset. ​The asset data includes: an up-to-date inventory, which includes the asset's parts. provide financial information on leased versus owned equipment. retain information about contracts, warranties, and insurance, as well as information about the configurations and capabilities of each machine. allows you to manage logs and meter readings. schedule and execute maintenance plans. track the work history. Additionally, the asset's key performance indicators make it easy to track the utilization of assets and achieve optimal use of them."
+        }        
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Understand the Asset Key Performance Indicators",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Assets."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Show KPI icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/1.png"
+        },
+        {
+          "type": "info",
+          "text": "Going across the top of the screen, the following statistics are:"
+        },
+        {
+          "type": "info",
+          "text": "Asset Failures Definition - This KPI reflects the count of assets that have open work orders, where these work orders include a work type that uses a Failure Code. On click will filter out the grid accordingly. Explanation - Purpose: To monitor assets that are currently experiencing issues that have triggered work orders associated with a failure condition. Usage: Helps in identifying how many assets are undergoing repair or maintenance due to failures. This can aid in prioritizing maintenance efforts and assessing the overall reliability of assets. Example: If there are 15 assets with open work orders categorized under Failure Codes, the Asset Failure KPI will show 15. This indicates that there are 15 assets with ongoing issues that need to be addressed."
+        },
+        {
+          "type": "info",
+          "text": "Assets Down Definition -This KPI indicates the count of assets that are currently out of operation due to reasons such as maintenance, breakdowns, or other issues. On click will filter out the grid accordingly. Explanation Purpose: To gauge the extent of operational disruption caused by assets being down. It provides insight into the immediate impact on production or operations. Usage: Helps in understanding the availability and performance of assets. If a high number of assets are down, it may signal the need for improved maintenance strategies or resource allocation. Example: If the KPI shows 8 assets down, it means 8 assets are not operational at the moment due to various reasons like scheduled maintenance or unexpected breakdowns."
+        },
+        {
+          "type": "info",
+          "text": "Asset Category Definition: This KPI is represented as a bar chart showing the distribution of open work orders across different asset categories. The X-axis represents the count of work orders, and these are further categorized by work type within each asset category. On click will filter out the grid accordingly.\n\nExplanation Purpose: To visualize and analyze the volume of work orders based on asset categories and their respective types.\n\nUsage: Helps in identifying which asset categories have the most work orders and what types of work are most frequent (preventive, breakdown, maintenance, etc.). This information can be used to optimize maintenance strategies and resource planning.\n\nExample: For the asset category Vehicle, if the chart shows 10 work orders, and these are divided as 3 Preventive Maintenance, 4 Breakdown, and 3 General Maintenance, you can see not just the total work order count but also the nature of the issues being addressed.\n\nExample Breakdown:\nVehicles: (Asset category)\n- Total Work Orders: 10\n- Preventive Maintenance: 3\n- Breakdown: 4\n- General Maintenance: 3\n\nVisualization: The bar for Vehicles category on the chart will be a total height of 10. This bar is segmented into three parts: The first segment (3 units high) represents Preventive Maintenance work orders. The second segment (4 units high) represents Breakdown work orders. The third segment (3 units high) represents General Maintenance work orders."
+        },
+        {
+          "type": "info",
+          "text": "Asset Not Utilized Definition - This KPI tracks assets that have meters or logs with assigned primary meters or logs, which have not been updated within a defined time period (Period/time is a number of days set in work order settings log reset days). These assets are considered not utilized. On click will filter out the grid accordingly.\n\nExplanation Purpose: To identify assets that are not being used as expected or not having their usage tracked properly.\n\nUsage: Helps in recognizing underutilized or potentially neglected assets, prompting a review of asset utilization practices. Regular updates are crucial for accurate asset management.\n\nExample: If an asset has a meter reading that hasn’t been updated for over a month (as per the number of days set in work order settings log reset days), it is flagged as “not utilized,” suggesting that the asset may either be idle or that its usage data is not being recorded properly."
+        },
+        {
+          "type": "info",
+          "text": "Average Age Definition: This KPI calculates the average age of all assets based on their manufacture dates and the current date.\n\nExplanation Purpose: To determine the overall age profile of the assets in the inventory. This can indicate the potential need for replacements or upgrades.\n\nUsage: Helps in understanding the longevity of assets and planning for future capital expenditures. Older assets might require more maintenance or replacement sooner.\n\nExample: If the average manufacture date of assets is calculated and found to be 5 years, it means, on average, the assets in the inventory are 5 years old."
+        },
+        {
+          "type": "info",
+          "text": "Cost Compare Definition: This KPI compares the costs of asset management and maintenance for the current period (month/year) against the previous month and the previous year.\n\nExplanation\n● Purpose: To assess cost trends over time and evaluate the financial impact of asset management and maintenance activities.\n\n● Usage: Helps in budget planning and cost control. By comparing costs month-over-month or year-over-year, organizations can identify trends, forecast future expenses, and implement cost-saving measures.\n\nExample: If this month’s maintenance costs are $10,000 compared to $8,000 last month and $12,000 in the same month last year, it provides insights into recent changes in maintenance spending and helps in financial planning."
+        },
+        {
+          "type": "step",
+          "text": "3. Click on any of the KPI tiles (excluding Cost Compare), it will display the relevant assets in the list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/2.gif"
+        },
+        {
+          "type": "info",
+          "text": "You can reset the view, click the More Actions  icon, and then Reset Grid."
+        },
+         {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/3.gif"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/4.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customize the Asset View",
+      "content": [
+        {
+          "type": "info",
+          "text": "Cost Compare Definition: This KPI compares the costs of asset management and maintenance for the current period (month/year) against the previous month and the previous year. Explanation ● Purpose: To assess cost trends over time and evaluate the financial impact of asset management and maintenance activities. ● Usage: Helps in budget planning and cost control. By comparing costs month-over-month or year-over-year, organizations can identify trends, forecast future expenses, and implement cost-saving measures. Example: If this month’s maintenance costs are $10,000 compared to $8,000 last month and $12,000 in the same month last year, it provides insights into recent changes in maintenance spending and helps in financial planning."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "info",
+          "text": "Search allows you to find any field within the Assets list. The example below shows results populated for forklift."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/5.png"
+        },
+        {
+          "type": "step",
+          "text": "1. In the Search field, enter the search term."
+        },
+        {
+          "type": "step",
+          "text": "2. Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Column Search",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you search for an asset, it will display only those assets for the search criteria. Each column contains the search, and this will let you focus on the assets you want to work on."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/6.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filters",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you click the Filter  icon, a menu will appear showing you the items you can select."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/7.png"
+        },
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/8.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Filter by Group",
+      "content": [
+        {
+          "type": "info",
+          "text": "Filter by group helps you view assets by group organization. These filter groups can be: single address. floor plan. roup of assets. These groups have been set up by your admin, see set up a site's location for more information."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Filter by Group button. The filter by group panel displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/9.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Select a group to filter by. The asset list is filtered."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/10.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the assets list, you may want to change the asset columns and sort order. The Save View lets you set up the assets listing and then save it for next time."
+        },
+        {
+          "type": "info",
+          "text": "This is best explained using an example. I want to create a saved list view for Ford and add the Year column to the list view."
+        },
+        {
+          "type": "step",
+          "text": "1. Reorder Columns"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Drag and drop the Manufacturer column to the front of the list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/11.gif"
+        },
+        {
+          "type": "step",
+          "text": "2. Filter the Column"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click on the filter   icon within the Manufacturer column. The list of manufacturers display."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Select FORD."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Click the OK button. The Manufacturer column is filtered to display FORD."
+        },
+        {
+          "type": "step",
+          "text": "3. Add a column from the Column Chooser"
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Click the more actions icon. ."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "substep",
+          "text": "3.3 Drag and drop the Year column to the Asset column headings. The year column displays on the asset list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/14.png"
+        },
+         {
+          "type": "step",
+          "text": "4. Save your View"
+        },
+        {
+          "type": "substep",
+          "text": "4.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "substep",
+          "text": "4.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "4.3 Select a who can access this view option, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "substep",
+          "text": "4.4 Click the Save View button."
+        }
+
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Toggle List Grouping Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you view the asset list, you may want to group the list view by a column. This lets you see the asset listing in a different way. Let's look at the example where we group by year."
+        },
+        {
+          "type": "step",
+          "text": "1. Add Column"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Click the more actions  icon."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Select Column Chooser and the column chooser displays."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 Drag and drop the Year to the Asset columns."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/14.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Group by a Column"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click the more actions icon."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Select Toggle List Grouping."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Drag and drop a column header to the group by. The Asset list is toggled by group. "
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/16.gif"
+        },
+        {
+          "type": "step",
+          "text": "3. Save your View"
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Click the Save icon. The create new view dialog displays."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "3.3 Select who can access this view options, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "substep",
+          "text": "3.4 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "step",
+          "text": "2. Select a saved view."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        },
+        {
+          "type": "step",
+          "text": "3. Click on apply selected. The saved view displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "When a new asset is purchased, you will need to create an asset record so that it can be maintained. When you create an asset, you first need to complete the required information and then later the additional information can be completed​."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Assets. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the New Asset button. The Create Asset form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/20.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Complete the required information: Asset ID field\tEnter the Asset identifier and this must be a unique number. For example, Truck 001, Truck 002 and so on. Description field\tEnter a short description of the asset. You can use letters, numbers, or a combination of up to 24 characters. For example, 2017 White Chevrolet Silverado Site drop-down\tSelect a site that the asset belongs to. Group drop-down\tSelect an asset group and this describes where an asset belongs, who uses it, and what they use it for. The Group field is used for reporting and sorting purposes and is defined during configuration. For example, an asset group can be used to describe a location or a department that the asset belongs to. Budget drop-down\tSelect the budget assignment and the budget is used to collect transactions. The budget assignments is defined during configuration. Status drop-down\tSelect the status either Active, Inactive, Scrapped, or Sold. Category drop-down\tSelect the asset category, which is the broadest description of an asset. For example, Vehicles.  Also, asset categories are tied to asset Sub Categories. The Category field is used for reporting and sorting purposes and is defined by your Administrator during set up. Sub Category drop-down\tSelect the asset sub-category, which is a narrower, but still generic description of an asset. These describe what type of assets are available for that category. For example, Truck is a sub-category in the Vehicles category. The Sub Category field is used for reporting and sorting purposes and is defined by your Administrator during set up."
+        },
+        {
+          "type": "info",
+          "text": "Now that you have completed the required information, you can click the Save button or you can continue on and complete the additional information below."
+        },
+        {
+          "type": "step",
+          "text": "4. Click General's expand  icon."
+        },
+         {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/21.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/22.png"
+        },
+        {
+          "type": "step",
+          "text": "5. Complete the general information: Vendor drop-down\tSelect the vendor who supplied the asset. Customer drop-down\tSelect the customer that the asset belongs to. For example, if you perform maintenance on customer-owned equipment. Parent Asset field\tEither select from the list or search for the parent asset."
+        },
+        {
+          "type": "step",
+          "text": "6. Click Spec's expand  icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/23.png"
+        },
+        {
+          "type": "step",
+          "text": "7. Complete the specification information: Year field\tEnter in the asset's year. Manufacturer drop-down\tSelect the manufacturer of the asset. Manufacturers defined by your Administrator during set up. Model drop-down\tSelect the model of the asset. Models defined by your Administrator during set up. In-Service Date calendar\tSelect the in-service date. Serial # field\tEnter the serial number of the asset. Barcode/Tag field\tSpecify a custom barcode using your company naming convention. System-generated and custom barcodes can both be used."
+        },
+        {
+          "type": "step",
+          "text": "8. Click Assets's expand  icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/24.png"
+        },
+        {
+          "type": "step",
+          "text": "9. Complete the asset information: License Plate # field\tEnter the license plate number. License Plate Expiration calendar\tSelect the license plate expiry date. Transmission # field\tEnter the transmission number. Passengers # field\tEnter the number of passengers. Warranty Epx. Calender\tSelect the warranty expiry date."
+        },
+        {
+          "type": "step",
+          "text": "10. Click Cost's expand  icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/25.png"
+        },
+        {
+          "type": "step",
+          "text": "11. Complete the cost information: Purchase Date calendar\tSelect the date the asset was purchased. Purchase Cost field\tEnter the amount that was paid for the asset. Useful Life (Months) field\tEnter the amount of expected life in months for the asset. Salvage Value field\tEnter the expected value of the asset. Sold Date calendar\tSelect the date the asset was sold."
+        },
+        {
+          "type": "step",
+          "text": "12. When you have completed the information, click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit Asset Details",
+      "content": [
+        {
+          "type": "info",
+          "text": "The asset's details can be viewed and edited."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click the Assets module. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. From the list, click an existing asset and the asset displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/26.png"
+        },
+        {
+          "type": "info",
+          "text": "This screen lets you view and edit the following information: Asset Image, Utilization and Accumulating Costs, Asset Toolbar, Maintenance Plans and Activity Timeline"
+        }        
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Image",
+      "content": [
+        {
+          "type": "info",
+          "text": "This lets you upload images of the asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Utilization",
+      "content": [
+        {
+          "type": "info",
+          "text": "Utilization - The Utilization graph displays the usage of the asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Accumulating Costs",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Accumulating Costs graph gives you an at-a-glance, view of the accumulating costs of an asset. On the vertical axis it displays the dollar amounts and on the horizontal axis the quarterly dates are listed."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/27.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Click on any column to access more information about that particular cost."
+        },
+        {
+          "type": "info",
+          "text": "You will then see a monthly breakdown of that time-period, with the cost on the left and the months on the bottom."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/28.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Click on any column to access more information about that particular monthly cost."
+        },
+        {
+          "type": "info",
+          "text": "This displays the breakdown of each cost."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/29.png"
+        },
+        {
+          "type": "step",
+          "text": "3. If you want to see the specifics of each Work Order, you can click on the record and pull up the specifics of that posted cost."
+        },
+        {
+          "type": "info",
+          "text": "If at any time you need to go back, there is a back arrow  icon on the top right."
+        },
+        {
+          "type": "info",
+          "text": "If you need to enter any missing data, then click the enter missing data here and the panel displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/31.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Asset Toolbar",
+      "content": [
+        {
+          "type": "info",
+          "text": "The top-right corner contains the asset toolbar, which consists of the following."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/Screenshot%202025-06-09%20024225.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/Screenshot%202025-06-09%20024331.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/Screenshot%202025-06-09%20024342.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/Screenshot%202025-06-09%20024348.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/Screenshot%202025-06-09%20024354.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/Screenshot%202025-06-09%20024402.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/Screenshot%202025-06-09%20024409.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Maintenance Plans and Activity Timeline",
+      "content": [
+        {
+          "type": "info",
+          "text": "The middle section lets you see when the:  Last PM was completed.  Last Unscheduled Work. Last Inspection. Open Work Orders. Maintenance Plans."
+        },
+        {
+          "type": "info",
+          "text": "Maintenance Plans lets you add new plans or you can create work orders for existing plans."
+        },
+        {
+          "type": "info",
+          "text": "Calendar is a visual display of your PMs and you can create new work orders."
+        },
+        {
+          "type": "info",
+          "text": "Activity Timeline displays the activity history of the asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add an Attachment or Link to an Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "1. You can quickly add an attachment or to an asset."
+        },
+        {
+          "type": "step",
+          "text": "2. Navigate to Asset. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "3. From the assets list, click an existing Asset. The Asset screen displays."
+        },
+        {
+          "type": "step",
+          "text": "4. Click on the View Asset Details icon. The Asset Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Attachments tab."
+        },
+        {
+          "type": "step",
+          "text": "6. You can add an attachment by either drag and drop the file to the specified area or click the Add Attachment button and then select the file to upload it."
+        },
+        {
+          "type": "step",
+          "text": "7. If you want to add a link, then click the Add Link button. The Add Attachment Link dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "8. In the Attachment Link field, enter the link."
+        },
+        {
+          "type": "step",
+          "text": "9. Click the Upload Link button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/43.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add an Image to an Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can upload multiple images to an asset, and this gives users a quick view of what the asset looks like."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click the Asset module. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. From the asset list, click an existing asset."
+        },
+        {
+          "type": "step",
+          "text": "3. Hover over the image of the asset and then click the Add an Image icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/44.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Navigate to the image and select the image."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Open button to upload the image."
+        },
+        {
+          "type": "info",
+          "text": "To delete an image, click on the Delete X icon on the top right corner of the image."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Note to an Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "Adding Notes to an individual Asset is a great way to keep its profile accurate. It allows you to customize any instructions or record any specific information on the Asset.  Below are the instructions on how to add Notes to an Asset."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to the Asset module. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. From the asset list, click an existing asset."
+        },
+        {
+          "type": "step",
+          "text": "3. Click on the View Asset Details icon. The Asset Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "4. Click on the Notes icon."
+        },
+        {
+          "type": "step",
+          "text": "5. Click on New Note."
+        },
+        {
+          "type": "step",
+          "text": "6. Add the desired Note in the provided box, then click on Add Note."
+        },
+        {
+          "type": "info",
+          "text": "If you need to edit or delete a note, click on the Delete icon or click the Edit button to modify a note."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/45.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Part to an Asset Record",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can manually add a part to an asset."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click Assets. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click an asset."
+        },
+        {
+          "type": "step",
+          "text": "3. On the top right section of the Asset screen, click on the Asset Parts icon."
+        },
+        {
+          "type": "step",
+          "text": "4. Click on the Add Part button."
+        },
+        {
+          "type": "step",
+          "text": "5. In the Search field, enter the part."
+        },
+        {
+          "type": "step",
+          "text": "6. Select the part."
+        },
+        {
+          "type": "info",
+          "text": "To Delete a Part on an Asset, click on the Delete icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/46.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Change an Asset to be Offline or Online",
+      "content": [
+        {
+          "type": "info",
+          "text": "Being able to take an asset offline due to repairs or other maintenance is part of the asset's life and you can track the downtime of any particular asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Take an Asset Offline",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. From the menu, click Assets."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Assets list, click on an asset."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Downtime  icon. The form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/47.png"
+        },
+                {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/48.png"
+        },
+        {
+          "type": "info",
+          "text": "This shows if an asset is Active or Down. If it is already Active, click on the Down option, and you will be prompted to give a reason for why it is down. A graph is also available showing you the History of the Assets Downtime."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Down tab."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/49.png"
+        },
+        {
+          "type": "step",
+          "text": "5. In the Reason to being asset down field, enter the reason."
+        },
+        {
+          "type": "step",
+          "text": "6. Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The asset is marked as Down."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reactive an Asset",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Navigate to Assets."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Assets list, click on an asset."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Downtime  icon. The form displays."
+        },
+        {
+          "type": "step",
+          "text": "4. Click on the Active tab.  The Reactivate Asset Manually dialog displays the message \"Please confirm manual asset activation\"."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Yes button."
+        },
+        {
+          "type": "info",
+          "text": "The asset is now active."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Work Order from the Asset Details Screen",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can create a work order for the asset."
+        },
+        {
+          "type": "step",
+          "text": "1. From the menu, click Assets. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the asset you want to open. The Asset Details screen displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click on the View Work Orders icon at the top right section of the screen."
+        },
+        {
+          "type": "step",
+          "text": "4. Click on Create New Work Order + icon."
+        },
+        {
+          "type": "step",
+          "text": "5. Fill in the appropriate information."
+        },
+        {
+          "type": "step",
+          "text": "6. Click on Create Work Order button. The work order is created."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/50.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Duplicate Asset Records",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you acquired 4 new identical vehicles, then you will need to add each.  With the Copy Asset, then you can set up the first one exactly the way you want, and then make duplicates of the asset.  Each one will require a unique Asset Name/Asset ID, but otherwise, will be identical (including similar PM schedules, parts lists, notes, attachments, or custom fields. This will save you time and eliminate errors when creating a new asset record."
+        },
+        {
+          "type": "step",
+          "text": "Form the menu, click the Assets module. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "1. From the list, click an existing asset."
+        },
+        {
+          "type": "step",
+          "text": "2. When the asset record is open, click the Asset Details  icon."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the More Actions icon at the top of the open Asset Details window"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/51.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Copy button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/52.png"
+        },
+        {
+          "type": "step",
+          "text": "5. In the new Asset ID field, select the items that are to be copied from the original asset record."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/54.png"
+        },
+        {
+          "type": "step",
+          "text": "6. Click either the Copy button OR the Copy and Open button. The asset is copied."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/55.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up Parent and Child Assets",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can establish a relationship between your assets, that are in the same location/group. By establishing a Parent/Child relationship between assets, it allows you the possibility of sharing meters/logs, report on combined costs, and share movement history between sites & locations."
+        },
+        {
+          "type": "info",
+          "text": "You can establish a relationship between your assets, that are in the same location/group. By establishing a Parent/Child relationship between assets, it allows you the possibility of sharing meters/logs, report on combined costs, and share movement history between sites & locations."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Prerequisites",
+      "content": [
+        {
+          "type": "info",
+          "text": "To take advantage of the Parent/Child feature, the option must first be turned on."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/56.png"
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Settings > Marketplace > Parent Child Assets and toggle the feature on."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/57.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Take a Parent Asset and assign a Child Asset",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click on the asset of your choosing."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the asset details icon."
+        },
+        {
+          "type": "step",
+          "text": "3. Click on the Child Assets + icon.  Only assets in the same location/group folder will appear."
+        },
+        {
+          "type": "step",
+          "text": "4. You can either search for an asset, or scroll down to the desired item, and then select it."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/58.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Assign a Child Asset to a Parent Asset",
+      "content": [
+        {
+          "type": "step",
+          "text": "1. Click on the asset that will act as the parent asset."
+        },
+        {
+          "type": "step",
+          "text": "2. Click on the asset details icon."
+        },
+        {
+          "type": "step",
+          "text": "3. Scroll down to the Parent Asset field and click on the globe icon"
+        },
+        {
+          "type": "step",
+          "text": "4. Search and select the Asset to be named the parent asset."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Save button at the bottom of the screen"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/59.gif"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View Installed Components",
+      "content": [
+        {
+          "type": "info",
+          "text": "When an asset is moved, then its move history will be recorded. You can view the move history and if needed, delete an asset move from the history.."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to the Asset module. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. From the asset list, click an existing asset."
+        },
+        {
+          "type": "step",
+          "text": "3. From the toolbar, click the View Components icon and the Installed Components form displays."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Install Note icon to display the installation note."
+        },
+        {
+          "type": "step",
+          "text": "5. Click the Lifetime Info expand icon to display the lifetime information."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/60.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "View the Asset Move History",
+      "content": [
+        {
+          "type": "info",
+          "text": "When an asset is moved, then its move history will be recorded. You can view the move history and if needed, delete an asset move from the history.."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to the Asset module. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. From the asset list, click an existing asset."
+        },
+        {
+          "type": "step",
+          "text": "3. From the toolbar, click the Move History  icon and the Asset Move History form displays."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Move Note  icon to display the move note description."
+        },
+        {
+          "type": "info",
+          "text": "If you want to delete the asset move, then hover over the move history and then click the Delete icon. The message, \"Are you sure you wish to delete this asset move from history?, click the Yes button to confirm the deletion."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/61.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/62.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/63.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Move an Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "You are able to move an asset to another group and/or to another site. Move a Single Asset. Move Multiple Assets. Before an asset can be moved, any attached work orders must be completed first."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Move a Single Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can move a single assets to another site and/or group."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to the Assets module. The Asset Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. From the Asset list, click an existing asset."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/64.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Click on the View Asset Details  icon and the Asset Details form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/65.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/66.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Either click on: (A) Change Site's Change button to move the asset to another site. (b) Change Group's Change button icon to be able to another group."
+        },      
+        {
+          "type": "step",
+          "text": "5. The Move Assets to Group dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/67.png"
+        },
+        {
+          "type": "step",
+          "text": "6. If you want to move the asset to another site, then from the Site drop-down, select the site."
+        },
+        {
+          "type": "step",
+          "text": "7. From the Group drop-down, select the group."
+        },
+        {
+          "type": "step",
+          "text": "8. If you need to change the budget, then uncheck the Don't Change the Asset's Budget check box. Then from the Budget drop-down, select the Budget."
+        },
+        {
+          "type": "step",
+          "text": "9. From the Date / Time of Move calender picker, select the date and time."
+        },
+        {
+          "type": "step",
+          "text": "10. In the Note field, enter any note."
+        },
+        {
+          "type": "step",
+          "text": "11. Click the Save button and the confirmation dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "12. Click the Yes, Confirm button."
+        },
+        {
+          "type": "info",
+          "text": "The asset is moved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Move Multiple Assets",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can move multiple assets to another site and/or group."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to the Assets module. The Asset Management screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/68.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Filter by Group button and the Filter By Group panel displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/69.png"
+        },
+        {
+          "type": "step",
+          "text": "3. Navigate to where the assets are and click the group's name. The list will be filtered by the group. In this example, the assets are in MTN_204 and we will move these to PERISHER SKI RESORT."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Select All icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/70.png"
+        },
+        {
+          "type": "step",
+          "text": "5. From the Actions drop-down, click Move."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/71.png"
+        },
+        {
+          "type": "info",
+          "text": "The Move Assets to Group dialog displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Assets%20Settings/72.png"
+        },
+        {
+          "type": "step",
+          "text": "6. If you want to move the asset to another site, then from the Site drop-down, select the site."
+        },
+        {
+          "type": "step",
+          "text": "7. From the Group drop-down, select the group."
+        },
+        {
+          "type": "step",
+          "text": "8. If you need to change the budget, then uncheck the Don't Change the Asset's Budget check box. Then from the Budget drop-down, select the Budget."
+        },
+        {
+          "type": "step",
+          "text": "9. From the Date / Time of Move calendar picker, select the date and time."
+        },
+        {
+          "type": "step",
+          "text": "10. In the Note field, enter any note."
+        },
+        {
+          "type": "step",
+          "text": "11. Click the Save button and the confirmation dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "12. Click the Yes, Confirm button."
+        },
+        {
+          "type": "info",
+          "text": "The assets are moved."
+        }
+      ]
+    }
+  ]
+}

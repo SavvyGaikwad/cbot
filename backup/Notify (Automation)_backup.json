@@ -1,0 +1,610 @@
+{
+  "document_title": "Notify (Automation)",
+  "content": [
+    {
+      "type": "section",
+      "title": "Notify Module Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Notify Overview",
+      "content": [
+        {
+          "type": "info",
+          "text": "The Notify module lets you set up automated email notifications and automated tasks. Additionally, it will let you do the following:"
+        },
+        {
+          "type": "info",
+          "text": "View Email Notification Implementations"
+        },
+        {
+          "type": "info",
+          "text": "View Scheduled Tasks Implementations"
+        },
+        {
+          "type": "info",
+          "text": "Preview a Notification"
+        },
+        {
+          "type": "info",
+          "text": "Edit an Implemented Email Notification or Scheduled Task - this is where you find the subscription list."
+        },
+        {
+          "type": "info",
+          "text": "Delete an Implemented Email Notification or Scheduled Task"
+        },
+        {
+          "type": "info",
+          "text": "To access Notify, complete the following:"
+        },
+        {
+          "type": "step",
+          "text": "From the menu, click Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the Tools and Support menu, click Notify."
+        },
+        {
+          "type": "info",
+          "text": "The Notify Implementation screen displays with the All Records selected. This displays the implemented notifications. Learn how to create a new email notification or an automated scheduled task."
+        },
+        {
+          "type": "info",
+          "text": "View Email Notification Implementations"
+        },
+        {
+          "type": "info",
+          "text": "In the Filter panel, click on the Email Templates expand arrow to see the available email notifications."
+        },
+        {
+          "type": "info",
+          "text": "View Scheduled Task Implementations"
+        },
+        {
+          "type": "info",
+          "text": "In the Filter panel, click on the Automated Tasks expand arrow to see the automated scheduled tasks."
+        },
+        {
+          "type": "info",
+          "text": "Preview a Notification"
+        },
+        {
+          "type": "info",
+          "text": "You can preview a notification to see if the layout meets your requirements."
+        },
+        {
+          "type": "step",
+          "text": "Click the Preview  icon."
+        },
+        {
+          "type": "info",
+          "text": "The notification displays."
+        },
+        {
+          "type": "info",
+          "text": "Edit an Implemented Email Notification or Scheduled Task"
+        },
+        {
+          "type": "info",
+          "text": "You can edit an implemented email notification or scheduled tasks and different tabs will display."
+        },
+        {
+          "type": "info",
+          "text": "Delete an Implemented Email Notification or Scheduled Task"
+        },
+        {
+          "type": "info",
+          "text": "If you no longer need the implementation, then it can be deleted."
+        },
+        {
+          "type": "step",
+          "text": "Click the Delete  icon and the confirmation message displays \"This will delete the \"name\". Do you still want to continue?\""
+        },
+        {
+          "type": "step",
+          "text": "Click the Yes button and it is deleted."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create an Email Notification",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the New Implementation button. The Notification Wizard dialog displays the Step 1: Select a template."
+        },
+        {
+          "type": "step",
+          "text": "From the Filter panel, select the filter and then select the email template."
+        },
+        {
+          "type": "info",
+          "text": "At the bottom of this dialog, you will see the List or Merge drop-down where you can select either:"
+        },
+        {
+          "type": "step",
+          "text": "List - This will send you one email containing all the Notifications."
+        },
+        {
+          "type": "step",
+          "text": "Merge - This will send you separate, individual emails for each Notification."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 2: Criteria & Options displays."
+        },
+        {
+          "type": "info",
+          "text": "This step will let you add search criteria and options (these are optional steps)."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Search Criteria button."
+        },
+        {
+          "type": "info",
+          "text": "Complete the following criteria:"
+        },
+        {
+          "type": "info",
+          "text": "When you have finished, click the Save  icon."
+        },
+        {
+          "type": "step",
+          "text": "If you want to add another criteria, then click the + icon."
+        },
+        {
+          "type": "step",
+          "text": "Delete Search Criteria"
+        },
+        {
+          "type": "info",
+          "text": "If you click the Delete icon, this will delete the specific search criteria or you can click the Clear All Search Criteria button to clear all search criteria."
+        },
+        {
+          "type": "step",
+          "text": "From the Sort By drop-down, select the field to sort the search results by."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 3: Layout displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Report Layout section, you can drag and drop the items from the Fields to choose from to the Displayed fields section. Also, you can reorder the items in the list."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 4: Security displays."
+        },
+        {
+          "type": "step",
+          "text": "The Security allows you to limit the Notification Subscription to certain individuals or groups of people. If this is left blank, any individual can subscribe to the notification."
+        },
+        {
+          "type": "step",
+          "text": "From the Contacts drop-down, select a contact name and then click the Add Subscriber button."
+        },
+        {
+          "type": "step",
+          "text": "From the Role Restrictions, select the role(s) check box."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 5: Scheduling displays."
+        },
+        {
+          "type": "info",
+          "text": "The Scheduling allows you to determine the frequency of the Notifications being sent out."
+        },
+        {
+          "type": "step",
+          "text": "From the Scheduled drop-down, you can choose from Daily, Weekdays, Weekly, Monthly, or Yearly."
+        },
+        {
+          "type": "info",
+          "text": "When set to Daily, the maximum minutes is 1440."
+        },
+        {
+          "type": "step",
+          "text": "From the Starts On calendar pick, select when to start the notification."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step6: Name & Description."
+        },
+        {
+          "type": "step",
+          "text": "In the Implementation Name field, enter the name of the notification."
+        },
+        {
+          "type": "step",
+          "text": "In the Description field, enter the short description."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The notification is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Create a Scheduled Task",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can create an automated task to schedule the following:"
+        },
+        {
+          "type": "info",
+          "text": "Work Request to Work Order Automation - When a work request is created, then convert it into a work order automatically."
+        },
+        {
+          "type": "info",
+          "text": "PM to Work Order Automation - When the preventative maintenance schedule becomes due, the work order is created automatically."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Work Request to Work Order Automation",
+      "content": [
+        {
+          "type": "info",
+          "text": "Let's learn how to set up a schedule task to take a newly created work request and then convert it into a work order automatically."
+        },
+        {
+          "type": "step",
+          "text": "Click the New Implementation button. The Notification Wizard dialog displays Step 1: Select a template."
+        },
+        {
+          "type": "step",
+          "text": "From the Filter, select Work Requests."
+        },
+        {
+          "type": "step",
+          "text": "From the list, select (Lighting) Change Request Status - Converts requests to work orders that meet a certain options."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 2: Criteria & Options displays."
+        },
+        {
+          "type": "info",
+          "text": "This step will let you add search criteria and options (these are optional steps)."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Search Criteria button."
+        },
+        {
+          "type": "info",
+          "text": "Complete the following criteria:"
+        },
+        {
+          "type": "info",
+          "text": "When you have finished, click the Save  icon."
+        },
+        {
+          "type": "step",
+          "text": "If you want to add another criteria, then click the + icon."
+        },
+        {
+          "type": "step",
+          "text": "Delete Search Criteria"
+        },
+        {
+          "type": "info",
+          "text": "If you click the Delete icon, this will delete the specific search criteria or you can click the Clear All Search Criteria button to clear all search criteria."
+        },
+        {
+          "type": "info",
+          "text": "Complete the options:"
+        },
+        {
+          "type": "step",
+          "text": "From the Entity drop-down, select the entity."
+        },
+        {
+          "type": "step",
+          "text": "From the Work Type drop-down, select the work type."
+        },
+        {
+          "type": "step",
+          "text": "From the Current Status drop-down, select the current status."
+        },
+        {
+          "type": "step",
+          "text": "From the New Status drop-down, select the new status."
+        },
+        {
+          "type": "step",
+          "text": "From the Budget ID drop-down, select the budget."
+        },
+        {
+          "type": "step",
+          "text": "From the Priority drop-down, select the priority."
+        },
+        {
+          "type": "step",
+          "text": "In the Days Until WO Due field, enter the days."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 3: Scheduling displays."
+        },
+        {
+          "type": "info",
+          "text": "The Scheduling allows you to determine the frequency of the Notifications being sent out."
+        },
+        {
+          "type": "step",
+          "text": "From the Scheduled drop-down, you can choose from Daily, Weekdays, Weekly, Monthly, or Yearly."
+        },
+        {
+          "type": "step",
+          "text": "From the Starts On calendar pick, select when to start the notification."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 6: Name & Description."
+        },
+        {
+          "type": "step",
+          "text": "In the Implementation Name field, enter the name of the notification."
+        },
+        {
+          "type": "step",
+          "text": "In the Description field, enter the short description."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The email notification is saved and displays in the implementation list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "PM to Work Order Automation",
+      "content": [
+        {
+          "type": "info",
+          "text": "Let's learn how to set up a schedule task, that when the preventative maintenance schedule becomes due, the work order is created automatically."
+        },
+        {
+          "type": "step",
+          "text": "Click the New Implementation button. The Notification Wizard dialog displays Step 1: Select a template."
+        },
+        {
+          "type": "step",
+          "text": "From the Filter, select Work Orders."
+        },
+        {
+          "type": "step",
+          "text": "From the list, select Generate Due Schedules - Converts schedules to work orders that meet a certain threshold."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 2: Criteria & Options displays."
+        },
+        {
+          "type": "info",
+          "text": "This step will let you add search criteria and options (these are optional steps)."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add Search Criteria button."
+        },
+        {
+          "type": "info",
+          "text": "Complete the following criteria:"
+        },
+        {
+          "type": "info",
+          "text": "When you have finished, click the Save  icon."
+        },
+        {
+          "type": "step",
+          "text": "If you want to add another criteria, then click the + icon."
+        },
+        {
+          "type": "step",
+          "text": "Delete Search Criteria"
+        },
+        {
+          "type": "info",
+          "text": "If you click the Delete icon, this will delete the specific search criteria or you can click the Clear All Search Criteria button to clear all search criteria."
+        },
+        {
+          "type": "info",
+          "text": "Complete the options:"
+        },
+        {
+          "type": "step",
+          "text": "From the Days Until Due drop-down, select the number of days. For example, 1 day."
+        },
+        {
+          "type": "step",
+          "text": "Then select either AND or OR."
+        },
+        {
+          "type": "step",
+          "text": "From the Minimum % drop-down, select the percentage. For example, 90%."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 3: Scheduling displays."
+        },
+        {
+          "type": "info",
+          "text": "This is where you can specify how often you want this automation task to run. For example, you can schedule this to run once a week on a Monday morning."
+        },
+        {
+          "type": "step",
+          "text": "From the Scheduled drop-down, you can choose from Daily, Weekdays, Weekly, Monthly, or Yearly."
+        },
+        {
+          "type": "step",
+          "text": "From the Starts On calendar pick, select when to start the notification."
+        },
+        {
+          "type": "step",
+          "text": "Click the Next button and the Step 4: Name & Description."
+        },
+        {
+          "type": "step",
+          "text": "In the Implementation Name field, enter the name of the notification."
+        },
+        {
+          "type": "step",
+          "text": "In the Description field, enter the short description."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The schedule task is saved and displays in the implementation list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit an Email Notification",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can easily edit an email notification."
+        },
+        {
+          "type": "step",
+          "text": "From the Notify Implementation list, click on the implementation name and this will have the type List. The Implementation Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Details tab, this is where you can update the name, description, and schedule."
+        },
+        {
+          "type": "step",
+          "text": "Click the Subscriptions tab."
+        },
+        {
+          "type": "step",
+          "text": "This is where you can add or remove people to a subscription or you can change role restrictions. See Subscribe to a Notification for more details."
+        },
+        {
+          "type": "step",
+          "text": "Click the Criteria / Options tab."
+        },
+        {
+          "type": "step",
+          "text": "Modify or remove the criteria, just like you did in the set wizard and the options can be adjusted."
+        },
+        {
+          "type": "step",
+          "text": "Click the Layout tab."
+        },
+        {
+          "type": "step",
+          "text": "If you find the email notification doesn't meet your requirements, then you can make the adjustments. Either add or remove fields; change the field order, or the size of the field."
+        },
+        {
+          "type": "step",
+          "text": "After you make any changes make sure you click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit a Scheduled Task",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can easily edit a scheduled task."
+        },
+        {
+          "type": "step",
+          "text": "From the Notify Implementation list, click on the implementation name and this will have the type Schedule Task. The Implementation Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Details tab, this is where you can update the name, description, and schedule."
+        },
+        {
+          "type": "step",
+          "text": "Click the Criteria / Options tab."
+        },
+        {
+          "type": "step",
+          "text": "Modify or remove the criteria, just like you did in the set wizard and the options can be adjusted."
+        },
+        {
+          "type": "step",
+          "text": "After you make any changes make sure you click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Subscribe to a Notification",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can easily subscribe to a specific notification."
+        },
+        {
+          "type": "step",
+          "text": "From the Notify Implementation list, click on the implementation name. The Implementation Details form displays."
+        },
+        {
+          "type": "step",
+          "text": "Click the Subscription tab."
+        },
+        {
+          "type": "step",
+          "text": "From the Contacts drop-down, select a contact name and then click the Add Subscriber button."
+        },
+        {
+          "type": "info",
+          "text": "The user must be a Full or Mobile User to receive the notifications. Learn more about employees in Employees & Users."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "step",
+          "text": "Unsubscribe"
+        },
+        {
+          "type": "info",
+          "text": "To remove an existing subscriber, click the Delete  icon."
+        },
+        {
+          "type": "info",
+          "text": "Element | Description\nAND / OR | Select either AND or OR.\nFields | There are fields for Parts, Vendors, or Warehouse available for selection.\nEquation | This option includes the following:\nis equal to\nis not\nis greater than\nis less than\nis greater or equal to\nis less or equal to \ncontains\nstarts with\nis empty\nis not empty\nCompare option | Select either Compare To Value or Compare To Field.\nValue | Enter the value."
+        },
+        {
+          "type": "info",
+          "text": "Element | Description\nAND / OR | Select either AND or OR.\nFields | There are fields for Parts, Vendors, or Warehouse available for selection.\nEquation | This option includes the following:\nis equal to\nis not\nis greater than\nis less than\nis greater or equal to\nis less or equal to \ncontains\nstarts with\nis empty\nis not empty\nCompare option | Select either Compare To Value or Compare To Field.\nValue | Enter the value."
+        },
+        {
+          "type": "info",
+          "text": "Element | Description\nAND / OR | Select either AND or OR.\nFields | There are fields for Parts, Vendors, or Warehouse available for selection.\nEquation | This option includes the following:\nis equal to\nis not\nis greater than\nis less than\nis greater or equal to\nis less or equal to \ncontains\nstarts with\nis empty\nis not empty\nCompare option | Select either Compare To Value or Compare To Field.\nValue | Enter the value."
+        }
+      ]
+    }
+  ]
+}

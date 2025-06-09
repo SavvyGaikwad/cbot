@@ -1,0 +1,204 @@
+{
+  "document_title": "Vendor Admin Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Vendor Admin Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Set up the Vendor Contacts",
+      "content": [
+        {
+          "type": "info",
+          "text": "This is where you set up the Contact Settings for your Vendors, so you can define the Vendor Types and any custom fields:"
+        },
+        {
+          "type": "info",
+          "text": "Vendor Types"
+        },
+        {
+          "type": "info",
+          "text": "Add Vendor Types"
+        },
+        {
+          "type": "info",
+          "text": "Edit Vendor Types"
+        },
+        {
+          "type": "info",
+          "text": "Custom fields"
+        },
+        {
+          "type": "info",
+          "text": "Add Custom Fields"
+        },
+        {
+          "type": "info",
+          "text": "See the Vendor Contact Settings in Action"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Vendor Settings",
+      "content": [
+        {
+          "type": "step",
+          "text": "Navigate to Settings > Module Settings > Contact > Vendor.  The vendor tab displays under contact settings."
+        },
+        {
+          "type": "info",
+          "text": "The Vendor Tab in contact settings is where Vendor Types are defined. Use these fields when creating new vendors for better organization, making them easier to find and filter."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Vendor Types",
+      "content": [
+        {
+          "type": "info",
+          "text": "Vendor Types are used to group vendors in the Vendor Management screen."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Vendor Types",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the vendor types + button."
+        },
+        {
+          "type": "step",
+          "text": "In the Name field, enter in the vendor types."
+        },
+        {
+          "type": "step",
+          "text": "Click off the field and it is saved."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit Vendor Types",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click on the existing vendor type and the pop-up displays."
+        },
+        {
+          "type": "info",
+          "text": "If you want to rename the labor code, then complete the following:"
+        },
+        {
+          "type": "step",
+          "text": "Click the Rename button."
+        },
+        {
+          "type": "step",
+          "text": "Edit the vendor type."
+        },
+        {
+          "type": "step",
+          "text": "Click the Rename  icon to save."
+        },
+        {
+          "type": "info",
+          "text": "If you need to delete the vendor type, click the Delete button. If the customer status is in use then the system will not let you delete the vendor type."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "You can add extra custom fields to the Vendor Contact and these will display in the Vendor form."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add Custom Fields",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the custom fields + button and the Custom Fields dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "From the list select a custom field. If you need to create a new custom field, then see Create or Edit Custom Fields."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add button and the custom field is added."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Make a Custom Field mandatory or optional",
+      "content": [
+        {
+          "type": "step",
+          "text": "To make the field mandatory, click the Not Required  icon and change it to Required   or vice versa."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Delete a Custom Field from the Employee Settings",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the X icon, next to the custom field's name."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reorder the Custom Fields",
+      "content": [
+        {
+          "type": "step",
+          "text": "Hover over the custom field."
+        },
+        {
+          "type": "step",
+          "text": "Click the double ellipsis icon and then drag and drop the custom field up or down to change the order."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "See the Vendor Contact Settings in Action",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you have set up the vendor contact settings and custom fields, then you will see these in the Vendor's Edit form."
+        },
+        {
+          "type": "step",
+          "text": "Navigate to Vendors."
+        },
+        {
+          "type": "step",
+          "text": "Click the vendor's name and the edit form displays."
+        },
+        {
+          "type": "step",
+          "text": "Here you see the (A) Vendor drop-down contains the types and the (B) Custom Info contains the custom fields."
+        },
+        {
+          "type": "info",
+          "text": "Learn more about how to add or edit vendor records in the Vendor module."
+        }
+      ]
+    }
+  ]
+}

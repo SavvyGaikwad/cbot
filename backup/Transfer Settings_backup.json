@@ -1,0 +1,454 @@
+{
+  "document_title": "Transfer Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Create a Transfer",
+      "content": [
+        {
+          "type": "info",
+          "text": "Transfers are used to move inventory from one warehouse to another if a part you require is in stock at another warehouse. The warehouse can be local or remote."
+        },
+        {
+          "type": "step",
+          "text": "1. Create Transfer"
+        },
+                {
+          "type": "substep",
+          "text": "1.1 Navigate to Transfers and the Inventory Transfer Management screen displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Click the New Transfer button and the Create Transfer form displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.3 From the Transfer Mode drop-down, select either: Local Move - Transfer parts between warehouses within the same site. Remote Transfer - Transfer parts between warehouses within separate sites."
+        },
+        {
+          "type": "substep",
+          "text": "1.4 In the Purpose field, enter the purpose of transfer."
+        },
+        {
+          "type": "substep",
+          "text": "1.5 From the Source Warehouse drop down, select the warehouse the parts will be transferred from."
+        },
+        {
+          "type": "info",
+          "text": "Source Warehouses credit budget accounts for the value of the transfer, as if they were returning inventory to a supplier."
+        },
+        {
+          "type": "substep",
+          "text": "1.6 If the transfer has already been sent, click calendar picker and select the date the transfer was sent."
+        },
+        {
+          "type": "substep",
+          "text": "1.7 From the Destination Warehouse drop-down, select the warehouse the parts have been sent to."
+        },
+        {
+          "type": "info",
+          "text": "Destination Warehouses expense budget accounts for the value of the transfer, as if they were purchasing inventory from any other supplier."
+        },
+        {
+          "type": "substep",
+          "text": "1.8 In the Deliver To field, enter the name of the recipient if you require a specific person to receive the transfer."
+        },
+        {
+          "type": "substep",
+          "text": "1.9 If you have selected Remote Transfer, this field displays. - From the Tracking # field, enter the tracking number."
+        },
+        {
+          "type": "substep",
+          "text": "1.10 Click the Save & Add Parts button and the new transfer displays OR if you want to add the parts later, then click the Create Transfer button."
+        },
+        {
+          "type": "info",
+          "text": "The transfer displays and next you can add the parts."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Add Parts to the Transfer"
+        },
+        {
+          "type": "info",
+          "text": "Add parts to a created transfer to track which parts are moving from one warehouse to another."
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click the + Add Part  button. A new line populates in the parts list on the transfer screen."
+        },{
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.2 In the search parts field, enter a search term and the search results populate."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 From the search results, select the part."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.4 From the quantity field, enter the quantity."
+        },
+        {
+          "type": "substep",
+          "text": "2.5 Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "The part has now been added to the transfer."
+        },
+        {
+          "type": "info",
+          "text": "If the part is not found, you can search in the Parts Master."
+        },
+        {
+          "type": "substep",
+          "text": "Click the Search Parts Master button and then either create a new part or search for an existing part."
+        },
+        {
+          "type": "info",
+          "text": "New Part - If the part is a new part, then click the New Part button. Then complete the part's details, learn more in Create a New Part and Create a New Tire Record. The part is added to the transfer."
+        },
+        {
+          "type": "info",
+          "text": "Existing Part - If the part is an existing part, then in the Search parts master field, enter the name of the part. Hover over the part and then click the Add  icon. The part is added to the transfer."
+        },
+        {
+          "type": "step",
+          "text": "3. Send the Transfer"
+        },
+        {
+          "type": "info",
+          "text": "After all parts are listed on the transfer and ready for fulfillment, send the transfer to the destination."
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Click the Send button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "The transfer is now sent and ready to be received by the destination warehouse."
+        },
+        {
+          "type": "step",
+          "text": "3.2 Click the Print Packing Slip  icon to add the packing slip with the physical transfer."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Customize the Transfers View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The list view is where you can see the full list of your Transfers, along with the transfer details at a glance. Each user can arrange the layout of the screen according to their own preferences and liking."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Search",
+      "content": [
+        {
+          "type": "info",
+          "text": "Search allows you to find any field within the Transfers list. The example below shows results populated for South Warehouse."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "1. In the Search field, enter the search term."
+        },
+        {
+          "type": "info",
+          "text": "Search results automatically populate."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View - Filter a Column Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When viewing the Transfers list, you may want to change the Transfers columns and sort order. The Save View let's you set up the Transfers listing and then save it for next time. This is best explained using an example. I want to create a saved list view for transfers originating from the Shop Warehouse and add the Transfer Mode column to the list view."
+        },
+        {
+          "type": "step",
+          "text": "1. Reorder Columns"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Drag and drop the Source Warehouse column to the front of the list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Filter the Column"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click on the filter  icon within the Source Warehouse column. The list of Warehouses display."
+        },
+        {
+          "type": "substep",
+          "text": " 2.2 Select Shop Warehouse."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Click the OK button. The Source Warehouse column is filtered."
+        },
+        {
+          "type": "step",
+          "text": "3. Add a column from the Column Chooser"
+        },
+        {
+          "type": "substep",
+          "text": "3.1 Click the more actions  icon."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 Select Column Chooser. The column chooser displays."
+        },
+        {
+          "type": "substep",
+          "text": "3.3 Drag and drop the Transfer Mode column to the Transfers column headings. The Transfer Mode column displays on the inventory list."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "4. Save your View"
+        },
+        {
+          "type": "substep",
+          "text": "4.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "substep",
+          "text": "4.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "4.3 Select a who can access this view option, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "4.4 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Saved View -Toggle List Grouping Example",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you view the asset list, you may want to group the list view by a column. This let's you see the asset listing in a different way. Let's look at the example where we group by Source Warehouse."
+        },
+        {
+          "type": "step",
+          "text": "1. Group by a Column"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Click the more actions icon ."
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Select Toggle List Grouping."
+        },
+        {
+          "type": "substep",
+          "text": "1.3 Drag and drop a column header to the group by. The transfer list is toggled by group."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Save view"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Click the save icon. The create new view dialog displays."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 In the View Name field, enter the name of the saved view."
+        },
+        {
+          "type": "substep",
+          "text": "2.3 Select who can access this view options, either: Private- Don't share this view with anyone. Everyone - Share this view with everyone. Security Roles - Share this view with specific roles in your organization. Teams - Share this view with specific teams in your organization."
+        },
+        {
+          "type": "info",
+          "text": "2.4 Click the Save View button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Display your Saved View",
+      "content": [
+        {
+          "type": "info",
+          "text": "The next time you want to use the saved view you can display it."
+        },
+        {
+          "type": "step",
+          "text": "1. Click the Saved views drop-down. The saved views pop-up displays."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "From this you can see a list of saved views, and the default view."
+        },
+        {
+          "type": "step",
+          "text": "2. Select a saved view."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "Remember, you can share a view that is private to you. Click the share  icon"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Receive a Transfer",
+      "content": [
+        {
+          "type": "info",
+          "text": "A sent transfer is ready to be received at the destination warehouse. Receive the transfer to add the parts to the destination warehouse inventory."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Transfers and the Inventory Management Transfer Screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click a sent transfer and the Transfer Screen displays."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Receive button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "The transfer is now fulfilled."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Send a Transfer that is Pending Fulfillment",
+      "content": [
+        {
+          "type": "info",
+          "text": "A transfer that is pending fulfillment is ready to be sent to the destination warehouse."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Transfers and the Inventory Transfer Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the transfer that is Pending Fulfillment."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Post button."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "The transfer is now sent and ready to be received by the destination warehouse upon arrival."
+        },
+        {
+          "type": "step",
+          "text": "4. Click the Print Packing Slip  icon to add the packing slip with the physical transfer."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Understand the Transfers Key Performance Indicators",
+      "content": [
+        {
+          "type": "info",
+          "text": "This provides the a quick overview of the transfers that are active and pending. Also, this includes the top warehouses that are suppliers and consumers."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to Transfers and the Inventory Transfer Management screen displays."
+        },
+        {
+          "type": "step",
+          "text": "2. Click the Show KPI icon."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/User%20Profile%20Settings/3.png"
+        },
+        {
+          "type": "info",
+          "text": "Going across the top of the screen, the following statistics are: Pending Receipt - The number of transfers waiting to be received. Active Transfers by Mode - The number of transfer by Local Move and Remote Transfer. Top Warehouse Suppliers - The number of transfers by warehouse suppliers. Top Warehouse Consumers - The number of transfer by warehouse consumers."
+        },
+        {
+          "type": "info",
+          "text": "When you click on a KPI, the grid is filtered. You can reset the view, click the More Actions  icon, and then Reset Grid."
+        }
+      ]
+    }
+  ]
+}

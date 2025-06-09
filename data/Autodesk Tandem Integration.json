@@ -1,0 +1,530 @@
+{
+  "document_title": "Autodesk Tandem Integration",
+  "content": [
+    {
+      "type": "section",
+      "title": "Introduction",
+      "content": [
+        {
+          "type": "info",
+          "text": "Autodesk Tandem is a digital twin solution, designed to deliver smarter buildings and operational excellence. By connecting data from the building's lifecycle within the digital replica. This streamlines facility operations and extend asset lifespans with full digital handoff and access to critical asset data. Autodesk Tandem and Eptura Asset integration provides a seamless digital handoff from design and construction to operations, bringing together essential asset data in a digital twin."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Requirements",
+      "content": [
+        {
+          "type": "info",
+          "text": "Eptura Requirements - The requirements include an instance of Eptura Asset that has been provisioned for the Tandem integration."
+        },
+        {
+          "type": "info",
+          "text": "Autodesk Tandem Requirements - The requirements include access to a digital twin hosted in Tandem. The Tandem digital twin must implement the Eptura facility template. Lastly, you must have an Autodesk Platform Services Application with API access to Eptura Asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Prepare your Tandem Digital Twin",
+      "content": [
+        {
+          "type": "info",
+          "text": "Before you can onboard your Tandem Digital Twin to Eptura Asset, you will need to set up your Tandem Digital Twin."
+        },
+        {
+          "type": "info",
+          "text": "Complete the following steps:"
+        },
+        {
+          "type": "step",
+          "text": "1. Create your Digital Twin"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 Create the Tandem Facility and upload models to Facility."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/1.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.2 Consolidate the model levels."
+        },
+        {
+          "type": "info",
+          "text": "When you consolidate model levels, you will combine common levels and rename them to use a common convention. There are two situations where we want to consolidate levels:"
+        },
+        {
+          "type": "info",
+          "text": "• Levels within the same model - A model will likely have multiple levels that belong to the same floor, for example 01Floor and 01 Ceiling, referring to the floor and ceiling plans for level 01. These need to be consolidated into a single level, for example Level01, for onboarding to Eptura."
+        },
+        {
+          "type": "info",
+          "text": "• Levels in shared models - Shared models don't necessarily use the same terminology to refer to the same level; e.g. the architectural model may use a convention of 01 Floor and the MEP model may use a convention of 01 MEP. These need to be consolidated into a single level, for example Level 01, for onboarding to Eptura."
+        },
+        {
+          "type": "info",
+          "text": "Assets and spaces that belong to a consolidated level will be onboarded to a single floor in Eptura."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/2.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.3 Apply the Eptura Facility Template."
+        },
+        {
+          "type": "info",
+          "text": "Facility Templates combine classification systems with parameters to define your asset information model for a given facility type. The classification system defines the hierarchical structure of asset categories and types. A parameter is an attribute or property with a specific definition of data associated to an asset. It can include a name, data type, measure, unit of measure, symbol, precision, description, and context."
+        },
+        {
+          "type": "info",
+          "text": "The Eptura Facility Template contains the classification system and parameters that will be shared between Autodesk Tandem and Eptura Asset. The Eptura Facility Template is a requirement for the Eptura - Autodesk Tandem integration."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/3.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.4 Classify/tag the assets as Eptura Assets."
+        },
+        {
+          "type": "info",
+          "text": "With the Eptura Facility Template applied, the next step is to classify assets that we wish to onboard to Eptura. When we classify an asset in Autodesk Tandem, we are defining that asset's place in the asset hierarchy, thus defining its category and type. Classifying assets in Autodesk Tandem must be done on the Properties Type, rather than the Properties Element. After you have classified an asset, the parameters from the Eptura Facility Template will appear on the Properties panel as Eptura Identity Data for both Element and Type."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/4.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.5 Optional - Map the model parameters to Eptura Asset parameters; this is only required if there is a model data that you want to onboard to Eptura."
+        },
+        {
+          "type": "info",
+          "text": "When assets have been classified, model parameters can optionally be mapped to facility template parameters. Mapping model parameters will populate facility template parameters with model data, making that data available to the Eptura - Autodesk Tandem integration."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/5.png"
+        },
+        {
+          "type": "substep",
+          "text": "1.6 Create the Eptura Asset view."
+        },
+        {
+          "type": "info",
+          "text": "An Eptura Assets view is required for using the embedded Eptura Autodesk Tandem viewer. Configure the Filters so that all of the Sources are visible, as well as Classifications --> Fixed Assets. Turn all other content off. Save this as the default view for the Facility."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/6.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Configure the Digital Twin access for Eptura Asset"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 Create an Autodesk Server-to-Server Application at https://aps.autodesk.com/myapps"
+        },
+        {
+          "type": "info",
+          "text": "The Eptura Autodesk Tandem integration requires an application type of Server-to-Server."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/7.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Grant the Autodesk Application access to your Digital Twin."
+        },
+        {
+          "type": "info",
+          "text": "In User Management, add an API key with the ClientId of the application you created above. Grant the API key manage permissions required for the Eptura Autodesk Tandem integration."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/8.png"
+        },
+        {
+          "type": "info",
+          "text": "We're now ready to onboard your Tandem Digital Twin to Eptura Asset."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Onboard your Tandem Digital Twin to Eptura Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "After you have completed the prerequisites, then you can onboard your Tandem Digital Twin to Eptura Asset."
+        },
+        {
+          "type": "step",
+          "text": "1. Create the Location"
+        },
+        {
+          "type": "substep",
+          "text": "1.1 From the menu, navigate to Settings > Portfolio Manager."
+        },
+        {
+          "type": "info",
+          "text": "In Portfolio Manager, create the location (site, building, floor) that you will use as the destination for onboarded Tandem data. The Eptura Tandem integration requires site and building. The floors are optional and you can create floors as you need to during the Tandem Onboarding."
+        },
+        {
+          "type": "info",
+          "text": "For example:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/9.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Onboard the Tandem Facility"
+        },
+        {
+          "type": "substep",
+          "text": "2.1 From the menu, navigate to Settings."
+        },
+        {
+          "type": "substep",
+          "text": "2.2 Under the Tools and Support heading, click Autodesk Tandem."
+        },
+        {
+          "type": "info",
+          "text": "If this is your first time loading the Autodesk Tandem Connector, you will be prompted to provide your Tandem account credentials."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/10.png"
+        },
+        {
+          "type": "substep",
+          "text": "2.3 In the Client ID field and the Client Secret field, enter the Autodesk Platform Services API credentials that have access to the Tandem Facility."
+        },
+        {
+          "type": "substep",
+          "text": "2.4 Click the Save button and your Tandem credentials will be stored securely in the Eptura Tandem service."
+        },
+        {
+          "type": "step",
+          "text": "3. Map the Tandem Facility to the Eptura Building"
+        },
+        {
+          "type": "info",
+          "text": "With valid Tandem Account credentials provided, the controls on the Tandem Onboarding form will be enabled."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/11.png"
+        },
+        {
+          "type": "substep",
+          "text": "3.1 From the Tandem Facility drop-down, select the Tandem Facility you want to onboard."
+        },
+        {
+          "type": "substep",
+          "text": "3.2 From the Eptura Building drop-down, select the destination Eptura building."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/12.png"
+        },
+        {
+          "type": "substep",
+          "text": "3.3 Click the Map Levels to Floors button."
+        },
+        {
+          "type": "info",
+          "text": "The mapped levels and floors will be added to the Location Map grid. Each row of the grid displays the source facility-level, destination building-floor, as well as the space and asset count to be onboarded for each floor."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/14.png"
+        },
+        {
+          "type": "substep",
+          "text": "3.4 Map Tandem Facility Levels that you want to use to an Eptura building floor."
+        },
+        {
+          "type": "substep",
+          "text": "3.5 Click the Done button."
+        },
+        {
+          "type": "info",
+          "text": "The mapped levels and floors will be added to the Location Map grid. Each row of the grid displays the source facility-level, destination building-floor, as well as the space and asset count to be onboarded for each floor."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/15.png"
+        },
+        {
+          "type": "substep",
+          "text": "3.6 If you are satisfied with the Location Map, click the Complete Onboarding button to complete the onboarding process."
+        },
+        {
+          "type": "info",
+          "text": "The onboarding process will run in the background to onboard the space and asset data from Tandem to Eptura. You will be notified when the onboarding process is complete."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/16.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Manage Tandem Assets in Eptura Asset",
+      "content": [
+        {
+          "type": "info",
+          "text": "Assets that have been onboarded from Tandem are available in Eptura Assets."
+        },
+        {
+          "type": "step",
+          "text": "1. Navigate to the Assets module."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/16.png"
+        },
+        {
+          "type": "step",
+          "text": "2. From the list, click an asset and the Asset Details display."
+        },
+        {
+          "type": "step",
+          "text": "3. Click the Tandem Viewer icon to launch the viewer."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/17.png"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/18.png"
+        },
+        {
+          "type": "info",
+          "text": "The viewer will load the Tandem Facility and zoom to the highlighted asset."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/19.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Open Eptura Asset from Tandem",
+      "content": [
+        {
+          "type": "info",
+          "text": "When you are working in Autodesk Tandem, it is easy to open Eptura Asset and display the asset."
+        },
+        {
+          "type": "info",
+          "text": "From Tandem Facility, complete the following:"
+        },
+        {
+          "type": "step",
+          "text": "1. Under the Asset Properties, click the Eptura Asset URL."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/20.png"
+        },
+        {
+          "type": "step",
+          "text": "2. Then Eptura Asset opens and displays the asset."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/21.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Synchronize Assets between Eptura and Tandem",
+      "content": [
+        {
+          "type": "info",
+          "text": "After assets are onboarded from Tandem to Eptura, we can synchronize asset data changes bi-directionally between Eptura and Tandem. Asset data can be synchronized by floor or by building. Currently, synchronization is manually initiated from the Tandem configuration screen."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update Asset Details in Eptura",
+      "content": [
+        {
+          "type": "info",
+          "text": "After onboarding, updates to the following Eptura Asset fields can be synced back to Autodesk Tandem. asset id, asset description, manufacturer, model, status, location"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/22.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Update Asset Details in Tandem",
+      "content": [
+        {
+          "type": "info",
+          "text": "After onboarding, updates to the following Autodesk Tandem fields can be synced back to Eptura Asset. Eptura manufacturer, Eptura Model"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/23.png"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Sync Assets",
+      "content": [
+        {
+          "type": "info",
+          "text": "After onboarding, the Sync Building button and Sync Floor icon will be enabled in the Autodesk Tandem configuration page:"
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/24.png"
+        },
+        {
+          "type": "info",
+          "text": "Use Sync Building to sync all floors of a building. Use Sync Floor to sync an individual floor of a building."
+        },
+        {
+          "type": "info",
+          "text": "If there are data conflicts, due to changes being made in both Eptura Asset and Autodesk Tandem; e.g. Manufacturer was updated in both places, the changes made to Eptura Asset will persist."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Known Limitations",
+      "content": [
+        {
+          "type": "info",
+          "text": "Autodesk Tandem includes a concept of Element and Type Properties."
+        },
+        {
+          "type": "info",
+          "text": "From the Autodesk Knowledge Center: Each element of the model is an instance of a family type. Element parameters apply to all elements that belong to a particular family type, but the values of these parameters could be unique for each instance of the element. An example would be a serial number or installation date."
+        },
+        {
+          "type": "info",
+          "text": "For example, your BIM model may contain a number of pumps. There may be many different types of pumps of various manufacturers and models. A pump of a particular manufacturer (Bell & Gosset) and model (4GC) belong to single family type. Manufacturer and model are type properties and are the same for all instances of the element in the model. A pump may also have other properties like id, name, and serial number. These are element properties and can vary for each instance of the element in the model."
+        },
+        {
+          "type": "info",
+          "text": "When updating type properties like manufacturer and model in Autodesk Tandem, they will be updated for all instances of the element in the model. This data can then be synced to Eptura Asset."
+        },
+        {
+          "type": "info",
+          "text": "When updating type properties like manufacturer and model in Eptura Asset, they will be updated for a single instance of the asset. When this data is synced to Autodesk Tandem, it will result in updating the manufacturer and model for all instances of the type."
+        },
+        {
+          "type": "info",
+          "text": "Users should be aware of this behavior when updating manufacturer and model. Eptura is currently working with Autodesk on a solution to better address this in the future."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Eptura to Autodesk Tandem Data Mapping",
+      "content": [
+        {
+          "type": "info",
+          "text": "This section contains information about the data mapping between Eptura and Autodesk Tandem, as well as what behavior to expect when onboarding and syncing data."
+        },
+        {
+          "type": "info",
+          "text": "If you want a better table layout, then we recommend you click the left-menu toggle to turn off the menu and then the table displays wider."
+        },
+        {
+          "type": "media",
+          "path": "https://github.com/SavvyGaikwad/img/blob/main/Autodesk%20Tandem%20Integration/25.png"
+        },
+        {
+            "type": "info",
+            "text": "tenantId - is a compulsory field and should be unique - Tenant Id is generated during onboarding. e.g. 3fa85f64-5717-4562-b3fc-2c963f66afa6 - Onboard to Eptura"
+        },
+        {
+            "type": "info",
+            "text": "id - is a compulsory field and should be unique - Eptura Asset Id - Asset Id is generated during onboarding. e.g. b0d68775-ebea-4c67-8aa8-3d1a7c3e7387 - Onboard to Eptura, Onboard to Tandem"
+        },
+        {
+            "type": "info",
+            "text": "parentAssetType or category - is a compulsory field - Eptura Parent Asset Class Description - Derived from the Tandem classification e.g. Mechanical - Onboard to Eptura"
+        },
+        {
+            "type": "info",
+            "text": "assetType or subCategory - is a compulsory field - Eptura Asset Class Description - Derived from the Tandem classification e.g. Air Handling Unit - Onboard to Eptura"
+        },
+        {
+            "type": "info",
+            "text": "group - optional field - All assets are onboarded with the default group: Tandem Operations - Onboard to Eptura"
+        },
+        {
+            "type": "info",
+            "text": "assetIdentifier or assetId - is a compulsory field and should be unique - Eptura Asset Code - Asset Identifier is calculated during onboarding. e.g. LTU-RF-ME-AHU-0001 - Onboard to Eptura, Onboard to Tandem - Sync to Tandem"
+        },
+        {
+            "type": "info",
+            "text": "name or description - is a compulsory field and should be unique - Eptura Asset Name - Asset Name is calculated during onboarding. e.g. Air Handling Unit LTU-RF-ME-AHU-0001 - Onboard to Eptura, Onboard to Tandem - Sync to Tandem"
+        },
+        {
+            "type": "info",
+            "text": "manufacturer - optional field - Eptura Manufacturer - Manufacturer is created by Back sync service (if it doesn't exist) during onboarding. - Onboard to Eptura - Sync to Eptura, Sync to Tandem"
+        },
+        {
+            "type": "info",
+            "text": "model - optional field - Eptura Model No - Model is created by Back sync service (if it doesn't exist) during onboarding. - Onboard to Eptura - Sync to Eptura, Sync to Tandem"
+        },
+        {
+            "type": "info",
+            "text": "status - is a compulsory field - Eptura Status - Assets are onboarded with a default status: ACTIVE - Onboard to Tandem - Sync to Tandem"
+        },
+        {
+            "type": "info",
+            "text": "siteId - optional field - Site Id is looked up in the Location service during onboarding. - Onboard to Eptura"
+        },
+        {
+            "type": "info",
+            "text": "locationId - optional field - Eptura Location - Location Id is looked up in the Location service during onboarding. Tandem location is calculated after onboarding: Site Name | Building Name | Floor Name | Space Name - Onboard to Eptura, Onboard to Tandem - Sync to Tandem"
+        },
+        {
+            "type": "info",
+            "text": "integrationAssetId - is a compulsory field - Asset identifier in Tandem e.g. AAAAACDlEY_-C0j9gKJ98yROarkAIFWD - Onboard to Eptura"
+        },
+        {
+            "type": "info",
+            "text": "integrationGroupId - is a compulsory field - Asset Facility and Model Identifiers in Tandem e.g. urn:adsk.dtt:knSiBIexTACwnRyQHFaZJA;urn:adsk.dtm:Q80B32BqSFKqdv6Z49-78g - Onboard to Eptura"
+        },
+        {
+            "type": "info",
+            "text": "integrationType - is a compulsory field - Assets are onboarded with a default Integration Type of tandem. - Onboard to Eptura"
+        },
+        {
+            "type": "info",
+            "text": "Deep link to Eptura Asset Detail - optional field - Eptura Asset URL - The Eptura Asset URL is generated during onboarding. e.g. https://mycompany.managerpluscloud.com/lt/module/assets/b0d68775-ebea-4c67-8aa8-3d1a7c3e7387 - Onboard to Tandem"
+        }
+        ]
+    }
+    ]
+}
+      

@@ -1,0 +1,83 @@
+{
+  "document_title": "Vendor Import Template Data",
+  "content": [
+    {
+      "type": "section",
+      "title": "Data Columns",
+      "content": [
+        {
+          "type": "info",
+          "text": "Do not change the column headers in Row 1 as this is used to complete the upload."
+        },
+        {
+          "type": "info",
+          "text": "Vendor ID - Required field with maximum length of 100 characters - Unique identifier for a vendor"
+        },
+        {
+          "type": "info",
+          "text": "Vendor Name - Required field with maximum length of 50 characters- Full name of the vendor"
+        },
+        {
+          "type": "info",
+          "text": "Preferred Name - Optional field with maximum length of 50 characters."
+        },
+        {
+          "type": "info",
+          "text": "Vendor Type - Optional field with maximum length of 100 characters"
+        },
+        {
+          "type": "info",
+          "text": "Email Address - Required field with maximum length of 100 characters"
+        },
+        {
+          "type": "info",
+          "text": "URL - Optional  field with maximum length of 100 characters"
+        },
+        {
+          "type": "info",
+          "text": "Used in Work Orders - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Phone - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Address Line 1 - Optional field with maximum length of 50 characters."
+        },
+        {
+          "type": "info",
+          "text": "Address Line 2 - Optional field with maximum length of 50 characters."
+        },
+        {
+          "type": "info",
+          "text": "City - Optional field with maximum length of 30 characters"
+        },
+        {
+          "type": "info",
+          "text": "State/Province - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Zip/Postal - Optional field with maximum length of 16 characters"
+        },
+        {
+          "type": "info",
+          "text": "Status - Required field with maximum length of 24 characters"
+        },
+        {
+          "type": "info",
+          "text": "Lead Time (Days) - Optional"
+        },
+        {
+          "type": "info",
+          "text": "Labor Rate - Optional - Hourly rate the vendor charges if assigned labor on work orders"
+        },
+        {
+          "type": "info",
+          "text": "Default Sales Tax ID - Optional field with maximum length of 24 characters"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Python cache and environments
+__pycache__/
+*.pyc
+.venv/
+
+# Ignore Chroma vector DB files if too large
+comprehensive_vector_db/3d965b2a-4c1b-4a09-9e01-5a4b505675a5/
+comprehensive_vector_db/chroma.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db

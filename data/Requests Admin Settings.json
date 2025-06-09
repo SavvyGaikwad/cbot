@@ -1,0 +1,256 @@
+{
+  "document_title": "Requests Admin Settings",
+  "content": [
+    {
+      "type": "section",
+      "title": "Work Request Admin Settings",
+      "content": []
+    },
+    {
+      "type": "section",
+      "title": "Add or Edit Request Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "These fields are set up to be internal custom fields on a Request and these are global across all sites. You can set up an unlimited number of custom fields on Request, but on the Request Portal you can only show 4 custom fields."
+        },
+        {
+          "type": "info",
+          "text": "This article includes:"
+        },
+        {
+          "type": "step",
+          "text": "Access Request Settings"
+        },
+        {
+          "type": "info",
+          "text": "Add a Custom Field"
+        },
+        {
+          "type": "info",
+          "text": "Make a Custom Field Required or Optional"
+        },
+        {
+          "type": "info",
+          "text": "Reorder the Custom Fields"
+        },
+        {
+          "type": "info",
+          "text": "Remove a Custom Field"
+        },
+        {
+          "type": "info",
+          "text": "Add a New Custom Field"
+        },
+        {
+          "type": "info",
+          "text": "Edit an Existing Custom Field"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Access Request Settings",
+      "content": [
+        {
+          "type": "step",
+          "text": "From the menu click, Settings."
+        },
+        {
+          "type": "step",
+          "text": "Under the the Module Settings section, click  the Requests icon. The Request Settings screen displays."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a Custom Field",
+      "content": [
+        {
+          "type": "step",
+          "text": "From the Custom Fields section, click the + icon."
+        },
+        {
+          "type": "info",
+          "text": "The Custom Fields dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "From the list, select one or multiple custom fields."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add button."
+        },
+        {
+          "type": "info",
+          "text": "The custom field(s) are added."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Make a Custom Field Required or Optional",
+      "content": [
+        {
+          "type": "info",
+          "text": "The custom fields can be made required (mandatory) or optiional:"
+        },
+        {
+          "type": "step",
+          "text": "Click the Required checkbox to make the custom field mandatory."
+        },
+        {
+          "type": "step",
+          "text": "Check the Required On Completion checkbox to make the custom field mandatory on completion of the request."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reorder the Custom Fields",
+      "content": [
+        {
+          "type": "info",
+          "text": "Hover over the custom field."
+        },
+        {
+          "type": "info",
+          "text": "Click the double ellipsis icon and drag the custom field up or down to change the order."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Remove a Custom Field",
+      "content": [
+        {
+          "type": "step",
+          "text": "Click the X icon to remove the custom list from the list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Add a New Custom Field",
+      "content": [
+        {
+          "type": "info",
+          "text": "If you need a specific custom field that is not in the list, then you can create a new custom field."
+        },
+        {
+          "type": "step",
+          "text": "Click the New button and the New Custom Field dialog displays."
+        },
+        {
+          "type": "info",
+          "text": "Complete the following:"
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        },
+        {
+          "type": "info",
+          "text": "Now, you can add the custom field to the list."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Edit an Existing Custom Field",
+      "content": [
+        {
+          "type": "info",
+          "text": "A custom field must be removed from the Category, before it can be edited."
+        },
+        {
+          "type": "step",
+          "text": "From the Custom Field list, click the X icon on the desired Custom Field, to remove it from the Category."
+        },
+        {
+          "type": "step",
+          "text": "Click the Add  + icon. The Custom Fields dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "In the Search field, enter the custom field's name."
+        },
+        {
+          "type": "step",
+          "text": "Hover on the custom field and click the Edit   icon."
+        },
+        {
+          "type": "info",
+          "text": "The Edit Custom Field dialog displays."
+        },
+        {
+          "type": "step",
+          "text": "Edit the Name, Group, or (if applicable) the Lookup field."
+        },
+        {
+          "type": "info",
+          "text": "The Type cannot be edited.  After a Type is selected and saved, you cannot change that custom field to a different type."
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Set up Email Request Settings",
+      "content": [
+        {
+          "type": "info",
+          "text": "Work Requests through the application are a convenient way to keep everything in one place as they remove the need for pen and paper, no more writing requests on a notepad only to find that it was misplaced."
+        },
+        {
+          "type": "info",
+          "text": "This will help you:"
+        },
+        {
+          "type": "info",
+          "text": "Simplify submissions for Requesters"
+        },
+        {
+          "type": "info",
+          "text": "Allow users to submit Work Requests From Email"
+        },
+        {
+          "type": "info",
+          "text": "Easily verify which email addresses  have permissions to submit requests"
+        },
+        {
+          "type": "info",
+          "text": "A Work Request can be initiated via email by emailing the Email Address provided in the Email To Request Settings. This setting must be enabled to allow users to submit Work Requests via Email."
+        },
+        {
+          "type": "step",
+          "text": "From the menu click Settings and then under Module Settings, click Request."
+        },
+        {
+          "type": "step",
+          "text": "Click the Email Request tab."
+        },
+        {
+          "type": "info",
+          "text": "Complete the following settings:"
+        },
+        {
+          "type": "step",
+          "text": "Click the Save button to save the changes."
+        },
+        {
+          "type": "info",
+          "text": "Field | Description\nName | Enter the name of the custom field.\nGroup | Groups are only to help with organizing a lengthy list of Custom Fields.\nCreate/edit a Custom Field Group\nClick the Manage Groups button. \nBegin typing the name in the Add a Field Group  field.\nPress enter.\nDelete a Custom Field Group\nClick the Manage Groups  button. \nClick the Delete icon.\nType | This is the most important field when establishing a new custom field. \nIt determines how the custom field will behave.  When a Type is selected and saved, you cannot change to a different type. \nThe following options are:\nText:  Any character, letter, symbol, or number, can be typed in this field\nCheckbox:  Creates a Yes/No style checkbox \nInteger:  Only numbers can be entered\nDecimal:  Numbers with a decimal point can be entered\nDate:  MM/DD/YY\nLookup:  Creates a drop-down field, containing the options that may be selected from\nContact:  Creates a drop-down field that brings up the list of Employees, Vendors, Customers, Users\nCurrency:  Numbers entered will be preceded by your country's currency symbol"
+        },
+        {
+          "type": "info",
+          "text": "Setting | Description\nEnable Email To Requests toggle | Click the toggle to ON to allow the system to accept Work Requests submitted via email.\nEnable Unprocessed Auto Response toggle | Click the toggle to ON so that email requests that cannot be processed receive an automated response.\nIn the Unprocessed Email Auto Response field, enter the message to send back to the requester.\nEnable Processed Auto Response toggle | Click the toggle to ON so that email requests that can be processed will receive an automated response.\nIn the Process Email Auto Response field, enter message to send back to the requester.\nWhitelist Only toggle | Click the toggle to ON so that the email requests that are not whitelisted will not be processed.\nTo whitelist an email address, click the + icon button and then in the Email field, enter the email address; OR to whitelist a domain click the + icon button and then in the Domain field, enter the email's domain, for example eptura.com.\nDefault Entity drop-down | From the drop-down, select the site the email request will be directed to by default.\nValidation Tag field | Email validation is a method of verifying if an email received is valid and deliverable. It also confirms if an email address has a reliable domain, such as Gmail or Yahoo (not commonly used).\nEmail Address field | This is the unique email address for your organization. Emails sent here will become requests in Eptura Asset."
+        }
+      ]
+    }
+  ]
+}
