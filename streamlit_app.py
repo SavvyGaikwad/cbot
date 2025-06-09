@@ -12,6 +12,10 @@ except ImportError:
     print("pysqlite3 not available, using system sqlite3")
     pass
 
+# Set environment variables for better compatibility
+os.environ['TOKENIZERS_PARALLELISM'] = 'false'
+os.environ['TORCH_HOME'] = '/tmp/torch'
+
 # Now safe to import streamlit and other packages
 import streamlit as st
 import google.generativeai as genai
@@ -150,26 +154,60 @@ class ProfessionalChatbot:
     def setup_vector_db(self):
         """Initialize vector database with enhanced error handling"""
         try:
-            self.embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+            # Initialize embedding model with device management
+            self.embedding_model = HuggingFaceEmbeddings(
+                model_name="all-MiniLM-L6-v2",
+                model_kwargs={'device': 'cpu'},  # Force CPU usage
+                encode_kwargs={'normalize_embeddings': True}
+            )
             self.vector_db_path = "comprehensive_vector_db"
             
             # Check if the vector database directory exists
             if os.path.exists(self.vector_db_path):
                 try:
+                    # Initialize ChromaDB with compatibility settings
+                    import chromadb
+                    from chromadb.config import Settings
+                    
+                    # Create client with explicit settings for compatibility
+                    client = chromadb.PersistentClient(
+                        path=self.vector_db_path,
+                        settings=Settings(
+                            anonymized_telemetry=False,
+                            allow_reset=True
+                        )
+                    )
+                    
                     self.vector_db = Chroma(
-                        persist_directory=self.vector_db_path, 
+                        client=client,
                         embedding_function=self.embedding_model
                     )
+                    
                     status_text = "✅ Knowledge base connected" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました"
                     st.markdown(
                         f'<div class="status-indicator status-success">{status_text}</div>', 
                         unsafe_allow_html=True
                     )
                     logger.info(f"Vector database loaded from {self.vector_db_path}")
+                    
                 except Exception as db_error:
                     logger.error(f"Failed to load existing vector database: {db_error}")
-                    st.error("Failed to load existing knowledge base. Please contact system administrator.")
-                    st.stop()
+                    # Try fallback method for older ChromaDB versions
+                    try:
+                        self.vector_db = Chroma(
+                            persist_directory=self.vector_db_path, 
+                            embedding_function=self.embedding_model
+                        )
+                        status_text = "✅ Knowledge base connected (fallback mode)" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました（フォールバックモード）"
+                        st.markdown(
+                            f'<div class="status-indicator status-success">{status_text}</div>', 
+                            unsafe_allow_html=True
+                        )
+                        logger.info(f"Vector database loaded using fallback method")
+                    except Exception as fallback_error:
+                        logger.error(f"Fallback method also failed: {fallback_error}")
+                        st.error("Failed to load existing knowledge base. Please contact system administrator.")
+                        st.stop()
             else:
                 error_text = "Knowledge base not found. Please contact system administrator." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースが見つかりません。システム管理者にお問い合わせください。"
                 st.error(error_text)
