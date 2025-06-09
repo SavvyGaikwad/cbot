@@ -16,11 +16,22 @@ except ImportError:
 os.environ['TOKENIZERS_PARALLELISM'] = 'false'
 os.environ['TORCH_HOME'] = '/tmp/torch'
 
+# Fix numpy compatibility issues for older chromadb versions
+try:
+    import numpy as np
+    # Add missing attributes for backward compatibility
+    if not hasattr(np, 'uint'):
+        np.uint = np.uint64
+    if not hasattr(np, 'int_'):
+        np.int_ = np.int64
+    if not hasattr(np, 'float_'):
+        np.float_ = np.float64
+except ImportError:
+    pass
+
 # Now safe to import streamlit and other packages
 import streamlit as st
 import google.generativeai as genai
-from langchain_chroma import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
 from PIL import Image
 import requests
 from io import BytesIO
@@ -28,6 +39,15 @@ from pathlib import Path
 import logging
 from datetime import datetime
 import time
+
+# Import ChromaDB and LangChain components with error handling
+try:
+    from langchain_chroma import Chroma
+    from langchain_huggingface import HuggingFaceEmbeddings
+    VECTOR_DB_AVAILABLE = True
+except ImportError as e:
+    VECTOR_DB_AVAILABLE = False
+    print(f"Vector database components not available: {e}")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -114,6 +134,11 @@ st.markdown("""
         color: #0c5460;
     }
     
+    .status-error {
+        background: #f8d7da;
+        color: #721c24;
+    }
+    
     .divider {
         height: 1px;
         background: linear-gradient(90deg, transparent, #ddd, transparent);
@@ -153,6 +178,15 @@ class ProfessionalChatbot:
     
     def setup_vector_db(self):
         """Initialize vector database with enhanced error handling"""
+        if not VECTOR_DB_AVAILABLE:
+            st.markdown(
+                '<div class="status-indicator status-error">⚠️ Vector database unavailable - running in limited mode</div>', 
+                unsafe_allow_html=True
+            )
+            self.vector_db = None
+            self.embedding_model = None
+            return
+            
         try:
             # Initialize embedding model with device management
             self.embedding_model = HuggingFaceEmbeddings(
@@ -206,19 +240,28 @@ class ProfessionalChatbot:
                         logger.info(f"Vector database loaded using fallback method")
                     except Exception as fallback_error:
                         logger.error(f"Fallback method also failed: {fallback_error}")
-                        st.error("Failed to load existing knowledge base. Please contact system administrator.")
-                        st.stop()
+                        st.markdown(
+                            '<div class="status-indicator status-error">⚠️ Knowledge base connection failed - running in AI-only mode</div>', 
+                            unsafe_allow_html=True
+                        )
+                        self.vector_db = None
             else:
-                error_text = "Knowledge base not found. Please contact system administrator." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースが見つかりません。システム管理者にお問い合わせください。"
-                st.error(error_text)
-                logger.error(f"Vector database not found at {self.vector_db_path}")
-                st.stop()
+                error_text = "Knowledge base not found - running in AI-only mode" if st.session_state.get('language', 'English') == 'English' else "ナレッジベースが見つかりません - AI専用モードで実行中"
+                st.markdown(
+                    f'<div class="status-indicator status-info">ℹ️ {error_text}</div>', 
+                    unsafe_allow_html=True
+                )
+                logger.info(f"Vector database not found at {self.vector_db_path}")
+                self.vector_db = None
                 
         except Exception as e:
-            error_text = "Failed to connect to knowledge base." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースへの接続に失敗しました。"
-            st.error(error_text)
+            error_text = "Failed to connect to knowledge base - running in AI-only mode" if st.session_state.get('language', 'English') == 'English' else "ナレッジベースへの接続に失敗しました - AI専用モードで実行中"
+            st.markdown(
+                f'<div class="status-indicator status-info">ℹ️ {error_text}</div>', 
+                unsafe_allow_html=True
+            )
             logger.error(f"Vector database initialization error: {e}")
-            st.stop()
+            self.vector_db = None
     
     def initialize_session_state(self):
         """Initialize session state variables"""
@@ -234,8 +277,8 @@ class ProfessionalChatbot:
         self.language_config = {
             'English': {
                 'title': 'Document Intelligence Assistant',
-                'subtitle': 'Get instant answers from your organization\'s knowledge base',
-                'input_placeholder': 'Ask me anything about your documents:',
+                'subtitle': 'Get instant answers with AI assistance',
+                'input_placeholder': 'Ask me anything:',
                 'ask_button': '🔍 Ask Question',
                 'new_chat': '🔄 New Chat',
                 'clear_history': '🗑️ Clear Chat History',
@@ -248,8 +291,8 @@ class ProfessionalChatbot:
                 'visual_resources_metric': 'Visual Resources',
                 'source_documents': 'Source Documents',
                 'searching': 'Searching knowledge base...',
-                'analyzing': 'Analyzing documents and generating response...',
-                'no_docs_found': 'No relevant documents found. Please try rephrasing your question.',
+                'analyzing': 'Analyzing and generating response...',
+                'no_docs_found': 'No relevant documents found in knowledge base. Generating AI response...',
                 'enter_question': 'Please enter a question to get started.',
                 'processing_error': 'An error occurred while processing your request. Please try again.',
                 'examples': [
@@ -263,8 +306,8 @@ class ProfessionalChatbot:
             },
             'Japanese': {
                 'title': 'ドキュメント インテリジェンス アシスタント',
-                'subtitle': '組織のナレッジベースから即座に回答を取得',
-                'input_placeholder': 'ドキュメントについて何でもお聞きください：',
+                'subtitle': 'AIアシスタンスで即座に回答を取得',
+                'input_placeholder': 'なんでもお聞きください：',
                 'ask_button': '🔍 質問する',
                 'new_chat': '🔄 新しいチャット',
                 'clear_history': '🗑️ 履歴をクリア',
@@ -277,8 +320,8 @@ class ProfessionalChatbot:
                 'visual_resources_metric': 'ビジュアルリソース',
                 'source_documents': 'ソースドキュメント',
                 'searching': 'ナレッジベースを検索中...',
-                'analyzing': 'ドキュメントを分析して回答を生成中...',
-                'no_docs_found': '関連するドキュメントが見つかりませんでした。質問を言い換えてみてください。',
+                'analyzing': '分析して回答を生成中...',
+                'no_docs_found': 'ナレッジベースに関連するドキュメントが見つかりませんでした。AI回答を生成中...',
                 'enter_question': '開始するには質問を入力してください。',
                 'processing_error': 'リクエストの処理中にエラーが発生しました。再試行してください。',
                 'examples': [
@@ -336,6 +379,9 @@ class ProfessionalChatbot:
 
     def extract_images_from_documents(self, docs, max_images=3):
         """Extract images from retrieved documents"""
+        if not docs:
+            return []
+            
         all_images = []
         seen_images = set()
         
@@ -359,29 +405,30 @@ class ProfessionalChatbot:
         
         return all_images
 
-    def generate_response(self, query, docs):
-        """Generate AI response from documents"""
-        # Build context from documents
-        context_parts = []
-        for i, doc in enumerate(docs):
-            metadata = doc.metadata if hasattr(doc, 'metadata') else {}
-            source = metadata.get('source', 'Document')
-            doc_title = metadata.get('document_title', source)
-            section = metadata.get('section', '')
-            doc_type = metadata.get('document_type', 'Content')
+    def generate_response(self, query, docs=None):
+        """Generate AI response from documents or direct AI response"""
+        if docs and len(docs) > 0:
+            # Build context from documents
+            context_parts = []
+            for i, doc in enumerate(docs):
+                metadata = doc.metadata if hasattr(doc, 'metadata') else {}
+                source = metadata.get('source', 'Document')
+                doc_title = metadata.get('document_title', source)
+                section = metadata.get('section', '')
+                doc_type = metadata.get('document_type', 'Content')
+                
+                header = f"[Source {i+1}: {doc_title}"
+                if section:
+                    header += f" - {section}"
+                header += f" ({doc_type})]"
+                
+                context_parts.append(f"{header}\n{doc.page_content}")
             
-            header = f"[Source {i+1}: {doc_title}"
-            if section:
-                header += f" - {section}"
-            header += f" ({doc_type})]"
-            
-            context_parts.append(f"{header}\n{doc.page_content}")
-        
-        context = "\n\n---\n\n".join(context_parts)
+            context = "\n\n---\n\n".join(context_parts)
 
-        # Create language-specific prompt
-        if st.session_state.language == 'Japanese':
-            prompt = f"""
+            # Create language-specific prompt with context
+            if st.session_state.language == 'Japanese':
+                prompt = f"""
 プロフェッショナルなドキュメントアシスタントとして、提供されたコンテキストに基づいて包括的で正確な回答を日本語で提供してください。
 
 ガイドライン:
@@ -401,8 +448,8 @@ class ProfessionalChatbot:
 
 ソース引用なしで詳細なプロフェッショナルな回答を日本語で提供してください:
 """
-        else:
-            prompt = f"""
+            else:
+                prompt = f"""
 As a professional document assistant, provide a comprehensive and accurate answer based on the provided context.
 
 Guidelines:
@@ -422,6 +469,40 @@ User Question: {query}
 
 Please provide a detailed, professional response without any source citations:
 """
+        else:
+            # Generate direct AI response without document context
+            if st.session_state.language == 'Japanese':
+                prompt = f"""
+プロフェッショナルなAIアシスタントとして、以下の質問に包括的で正確な回答を日本語で提供してください。
+
+ガイドライン:
+- 明確でプロフェッショナルな日本語を使用する
+- 回答を論理的に構成し、適切な書式設定を行う
+- 可能な場合は実用的なガイダンスを提供する
+- ステップバイステップの指示には箇条書きや番号付きリストを使用する
+- 会話的でありながらプロフェッショナルな回答を維持する
+- 情報が不確実な場合は制限を認める
+
+ユーザーの質問: {query}
+
+詳細なプロフェッショナルな回答を日本語で提供してください:
+"""
+            else:
+                prompt = f"""
+As a professional AI assistant, provide a comprehensive and accurate answer to the following question.
+
+Guidelines:
+- Use clear, professional language
+- Structure your response logically with proper formatting
+- Provide actionable guidance when possible
+- Use bullet points or numbered lists for step-by-step instructions
+- Keep responses conversational yet professional
+- If information is uncertain, acknowledge limitations
+
+User Question: {query}
+
+Please provide a detailed, professional response:
+"""
 
         try:
             response = self.model.generate_content(prompt)
@@ -439,17 +520,23 @@ Please provide a detailed, professional response without any source citations:
                 container = st.container()
             
             with container:
-                # Search documents - using default k value instead of hardcoded 50
-                with st.spinner(self.get_text('searching')):
-                    docs = self.vector_db.similarity_search(query, k=10)  # Changed from k=50 to k=10
+                docs = []
+                images = []
                 
-                if not docs:
-                    st.warning(self.get_text('no_docs_found'))
-                    return
+                # Search documents if vector DB is available
+                if self.vector_db is not None:
+                    with st.spinner(self.get_text('searching')):
+                        docs = self.vector_db.similarity_search(query, k=10)
+                    
+                    if not docs:
+                        st.info(self.get_text('no_docs_found'))
+                    
+                    # Extract images from documents
+                    images = self.extract_images_from_documents(docs, max_images=3)
                 
-                # Generate response
+                # Generate response (with or without document context)
                 with st.spinner(self.get_text('analyzing')):
-                    response_text = self.generate_response(query, docs)
+                    response_text = self.generate_response(query, docs if docs else None)
                 
                 # Display response
                 st.markdown('<div class="response-container">', unsafe_allow_html=True)
@@ -457,8 +544,7 @@ Please provide a detailed, professional response without any source citations:
                 st.write(response_text)
                 st.markdown('</div>', unsafe_allow_html=True)
                 
-                # Display images - hardcoded to max 3 images
-                images = self.extract_images_from_documents(docs, max_images=3)
+                # Display images if available
                 if images:
                     st.markdown(self.get_text('visual_resources'))
                     cols = st.columns(min(len(images), 3))
