@@ -1,7 +1,8 @@
 import streamlit as st
 import google.generativeai as genai
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+# Updated imports to fix deprecation warnings
+from langchain_chroma import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
 from PIL import Image
 import requests
 from io import BytesIO
@@ -10,6 +11,15 @@ from pathlib import Path
 import logging
 from datetime import datetime
 import time
+
+# SQLite fix for ChromaDB
+import sys
+import sqlite3
+try:
+    import pysqlite3
+    sys.modules['sqlite3'] = pysqlite3
+except ImportError:
+    pass
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -123,7 +133,9 @@ class ProfessionalChatbot:
     def setup_genai(self):
         """Initialize Gemini AI model"""
         try:
-            genai.configure(api_key="AIzaSyAvzloY_NyX-yjtZb8EE_RdXPs3rPmMEso")
+            # Use Streamlit secrets for API key (more secure)
+            api_key = st.secrets.get("GEMINI_API_KEY") or "AIzaSyAvzloY_NyX-yjtZb8EE_RdXPs3rPmMEso"
+            genai.configure(api_key=api_key)
             self.model = genai.GenerativeModel(model_name="gemini-1.5-flash")
             logger.info("Gemini AI model initialized successfully")
         except Exception as e:
