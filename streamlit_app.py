@@ -123,13 +123,7 @@ class ProfessionalChatbot:
     def setup_genai(self):
         """Initialize Gemini AI model"""
         try:
-            # Use Streamlit secrets for API key instead of hardcoding
-            api_key = st.secrets.get("GEMINI_API_KEY", os.getenv("GEMINI_API_KEY"))
-            if not api_key:
-                st.error("⚠️ API key not found. Please set GEMINI_API_KEY in Streamlit secrets or environment variables.")
-                st.stop()
-            
-            genai.configure(api_key=api_key)
+            genai.configure(api_key="AIzaSyAvzloY_NyX-yjtZb8EE_RdXPs3rPmMEso")
             self.model = genai.GenerativeModel(model_name="gemini-1.5-flash")
             logger.info("Gemini AI model initialized successfully")
         except Exception as e:
@@ -140,50 +134,25 @@ class ProfessionalChatbot:
     def setup_vector_db(self):
         """Initialize vector database"""
         try:
-            # Initialize embedding model with error handling
-            try:
-                self.embedding_model = HuggingFaceEmbeddings(
-                    model_name="all-MiniLM-L6-v2",
-                    model_kwargs={'device': 'cpu'},  # Force CPU for cloud deployment
-                    encode_kwargs={'normalize_embeddings': True}
-                )
-            except Exception as e:
-                logger.error(f"Failed to load embedding model: {e}")
-                st.error("Failed to load embedding model. This might be due to memory constraints.")
-                st.stop()
-            
+            self.embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
             self.vector_db_path = "comprehensive_vector_db"
             
-            # Check if vector database exists
-            if os.path.exists(self.vector_db_path) and os.listdir(self.vector_db_path):
-                try:
-                    self.vector_db = Chroma(
-                        persist_directory=self.vector_db_path, 
-                        embedding_function=self.embedding_model
-                    )
-                    # Test the database
-                    test_docs = self.vector_db.similarity_search("test", k=1)
-                    status_text = "✅ Knowledge base connected" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました"
-                    st.markdown(
-                        f'<div class="status-indicator status-success">{status_text}</div>', 
-                        unsafe_allow_html=True
-                    )
-                    logger.info(f"Vector database loaded from {self.vector_db_path}")
-                except Exception as e:
-                    logger.error(f"Failed to load vector database: {e}")
-                    st.error("Failed to load knowledge base. Database may be corrupted.")
-                    st.stop()
+            if os.path.exists(self.vector_db_path):
+                self.vector_db = Chroma(
+                    persist_directory=self.vector_db_path, 
+                    embedding_function=self.embedding_model
+                )
+                status_text = "✅ Knowledge base connected" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました"
+                st.markdown(
+                    f'<div class="status-indicator status-success">{status_text}</div>', 
+                    unsafe_allow_html=True
+                )
+                logger.info(f"Vector database loaded from {self.vector_db_path}")
             else:
                 error_text = "Knowledge base not found. Please contact system administrator." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースが見つかりません。システム管理者にお問い合わせください。"
                 st.error(error_text)
                 logger.error(f"Vector database not found at {self.vector_db_path}")
-                
-                # Show debug information
-                st.info(f"Looking for database at: {os.path.abspath(self.vector_db_path)}")
-                st.info(f"Current directory: {os.getcwd()}")
-                st.info(f"Files in current directory: {os.listdir('.')}")
                 st.stop()
-                
         except Exception as e:
             error_text = "Failed to connect to knowledge base." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースへの接続に失敗しました。"
             st.error(error_text)
@@ -292,18 +261,11 @@ class ProfessionalChatbot:
                     </div>
                     """, unsafe_allow_html=True)
                 else:
-                    # Add timeout and error handling for requests
-                    response = requests.get(raw_url, timeout=10, stream=True)
+                    response = requests.get(raw_url, timeout=10)
                     response.raise_for_status()
                     img = Image.open(BytesIO(response.content))
                     st.image(img, use_column_width=True)
             return True
-        except requests.exceptions.Timeout:
-            logger.error(f"Image request timeout: {image_url}")
-            with container:
-                error_text = "Image loading timeout" if st.session_state.language == 'English' else "画像の読み込みがタイムアウトしました"
-                st.warning(error_text)
-            return False
         except Exception as e:
             logger.error(f"Image display error: {e}")
             with container:
@@ -416,9 +378,9 @@ Please provide a detailed, professional response without any source citations:
                 container = st.container()
             
             with container:
-                # Search documents
+                # Search documents - using default k value instead of hardcoded 50
                 with st.spinner(self.get_text('searching')):
-                    docs = self.vector_db.similarity_search(query, k=10)
+                    docs = self.vector_db.similarity_search(query, k=10)  # Changed from k=50 to k=10
                 
                 if not docs:
                     st.warning(self.get_text('no_docs_found'))
@@ -434,7 +396,7 @@ Please provide a detailed, professional response without any source citations:
                 st.write(response_text)
                 st.markdown('</div>', unsafe_allow_html=True)
                 
-                # Display images
+                # Display images - hardcoded to max 3 images
                 images = self.extract_images_from_documents(docs, max_images=3)
                 if images:
                     st.markdown(self.get_text('visual_resources'))
@@ -539,7 +501,7 @@ Please provide a detailed, professional response without any source citations:
                     st.session_state.chat_history = []
                     st.rerun()
         
-        # Response area container
+        # Response area container - positioned directly after input
         response_container = st.container()
         
         # Process query from input box
@@ -577,15 +539,6 @@ def main():
         error_text = "Failed to initialize the application. Please contact support." if st.session_state.get('language', 'English') == 'English' else "アプリケーションの初期化に失敗しました。サポートにお問い合わせください。"
         st.error(error_text)
         logger.error(f"Application initialization error: {e}")
-        
-        # Show debug information
-        st.error(f"Error details: {str(e)}")
-        st.info("Debug information:")
-        st.write(f"Current working directory: {os.getcwd()}")
-        try:
-            st.write(f"Files in directory: {os.listdir('.')}")
-        except:
-            st.write("Cannot list directory contents")
 
 if __name__ == "__main__":
     main()
