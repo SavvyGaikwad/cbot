@@ -4,3 +4,4 @@ langchain-community
 Pillow
 requests
 chromadb
+sentence-transformers
