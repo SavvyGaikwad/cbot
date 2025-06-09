@@ -12,22 +12,28 @@ except ImportError:
     print("pysqlite3 not available, using system sqlite3")
     pass
 
-# Set environment variables for better compatibility
-os.environ['TOKENIZERS_PARALLELISM'] = 'false'
-os.environ['TORCH_HOME'] = '/tmp/torch'
-
-# Fix numpy compatibility issues for older chromadb versions
+# CRITICAL: Fix numpy compatibility issues BEFORE any imports that use numpy
 try:
     import numpy as np
-    # Add missing attributes for backward compatibility
+    # Add missing attributes for backward compatibility with NumPy 2.0
     if not hasattr(np, 'uint'):
         np.uint = np.uint64
     if not hasattr(np, 'int_'):
         np.int_ = np.int64
     if not hasattr(np, 'float_'):
         np.float_ = np.float64
+    if not hasattr(np, 'bool_'):
+        np.bool_ = bool
+    if not hasattr(np, 'complex_'):
+        np.complex_ = np.complex128
+    print("NumPy compatibility patches applied successfully")
 except ImportError:
+    print("NumPy not available, skipping compatibility patches")
     pass
+
+# Set environment variables for better compatibility
+os.environ['TOKENIZERS_PARALLELISM'] = 'false'
+os.environ['TORCH_HOME'] = '/tmp/torch'
 
 # Now safe to import streamlit and other packages
 import streamlit as st
@@ -45,6 +51,7 @@ try:
     from langchain_chroma import Chroma
     from langchain_huggingface import HuggingFaceEmbeddings
     VECTOR_DB_AVAILABLE = True
+    print("ChromaDB and LangChain components imported successfully")
 except ImportError as e:
     VECTOR_DB_AVAILABLE = False
     print(f"Vector database components not available: {e}")
@@ -582,7 +589,7 @@ Please provide a detailed, professional response:
             language_options = {'English': '🇺🇸 English', 'Japanese': '🇯🇵 日本語'}
             
             new_language = st.selectbox(
-                "",
+                "Select Language",
                 options=list(language_options.keys()),
                 format_func=lambda x: language_options[x],
                 index=0 if st.session_state.language == 'English' else 1,
@@ -635,7 +642,7 @@ Please provide a detailed, professional response:
         # Main query interface
         with st.container():
             query = st.text_input(
-                "",
+                "Enter your question:",
                 placeholder=self.get_text('input_placeholder'),
                 key="main_query"
             )
