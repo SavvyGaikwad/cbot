@@ -1,31 +1,35 @@
+# CRITICAL: SQLite fix MUST be at the very top, before ANY imports including streamlit
+import sys
+import os
+
+# Force pysqlite3 to replace sqlite3 before any other imports
+try:
+    __import__('pysqlite3')
+    import pysqlite3
+    sys.modules['sqlite3'] = pysqlite3
+    print("Successfully replaced sqlite3 with pysqlite3")
+except ImportError:
+    print("pysqlite3 not available, using system sqlite3")
+    pass
+
+# Now safe to import streamlit and other packages
 import streamlit as st
 import google.generativeai as genai
-# Updated imports to fix deprecation warnings
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from PIL import Image
 import requests
 from io import BytesIO
-import os
 from pathlib import Path
 import logging
 from datetime import datetime
 import time
 
-# SQLite fix for ChromaDB
-import sys
-import sqlite3
-try:
-    import pysqlite3
-    sys.modules['sqlite3'] = pysqlite3
-except ImportError:
-    pass
-
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# MUST BE FIRST: Configure Streamlit page
+# Configure Streamlit page
 st.set_page_config(
     page_title="Document Intelligence Assistant",
     page_icon="🤖",
@@ -144,27 +148,34 @@ class ProfessionalChatbot:
             st.stop()
     
     def setup_vector_db(self):
-        """Initialize vector database"""
+        """Initialize vector database with enhanced error handling"""
         try:
             self.embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
             self.vector_db_path = "comprehensive_vector_db"
             
+            # Check if the vector database directory exists
             if os.path.exists(self.vector_db_path):
-                self.vector_db = Chroma(
-                    persist_directory=self.vector_db_path, 
-                    embedding_function=self.embedding_model
-                )
-                status_text = "✅ Knowledge base connected" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました"
-                st.markdown(
-                    f'<div class="status-indicator status-success">{status_text}</div>', 
-                    unsafe_allow_html=True
-                )
-                logger.info(f"Vector database loaded from {self.vector_db_path}")
+                try:
+                    self.vector_db = Chroma(
+                        persist_directory=self.vector_db_path, 
+                        embedding_function=self.embedding_model
+                    )
+                    status_text = "✅ Knowledge base connected" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました"
+                    st.markdown(
+                        f'<div class="status-indicator status-success">{status_text}</div>', 
+                        unsafe_allow_html=True
+                    )
+                    logger.info(f"Vector database loaded from {self.vector_db_path}")
+                except Exception as db_error:
+                    logger.error(f"Failed to load existing vector database: {db_error}")
+                    st.error("Failed to load existing knowledge base. Please contact system administrator.")
+                    st.stop()
             else:
                 error_text = "Knowledge base not found. Please contact system administrator." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースが見つかりません。システム管理者にお問い合わせください。"
                 st.error(error_text)
                 logger.error(f"Vector database not found at {self.vector_db_path}")
                 st.stop()
+                
         except Exception as e:
             error_text = "Failed to connect to knowledge base." if st.session_state.get('language', 'English') == 'English' else "ナレッジベースへの接続に失敗しました。"
             st.error(error_text)
