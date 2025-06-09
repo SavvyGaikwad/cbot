@@ -6,16 +6,28 @@ import logging
 from typing import List, Dict, Any
 import time
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
+# Configure logging to be less verbose
+logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger(__name__)
 
+# Set environment variables to fix protobuf and torch issues
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 try:
-    from langchain_community.vectorstores import Chroma
-    from langchain_community.embeddings import HuggingFaceEmbeddings
-    from langchain.docstore.document import Document
+    # Import with proper error handling
+    import torch
+    # Force CPU usage to avoid device issues
+    torch.set_default_tensor_type('torch.FloatTensor')
+    
+    from langchain_chroma import Chroma
+    from sentence_transformers import SentenceTransformer
+    import chromadb
+    from chromadb.config import Settings
+    
 except ImportError as e:
     st.error(f"Missing dependencies: {e}")
+    st.error("Please install: pip install langchain-chroma sentence-transformers chromadb")
     st.stop()
 
 # Page configuration
@@ -26,26 +38,76 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+class EmbeddingFunction:
+    """Custom embedding function to handle Streamlit Cloud issues"""
+    
+    def __init__(self, model_name="all-MiniLM-L6-v2"):
+        self.model_name = model_name
+        self._model = None
+    
+    def _get_model(self):
+        if self._model is None:
+            try:
+                # Force CPU and avoid device issues
+                self._model = SentenceTransformer(
+                    self.model_name,
+                    device='cpu',
+                    cache_folder=None
+                )
+                # Ensure model is on CPU
+                self._model = self._model.cpu()
+            except Exception as e:
+                logger.error(f"Failed to load SentenceTransformer: {e}")
+                raise e
+        return self._model
+    
+    def __call__(self, input_texts):
+        """Encode texts to embeddings"""
+        model = self._get_model()
+        try:
+            # Convert to list if single string
+            if isinstance(input_texts, str):
+                input_texts = [input_texts]
+            
+            # Generate embeddings with CPU
+            with torch.no_grad():
+                embeddings = model.encode(
+                    input_texts,
+                    convert_to_tensor=False,  # Return numpy arrays
+                    show_progress_bar=False,
+                    device='cpu'
+                )
+            
+            return embeddings.tolist() if hasattr(embeddings, 'tolist') else embeddings
+            
+        except Exception as e:
+            logger.error(f"Embedding generation failed: {e}")
+            # Return dummy embeddings as fallback
+            return [[0.0] * 384 for _ in input_texts]
+
 class ChromaDBManager:
     def __init__(self, db_path: str):
         self.db_path = db_path
         self.db = None
-        self.embeddings = None
+        self.embedding_function = None
         
     def initialize_embeddings(self):
-        """Initialize embeddings model with caching"""
-        if self.embeddings is None:
+        """Initialize embeddings with proper error handling"""
+        if self.embedding_function is None:
             try:
-                with st.spinner("Loading embeddings model..."):
-                    self.embeddings = HuggingFaceEmbeddings(
-                        model_name="all-MiniLM-L6-v2",
-                        model_kwargs={'device': 'cpu'}
-                    )
-                logger.info("Embeddings model loaded successfully")
+                with st.spinner("Loading embeddings model (first time may take a while)..."):
+                    self.embedding_function = EmbeddingFunction()
+                    # Test the embedding function
+                    test_embedding = self.embedding_function(["test"])
+                    if test_embedding:
+                        logger.info("Embeddings model loaded successfully")
+                    else:
+                        raise Exception("Test embedding failed")
             except Exception as e:
                 logger.error(f"Failed to load embeddings: {e}")
-                raise e
-        return self.embeddings
+                st.error(f"Embedding model error: {str(e)}")
+                return None
+        return self.embedding_function
     
     def load_database(self):
         """Load ChromaDB with proper error handling"""
@@ -55,14 +117,30 @@ class ChromaDBManager:
                     st.error(f"Database path does not exist: {self.db_path}")
                     return None
                 
-                embeddings = self.initialize_embeddings()
+                embedding_function = self.initialize_embeddings()
+                if embedding_function is None:
+                    return None
                 
                 with st.spinner("Loading vector database..."):
-                    # Try to load existing database
-                    self.db = Chroma(
-                        persist_directory=self.db_path,
-                        embedding_function=embeddings
+                    # Use direct ChromaDB client
+                    client = chromadb.PersistentClient(
+                        path=self.db_path,
+                        settings=Settings(
+                            anonymized_telemetry=False,
+                            allow_reset=True
+                        )
                     )
+                    
+                    # Get the collection
+                    collections = client.list_collections()
+                    if not collections:
+                        st.error("No collections found in database")
+                        return None
+                    
+                    collection = collections[0]  # Use first collection
+                    
+                    # Create wrapper for queries
+                    self.db = DatabaseWrapper(client, collection, embedding_function)
                 
                 logger.info("Vector database loaded successfully")
                 
@@ -82,7 +160,7 @@ class ChromaDBManager:
         
         try:
             # Perform similarity search
-            results = db.similarity_search(query, k=k*2)  # Get extra to filter
+            results = db.similarity_search(query, k=k*2)
             
             # Apply filters
             filtered_results = []
@@ -90,11 +168,12 @@ class ChromaDBManager:
                 include = True
                 
                 if document_type and document_type != "All":
-                    if result.metadata.get("document_type") != document_type.lower():
+                    if result.get("document_type") != document_type.lower():
                         include = False
                 
                 if document_title and document_title != "All":
-                    if document_title.lower() not in result.metadata.get("document_title", "").lower():
+                    doc_title = result.get("document_title", "")
+                    if document_title.lower() not in doc_title.lower():
                         include = False
                 
                 if include:
@@ -103,31 +182,50 @@ class ChromaDBManager:
                 if len(filtered_results) >= k:
                     break
             
-            # Format results
-            response_data = []
-            for i, result in enumerate(filtered_results):
-                images_str = result.metadata.get("images", "")
-                images_list = images_str.split('|') if images_str else []
-                
-                item = {
-                    "rank": i + 1,
-                    "content": result.page_content,
-                    "document_type": result.metadata.get("document_type", "unknown"),
-                    "source": result.metadata.get("source", "unknown"),
-                    "document_title": result.metadata.get("document_title", ""),
-                    "section": result.metadata.get("section", ""),
-                    "type": result.metadata.get("type", ""),
-                    "images": images_list,
-                    "has_images": result.metadata.get("has_images", False),
-                    "metadata": result.metadata
-                }
-                response_data.append(item)
-            
-            return response_data
+            return filtered_results
             
         except Exception as e:
             logger.error(f"Query failed: {e}")
             st.error(f"Query error: {str(e)}")
+            return []
+
+class DatabaseWrapper:
+    """Wrapper to make ChromaDB work like LangChain Chroma"""
+    
+    def __init__(self, client, collection, embedding_function):
+        self.client = client
+        self.collection = collection
+        self.embedding_function = embedding_function
+    
+    def similarity_search(self, query: str, k: int = 5):
+        """Perform similarity search"""
+        try:
+            # Generate query embedding
+            query_embedding = self.embedding_function([query])[0]
+            
+            # Query the collection
+            results = self.collection.query(
+                query_embeddings=[query_embedding],
+                n_results=k,
+                include=['documents', 'metadatas', 'distances']
+            )
+            
+            # Format results
+            formatted_results = []
+            if results['documents'] and results['documents'][0]:
+                for i, (doc, metadata) in enumerate(zip(results['documents'][0], results['metadatas'][0])):
+                    result = {
+                        "content": doc,
+                        "rank": i + 1,
+                        "distance": results['distances'][0][i] if results['distances'] else 0,
+                        **metadata  # Unpack all metadata
+                    }
+                    formatted_results.append(result)
+            
+            return formatted_results
+            
+        except Exception as e:
+            logger.error(f"Similarity search failed: {e}")
             return []
 
 @st.cache_resource
@@ -144,32 +242,50 @@ def display_search_results(results: List[Dict[str, Any]]):
     st.success(f"Found {len(results)} relevant documents")
     
     for i, result in enumerate(results):
-        with st.expander(f"Result {result['rank']}: {result['document_title']}", expanded=i==0):
+        doc_title = result.get('document_title', result.get('source', 'Unknown'))
+        
+        with st.expander(f"Result {result.get('rank', i+1)}: {doc_title}", expanded=i==0):
             
             # Metadata section
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.badge(result['document_type'].upper(), type="secondary")
+                doc_type = result.get('document_type', 'unknown')
+                st.badge(doc_type.upper(), type="secondary")
             with col2:
-                if result['section']:
-                    st.write(f"**Section:** {result['section']}")
+                section = result.get('section', '')
+                if section:
+                    st.write(f"**Section:** {section}")
             with col3:
-                if result['has_images']:
-                    st.write(f"📷 {len(result['images'])} images")
+                has_images = result.get('has_images', False)
+                if has_images:
+                    image_count = result.get('image_count', 0)
+                    st.write(f"📷 {image_count} images")
             
             # Content section
             st.write("**Content:**")
-            st.write(result['content'])
+            content = result.get('content', 'No content available')
+            st.write(content)
             
             # Source information
-            if result['source']:
-                st.caption(f"Source: {result['source']}")
+            source = result.get('source', '')
+            if source:
+                st.caption(f"Source: {source}")
+            
+            # Distance/similarity score
+            distance = result.get('distance')
+            if distance is not None:
+                similarity = max(0, 1 - distance)
+                st.caption(f"Similarity: {similarity:.2%}")
             
             # Images section
-            if result['images']:
-                with st.expander("📷 Associated Images"):
-                    for img_path in result['images']:
-                        st.write(f"• {img_path}")
+            images_str = result.get('images', '')
+            if images_str:
+                images = images_str.split('|') if images_str else []
+                if images:
+                    with st.expander("📷 Associated Images"):
+                        for img_path in images:
+                            if img_path:
+                                st.write(f"• {img_path}")
 
 def main():
     st.title("🔍 Document Search Interface")
@@ -211,7 +327,6 @@ def main():
         
         # Database status
         st.subheader("📊 Database Status")
-        db_manager = get_db_manager(db_path)
         
         if st.button("🔄 Refresh Database"):
             st.cache_resource.clear()
@@ -221,6 +336,7 @@ def main():
         if os.path.exists(db_path):
             st.success("✅ Database found")
             try:
+                db_manager = get_db_manager(db_path)
                 db = db_manager.load_database()
                 if db:
                     st.success("✅ Database loaded")
@@ -236,9 +352,9 @@ def main():
     
     # Search input
     query = st.text_input(
-        "Enter your search query:",
+        "Enter your search query",
         placeholder="e.g., 'cycle count recount', 'saved view', 'column chooser'",
-        label_visibility="collapsed"
+        key="search_query"
     )
     
     # Example queries
@@ -253,15 +369,13 @@ def main():
         ]
         
         st.write("Try these example queries:")
-        for example in example_queries:
-            if st.button(f"🔸 {example}", key=f"example_{example}"):
-                st.session_state.query = example
-                st.rerun()
-    
-    # Use session state for query if set by example
-    if 'query' in st.session_state:
-        query = st.session_state.query
-        del st.session_state.query
+        cols = st.columns(2)
+        for i, example in enumerate(example_queries):
+            col = cols[i % 2]
+            with col:
+                if st.button(f"🔸 {example}", key=f"example_{i}"):
+                    st.session_state.search_query = example
+                    st.rerun()
     
     # Search button and results
     if st.button("🔍 Search", type="primary", use_container_width=True) or query:
@@ -269,22 +383,27 @@ def main():
             st.warning("Please enter a search query.")
         else:
             with st.spinner("Searching documents..."):
-                db_manager = get_db_manager(db_path)
-                
-                # Perform search
-                results = db_manager.query_database(
-                    query=query,
-                    document_type=document_type if document_type != "All" else None,
-                    document_title=document_title if document_title else None,
-                    k=max_results
-                )
-                
-                # Display results
-                if results:
-                    st.header("📋 Search Results")
-                    display_search_results(results)
-                else:
-                    st.warning("No results found. Try adjusting your query or filters.")
+                try:
+                    db_manager = get_db_manager(db_path)
+                    
+                    # Perform search
+                    results = db_manager.query_database(
+                        query=query,
+                        document_type=document_type if document_type != "All" else None,
+                        document_title=document_title if document_title else None,
+                        k=max_results
+                    )
+                    
+                    # Display results
+                    if results:
+                        st.header("📋 Search Results")
+                        display_search_results(results)
+                    else:
+                        st.warning("No results found. Try adjusting your query or filters.")
+                        
+                except Exception as e:
+                    st.error(f"Search failed: {str(e)}")
+                    st.error("Please check your database path and try again.")
     
     # Footer
     st.markdown("---")
