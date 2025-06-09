@@ -264,7 +264,7 @@ class ProfessionalChatbot:
                     response = requests.get(raw_url, timeout=10)
                     response.raise_for_status()
                     img = Image.open(BytesIO(response.content))
-                    st.image(img, use_container_width=True)
+                    st.image(img, use_column_width=True)
             return True
         except Exception as e:
             logger.error(f"Image display error: {e}")
