@@ -1,416 +1,698 @@
-import streamlit as st
-import os
+# CRITICAL: SQLite fix MUST be at the very top, before ANY imports including streamlit
 import sys
+import os
+
+# Force pysqlite3 to replace sqlite3 before any other imports
+try:
+    __import__('pysqlite3')
+    import pysqlite3
+    sys.modules['sqlite3'] = pysqlite3
+    print("Successfully replaced sqlite3 with pysqlite3")
+except ImportError:
+    print("pysqlite3 not available, using system sqlite3")
+    pass
+
+# CRITICAL: Fix numpy compatibility issues BEFORE any imports that use numpy
+try:
+    import numpy as np
+    # Add missing attributes for backward compatibility with NumPy 2.0
+    if not hasattr(np, 'uint'):
+        np.uint = np.uint64
+    if not hasattr(np, 'int_'):
+        np.int_ = np.int64
+    if not hasattr(np, 'float_'):
+        np.float_ = np.float64
+    if not hasattr(np, 'bool_'):
+        np.bool_ = bool
+    if not hasattr(np, 'complex_'):
+        np.complex_ = np.complex128
+    print("NumPy compatibility patches applied successfully")
+except ImportError:
+    print("NumPy not available, skipping compatibility patches")
+    pass
+
+# Set environment variables for better compatibility
+os.environ['TOKENIZERS_PARALLELISM'] = 'false'
+os.environ['TORCH_HOME'] = '/tmp/torch'
+
+# Now safe to import streamlit and other packages
+import streamlit as st
+import google.generativeai as genai
+from PIL import Image
+import requests
+from io import BytesIO
 from pathlib import Path
 import logging
-from typing import List, Dict, Any
+from datetime import datetime
 import time
 
-# Configure logging to be less verbose
-logging.basicConfig(level=logging.WARNING)
+# Import ChromaDB and LangChain components with error handling
+try:
+    from langchain_chroma import Chroma
+    from langchain_huggingface import HuggingFaceEmbeddings
+    VECTOR_DB_AVAILABLE = True
+    print("ChromaDB and LangChain components imported successfully")
+except ImportError as e:
+    VECTOR_DB_AVAILABLE = False
+    print(f"Vector database components not available: {e}")
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Set environment variables to fix protobuf and torch issues
-os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
-try:
-    # Import with proper error handling
-    import torch
-    # Force CPU usage to avoid device issues
-    torch.set_default_tensor_type('torch.FloatTensor')
-    
-    from langchain_chroma import Chroma
-    from sentence_transformers import SentenceTransformer
-    import chromadb
-    from chromadb.config import Settings
-    
-except ImportError as e:
-    st.error(f"Missing dependencies: {e}")
-    st.error("Please install: pip install langchain-chroma sentence-transformers chromadb")
-    st.stop()
-
-# Page configuration
+# Configure Streamlit page
 st.set_page_config(
-    page_title="Document Search Interface",
-    page_icon="🔍",
+    page_title="Document Intelligence Assistant",
+    page_icon="🤖",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
-class EmbeddingFunction:
-    """Custom embedding function to handle Streamlit Cloud issues"""
+# Custom CSS for professional styling
+st.markdown("""
+<style>
+    .main {
+        padding-top: 2rem;
+    }
     
-    def __init__(self, model_name="all-MiniLM-L6-v2"):
-        self.model_name = model_name
-        self._model = None
+    .stButton > button {
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
     
-    def _get_model(self):
-        if self._model is None:
-            try:
-                # Force CPU and avoid device issues
-                self._model = SentenceTransformer(
-                    self.model_name,
-                    device='cpu',
-                    cache_folder=None
-                )
-                # Ensure model is on CPU
-                self._model = self._model.cpu()
-            except Exception as e:
-                logger.error(f"Failed to load SentenceTransformer: {e}")
-                raise e
-        return self._model
+    .stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
     
-    def __call__(self, input_texts):
-        """Encode texts to embeddings"""
-        model = self._get_model()
-        try:
-            # Convert to list if single string
-            if isinstance(input_texts, str):
-                input_texts = [input_texts]
-            
-            # Generate embeddings with CPU
-            with torch.no_grad():
-                embeddings = model.encode(
-                    input_texts,
-                    convert_to_tensor=False,  # Return numpy arrays
-                    show_progress_bar=False,
-                    device='cpu'
-                )
-            
-            return embeddings.tolist() if hasattr(embeddings, 'tolist') else embeddings
-            
-        except Exception as e:
-            logger.error(f"Embedding generation failed: {e}")
-            # Return dummy embeddings as fallback
-            return [[0.0] * 384 for _ in input_texts]
+    .chat-message {
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin: 1rem 0;
+        border-left: 4px solid #667eea;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    
+    .response-container {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        margin: 1rem 0;
+    }
+    
+    .metric-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+    
+    .image-container {
+        border: 1px solid #e1e5e9;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        background: #fafbfc;
+    }
+    
+    .status-indicator {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+    
+    .status-success {
+        background: #d4edda;
+        color: #155724;
+    }
+    
+    .status-info {
+        background: #d1ecf1;
+        color: #0c5460;
+    }
+    
+    .status-error {
+        background: #f8d7da;
+        color: #721c24;
+    }
+    
+    .divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #ddd, transparent);
+        margin: 2rem 0;
+    }
+    
+    .language-selector {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+</style>
+""", unsafe_allow_html=True)
 
-class ChromaDBManager:
-    def __init__(self, db_path: str):
-        self.db_path = db_path
-        self.db = None
-        self.embedding_function = None
-        
-    def initialize_embeddings(self):
-        """Initialize embeddings with proper error handling"""
-        if self.embedding_function is None:
-            try:
-                with st.spinner("Loading embeddings model (first time may take a while)..."):
-                    self.embedding_function = EmbeddingFunction()
-                    # Test the embedding function
-                    test_embedding = self.embedding_function(["test"])
-                    if test_embedding:
-                        logger.info("Embeddings model loaded successfully")
-                    else:
-                        raise Exception("Test embedding failed")
-            except Exception as e:
-                logger.error(f"Failed to load embeddings: {e}")
-                st.error(f"Embedding model error: {str(e)}")
-                return None
-        return self.embedding_function
+class ProfessionalChatbot:
+    def __init__(self):
+        self.setup_genai()
+        self.setup_vector_db()
+        self.initialize_session_state()
+        self.setup_language_prompts()
     
-    def load_database(self):
-        """Load ChromaDB with proper error handling"""
-        if self.db is None:
-            try:
-                if not os.path.exists(self.db_path):
-                    st.error(f"Database path does not exist: {self.db_path}")
-                    return None
-                
-                embedding_function = self.initialize_embeddings()
-                if embedding_function is None:
-                    return None
-                
-                with st.spinner("Loading vector database..."):
-                    # Use direct ChromaDB client
+    def setup_genai(self):
+        """Initialize Gemini AI model"""
+        try:
+            # Use Streamlit secrets for API key (more secure)
+            api_key = st.secrets.get("GEMINI_API_KEY") or "AIzaSyAvzloY_NyX-yjtZb8EE_RdXPs3rPmMEso"
+            genai.configure(api_key=api_key)
+            self.model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+            logger.info("Gemini AI model initialized successfully")
+        except Exception as e:
+            st.error("Failed to initialize AI model. Please check your API key.")
+            logger.error(f"Gemini AI initialization error: {e}")
+            st.stop()
+    
+    def setup_vector_db(self):
+        """Initialize vector database with enhanced error handling"""
+        if not VECTOR_DB_AVAILABLE:
+            st.markdown(
+                '<div class="status-indicator status-error">⚠️ Vector database unavailable - running in limited mode</div>', 
+                unsafe_allow_html=True
+            )
+            self.vector_db = None
+            self.embedding_model = None
+            return
+            
+        try:
+            # Initialize embedding model with device management
+            self.embedding_model = HuggingFaceEmbeddings(
+                model_name="all-MiniLM-L6-v2",
+                model_kwargs={'device': 'cpu'},  # Force CPU usage
+                encode_kwargs={'normalize_embeddings': True}
+            )
+            self.vector_db_path = "comprehensive_vector_db"
+            
+            # Check if the vector database directory exists
+            if os.path.exists(self.vector_db_path):
+                try:
+                    # Initialize ChromaDB with compatibility settings
+                    import chromadb
+                    from chromadb.config import Settings
+                    
+                    # Create client with explicit settings for compatibility
                     client = chromadb.PersistentClient(
-                        path=self.db_path,
+                        path=self.vector_db_path,
                         settings=Settings(
                             anonymized_telemetry=False,
                             allow_reset=True
                         )
                     )
                     
-                    # Get the collection
-                    collections = client.list_collections()
-                    if not collections:
-                        st.error("No collections found in database")
-                        return None
-                    
-                    collection = collections[0]  # Use first collection
-                    
-                    # Create wrapper for queries
-                    self.db = DatabaseWrapper(client, collection, embedding_function)
-                
-                logger.info("Vector database loaded successfully")
-                
-            except Exception as e:
-                logger.error(f"Failed to load vector database: {e}")
-                st.error(f"Database loading error: {str(e)}")
-                return None
-                
-        return self.db
-    
-    def query_database(self, query: str, document_type: str = None, 
-                      document_title: str = None, k: int = 5) -> List[Dict[str, Any]]:
-        """Query the database with optional filters"""
-        db = self.load_database()
-        if db is None:
-            return []
-        
-        try:
-            # Perform similarity search
-            results = db.similarity_search(query, k=k*2)
-            
-            # Apply filters
-            filtered_results = []
-            for result in results:
-                include = True
-                
-                if document_type and document_type != "All":
-                    if result.get("document_type") != document_type.lower():
-                        include = False
-                
-                if document_title and document_title != "All":
-                    doc_title = result.get("document_title", "")
-                    if document_title.lower() not in doc_title.lower():
-                        include = False
-                
-                if include:
-                    filtered_results.append(result)
-                
-                if len(filtered_results) >= k:
-                    break
-            
-            return filtered_results
-            
-        except Exception as e:
-            logger.error(f"Query failed: {e}")
-            st.error(f"Query error: {str(e)}")
-            return []
-
-class DatabaseWrapper:
-    """Wrapper to make ChromaDB work like LangChain Chroma"""
-    
-    def __init__(self, client, collection, embedding_function):
-        self.client = client
-        self.collection = collection
-        self.embedding_function = embedding_function
-    
-    def similarity_search(self, query: str, k: int = 5):
-        """Perform similarity search"""
-        try:
-            # Generate query embedding
-            query_embedding = self.embedding_function([query])[0]
-            
-            # Query the collection
-            results = self.collection.query(
-                query_embeddings=[query_embedding],
-                n_results=k,
-                include=['documents', 'metadatas', 'distances']
-            )
-            
-            # Format results
-            formatted_results = []
-            if results['documents'] and results['documents'][0]:
-                for i, (doc, metadata) in enumerate(zip(results['documents'][0], results['metadatas'][0])):
-                    result = {
-                        "content": doc,
-                        "rank": i + 1,
-                        "distance": results['distances'][0][i] if results['distances'] else 0,
-                        **metadata  # Unpack all metadata
-                    }
-                    formatted_results.append(result)
-            
-            return formatted_results
-            
-        except Exception as e:
-            logger.error(f"Similarity search failed: {e}")
-            return []
-
-@st.cache_resource
-def get_db_manager(db_path: str):
-    """Cached database manager initialization"""
-    return ChromaDBManager(db_path)
-
-def display_search_results(results: List[Dict[str, Any]]):
-    """Display search results in a nice format"""
-    if not results:
-        st.warning("No results found for your query.")
-        return
-    
-    st.success(f"Found {len(results)} relevant documents")
-    
-    for i, result in enumerate(results):
-        doc_title = result.get('document_title', result.get('source', 'Unknown'))
-        
-        with st.expander(f"Result {result.get('rank', i+1)}: {doc_title}", expanded=i==0):
-            
-            # Metadata section
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                doc_type = result.get('document_type', 'unknown')
-                st.badge(doc_type.upper(), type="secondary")
-            with col2:
-                section = result.get('section', '')
-                if section:
-                    st.write(f"**Section:** {section}")
-            with col3:
-                has_images = result.get('has_images', False)
-                if has_images:
-                    image_count = result.get('image_count', 0)
-                    st.write(f"📷 {image_count} images")
-            
-            # Content section
-            st.write("**Content:**")
-            content = result.get('content', 'No content available')
-            st.write(content)
-            
-            # Source information
-            source = result.get('source', '')
-            if source:
-                st.caption(f"Source: {source}")
-            
-            # Distance/similarity score
-            distance = result.get('distance')
-            if distance is not None:
-                similarity = max(0, 1 - distance)
-                st.caption(f"Similarity: {similarity:.2%}")
-            
-            # Images section
-            images_str = result.get('images', '')
-            if images_str:
-                images = images_str.split('|') if images_str else []
-                if images:
-                    with st.expander("📷 Associated Images"):
-                        for img_path in images:
-                            if img_path:
-                                st.write(f"• {img_path}")
-
-def main():
-    st.title("🔍 Document Search Interface")
-    st.markdown("Search through your processed documents using semantic similarity")
-    
-    # Sidebar configuration
-    with st.sidebar:
-        st.header("⚙️ Configuration")
-        
-        # Database path input
-        db_path = st.text_input(
-            "Vector Database Path", 
-            value="comprehensive_vector_db",
-            help="Path to your ChromaDB directory"
-        )
-        
-        # Search filters
-        st.subheader("🔧 Search Filters")
-        
-        document_type = st.selectbox(
-            "Document Type",
-            ["All", "user_guide", "glossary", "faq"],
-            help="Filter by document type"
-        )
-        
-        document_title = st.text_input(
-            "Document Title (contains)",
-            placeholder="Leave empty for all documents",
-            help="Filter by document title"
-        )
-        
-        max_results = st.slider(
-            "Maximum Results",
-            min_value=1,
-            max_value=20,
-            value=5,
-            help="Number of results to return"
-        )
-        
-        # Database status
-        st.subheader("📊 Database Status")
-        
-        if st.button("🔄 Refresh Database"):
-            st.cache_resource.clear()
-            st.rerun()
-        
-        # Test database connection
-        if os.path.exists(db_path):
-            st.success("✅ Database found")
-            try:
-                db_manager = get_db_manager(db_path)
-                db = db_manager.load_database()
-                if db:
-                    st.success("✅ Database loaded")
-                else:
-                    st.error("❌ Database loading failed")
-            except Exception as e:
-                st.error(f"❌ Database error: {str(e)}")
-        else:
-            st.error("❌ Database path not found")
-    
-    # Main search interface
-    st.header("🔍 Search Documents")
-    
-    # Search input
-    query = st.text_input(
-        "Enter your search query",
-        placeholder="e.g., 'cycle count recount', 'saved view', 'column chooser'",
-        key="search_query"
-    )
-    
-    # Example queries
-    with st.expander("💡 Example Queries"):
-        example_queries = [
-            "How to create a saved view?",
-            "cycle count recount process",
-            "column chooser functionality",
-            "mobile app features",
-            "API documentation",
-            "user guide steps"
-        ]
-        
-        st.write("Try these example queries:")
-        cols = st.columns(2)
-        for i, example in enumerate(example_queries):
-            col = cols[i % 2]
-            with col:
-                if st.button(f"🔸 {example}", key=f"example_{i}"):
-                    st.session_state.search_query = example
-                    st.rerun()
-    
-    # Search button and results
-    if st.button("🔍 Search", type="primary", use_container_width=True) or query:
-        if not query.strip():
-            st.warning("Please enter a search query.")
-        else:
-            with st.spinner("Searching documents..."):
-                try:
-                    db_manager = get_db_manager(db_path)
-                    
-                    # Perform search
-                    results = db_manager.query_database(
-                        query=query,
-                        document_type=document_type if document_type != "All" else None,
-                        document_title=document_title if document_title else None,
-                        k=max_results
+                    self.vector_db = Chroma(
+                        client=client,
+                        embedding_function=self.embedding_model
                     )
                     
-                    # Display results
-                    if results:
-                        st.header("📋 Search Results")
-                        display_search_results(results)
-                    else:
-                        st.warning("No results found. Try adjusting your query or filters.")
-                        
-                except Exception as e:
-                    st.error(f"Search failed: {str(e)}")
-                    st.error("Please check your database path and try again.")
+                    status_text = "✅ Knowledge base connected" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました"
+                    st.markdown(
+                        f'<div class="status-indicator status-success">{status_text}</div>', 
+                        unsafe_allow_html=True
+                    )
+                    logger.info(f"Vector database loaded from {self.vector_db_path}")
+                    
+                except Exception as db_error:
+                    logger.error(f"Failed to load existing vector database: {db_error}")
+                    # Try fallback method for older ChromaDB versions
+                    try:
+                        self.vector_db = Chroma(
+                            persist_directory=self.vector_db_path, 
+                            embedding_function=self.embedding_model
+                        )
+                        status_text = "✅ Knowledge base connected (fallback mode)" if st.session_state.get('language', 'English') == 'English' else "✅ ナレッジベースに接続しました（フォールバックモード）"
+                        st.markdown(
+                            f'<div class="status-indicator status-success">{status_text}</div>', 
+                            unsafe_allow_html=True
+                        )
+                        logger.info(f"Vector database loaded using fallback method")
+                    except Exception as fallback_error:
+                        logger.error(f"Fallback method also failed: {fallback_error}")
+                        st.markdown(
+                            '<div class="status-indicator status-error">⚠️ Knowledge base connection failed - running in AI-only mode</div>', 
+                            unsafe_allow_html=True
+                        )
+                        self.vector_db = None
+            else:
+                error_text = "Knowledge base not found - running in AI-only mode" if st.session_state.get('language', 'English') == 'English' else "ナレッジベースが見つかりません - AI専用モードで実行中"
+                st.markdown(
+                    f'<div class="status-indicator status-info">ℹ️ {error_text}</div>', 
+                    unsafe_allow_html=True
+                )
+                logger.info(f"Vector database not found at {self.vector_db_path}")
+                self.vector_db = None
+                
+        except Exception as e:
+            error_text = "Failed to connect to knowledge base - running in AI-only mode" if st.session_state.get('language', 'English') == 'English' else "ナレッジベースへの接続に失敗しました - AI専用モードで実行中"
+            st.markdown(
+                f'<div class="status-indicator status-info">ℹ️ {error_text}</div>', 
+                unsafe_allow_html=True
+            )
+            logger.error(f"Vector database initialization error: {e}")
+            self.vector_db = None
     
-    # Footer
-    st.markdown("---")
-    st.markdown(
-        "💡 **Tip:** Use specific keywords from your documents for better results. "
-        "The search uses semantic similarity, so related terms will also match."
-    )
+    def initialize_session_state(self):
+        """Initialize session state variables"""
+        if 'chat_history' not in st.session_state:
+            st.session_state.chat_history = []
+        if 'processing' not in st.session_state:
+            st.session_state.processing = False
+        if 'language' not in st.session_state:
+            st.session_state.language = 'English'
+
+    def setup_language_prompts(self):
+        """Setup language-specific prompts and text"""
+        self.language_config = {
+            'English': {
+                'title': 'Document Intelligence Assistant',
+                'subtitle': 'Get instant answers with AI assistance',
+                'input_placeholder': 'Ask me anything:',
+                'ask_button': '🔍 Ask Question',
+                'new_chat': '🔄 New Chat',
+                'clear_history': '🗑️ Clear Chat History',
+                'recent_queries': '📝 Recent Queries',
+                'response_header': '### Response',
+                'visual_resources': '### Related Visual Resources',
+                'quick_examples': '### 💡 Quick Start Examples',
+                'documents_analyzed': 'Documents Analyzed',
+                'content_types': 'Content Types',
+                'visual_resources_metric': 'Visual Resources',
+                'source_documents': 'Source Documents',
+                'searching': 'Searching knowledge base...',
+                'analyzing': 'Analyzing and generating response...',
+                'no_docs_found': 'No relevant documents found in knowledge base. Generating AI response...',
+                'enter_question': 'Please enter a question to get started.',
+                'processing_error': 'An error occurred while processing your request. Please try again.',
+                'examples': [
+                    ("📊 Data Management", "How to create and manage saved views?"),
+                    ("🔄 Process Workflows", "What are the cycle count procedures?"),
+                    ("🔍 Search & Filter", "How to use advanced filtering options?"),
+                    ("👥 User Management", "How to manage user roles and permissions?"),
+                    ("📋 Reporting", "How to generate comprehensive reports?"),
+                    ("⚙️ Configuration", "How to configure system settings?")
+                ]
+            },
+            'Japanese': {
+                'title': 'ドキュメント インテリジェンス アシスタント',
+                'subtitle': 'AIアシスタンスで即座に回答を取得',
+                'input_placeholder': 'なんでもお聞きください：',
+                'ask_button': '🔍 質問する',
+                'new_chat': '🔄 新しいチャット',
+                'clear_history': '🗑️ 履歴をクリア',
+                'recent_queries': '📝 最近の質問',
+                'response_header': '### 回答',
+                'visual_resources': '### 関連するビジュアルリソース',
+                'quick_examples': '### 💡 クイックスタートの例',
+                'documents_analyzed': '分析されたドキュメント',
+                'content_types': 'コンテンツタイプ',
+                'visual_resources_metric': 'ビジュアルリソース',
+                'source_documents': 'ソースドキュメント',
+                'searching': 'ナレッジベースを検索中...',
+                'analyzing': '分析して回答を生成中...',
+                'no_docs_found': 'ナレッジベースに関連するドキュメントが見つかりませんでした。AI回答を生成中...',
+                'enter_question': '開始するには質問を入力してください。',
+                'processing_error': 'リクエストの処理中にエラーが発生しました。再試行してください。',
+                'examples': [
+                    ("📊 データ管理", "保存ビューの作成と管理方法は？"),
+                    ("🔄 プロセスワークフロー", "サイクルカウントの手順は何ですか？"),
+                    ("🔍 検索とフィルター", "高度なフィルタリングオプションの使用方法は？"),
+                    ("👥 ユーザー管理", "ユーザーの役割と権限の管理方法は？"),
+                    ("📋 レポート", "包括的なレポートの生成方法は？"),
+                    ("⚙️ 設定", "システム設定の構成方法は？")
+                ]
+            }
+        }
+
+    def get_text(self, key):
+        """Get localized text based on current language"""
+        return self.language_config[st.session_state.language][key]
+
+    @staticmethod
+    def convert_github_url_to_raw(github_url):
+        """Convert GitHub URL to raw format"""
+        if "github.com" in github_url and "/blob/" in github_url:
+            return github_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+        return github_url
+
+    @staticmethod
+    def is_gif_file(url):
+        """Check if URL points to a GIF file"""
+        return url.lower().endswith('.gif')
+
+    def display_image_safely(self, image_url, container):
+        """Display image with error handling"""
+        try:
+            raw_url = self.convert_github_url_to_raw(image_url)
+            
+            with container:
+                if self.is_gif_file(raw_url):
+                    st.markdown(f"""
+                    <div class="image-container">
+                        <img src="{raw_url}" alt="Visual Resource" 
+                             style="max-width: 100%; height: auto; border-radius: 4px;">
+                    </div>
+                    """, unsafe_allow_html=True)
+                else:
+                    response = requests.get(raw_url, timeout=10)
+                    response.raise_for_status()
+                    img = Image.open(BytesIO(response.content))
+                    st.image(img, use_column_width=True)
+            return True
+        except Exception as e:
+            logger.error(f"Image display error: {e}")
+            with container:
+                error_text = "Unable to load image" if st.session_state.language == 'English' else "画像を読み込めません"
+                st.error(error_text)
+            return False
+
+    def extract_images_from_documents(self, docs, max_images=3):
+        """Extract images from retrieved documents"""
+        if not docs:
+            return []
+            
+        all_images = []
+        seen_images = set()
+        
+        for doc in docs:
+            if hasattr(doc, 'metadata') and doc.metadata:
+                images_str = doc.metadata.get('images', '')
+                
+                if images_str and images_str.strip():
+                    # Handle multiple delimiter formats
+                    for delimiter in ['|', ',', ';']:
+                        if delimiter in images_str:
+                            images = [img.strip() for img in images_str.split(delimiter) if img.strip()]
+                            break
+                    else:
+                        images = [images_str.strip()] if images_str.strip() else []
+                    
+                    for img in images:
+                        if img and img not in seen_images and len(all_images) < max_images:
+                            all_images.append(img)
+                            seen_images.add(img)
+        
+        return all_images
+
+    def generate_response(self, query, docs=None):
+        """Generate AI response from documents or direct AI response"""
+        if docs and len(docs) > 0:
+            # Build context from documents
+            context_parts = []
+            for i, doc in enumerate(docs):
+                metadata = doc.metadata if hasattr(doc, 'metadata') else {}
+                source = metadata.get('source', 'Document')
+                doc_title = metadata.get('document_title', source)
+                section = metadata.get('section', '')
+                doc_type = metadata.get('document_type', 'Content')
+                
+                header = f"[Source {i+1}: {doc_title}"
+                if section:
+                    header += f" - {section}"
+                header += f" ({doc_type})]"
+                
+                context_parts.append(f"{header}\n{doc.page_content}")
+            
+            context = "\n\n---\n\n".join(context_parts)
+
+            # Create language-specific prompt with context
+            if st.session_state.language == 'Japanese':
+                prompt = f"""
+プロフェッショナルなドキュメントアシスタントとして、提供されたコンテキストに基づいて包括的で正確な回答を日本語で提供してください。
+
+ガイドライン:
+- 明確でプロフェッショナルな日本語を使用する
+- 回答を論理的に構成し、適切な書式設定を行う
+- 回答に「(ソース1、2、3)」のようなソース引用や参照を含めない
+- 情報を直接的で権威ある知識として提示する
+- 情報が不完全な場合は制限を認める
+- 可能な場合は実用的なガイダンスを提供する
+- ステップバイステップの指示には箇条書きや番号付きリストを使用する
+- 会話的でありながらプロフェッショナルな回答を維持する
+
+ナレッジベースからのコンテキスト:
+{context}
+
+ユーザーの質問: {query}
+
+ソース引用なしで詳細なプロフェッショナルな回答を日本語で提供してください:
+"""
+            else:
+                prompt = f"""
+As a professional document assistant, provide a comprehensive and accurate answer based on the provided context.
+
+Guidelines:
+- Use clear, professional language
+- Structure your response logically with proper formatting
+- Do NOT include source citations or references like "(Source 1, 2, 3)" in your response
+- Present information as direct, authoritative knowledge
+- If information is incomplete, acknowledge limitations
+- Provide actionable guidance when possible
+- Use bullet points or numbered lists for step-by-step instructions
+- Keep responses conversational yet professional
+
+Context from knowledge base:
+{context}
+
+User Question: {query}
+
+Please provide a detailed, professional response without any source citations:
+"""
+        else:
+            # Generate direct AI response without document context
+            if st.session_state.language == 'Japanese':
+                prompt = f"""
+プロフェッショナルなAIアシスタントとして、以下の質問に包括的で正確な回答を日本語で提供してください。
+
+ガイドライン:
+- 明確でプロフェッショナルな日本語を使用する
+- 回答を論理的に構成し、適切な書式設定を行う
+- 可能な場合は実用的なガイダンスを提供する
+- ステップバイステップの指示には箇条書きや番号付きリストを使用する
+- 会話的でありながらプロフェッショナルな回答を維持する
+- 情報が不確実な場合は制限を認める
+
+ユーザーの質問: {query}
+
+詳細なプロフェッショナルな回答を日本語で提供してください:
+"""
+            else:
+                prompt = f"""
+As a professional AI assistant, provide a comprehensive and accurate answer to the following question.
+
+Guidelines:
+- Use clear, professional language
+- Structure your response logically with proper formatting
+- Provide actionable guidance when possible
+- Use bullet points or numbered lists for step-by-step instructions
+- Keep responses conversational yet professional
+- If information is uncertain, acknowledge limitations
+
+User Question: {query}
+
+Please provide a detailed, professional response:
+"""
+
+        try:
+            response = self.model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            logger.error(f"AI response generation error: {e}")
+            error_text = "I apologize, but I'm unable to generate a response at this time. Please try again or contact support." if st.session_state.language == 'English' else "申し訳ございませんが、現在回答を生成できません。再試行するかサポートにお問い合わせください。"
+            return error_text
+
+    def process_query(self, query, container=None):
+        """Main query processing function"""
+        try:
+            # Use provided container or create a new one
+            if container is None:
+                container = st.container()
+            
+            with container:
+                docs = []
+                images = []
+                
+                # Search documents if vector DB is available
+                if self.vector_db is not None:
+                    with st.spinner(self.get_text('searching')):
+                        docs = self.vector_db.similarity_search(query, k=10)
+                    
+                    if not docs:
+                        st.info(self.get_text('no_docs_found'))
+                    
+                    # Extract images from documents
+                    images = self.extract_images_from_documents(docs, max_images=3)
+                
+                # Generate response (with or without document context)
+                with st.spinner(self.get_text('analyzing')):
+                    response_text = self.generate_response(query, docs if docs else None)
+                
+                # Display response
+                st.markdown('<div class="response-container">', unsafe_allow_html=True)
+                st.markdown(self.get_text('response_header'))
+                st.write(response_text)
+                st.markdown('</div>', unsafe_allow_html=True)
+                
+                # Display images if available
+                if images:
+                    st.markdown(self.get_text('visual_resources'))
+                    cols = st.columns(min(len(images), 3))
+                    for idx, img_url in enumerate(images):
+                        self.display_image_safely(img_url, cols[idx % len(cols)])
+                
+                # Add to chat history
+                timestamp = datetime.now().strftime("%H:%M")
+                st.session_state.chat_history.append({
+                    'timestamp': timestamp,
+                    'query': query,
+                    'response': response_text,
+                    'doc_count': len(docs),
+                    'image_count': len(images)
+                })
+            
+        except Exception as e:
+            logger.error(f"Query processing error: {e}")
+            if container:
+                with container:
+                    st.error(self.get_text('processing_error'))
+            else:
+                st.error(self.get_text('processing_error'))
+
+    def render_sidebar(self):
+        """Render sidebar with language selection and chat history"""
+        with st.sidebar:
+            # Language Selection at the top
+            st.markdown("""
+            <div class="language-selector">
+                <h3>🌐 Language / 言語</h3>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            language_options = {'English': '🇺🇸 English', 'Japanese': '🇯🇵 日本語'}
+            
+            new_language = st.selectbox(
+                "Select Language",
+                options=list(language_options.keys()),
+                format_func=lambda x: language_options[x],
+                index=0 if st.session_state.language == 'English' else 1,
+                key="language_selector"
+            )
+            
+            if new_language != st.session_state.language:
+                st.session_state.language = new_language
+                st.rerun()
+            
+            st.markdown("---")
+            
+            # Clear history button
+            if st.button(self.get_text('clear_history')):
+                st.session_state.chat_history = []
+                st.rerun()
+            
+            # Chat history
+            if st.session_state.chat_history:
+                st.markdown(f"### {self.get_text('recent_queries')}")
+                for idx, chat in enumerate(reversed(st.session_state.chat_history[-5:])):
+                    with st.expander(f"{chat['timestamp']} - {chat['query'][:30]}..."):
+                        query_label = "**Query:**" if st.session_state.language == 'English' else "**質問:**"
+                        docs_label = "**Documents:**" if st.session_state.language == 'English' else "**ドキュメント:**"
+                        images_label = "**Images:**" if st.session_state.language == 'English' else "**画像:**"
+                        
+                        st.write(f"{query_label} {chat['query']}")
+                        st.write(f"{docs_label} {chat['doc_count']}")
+                        st.write(f"{images_label} {chat['image_count']}")
+
+    def render_main_interface(self):
+        """Render main chat interface"""
+        # Header
+        st.markdown(f"""
+        <div style="text-align: center; padding: 2rem 0;">
+            <h1 style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
+                       -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+                       font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">
+                {self.get_text('title')}
+            </h1>
+            <p style="color: #6c757d; font-size: 1.1rem;">
+                {self.get_text('subtitle')}
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Render sidebar
+        self.render_sidebar()
+        
+        # Main query interface
+        with st.container():
+            query = st.text_input(
+                "Enter your question:",
+                placeholder=self.get_text('input_placeholder'),
+                key="main_query"
+            )
+            
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                submit_clicked = st.button(self.get_text('ask_button'), type="primary", key="submit_main")
+            with col2:
+                if st.button(self.get_text('new_chat'), key="clear_main"):
+                    st.session_state.chat_history = []
+                    st.rerun()
+        
+        # Response area container - positioned directly after input
+        response_container = st.container()
+        
+        # Process query from input box
+        if submit_clicked and query.strip():
+            self.process_query(query, response_container)
+        elif submit_clicked:
+            with response_container:
+                st.warning(self.get_text('enter_question'))
+        
+        # Quick examples
+        st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+        
+        st.markdown(self.get_text('quick_examples'))
+        
+        examples = self.get_text('examples')
+        
+        # Check if any example button was clicked
+        example_clicked = None
+        cols = st.columns(2)
+        for idx, (category, example) in enumerate(examples):
+            with cols[idx % 2]:
+                if st.button(f"{category}: {example}", key=f"example_{idx}"):
+                    example_clicked = example
+        
+        # Process example query in the response container
+        if example_clicked:
+            self.process_query(example_clicked, response_container)
+
+def main():
+    """Main application entry point"""
+    try:
+        chatbot = ProfessionalChatbot()
+        chatbot.render_main_interface()
+    except Exception as e:
+        error_text = "Failed to initialize the application. Please contact support." if st.session_state.get('language', 'English') == 'English' else "アプリケーションの初期化に失敗しました。サポートにお問い合わせください。"
+        st.error(error_text)
+        logger.error(f"Application initialization error: {e}")
 
 if __name__ == "__main__":
     main()
